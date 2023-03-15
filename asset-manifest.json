@@ -1,22 +1,30 @@
 {
   "files": {
     "main.css": "/website/static/css/main.78e63270.css",
-    "main.js": "/website/static/js/main.31efc63e.js",
+    "main.js": "/website/static/js/main.77ca3968.js",
+    "static/media/Oxxo.jpg": "/website/static/media/Oxxo.ec69872d4abe86e326fa.jpg",
+    "static/media/Payphone.jpg": "/website/static/media/Payphone.9da3c40648dec9af5687.jpg",
     "static/media/PayCash.jpg": "/website/static/media/PayCash.a6061cfbb183af98afed.jpg",
     "static/media/Facilito.jpg": "/website/static/media/Facilito.7d7b34eb989731f2e382.jpg",
     "static/media/Punto_Pago.jpg": "/website/static/media/Punto_Pago.e73f25898204ad497b4f.jpg",
     "static/media/Pay_to_card.jpg": "/website/static/media/Pay_to_card.defcf50cf1c439b7b1c2.jpg",
     "static/media/Tarjetas.jpg": "/website/static/media/Tarjetas.5865542f7d80c0e4131d.jpg",
+    "static/media/SafetyPay.jpg": "/website/static/media/SafetyPay.e5bdf49ec7a75b954a52.jpg",
     "static/media/Bank_transfer.jpg": "/website/static/media/Bank_transfer.4c25dd10b3826c46392a.jpg",
-    "static/media/Bitcoin.png": "/website/static/media/Bitcoin.61420d9440bc1c61aa24.png",
     "static/media/RedActiva.jpg": "/website/static/media/RedActiva.9c6f37cd90c578bc0825.jpg",
+    "static/media/PaysafeCard.jpg": "/website/static/media/PaysafeCard.f7f198b0299b3a86829b.jpg",
     "static/media/Sistema_clave.jpg": "/website/static/media/Sistema_clave.e4fab673082929fc7966.jpg",
+    "static/media/E_wallet.jpg": "/website/static/media/E_wallet.40243c99f768ab46f134.jpg",
+    "static/media/Paynet.jpg": "/website/static/media/Paynet.519717befa40b6ecfdd4.jpg",
+    "static/media/Spei.jpg": "/website/static/media/Spei.a94bfda4f7c1905d893c.jpg",
+    "static/media/Astropay.jpg": "/website/static/media/Astropay.ac95b49bca7f9c804056.jpg",
+    "static/media/Betcris_Agencias.png": "/website/static/media/Betcris_Agencias.537a99d9d474615f008b.png",
     "index.html": "/website/index.html",
     "main.78e63270.css.map": "/website/static/css/main.78e63270.css.map",
-    "main.31efc63e.js.map": "/website/static/js/main.31efc63e.js.map"
+    "main.77ca3968.js.map": "/website/static/js/main.77ca3968.js.map"
   },
   "entrypoints": [
     "static/css/main.78e63270.css",
-    "static/js/main.31efc63e.js"
+    "static/js/main.77ca3968.js"
   ]
 }
