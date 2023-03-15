@@ -6,6 +6,7 @@ import Puntopago from "../../img/Punto_Pago.jpg";
 import Tarjetas from "../../img/Tarjetas.jpg";
 import Banktransfer from "../../img/Bank_transfer.jpg";
 import Retirotarjeta from "../../img/Pay_to_card.jpg";
+import Agencias from "../../img/Betcris_Agencias.png";
 
 const imagesDepositos = [
   {
@@ -52,6 +53,28 @@ const imagesDepositos = [
     description:
       "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
   },
+  {
+    img: Banktransfer,
+    title: "TRANSFERENCIA BANCARIA LOCAL",
+    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/retiros/transferencia-bancaria-local/",
+    min: "$10.00",
+    max: "$10,000.00",
+    time: "7 días",
+    descriptionTitle: "Desde el Cajero de Betcris:",
+    description:
+      "Elige Retiro, selecciona 'Transferencia Bancaria', ingresa el monto de tu retiro, seguido ingresa la información de tu cuenta bancaria para tu primer retiro por este método (tus datos serán guardados para la próxima vez), finalmente selecciona 'Retirar'.",
+  },
+  {
+    img: Agencias,
+    title: "AGENCIAS BETCRIS",
+    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/retiros/transferencia-bancaria-local/",
+    min: "$10.00",
+    max: "$10,000.00",
+    time: "7 días",
+    descriptionTitle: "Desde el Cajero de Betcris:",
+    description:
+      "Elige Retiro, selecciona 'Transferencia Bancaria', ingresa el monto de tu retiro, seguido ingresa la información de tu cuenta bancaria para tu primer retiro por este método (tus datos serán guardados para la próxima vez), finalmente selecciona 'Retirar'.",
+  },
 ];
 
 const imagesRetiros = [
@@ -68,7 +91,18 @@ const imagesRetiros = [
   },
   {
     img: Retirotarjeta,
-    title: "TARJETA - VISA DIRECT",
+    title: "TARJETAS DE CRÉDITO Y DÉBITO",
+    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/retiros/retiro-a-tarjeta/",
+    min: "$10.00",
+    max: "-",
+    time: "30 minutos",
+    descriptionTitle: "Desde el Cajero de Betcris:",
+    description:
+      "Selecciona 'VISA Direct / Retiro a tarjeta', ingresa la cantidad deseada, seguido agrega la información de tu tarjeta: Tu nombre tal como se muestra en la tarjeta, el número de 16 dígitos, la fecha de vencimiento, tu dirección de correo electrónico, número de teléfono, cantidad solicitada y finalmente selecciona 'Retirar'.",
+  },
+  {
+    img: Agencias,
+    title: "AGENCIAS BETCRIS",
     url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/retiros/retiro-a-tarjeta/",
     min: "$10.00",
     max: "-",

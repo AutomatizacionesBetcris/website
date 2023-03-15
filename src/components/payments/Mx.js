@@ -1,31 +1,21 @@
 import React, { useState } from "react";
 import LogoBC from "../../img/logo-blanco.png";
 import Tarjetas from "../../img/Tarjetas.jpg";
-import Facilito from "../../img/Facilito.jpg";
-import RedActiva from "../../img/RedActiva.jpg";
 import SafetyPay from "../../img/SafetyPay.jpg";
 import Banktransfer from "../../img/Bank_transfer.jpg";
-import PayPhone from "../../img/Payphone.jpg";
 import EWallet from "../../img/E_wallet.jpg";
 import AstroPay from "../../img/Astropay.jpg";
 import Agencias from "../../img/Betcris_Agencias.png";
 import Retirotarjeta from "../../img/Pay_to_card.jpg";
+import Oxxo from "../../img/Oxxo.jpg";
+import PaysafeCard from "../../img/PaysafeCard.jpg";
+import SPEI from "../../img/Spei.jpg";
+import Paynet from "../../img/Paynet.jpg";
 
 const imagesDepositos = [
   {
-    img: RedActiva,
-    title: "REDACTIVA",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/tarjetas-de-credito-y-debito/",
-    min: "$10.00",
-    max: "$",
-    time: "Inmediato",
-    descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
-  },
-  {
-    img: Facilito,
-    title: "FACILITO",
+    img: Tarjetas,
+    title: "TARJETAS DE CRÉDITO Y DÉBITO",
     url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/tarjetas-de-credito-y-debito/",
     min: "$10.00",
     max: "$",
@@ -46,50 +36,6 @@ const imagesDepositos = [
       "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
   },
   {
-    img: Tarjetas,
-    title: "TARJETAS DE CRÉDITO Y DÉBITO",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/tarjetas-de-credito-y-debito/",
-    min: "$10.00",
-    max: "$",
-    time: "Inmediato",
-    descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
-  },
-  {
-    img: Banktransfer,
-    title: "TRANSFERENCIA BANCARIA LOCAL",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/retiros/transferencia-bancaria-local/",
-    min: "$10.00",
-    max: "$10,000.00",
-    time: "7 días",
-    descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Elige Retiro, selecciona 'Transferencia Bancaria', ingresa el monto de tu retiro, seguido ingresa la información de tu cuenta bancaria para tu primer retiro por este método (tus datos serán guardados para la próxima vez), finalmente selecciona 'Retirar'.",
-  },
-  {
-    img: PayPhone,
-    title: "PAYPHONE",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/tarjetas-de-credito-y-debito/",
-    min: "$10.00",
-    max: "$",
-    time: "Inmediato",
-    descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
-  },
-  {
-    img: EWallet,
-    title: "E-WALLET",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/tarjetas-de-credito-y-debito/",
-    min: "$10.00",
-    max: "$",
-    time: "Inmediato",
-    descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
-  },
-  {
     img: AstroPay,
     title: "ASTROPAY",
     url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/tarjetas-de-credito-y-debito/",
@@ -101,22 +47,8 @@ const imagesDepositos = [
       "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
   },
   {
-    img: Agencias,
-    title: "AGENCIAS BETCRISs",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/retiros/transferencia-bancaria-local/",
-    min: "$10.00",
-    max: "$10,000.00",
-    time: "7 días",
-    descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Elige Retiro, selecciona 'Transferencia Bancaria', ingresa el monto de tu retiro, seguido ingresa la información de tu cuenta bancaria para tu primer retiro por este método (tus datos serán guardados para la próxima vez), finalmente selecciona 'Retirar'.",
-  },
-];
-
-const imagesRetiros = [
-  {
-    img: RedActiva,
-    title: "REDACTIVA",
+    img: Oxxo,
+    title: "OXXO",
     url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/tarjetas-de-credito-y-debito/",
     min: "$10.00",
     max: "$",
@@ -126,8 +58,8 @@ const imagesRetiros = [
       "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
   },
   {
-    img: Facilito,
-    title: "FACILITO",
+    img: PaysafeCard,
+    title: "PAYSAFE CARD",
     url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/tarjetas-de-credito-y-debito/",
     min: "$10.00",
     max: "$",
@@ -137,41 +69,30 @@ const imagesRetiros = [
       "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
   },
   {
-    img: Retirotarjeta,
-    title: "TARJETA - VISA DIRECT",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/retiros/retiro-a-tarjeta/",
+    img: SPEI,
+    title: "SPEI",
+    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/tarjetas-de-credito-y-debito/",
     min: "$10.00",
-    max: "-",
-    time: "30 minutos",
+    max: "$",
+    time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
-      "Selecciona 'VISA Direct / Retiro a tarjeta', ingresa la cantidad deseada, seguido agrega la información de tu tarjeta: Tu nombre tal como se muestra en la tarjeta, el número de 16 dígitos, la fecha de vencimiento, tu dirección de correo electrónico, número de teléfono, cantidad solicitada y finalmente selecciona 'Retirar'.",
+      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
   },
   {
-    img: Banktransfer,
-    title: "TRANSFERENCIA BANCARIA LOCAL",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/retiros/transferencia-bancaria-local/",
+    img: Paynet,
+    title: "PAYNET",
+    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/tarjetas-de-credito-y-debito/",
     min: "$10.00",
-    max: "$10,000.00",
-    time: "7 días",
+    max: "$",
+    time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
-      "Elige Retiro, selecciona 'Transferencia Bancaria', ingresa el monto de tu retiro, seguido ingresa la información de tu cuenta bancaria para tu primer retiro por este método (tus datos serán guardados para la próxima vez), finalmente selecciona 'Retirar'.",
+      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
   },
   {
     img: EWallet,
     title: "E-WALLET",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/tarjetas-de-credito-y-debito/",
-    min: "$10.00",
-    max: "$",
-    time: "Inmediato",
-    descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
-  },
-  {
-    img: AstroPay,
-    title: "ASTROPAY",
     url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/tarjetas-de-credito-y-debito/",
     min: "$10.00",
     max: "$",
@@ -193,7 +114,65 @@ const imagesRetiros = [
   },
 ];
 
-const EC = () => {
+const imagesRetiros = [
+  {
+    img: Retirotarjeta,
+    title: "TARJETAS DE CRÉDITO Y DÉBITO",
+    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/tarjetas-de-credito-y-debito/",
+    min: "$10.00",
+    max: "$",
+    time: "Inmediato",
+    descriptionTitle: "Desde el Cajero de Betcris:",
+    description:
+      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
+  },
+  {
+    img: Banktransfer,
+    title: "TRANSFERENCIA BANCARIA LOCAL",
+    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/retiros/transferencia-bancaria-local/",
+    min: "$10.00",
+    max: "$10,000.00",
+    time: "7 días",
+    descriptionTitle: "Desde el Cajero de Betcris:",
+    description:
+      "Elige Retiro, selecciona 'Transferencia Bancaria', ingresa el monto de tu retiro, seguido ingresa la información de tu cuenta bancaria para tu primer retiro por este método (tus datos serán guardados para la próxima vez), finalmente selecciona 'Retirar'.",
+  },
+  {
+    img: AstroPay,
+    title: "ASTROPAY",
+    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/tarjetas-de-credito-y-debito/",
+    min: "$10.00",
+    max: "$",
+    time: "Inmediato",
+    descriptionTitle: "Desde el Cajero de Betcris:",
+    description:
+      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
+  },
+  {
+    img: EWallet,
+    title: "E-WALLET",
+    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/tarjetas-de-credito-y-debito/",
+    min: "$10.00",
+    max: "$",
+    time: "Inmediato",
+    descriptionTitle: "Desde el Cajero de Betcris:",
+    description:
+      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
+  },
+  {
+    img: Agencias,
+    title: "AGENCIAS BETCRIS",
+    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/retiros/transferencia-bancaria-local/",
+    min: "$10.00",
+    max: "$10,000.00",
+    time: "7 días",
+    descriptionTitle: "Desde el Cajero de Betcris:",
+    description:
+      "Elige Retiro, selecciona 'Transferencia Bancaria', ingresa el monto de tu retiro, seguido ingresa la información de tu cuenta bancaria para tu primer retiro por este método (tus datos serán guardados para la próxima vez), finalmente selecciona 'Retirar'.",
+  },
+];
+
+const Mx = () => {
   const [showDepositos, setShowDepositos] = useState(true);
   const [selectedImage, setSelectedImage] = useState(null);
 
@@ -326,4 +305,4 @@ const EC = () => {
   );
 };
 
-export default EC;
+export default Mx;
