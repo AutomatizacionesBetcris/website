@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/website/static/css/main.78e63270.css",
+    "main.js": "/website/static/js/main.e6e286da.js",
+    "static/media/PayCash.jpg": "/website/static/media/PayCash.a6061cfbb183af98afed.jpg",
+    "static/media/Punto_Pago.jpg": "/website/static/media/Punto_Pago.e73f25898204ad497b4f.jpg",
+    "static/media/Pay_to_card.jpg": "/website/static/media/Pay_to_card.defcf50cf1c439b7b1c2.jpg",
+    "static/media/Tarjetas.jpg": "/website/static/media/Tarjetas.5865542f7d80c0e4131d.jpg",
+    "static/media/Bank_transfer.jpg": "/website/static/media/Bank_transfer.4c25dd10b3826c46392a.jpg",
+    "static/media/Sistema_clave.jpg": "/website/static/media/Sistema_clave.e4fab673082929fc7966.jpg",
+    "index.html": "/website/index.html",
+    "main.78e63270.css.map": "/website/static/css/main.78e63270.css.map",
+    "main.e6e286da.js.map": "/website/static/js/main.e6e286da.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.78e63270.css",
+    "static/js/main.e6e286da.js"
+  ]
+}
