@@ -1,37 +1,36 @@
 import React, { useState } from "react";
 import LogoBC from "../../img/logo-blanco.png";
-import PayCash from "../../img/PayCash.jpg";
-import Puntopago from "../../img/Punto_Pago.jpg";
 import Tarjetas from "../../img/Tarjetas.jpg";
-import Banktransfer from "../../img/Bank_transfer.jpg";
-import Retirotarjeta from "../../img/Pay_to_card.jpg";
+import Facilito from "../../img/Facilito.jpg";
+import RedActiva from "../../img/RedActiva.jpg";
+import Bitcoin from "../../img/Bitcoin.png";
 
 const imagesDepositos = [
   {
-    img: PayCash,
-    title: "PAYCASH",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/paycash-panama/",
-    min: "$10.00",
-    max: "$200.00",
-    time: "-",
-    descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Elige Depósito, haz clic en 'Tienda de conveniencia', seguido selecciona la opción 'Pagar en efectivo', ingresa el monto a depositar y selecciona la opción 'Generar referencia', el sistema te brindará un código de 16 dígitos que debes copiar, luego debes presentarte en la tienda de conveniencia y brindar al cajero el número de referencia y el dinero a pagar (el monto debe ser el mismo que digitaste en el cajero en línea de Betcris), ahora solo debes guardar el recibo como comprobante de pago.",
-  },
-  {
-    img: Puntopago,
-    title: "PUNTO PAGO",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/punto-pago/",
-    min: "$1.00",
-    max: "$1,000.00",
-    time: "-",
-    descriptionTitle: "En el quiosco de Punto Pago:",
-    description:
-      "En el quiosco de Punto Pago, busca el botón 'Betcris', seguido ingresa tu número de cuenta 'PANXXXX', revisa y confirma tus datos personales, luego ingresa el monto a recargar, haz clic en opción 'Pagar', y se te dará un recibo que confirma tu transacción.",
-  },
-  {
     img: Tarjetas,
     title: "TARJETAS DE CRÉDITO Y DÉBITO",
+    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/tarjetas-de-credito-y-debito/",
+    min: "$10.00",
+    max: "$",
+    time: "Inmediato",
+    descriptionTitle: "Desde el Cajero de Betcris:",
+    description:
+      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
+  },
+  {
+    img: Facilito,
+    title: "FACILITO",
+    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/tarjetas-de-credito-y-debito/",
+    min: "$10.00",
+    max: "$",
+    time: "Inmediato",
+    descriptionTitle: "Desde el Cajero de Betcris:",
+    description:
+      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
+  },
+  {
+    img: RedActiva,
+    title: "REDACTIVA",
     url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/tarjetas-de-credito-y-debito/",
     min: "$10.00",
     max: "$",
@@ -44,19 +43,8 @@ const imagesDepositos = [
 
 const imagesRetiros = [
   {
-    img: Banktransfer,
-    title: "TRANSFERENCIA BANCARIA LOCAL",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/retiros/transferencia-bancaria-local/",
-    min: "$10.00",
-    max: "$10,000.00",
-    time: "7 días",
-    descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Elige Retiro, selecciona 'Transferencia Bancaria', ingresa el monto de tu retiro, seguido ingresa la información de tu cuenta bancaria para tu primer retiro por este método (tus datos serán guardados para la próxima vez), finalmente selecciona 'Retirar'.",
-  },
-  {
-    img: Retirotarjeta,
-    title: "TARJETA - VISA DIRECT",
+    img: Bitcoin,
+    title: "Bitcoin",
     url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/retiros/retiro-a-tarjeta/",
     min: "$10.00",
     max: "-",
@@ -123,6 +111,7 @@ const EC = () => {
                   key={index}
                   src={image.img}
                   alt={`Imagen ${index + 1}`}
+                  className="w-38 rounded-lg overflow-hidden border-black shadow-lg hover:scale-110 transition-transform duration-300 ease-out"
                   onClick={() => handleImageClick(image)}
                 />
               ))}

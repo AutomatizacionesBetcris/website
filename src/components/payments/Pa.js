@@ -135,6 +135,7 @@ const PA = () => {
                   key={index}
                   src={image.img}
                   alt={`Imagen ${index + 1}`}
+                  className="w-38 rounded-lg overflow-hidden border-black shadow-lg hover:scale-110 transition-transform duration-300 ease-out"
                   onClick={() => handleImageClick(image)}
                 />
               ))}
