@@ -13,9 +13,9 @@ const imagesDepositos = [
     img: SafetyPay,
     title: "SAFETYPAY",
     url: "https://get.betcris.help/hc/es-419/articles/360002241397-SafetyPay",
-    min: "$10.00",
-    max: "$",
-    time: "Inmediato",
+    min: "$20.00",
+    max: "$2,000.00",
+    time: "60 minutos",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
       "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
@@ -25,7 +25,7 @@ const imagesDepositos = [
     title: "MACH",
     url: "https://get.betcris.help/hc/es-419/articles/4423322709521-MACH",
     min: "$10.00",
-    max: "$",
+    max: "$479.00",
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
@@ -36,7 +36,7 @@ const imagesDepositos = [
     title: "TARJETAS DE CRÉDITO Y DÉBITO",
     url: "https://get.betcris.help/hc/es-419/articles/360002208798-Tarjetas-de-cr%C3%A9dito-y-d%C3%A9bito",
     min: "$10.00",
-    max: "$",
+    max: "$259.00",
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
@@ -57,8 +57,8 @@ const imagesDepositos = [
     img: AstroPay,
     title: "ASTROPAY",
     url: "https://get.betcris.help/hc/es-419/articles/360002212037-AstroPay-Card",
-    min: "$10.00",
-    max: "$",
+    min: "$5.00",
+    max: "$10,000.00",
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
@@ -72,7 +72,7 @@ const imagesRetiros = [
     title: "TARJETAS DE CRÉDITO Y DÉBITO",
     url: "https://get.betcris.help/hc/es-419/articles/360002241997-Retiro-a-Tarjeta",
     min: "$10.00",
-    max: "-",
+    max: "$5,000.00",
     time: "30 minutos",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
@@ -93,9 +93,9 @@ const imagesRetiros = [
     img: EWallet,
     title: "E-WALLET",
     url: "#",
-    min: "$10.00",
+    min: "$",
     max: "$",
-    time: "Inmediato",
+    time: "-",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
       "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
@@ -104,8 +104,8 @@ const imagesRetiros = [
     img: AstroPay,
     title: "ASTROPAY",
     url: "https://get.betcris.help/hc/es-419/articles/360011110557-AstroPay-Card",
-    min: "$10.00",
-    max: "$",
+    min: "$5.00",
+    max: "$1,000.00",
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:

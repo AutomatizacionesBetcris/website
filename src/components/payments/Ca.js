@@ -9,11 +9,11 @@ import AstroPay from "../../img/Astropay.jpg";
 const imagesDepositos = [
   {
     img: Tarjetas,
-    title: "TARJETAS DE CRÉDITO Y DÉBITO",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/tarjetas-de-credito-y-debito/",
+    title: "CREDIT AND DEBIT CARDS",
+    url: "https://get.betcris.help/hc/en-us/articles/360002208798-Credit-and-Debit-Cards",
     min: "$10.00",
-    max: "$",
-    time: "Inmediato",
+    max: "$5,000.00",
+    time: "Immediately",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
       "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
@@ -21,10 +21,10 @@ const imagesDepositos = [
   {
     img: PaysafeCard,
     title: "PAYSAFE CARD",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/tarjetas-de-credito-y-debito/",
-    min: "$10.00",
-    max: "$",
-    time: "Inmediato",
+    url: "https://get.betcris.help/hc/en-us/articles/360002241357-paysafecard",
+    min: "$5.00",
+    max: "$2,500.00",
+    time: "-",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
       "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
@@ -32,10 +32,10 @@ const imagesDepositos = [
   {
     img: EcoPayz,
     title: "ECOPAYZ",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/tarjetas-de-credito-y-debito/",
+    url: "https://get.betcris.help/hc/en-us/articles/360002218938-ecoPayz",
     min: "$10.00",
-    max: "$",
-    time: "Inmediato",
+    max: "$50,000.00",
+    time: "Immediately",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
       "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
@@ -43,10 +43,10 @@ const imagesDepositos = [
   {
     img: AstroPay,
     title: "ASTROPAY",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/tarjetas-de-credito-y-debito/",
-    min: "$10.00",
-    max: "$",
-    time: "Inmediato",
+    url: "https://get.betcris.help/hc/en-us/articles/360002212037-AstroPay-",
+    min: "$5.00",
+    max: "$10,000.00",
+    time: "Immediately",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
       "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
@@ -57,21 +57,21 @@ const imagesRetiros = [
   {
     img: EcoPayz,
     title: "ECOPAYZ",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/tarjetas-de-credito-y-debito/",
+    url: "https://get.betcris.help/hc/en-us/articles/360002245158-ecoPayz",
     min: "$10.00",
-    max: "$",
-    time: "Inmediato",
+    max: "$2,500.00",
+    time: "48 hours",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
       "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
   },
   {
     img: Retirotarjeta,
-    title: "TARJETAS DE CRÉDITO Y DÉBITO",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/retiros/retiro-a-tarjeta/",
+    title: "PAY TO CARD- VISA DIRECT",
+    url: "https://get.betcris.help/hc/en-us/articles/360002241997-Pay-to-Card-Visa-Direct-",
     min: "$10.00",
-    max: "-",
-    time: "30 minutos",
+    max: "$5,000.00",
+    time: "30 minutes",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
       "Selecciona 'VISA Direct / Retiro a tarjeta', ingresa la cantidad deseada, seguido agrega la información de tu tarjeta: Tu nombre tal como se muestra en la tarjeta, el número de 16 dígitos, la fecha de vencimiento, tu dirección de correo electrónico, número de teléfono, cantidad solicitada y finalmente selecciona 'Retirar'.",
@@ -79,10 +79,10 @@ const imagesRetiros = [
   {
     img: AstroPay,
     title: "ASTROPAY",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/tarjetas-de-credito-y-debito/",
-    min: "$10.00",
-    max: "$",
-    time: "Inmediato",
+    url: "https://get.betcris.help/hc/en-us/articles/360011110557-AstroPay-Card",
+    min: "$5.00",
+    max: "$1,000.00",
+    time: "24 hours",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
       "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
