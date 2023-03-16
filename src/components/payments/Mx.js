@@ -16,7 +16,7 @@ const imagesDepositos = [
   {
     img: Tarjetas,
     title: "TARJETAS DE CRÉDITO Y DÉBITO",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/tarjetas-de-credito-y-debito/",
+    url: "https://ayuda.betcris.mx/guia-de-usuario/centro-de-ayuda/depositos/tarjetas-de-credito-y-debito/",
     min: "$10.00",
     max: "$",
     time: "Inmediato",
@@ -27,7 +27,7 @@ const imagesDepositos = [
   {
     img: SafetyPay,
     title: "SAFETYPAY",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/tarjetas-de-credito-y-debito/",
+    url: "https://ayuda.betcris.mx/guia-de-usuario/centro-de-ayuda/depositos/safetypay/",
     min: "$10.00",
     max: "$",
     time: "Inmediato",
@@ -38,7 +38,7 @@ const imagesDepositos = [
   {
     img: AstroPay,
     title: "ASTROPAY",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/tarjetas-de-credito-y-debito/",
+    url: "https://ayuda.betcris.mx/guia-de-usuario/centro-de-ayuda/depositos/astropay-card-2/",
     min: "$10.00",
     max: "$",
     time: "Inmediato",
@@ -49,7 +49,7 @@ const imagesDepositos = [
   {
     img: Oxxo,
     title: "OXXO",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/tarjetas-de-credito-y-debito/",
+    url: "https://ayuda.betcris.mx/guia-de-usuario/centro-de-ayuda/depositos/oxxo/",
     min: "$10.00",
     max: "$",
     time: "Inmediato",
@@ -60,7 +60,7 @@ const imagesDepositos = [
   {
     img: PaysafeCard,
     title: "PAYSAFE CARD",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/tarjetas-de-credito-y-debito/",
+    url: "https://ayuda.betcris.mx/guia-de-usuario/centro-de-ayuda/depositos/paysafecard/",
     min: "$10.00",
     max: "$",
     time: "Inmediato",
@@ -71,7 +71,7 @@ const imagesDepositos = [
   {
     img: SPEI,
     title: "SPEI",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/tarjetas-de-credito-y-debito/",
+    url: "https://ayuda.betcris.mx/guia-de-usuario/centro-de-ayuda/depositos/spei/",
     min: "$10.00",
     max: "$",
     time: "Inmediato",
@@ -82,7 +82,7 @@ const imagesDepositos = [
   {
     img: Paynet,
     title: "PAYNET",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/tarjetas-de-credito-y-debito/",
+    url: "https://ayuda.betcris.mx/guia-de-usuario/centro-de-ayuda/depositos/paynet/",
     min: "$10.00",
     max: "$",
     time: "Inmediato",
@@ -93,7 +93,7 @@ const imagesDepositos = [
   {
     img: EWallet,
     title: "E-WALLET",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/tarjetas-de-credito-y-debito/",
+    url: "#",
     min: "$10.00",
     max: "$",
     time: "Inmediato",
@@ -104,7 +104,7 @@ const imagesDepositos = [
   {
     img: Agencias,
     title: "AGENCIAS BETCRIS",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/retiros/transferencia-bancaria-local/",
+    url: "https://ayuda.betcris.mx/guia-de-usuario/centro-de-ayuda/depositos/depositos-en-agencias-betcris/",
     min: "$10.00",
     max: "$10,000.00",
     time: "7 días",
@@ -118,7 +118,7 @@ const imagesRetiros = [
   {
     img: Retirotarjeta,
     title: "TARJETAS DE CRÉDITO Y DÉBITO",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/tarjetas-de-credito-y-debito/",
+    url: "https://get.betcris.help/hc/es-419/articles/360002241997-Retiro-a-Tarjeta",
     min: "$10.00",
     max: "$",
     time: "Inmediato",
@@ -129,7 +129,7 @@ const imagesRetiros = [
   {
     img: Banktransfer,
     title: "TRANSFERENCIA BANCARIA LOCAL",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/retiros/transferencia-bancaria-local/",
+    url: "https://get.betcris.help/hc/es-419/articles/360002245278-Transferencia-bancaria-local",
     min: "$10.00",
     max: "$10,000.00",
     time: "7 días",
@@ -140,7 +140,7 @@ const imagesRetiros = [
   {
     img: AstroPay,
     title: "ASTROPAY",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/tarjetas-de-credito-y-debito/",
+    url: "https://ayuda.betcris.mx/guia-de-usuario/centro-de-ayuda/retiros/astropay-card/",
     min: "$10.00",
     max: "$",
     time: "Inmediato",
@@ -151,7 +151,7 @@ const imagesRetiros = [
   {
     img: EWallet,
     title: "E-WALLET",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/tarjetas-de-credito-y-debito/",
+    url: "#",
     min: "$10.00",
     max: "$",
     time: "Inmediato",
@@ -162,7 +162,7 @@ const imagesRetiros = [
   {
     img: Agencias,
     title: "AGENCIAS BETCRIS",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/retiros/transferencia-bancaria-local/",
+    url: "https://ayuda.betcris.mx/guia-de-usuario/centro-de-ayuda/retiros/retiros-en-agencias-betcris/",
     min: "$10.00",
     max: "$10,000.00",
     time: "7 días",

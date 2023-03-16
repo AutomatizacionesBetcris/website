@@ -15,7 +15,7 @@ const imagesDepositos = [
   {
     img: RedActiva,
     title: "REDACTIVA",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/tarjetas-de-credito-y-debito/",
+    url: "https://get.betcris.help/hc/es-419/articles/5016167802257-Red-Activa",
     min: "$10.00",
     max: "$",
     time: "Inmediato",
@@ -26,7 +26,7 @@ const imagesDepositos = [
   {
     img: Facilito,
     title: "FACILITO",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/tarjetas-de-credito-y-debito/",
+    url: "https://get.betcris.help/hc/es-419/articles/360016935658-Facilito",
     min: "$10.00",
     max: "$",
     time: "Inmediato",
@@ -37,7 +37,7 @@ const imagesDepositos = [
   {
     img: SafetyPay,
     title: "SAFETYPAY",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/tarjetas-de-credito-y-debito/",
+    url: "https://get.betcris.help/hc/es-419/articles/360002241397-SafetyPay",
     min: "$10.00",
     max: "$",
     time: "Inmediato",
@@ -48,7 +48,7 @@ const imagesDepositos = [
   {
     img: Tarjetas,
     title: "TARJETAS DE CRÉDITO Y DÉBITO",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/tarjetas-de-credito-y-debito/",
+    url: "https://get.betcris.help/hc/es-419/articles/360002208798-Tarjetas-de-cr%C3%A9dito-y-d%C3%A9bito",
     min: "$10.00",
     max: "$",
     time: "Inmediato",
@@ -59,7 +59,7 @@ const imagesDepositos = [
   {
     img: Banktransfer,
     title: "TRANSFERENCIA BANCARIA LOCAL",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/retiros/transferencia-bancaria-local/",
+    url: "https://get.betcris.help/hc/es-419/articles/360002241437-Transferencias-bancarias",
     min: "$10.00",
     max: "$10,000.00",
     time: "7 días",
@@ -70,7 +70,7 @@ const imagesDepositos = [
   {
     img: PayPhone,
     title: "PAYPHONE",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/tarjetas-de-credito-y-debito/",
+    url: "https://get.betcris.help/hc/es-419/articles/360012312518-PayPhone",
     min: "$10.00",
     max: "$",
     time: "Inmediato",
@@ -81,7 +81,7 @@ const imagesDepositos = [
   {
     img: EWallet,
     title: "E-WALLET",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/tarjetas-de-credito-y-debito/",
+    url: "#",
     min: "$10.00",
     max: "$",
     time: "Inmediato",
@@ -92,7 +92,7 @@ const imagesDepositos = [
   {
     img: AstroPay,
     title: "ASTROPAY",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/tarjetas-de-credito-y-debito/",
+    url: "https://get.betcris.help/hc/es-419/articles/360002212037-AstroPay-Card",
     min: "$10.00",
     max: "$",
     time: "Inmediato",
@@ -103,7 +103,7 @@ const imagesDepositos = [
   {
     img: Agencias,
     title: "AGENCIAS BETCRISs",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/retiros/transferencia-bancaria-local/",
+    url: "https://get.betcris.help/hc/es-419/articles/6404360144273-Dep%C3%B3sitos-en-Agencias-Betcris",
     min: "$10.00",
     max: "$10,000.00",
     time: "7 días",
@@ -117,7 +117,7 @@ const imagesRetiros = [
   {
     img: RedActiva,
     title: "REDACTIVA",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/tarjetas-de-credito-y-debito/",
+    url: "https://get.betcris.help/hc/es-419/articles/5016167802257-Red-Activa",
     min: "$10.00",
     max: "$",
     time: "Inmediato",
@@ -128,7 +128,7 @@ const imagesRetiros = [
   {
     img: Facilito,
     title: "FACILITO",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/tarjetas-de-credito-y-debito/",
+    url: "https://get.betcris.help/hc/es-419/articles/360018302398-Facilito",
     min: "$10.00",
     max: "$",
     time: "Inmediato",
@@ -139,7 +139,7 @@ const imagesRetiros = [
   {
     img: Retirotarjeta,
     title: "TARJETA - VISA DIRECT",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/retiros/retiro-a-tarjeta/",
+    url: "https://get.betcris.help/hc/es-419/articles/360002241997-Retiro-a-Tarjeta",
     min: "$10.00",
     max: "-",
     time: "30 minutos",
@@ -150,7 +150,7 @@ const imagesRetiros = [
   {
     img: Banktransfer,
     title: "TRANSFERENCIA BANCARIA LOCAL",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/retiros/transferencia-bancaria-local/",
+    url: "https://get.betcris.help/hc/es-419/articles/360002245278-Transferencia-bancaria-local",
     min: "$10.00",
     max: "$10,000.00",
     time: "7 días",
@@ -161,7 +161,7 @@ const imagesRetiros = [
   {
     img: EWallet,
     title: "E-WALLET",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/tarjetas-de-credito-y-debito/",
+    url: "#",
     min: "$10.00",
     max: "$",
     time: "Inmediato",
@@ -172,7 +172,7 @@ const imagesRetiros = [
   {
     img: AstroPay,
     title: "ASTROPAY",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/tarjetas-de-credito-y-debito/",
+    url: "https://get.betcris.help/hc/es-419/articles/360011110557-AstroPay-Card",
     min: "$10.00",
     max: "$",
     time: "Inmediato",
@@ -183,7 +183,7 @@ const imagesRetiros = [
   {
     img: Agencias,
     title: "AGENCIAS BETCRIS",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/retiros/transferencia-bancaria-local/",
+    url: "https://get.betcris.help/hc/es-419/articles/6404449911057-Retiros-en-Agencias-Betcris",
     min: "$10.00",
     max: "$10,000.00",
     time: "7 días",

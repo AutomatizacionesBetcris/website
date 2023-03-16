@@ -1,47 +1,12 @@
 import React, { useState } from "react";
 import LogoBC from "../../img/logo-blanco.png";
-import Sistemaclave from "../../img/Sistema_clave.jpg";
-import PayCash from "../../img/PayCash.jpg";
-import Puntopago from "../../img/Punto_Pago.jpg";
+import EcoPayz from "../../img/Ecopayz.jpg";
 import Tarjetas from "../../img/Tarjetas.jpg";
-import Banktransfer from "../../img/Bank_transfer.jpg";
 import Retirotarjeta from "../../img/Pay_to_card.jpg";
-import Agencias from "../../img/Betcris_Agencias.png";
+import PaysafeCard from "../../img/PaysafeCard.jpg";
+import AstroPay from "../../img/Astropay.jpg";
 
 const imagesDepositos = [
-  {
-    img: Sistemaclave,
-    title: "SISTEMA CLAVE",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/sistema-clave/",
-    min: "$10.00",
-    max: "$5,000.00",
-    time: "Inmediato",
-    descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Elige Depósito, haz clic en 'Sistema Clave', seguido haz clic en pagar como invitado, elige 'Sistema Clave' nuevamente, ingresa tu correo electrónico y número telefónico, haz clic en la opción de enviar pago, llena los datos para el registro de la tarjeta 'CLAVE', haz clic en 'Aceptar', proporciona el PIN de la tarjeta 'CLAVE' y por último haz clic en confirmar.",
-  },
-  {
-    img: PayCash,
-    title: "PAYCASH",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/paycash-panama/",
-    min: "$10.00",
-    max: "$200.00",
-    time: "-",
-    descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Elige Depósito, haz clic en 'Tienda de conveniencia', seguido selecciona la opción 'Pagar en efectivo', ingresa el monto a depositar y selecciona la opción 'Generar referencia', el sistema te brindará un código de 16 dígitos que debes copiar, luego debes presentarte en la tienda de conveniencia y brindar al cajero el número de referencia y el dinero a pagar (el monto debe ser el mismo que digitaste en el cajero en línea de Betcris), ahora solo debes guardar el recibo como comprobante de pago.",
-  },
-  {
-    img: Puntopago,
-    title: "PUNTO PAGO",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/punto-pago/",
-    min: "$1.00",
-    max: "$1,000.00",
-    time: "-",
-    descriptionTitle: "En el quiosco de Punto Pago:",
-    description:
-      "En el quiosco de Punto Pago, busca el botón 'Betcris', seguido ingresa tu número de cuenta 'PANXXXX', revisa y confirma tus datos personales, luego ingresa el monto a recargar, haz clic en opción 'Pagar', y se te dará un recibo que confirma tu transacción.",
-  },
   {
     img: Tarjetas,
     title: "TARJETAS DE CRÉDITO Y DÉBITO",
@@ -54,40 +19,51 @@ const imagesDepositos = [
       "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
   },
   {
-    img: Banktransfer,
-    title: "TRANSFERENCIA BANCARIA LOCAL",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/transferencias-bancarias/",
+    img: PaysafeCard,
+    title: "PAYSAFE CARD",
+    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/tarjetas-de-credito-y-debito/",
     min: "$10.00",
-    max: "$10,000.00",
-    time: "7 días",
+    max: "$",
+    time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
-      "Elige Retiro, selecciona 'Transferencia Bancaria', ingresa el monto de tu retiro, seguido ingresa la información de tu cuenta bancaria para tu primer retiro por este método (tus datos serán guardados para la próxima vez), finalmente selecciona 'Retirar'.",
+      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
   },
   {
-    img: Agencias,
-    title: "AGENCIAS BETCRIS",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/depositos-en-agencias-betcris/",
+    img: EcoPayz,
+    title: "ECOPAYZ",
+    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/tarjetas-de-credito-y-debito/",
     min: "$10.00",
-    max: "$10,000.00",
-    time: "7 días",
+    max: "$",
+    time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
-      "Elige Retiro, selecciona 'Transferencia Bancaria', ingresa el monto de tu retiro, seguido ingresa la información de tu cuenta bancaria para tu primer retiro por este método (tus datos serán guardados para la próxima vez), finalmente selecciona 'Retirar'.",
+      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
+  },
+  {
+    img: AstroPay,
+    title: "ASTROPAY",
+    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/tarjetas-de-credito-y-debito/",
+    min: "$10.00",
+    max: "$",
+    time: "Inmediato",
+    descriptionTitle: "Desde el Cajero de Betcris:",
+    description:
+      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
   },
 ];
 
 const imagesRetiros = [
   {
-    img: Banktransfer,
-    title: "TRANSFERENCIA BANCARIA LOCAL",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/retiros/transferencia-bancaria-local/",
+    img: EcoPayz,
+    title: "ECOPAYZ",
+    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/tarjetas-de-credito-y-debito/",
     min: "$10.00",
-    max: "$10,000.00",
-    time: "7 días",
+    max: "$",
+    time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
-      "Elige Retiro, selecciona 'Transferencia Bancaria', ingresa el monto de tu retiro, seguido ingresa la información de tu cuenta bancaria para tu primer retiro por este método (tus datos serán guardados para la próxima vez), finalmente selecciona 'Retirar'.",
+      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
   },
   {
     img: Retirotarjeta,
@@ -101,19 +77,19 @@ const imagesRetiros = [
       "Selecciona 'VISA Direct / Retiro a tarjeta', ingresa la cantidad deseada, seguido agrega la información de tu tarjeta: Tu nombre tal como se muestra en la tarjeta, el número de 16 dígitos, la fecha de vencimiento, tu dirección de correo electrónico, número de teléfono, cantidad solicitada y finalmente selecciona 'Retirar'.",
   },
   {
-    img: Agencias,
-    title: "AGENCIAS BETCRIS",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/retiros/retiro-a-tarjeta/",
+    img: AstroPay,
+    title: "ASTROPAY",
+    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/tarjetas-de-credito-y-debito/",
     min: "$10.00",
-    max: "-",
-    time: "30 minutos",
+    max: "$",
+    time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
-      "Selecciona 'VISA Direct / Retiro a tarjeta', ingresa la cantidad deseada, seguido agrega la información de tu tarjeta: Tu nombre tal como se muestra en la tarjeta, el número de 16 dígitos, la fecha de vencimiento, tu dirección de correo electrónico, número de teléfono, cantidad solicitada y finalmente selecciona 'Retirar'.",
+      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
   },
 ];
 
-const PA = () => {
+const Ca = () => {
   const [showDepositos, setShowDepositos] = useState(true);
   const [selectedImage, setSelectedImage] = useState(null);
 
@@ -142,13 +118,13 @@ const PA = () => {
             className="inline-block px-4 text-sm font-semibold border py-2 bg-green-500 hover:bg-green-600 text-white rounded-md mr-2 sm:mr-4"
             onClick={handleDepositosClick}
           >
-            Depósitos
+            Deposit
           </button>
           <button
             className="inline-block px-5 text-sm font-semibold border py-2 bg-green-500 hover:bg-green-600 text-white rounded-md"
             onClick={handleRetirosClick}
           >
-            Retiros
+            Withdraw
           </button>
         </div>
 
@@ -246,4 +222,4 @@ const PA = () => {
   );
 };
 
-export default PA;
+export default Ca;
