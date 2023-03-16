@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/website/static/css/main.78e63270.css",
-    "main.js": "/website/static/js/main.77ca3968.js",
+    "main.js": "/website/static/js/main.0e5dda3c.js",
     "static/media/Oxxo.jpg": "/website/static/media/Oxxo.ec69872d4abe86e326fa.jpg",
     "static/media/Payphone.jpg": "/website/static/media/Payphone.9da3c40648dec9af5687.jpg",
     "static/media/PayCash.jpg": "/website/static/media/PayCash.a6061cfbb183af98afed.jpg",
@@ -11,20 +11,26 @@
     "static/media/Tarjetas.jpg": "/website/static/media/Tarjetas.5865542f7d80c0e4131d.jpg",
     "static/media/SafetyPay.jpg": "/website/static/media/SafetyPay.e5bdf49ec7a75b954a52.jpg",
     "static/media/Bank_transfer.jpg": "/website/static/media/Bank_transfer.4c25dd10b3826c46392a.jpg",
+    "static/media/PagoEfectivo.jpg": "/website/static/media/PagoEfectivo.c58e1c71672ff4023217.jpg",
     "static/media/RedActiva.jpg": "/website/static/media/RedActiva.9c6f37cd90c578bc0825.jpg",
     "static/media/PaysafeCard.jpg": "/website/static/media/PaysafeCard.f7f198b0299b3a86829b.jpg",
     "static/media/Sistema_clave.jpg": "/website/static/media/Sistema_clave.e4fab673082929fc7966.jpg",
+    "static/media/Pay4fun.jpg": "/website/static/media/Pay4fun.ee9c377634a5fd6a79fa.jpg",
+    "static/media/Ecopayz.jpg": "/website/static/media/Ecopayz.f34a6ffe83887e934d34.jpg",
+    "static/media/Disashop.jpg": "/website/static/media/Disashop.2b4062e35a9709a04c97.jpg",
     "static/media/E_wallet.jpg": "/website/static/media/E_wallet.40243c99f768ab46f134.jpg",
     "static/media/Paynet.jpg": "/website/static/media/Paynet.519717befa40b6ecfdd4.jpg",
     "static/media/Spei.jpg": "/website/static/media/Spei.a94bfda4f7c1905d893c.jpg",
+    "static/media/Mach.jpg": "/website/static/media/Mach.f1b68ba57616360f8272.jpg",
     "static/media/Astropay.jpg": "/website/static/media/Astropay.ac95b49bca7f9c804056.jpg",
+    "static/media/Pix.jpg": "/website/static/media/Pix.8e5ada9445bf3e57d23a.jpg",
     "static/media/Betcris_Agencias.png": "/website/static/media/Betcris_Agencias.537a99d9d474615f008b.png",
     "index.html": "/website/index.html",
     "main.78e63270.css.map": "/website/static/css/main.78e63270.css.map",
-    "main.77ca3968.js.map": "/website/static/js/main.77ca3968.js.map"
+    "main.0e5dda3c.js.map": "/website/static/js/main.0e5dda3c.js.map"
   },
   "entrypoints": [
     "static/css/main.78e63270.css",
-    "static/js/main.77ca3968.js"
+    "static/js/main.0e5dda3c.js"
   ]
 }
