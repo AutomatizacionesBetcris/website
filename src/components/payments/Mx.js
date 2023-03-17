@@ -76,7 +76,7 @@ const imagesDepositos = [
     url: "https://ayuda.betcris.mx/guia-de-usuario/centro-de-ayuda/depositos/spei/",
     min: "MXN 198.00",
     max: "MXN 395,000.00",
-    time: "-",
+    time: "30 minutos",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
       "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",

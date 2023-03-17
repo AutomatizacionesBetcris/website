@@ -11,6 +11,7 @@ import AstroPay from "../../img/Astropay.jpg";
 import Skrill from "../../img/Skrill.jpg";
 import Neteller from "../../img/Neteller.jpg";
 import EcoPayz from "../../img/Ecopayz.jpg";
+import Yape from "../../img/Yape.jpg";
 
 const imagesDepositos = [
   {
@@ -96,6 +97,17 @@ const imagesDepositos = [
     url: "https://get.betcris.help/hc/es-419/articles/360002212037-AstroPay-Card",
     min: "$5.00",
     max: "$100,000.00",
+    time: "Inmediato",
+    descriptionTitle: "Desde el Cajero de Betcris:",
+    description:
+      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
+  },
+  {
+    img: Yape,
+    title: "YAPE",
+    url: "https://get.betcris.help/hc/es-419/articles/11446138940689-Yape",
+    min: "$3.00",
+    max: "$125.00",
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:

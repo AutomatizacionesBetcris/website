@@ -24,7 +24,7 @@ const imagesDepositos = [
     url: "https://get.betcris.help/hc/en-us/articles/360002241357-paysafecard",
     min: "$5.00",
     max: "$2,500.00",
-    time: "-",
+    time: "60 minutes",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
       "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",

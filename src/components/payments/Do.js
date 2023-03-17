@@ -39,7 +39,7 @@ const imagesDepositos = [
     url: "https://get.betcris.help/hc/es-419/articles/360011301877-Disashop",
     min: "$1.00",
     max: "$",
-    time: "-",
+    time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
       "Elige Retiro, selecciona 'Transferencia Bancaria', ingresa el monto de tu retiro, seguido ingresa la información de tu cuenta bancaria para tu primer retiro por este método (tus datos serán guardados para la próxima vez), finalmente selecciona 'Retirar'.",
