@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/website/static/css/main.78e63270.css",
-    "main.js": "/website/static/js/main.de19995f.js",
+    "main.js": "/website/static/js/main.484ab068.js",
     "static/media/Oxxo.jpg": "/website/static/media/Oxxo.ec69872d4abe86e326fa.jpg",
     "static/media/Payphone.jpg": "/website/static/media/Payphone.9da3c40648dec9af5687.jpg",
     "static/media/PayCash.jpg": "/website/static/media/PayCash.a6061cfbb183af98afed.jpg",
@@ -27,12 +27,13 @@
     "static/media/Pix.jpg": "/website/static/media/Pix.8e5ada9445bf3e57d23a.jpg",
     "static/media/Neteller.jpg": "/website/static/media/Neteller.211fa1bf66f769e3dfba.jpg",
     "static/media/Betcris_Agencias.png": "/website/static/media/Betcris_Agencias.537a99d9d474615f008b.png",
+    "static/media/Yape.jpg": "/website/static/media/Yape.33f02dd8e384ce4ae44e.jpg",
     "index.html": "/website/index.html",
     "main.78e63270.css.map": "/website/static/css/main.78e63270.css.map",
-    "main.de19995f.js.map": "/website/static/js/main.de19995f.js.map"
+    "main.484ab068.js.map": "/website/static/js/main.484ab068.js.map"
   },
   "entrypoints": [
     "static/css/main.78e63270.css",
-    "static/js/main.de19995f.js"
+    "static/js/main.484ab068.js"
   ]
 }
