@@ -6,10 +6,12 @@ import RedActiva from "../../img/RedActiva.jpg";
 import SafetyPay from "../../img/SafetyPay.jpg";
 import Banktransfer from "../../img/Bank_transfer.jpg";
 import PayPhone from "../../img/Payphone.jpg";
-import EWallet from "../../img/E_wallet.jpg";
 import AstroPay from "../../img/Astropay.jpg";
 import Agencias from "../../img/Betcris_Agencias.png";
 import Retirotarjeta from "../../img/Pay_to_card.jpg";
+import Skrill from "../../img/Skrill.jpg";
+import Neteller from "../../img/Neteller.jpg";
+import EcoPayz from "../../img/Ecopayz.jpg";
 
 const imagesDepositos = [
   {
@@ -79,12 +81,34 @@ const imagesDepositos = [
       "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
   },
   {
-    img: EWallet,
-    title: "E-WALLET",
-    url: "#",
-    min: "$",
-    max: "$",
-    time: "-",
+    img: Skrill,
+    title: "SKRILL",
+    url: "https://get.betcris.help/hc/es-419/articles/360002218658-Skrill",
+    min: "$10.00",
+    max: "$100,000.00",
+    time: "Inmediato",
+    descriptionTitle: "Desde el Cajero de Betcris:",
+    description:
+      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
+  },
+  {
+    img: Neteller,
+    title: "NETELLER",
+    url: "https://get.betcris.help/hc/es-419/articles/360002208818-NETELLER",
+    min: "$10.00",
+    max: "$100,000.00",
+    time: "Inmediato",
+    descriptionTitle: "Desde el Cajero de Betcris:",
+    description:
+      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
+  },
+  {
+    img: EcoPayz,
+    title: "ECOPAYZ",
+    url: "https://get.betcris.help/hc/es-419/articles/360002218938-ecoPayz",
+    min: "$10.00",
+    max: "$50,000.00",
+    time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
       "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
@@ -159,12 +183,34 @@ const imagesRetiros = [
       "Elige Retiro, selecciona 'Transferencia Bancaria', ingresa el monto de tu retiro, seguido ingresa la información de tu cuenta bancaria para tu primer retiro por este método (tus datos serán guardados para la próxima vez), finalmente selecciona 'Retirar'.",
   },
   {
-    img: EWallet,
-    title: "E-WALLET",
-    url: "#",
-    min: "$",
-    max: "$",
-    time: "-",
+    img: Skrill,
+    title: "SKRILL",
+    url: "https://get.betcris.help/hc/es-419/articles/360002241957-Skrill",
+    min: "$10.00",
+    max: "$2,500.00",
+    time: "48 horas",
+    descriptionTitle: "Desde el Cajero de Betcris:",
+    description:
+      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
+  },
+  {
+    img: Neteller,
+    title: "NETELLER",
+    url: "https://get.betcris.help/hc/es-419/articles/360002241917-NETELLER-",
+    min: "$10.00",
+    max: "$2,500.00",
+    time: "48 horas",
+    descriptionTitle: "Desde el Cajero de Betcris:",
+    description:
+      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
+  },
+  {
+    img: EcoPayz,
+    title: "ECOPAYZ",
+    url: "https://get.betcris.help/hc/es-419/articles/360002245158-ecoPayz",
+    min: "$10.00",
+    max: "$2,500.00",
+    time: "48 horas",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
       "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",

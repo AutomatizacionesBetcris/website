@@ -3,7 +3,6 @@ import LogoBC from "../../img/logo-blanco.png";
 import Tarjetas from "../../img/Tarjetas.jpg";
 import SafetyPay from "../../img/SafetyPay.jpg";
 import Banktransfer from "../../img/Bank_transfer.jpg";
-import EWallet from "../../img/E_wallet.jpg";
 import AstroPay from "../../img/Astropay.jpg";
 import Agencias from "../../img/Betcris_Agencias.png";
 import Retirotarjeta from "../../img/Pay_to_card.jpg";
@@ -11,6 +10,9 @@ import Oxxo from "../../img/Oxxo.jpg";
 import PaysafeCard from "../../img/PaysafeCard.jpg";
 import SPEI from "../../img/Spei.jpg";
 import Paynet from "../../img/Paynet.jpg";
+import Skrill from "../../img/Skrill.jpg";
+import Neteller from "../../img/Neteller.jpg";
+import EcoPayz from "../../img/Ecopayz.jpg";
 
 const imagesDepositos = [
   {
@@ -91,12 +93,34 @@ const imagesDepositos = [
       "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
   },
   {
-    img: EWallet,
-    title: "E-WALLET",
-    url: "#",
-    min: "$",
-    max: "$",
-    time: "-",
+    img: Skrill,
+    title: "SKRILL",
+    url: "https://ayuda.betcris.mx/guia-de-usuario/centro-de-ayuda/depositos/skrill/",
+    min: "$10.00",
+    max: "$100,000.00",
+    time: "Inmediato",
+    descriptionTitle: "Desde el Cajero de Betcris:",
+    description:
+      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
+  },
+  {
+    img: Neteller,
+    title: "NETELLER",
+    url: "https://ayuda.betcris.mx/guia-de-usuario/centro-de-ayuda/depositos/neteller/",
+    min: "$10.00",
+    max: "$100,000.00",
+    time: "Inmediato",
+    descriptionTitle: "Desde el Cajero de Betcris:",
+    description:
+      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
+  },
+  {
+    img: EcoPayz,
+    title: "ECOPAYZ",
+    url: "https://ayuda.betcris.mx/guia-de-usuario/centro-de-ayuda/depositos/ecopayz/",
+    min: "$10.00",
+    max: "$50,000.00",
+    time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
       "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
@@ -149,12 +173,34 @@ const imagesRetiros = [
       "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
   },
   {
-    img: EWallet,
-    title: "E-WALLET",
-    url: "#",
-    min: "$",
-    max: "$",
-    time: "-",
+    img: Skrill,
+    title: "SKRILL",
+    url: "https://ayuda.betcris.mx/guia-de-usuario/centro-de-ayuda/retiros/skrill-2/",
+    min: "$10.00",
+    max: "$2,500.00",
+    time: "48 horas",
+    descriptionTitle: "Desde el Cajero de Betcris:",
+    description:
+      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
+  },
+  {
+    img: Neteller,
+    title: "NETELLER",
+    url: "https://ayuda.betcris.mx/guia-de-usuario/centro-de-ayuda/retiros/neteller-2/",
+    min: "$10.00",
+    max: "$2,500.00",
+    time: "48 horas",
+    descriptionTitle: "Desde el Cajero de Betcris:",
+    description:
+      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
+  },
+  {
+    img: EcoPayz,
+    title: "ECOPAYZ",
+    url: "https://ayuda.betcris.mx/guia-de-usuario/centro-de-ayuda/retiros/ecopayz-2/",
+    min: "$10.00",
+    max: "$2,500.00",
+    time: "48 horas",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
       "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
