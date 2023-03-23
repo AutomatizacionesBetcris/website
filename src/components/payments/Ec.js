@@ -126,7 +126,7 @@ const imagesDepositos = [
   },
   {
     img: Agencias,
-    title: "AGENCIAS BETCRISs",
+    title: "AGENCIAS BETCRIS",
     url: "https://get.betcris.help/hc/es-419/articles/6404360144273-Dep%C3%B3sitos-en-Agencias-Betcris",
     min: "$",
     max: "$",
@@ -319,40 +319,44 @@ const EC = () => {
                         <br></br>
                         {selectedImage.description}
                       </p>
-                      <div>
-                        <hr></hr>
-                        <div class="grid grid-cols-3 mt-2 mb-2 text-center justify-center gap-2">
-                          <p class="w-full whitespace-nowrap">
-                            <strong>Mínimo:</strong>
-                          </p>
-                          <p class="w-full whitespace-nowrap">
-                            <strong>Máximo:</strong>
-                          </p>
-                          <p class="w-full whitespace-nowrap">
-                            <strong>Tiempo:</strong>
-                          </p>
-                        </div>
+                      {selectedImage.title !== "AGENCIAS BETCRIS" && (
+                        <div>
+                          <hr></hr>
+                          <div class="grid grid-cols-3 mt-2 mb-2 text-center justify-center gap-2">
+                            <p class="w-full whitespace-nowrap">
+                              <strong>Mínimo:</strong>
+                            </p>
+                            <p class="w-full whitespace-nowrap">
+                              <strong>Máximo:</strong>
+                            </p>
+                            <p class="w-full whitespace-nowrap">
+                              <strong>Tiempo:</strong>
+                            </p>
+                          </div>
 
-                        <div class="grid grid-cols-3 mb-2 text-center justify-center gap-2">
-                          <p>{selectedImage.min}</p>
-                          <p>{selectedImage.max}</p>
-                          <p>{selectedImage.time}</p>
+                          <div class="grid grid-cols-3 mb-2 text-center justify-center gap-2">
+                            <p>{selectedImage.min}</p>
+                            <p>{selectedImage.max}</p>
+                            <p>{selectedImage.time}</p>
+                          </div>
+                          <hr></hr>
                         </div>
-                      </div>
-                      <hr></hr>
+                      )}
                     </div>
                   </div>
                 </div>
-                <footer className="text-center text-gray-500 text-sm">
-                  <a
-                    href={selectedImage.url}
-                    target="_blank"
-                    className="underline hover:text-gray-700"
-                    rel="noopener noreferrer"
-                  >
-                    Más información
-                  </a>
-                </footer>
+                {selectedImage.title !== "AGENCIAS BETCRIS" && (
+                  <footer className="text-center text-gray-500 text-sm">
+                    <a
+                      href={selectedImage.url}
+                      target="_blank"
+                      className="underline hover:text-gray-700"
+                      rel="noopener noreferrer"
+                    >
+                      Más información
+                    </a>
+                  </footer>
+                )}
 
                 <div class="flex justify-center items-center px-4 py-3">
                   <button
