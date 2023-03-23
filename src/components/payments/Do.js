@@ -38,7 +38,7 @@ const imagesDepositos = [
     title: "DISASHOP",
     url: "https://get.betcris.help/hc/es-419/articles/360011301877-Disashop",
     min: "$1.00",
-    max: "$",
+    max: "$1,000.00",
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
