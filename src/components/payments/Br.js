@@ -11,9 +11,8 @@ const imagesDepositos = [
     min: "BRL 20",
     max: "BRL 1,290",
     time: "Imediatamente",
-    descriptionTitle: "Desde el Cajero de Betcris:",
     description:
-      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
+      "Escolha 'Pay4Fun', insira o valor do depósito e clique 'confirmar', finalmente você será redirecionado para a site da Pay4Fun para completar a transação.",
   },
   {
     img: Pix,
@@ -22,9 +21,8 @@ const imagesDepositos = [
     min: "BRL 52",
     max: "BRL 1,290,000",
     time: "Imediatamente",
-    descriptionTitle: "Desde el Cajero de Betcris:",
     description:
-      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
+      "Selecione 'PIX', insira o valor a ser depositado e clique em 'confirmar', finalmente você será redirecionado para a página PIX para concluir a transação.",
   },
 ];
 
@@ -36,9 +34,8 @@ const imagesRetiros = [
     min: "BRL 52",
     max: "BRL 51,600",
     time: "Imediatamente",
-    descriptionTitle: "Desde el Cajero de Betcris:",
     description:
-      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
+      "Escolha 'Pay4Fun', insira o valor do saqu,  escolha a conta Pay4Fun cadastrada ou a registre inserindo seu e-mail, finalmente clique em 'Verificar saque'.",
   },
   {
     img: Pix,
@@ -47,9 +44,8 @@ const imagesRetiros = [
     min: "BRL 52",
     max: "BRL 4,582",
     time: "24 Horas",
-    descriptionTitle: "Desde el Cajero de Betcris:",
     description:
-      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
+      "Escolha 'PIX', insira o valor do saque, digite seu CPF e seu primeiro nome finalmente finalmente clique em 'Verificar saque'.",
   },
 ];
 
@@ -129,8 +125,6 @@ const Br = () => {
                       </h3>
                       <hr></hr>
                       <p className=" mt-4 mb-4 text-sm text-justify w-full">
-                        <p>{selectedImage.descriptionTitle}</p>
-                        <br></br>
                         {selectedImage.description}
                       </p>
                       <div>
@@ -143,7 +137,7 @@ const Br = () => {
                             <strong>Máximo:</strong>
                           </p>
                           <p class="w-full whitespace-nowrap">
-                            <strong>Tiempo:</strong>
+                            <strong>Tempo:</strong>
                           </p>
                         </div>
 
@@ -164,7 +158,7 @@ const Br = () => {
                     className="underline hover:text-gray-700"
                     rel="noopener noreferrer"
                   >
-                    Más información
+                    Mais informação
                   </a>
                 </footer>
 
@@ -174,7 +168,7 @@ const Br = () => {
                     class="w-full rounded-md border border-transparent shadow-sm px-4 py-2 bg-blue-600 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:ml-3 sm:w-auto sm:text-sm"
                     onClick={() => setSelectedImage(null)}
                   >
-                    Cerrar
+                    Fechar
                   </button>
                 </div>
               </div>

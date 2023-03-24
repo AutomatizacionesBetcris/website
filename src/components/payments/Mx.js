@@ -24,7 +24,7 @@ const imagesDepositos = [
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
-      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
+      "Haz clic en 'Tarjetas de crédito y débito', ingresa el monto que quieres deposita, seguido selecciona 'Siguiente', luego asegúrate de revisar todos los detalles y presiona 'Confirmar' para completar la transacción.",
   },
   {
     img: SafetyPay,
@@ -35,7 +35,7 @@ const imagesDepositos = [
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
-      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
+      "Haz clic en 'SafetyPay', ingresa la cantidad y presiona 'Depositar', una vez que cargue la página de SafetyPay, elige entre Transferencia bancaria o Pagar en efectivo.",
   },
   {
     img: AstroPay,
@@ -46,7 +46,7 @@ const imagesDepositos = [
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
-      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
+      "Haz clic en 'AstroPay Card', seguido ingresa el monto y la información de la tarjeta, pulsa 'Depositar' para completar la transacción.",
   },
   {
     img: Oxxo,
@@ -57,7 +57,7 @@ const imagesDepositos = [
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
-      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
+      "Haz clic en 'Oxxo Pay', seguido ingresa el monto a depositar, haz clic en 'Depositar'. Se te generará un número de transacción, el cual podrás ir a pagar al Oxxo más cercano, para que los fondos se acrediten de forma inmediata.",
   },
   {
     img: PaysafeCard,
@@ -68,7 +68,7 @@ const imagesDepositos = [
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
-      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
+      "Haz clic en 'Paysafecard', seguido ingresa el monto del depósito, luego ingresa los 16 dígitos del PIN de paysafecard y por último pulsa 'Depositar' para completar la transacción.",
   },
   {
     img: SPEI,
@@ -79,7 +79,7 @@ const imagesDepositos = [
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
-      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
+      "Haz clic en 'SPEI', ingresa la cantidad y los datos que se te solicitan, luego haz clic en 'Depositar'. Se te brindará la información del detalle de pago que debes utilizar para que hagas la transferencia.",
   },
   {
     img: Paynet,
@@ -90,7 +90,7 @@ const imagesDepositos = [
     time: "24 horas",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
-      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
+      "Haz clic en 'Paynet', ingresa el monto que deseas depositar, luego ingresa los datos que se te solicitan, los cuales solo se te pedirán una vez, y quedarán guardados para futuras transacciones y por último haz clic en 'Depositar'.",
   },
   {
     img: Skrill,
@@ -101,7 +101,7 @@ const imagesDepositos = [
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
-      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
+      "Haz clic en 'e-Wallet', seguido en 'Skrill', seguido ingresa el monto y la información de tu cuenta de Skrill, luego pulsa 'Depositar'. Serás redirigido al sitio de Skrill para completar la transacción.",
   },
   {
     img: Neteller,
@@ -112,7 +112,7 @@ const imagesDepositos = [
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
-      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
+      "Haz clic en 'e-Wallet', seguido en 'NETELLER', seguido ingresa el monto, tu número de cuenta e identificación segura de NETELLER, luego pulsa 'Depositar'. Serás redirigido al sitio de NETELLER para completar la transacción.",
   },
   {
     img: EcoPayz,
@@ -123,7 +123,7 @@ const imagesDepositos = [
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
-      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
+      "Haz clic en 'e-Wallet', seguido en 'ecoPayz', seguido ingresa el monto y la información de tu cuenta de ecoPayz, luego pulsa 'Depositar'. Serás redirigido al sitio de ecoPayz para completar la transacción.",
   },
   {
     img: Agencias,
@@ -134,7 +134,7 @@ const imagesDepositos = [
     time: "Inmediato",
     descriptionTitle: "Dentro de quioscos o agencias Betcris:",
     description:
-      "Elige Retiro, selecciona 'Transferencia Bancaria', ingresa el monto de tu retiro, seguido ingresa la información de tu cuenta bancaria para tu primer retiro por este método (tus datos serán guardados para la próxima vez), finalmente selecciona 'Retirar'.",
+      "Ofrecemos una variedad de formas rápidas y convenientes para depositar fondos en tu cuenta, incluyendo depósitos en las Agencias oficiales de Betcris. Para hacer tu depósito, solo debes presentar tu identificación y número de cuenta, junto con los fondos a depositar. Contacta a tu Agencia Betcris más cercana para confirmar los montos mínimos y máximos por transacción, así como cualquier detalle adicional que necesites, ya que pueden variar según el país.",
   },
 ];
 
@@ -148,7 +148,7 @@ const imagesRetiros = [
     time: "30 minutos",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
-      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
+      "Haz clic en 'Retiro a tarjeta-Visa Direct', seguido ingresa la cantidad deseada, selecciona la tarjeta, y por último haz clic en 'Retirar'.",
   },
   {
     img: Banktransfer,
@@ -159,7 +159,7 @@ const imagesRetiros = [
     time: "7 días",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
-      "Elige Retiro, selecciona 'Transferencia Bancaria', ingresa el monto de tu retiro, seguido ingresa la información de tu cuenta bancaria para tu primer retiro por este método (tus datos serán guardados para la próxima vez), finalmente selecciona 'Retirar'.",
+      "Haz clic en 'Transferencia Bancaria', seguido ingresa el monto del retiro, luego completa la información de tu cuenta bancaria la primera vez (estará guardada la próxima vez) y por último haz clic en 'Retirar'.",
   },
   {
     img: AstroPay,
@@ -170,7 +170,7 @@ const imagesRetiros = [
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
-      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
+      "Haz clic en 'AstroPay Card', seguido ingresa el monto a retirar y haz clic en 'Registrar' una cuenta nueva, luego ingresa tu información, la misma que usaste en la aplicación móvil: número de teléfono (incluye el código de tu país sin utilizar el signo de “+” al principio), nombre y apellido, correo electrónico e identificación personal.",
   },
   {
     img: Skrill,
@@ -181,7 +181,7 @@ const imagesRetiros = [
     time: "48 horas",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
-      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
+      "Haz clic en 'Skrill', seguido ingresa la cantidad que quieres retirar, luego agrega los datos de tu cuenta Skrill para tu primer retiro (los datos serán guardados para la siguiente vez), y por último haz clic en 'Verificar retiro'.",
   },
   {
     img: Neteller,
@@ -192,7 +192,7 @@ const imagesRetiros = [
     time: "48 horas",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
-      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
+      "Haz clic en 'NETELLER', seguido ingresa la cantidad que quieres retirar, luego ingresa los datos de tu cuenta NETELLER, y por último haz clic en 'Verificar retiro'.",
   },
   {
     img: EcoPayz,
@@ -203,7 +203,7 @@ const imagesRetiros = [
     time: "48 horas",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
-      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
+      "Haz clic en 'ecoPayz', seguido ingresa la cantidad que quieres retirar, luego ingresa los datos de tu cuenta ecoPayz y por último haz clic en 'Verificar retiro'.",
   },
   {
     img: Agencias,
@@ -214,7 +214,7 @@ const imagesRetiros = [
     time: "-",
     descriptionTitle: "Dentro de quioscos o agencias Betcris:",
     description:
-      "Elige Retiro, selecciona 'Transferencia Bancaria', ingresa el monto de tu retiro, seguido ingresa la información de tu cuenta bancaria para tu primer retiro por este método (tus datos serán guardados para la próxima vez), finalmente selecciona 'Retirar'.",
+      "Ofrecemos una variedad de formas rápidas y convenientes para retirar fondos en tu cuenta, incluyendo depósitos en las Agencias oficiales de Betcris. Para hacer tu retiro solo debes presentar tu identificación y número de cuenta, además de haber completado todos los procesos de verificación necesarios para el retiro de fondos. Contacta a tu Agencia Betcris más cercana para confirmar los montos mínimos y máximos por transacción, así como cualquier detalle adicional que necesites, ya que pueden variar según el país.",
   },
 ];
 

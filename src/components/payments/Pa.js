@@ -18,7 +18,7 @@ const imagesDepositos = [
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
-      "Elige Depósito, haz clic en 'Sistema Clave', seguido haz clic en pagar como invitado, elige 'Sistema Clave' nuevamente, ingresa tu correo electrónico y número telefónico, haz clic en la opción de enviar pago, llena los datos para el registro de la tarjeta 'CLAVE', haz clic en 'Aceptar', proporciona el PIN de la tarjeta 'CLAVE' y por último haz clic en confirmar.",
+      "Haz clic en 'Sistema Clave', seguido haz clic en pagar como invitado, elige 'Sistema Clave' nuevamente, ingresa tu correo electrónico y número telefónico, haz clic en la opción de enviar pago, llena los datos para el registro de la tarjeta 'CLAVE', haz clic en 'Aceptar', proporciona el PIN de la tarjeta 'CLAVE' y por último haz clic en confirmar.",
   },
   {
     img: PayCash,
@@ -29,7 +29,7 @@ const imagesDepositos = [
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
-      "Elige Depósito, haz clic en 'Tienda de conveniencia', seguido selecciona la opción 'Pagar en efectivo', ingresa el monto a depositar y selecciona la opción 'Generar referencia', el sistema te brindará un código de 16 dígitos que debes copiar, luego debes presentarte en la tienda de conveniencia y brindar al cajero el número de referencia y el dinero a pagar (el monto debe ser el mismo que digitaste en el cajero en línea de Betcris), ahora solo debes guardar el recibo como comprobante de pago.",
+      "Haz clic en 'Pagar en efectivo', seguido ingresa el monto a depositar y selecciona la opción 'Generar referencia', el sistema te brindará un código de 16 dígitos que debes copiar, luego debes presentarte en la tienda de conveniencia y brindar al cajero el número de referencia y el dinero a pagar (el monto debe ser el mismo que digitaste en el Cajero en Línea de Betcris). Guarda el recibo como comprobante de pago.",
   },
   {
     img: Puntopago,
@@ -40,7 +40,7 @@ const imagesDepositos = [
     time: "Inmediato",
     descriptionTitle: "En el quiosco de Punto Pago:",
     description:
-      "En el quiosco de Punto Pago, busca el botón 'Betcris', seguido ingresa tu número de cuenta 'PANXXXX', revisa y confirma tus datos personales, luego ingresa el monto a recargar, haz clic en opción 'Pagar', y se te dará un recibo que confirma tu transacción.",
+      "Busca el botón 'Betcris', seguido ingresa tu número de cuenta 'PANXXXX', revisa y confirma tus datos personales, luego ingresa el monto a recargar, haz clic en opción 'Pagar', y se te dará un recibo que confirma tu transacción.",
   },
   {
     img: Tarjetas,
@@ -51,7 +51,7 @@ const imagesDepositos = [
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
-      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
+      "Haz clic en 'Tarjetas de crédito y débito', Ingresa la información solicitada si esta es la primera vez que estás usando una tarjeta (para acelerar el proceso, la próxima vez que realices un depósito, los datos de tu tarjeta ya estarán almacenados) y haz clic en 'Guardar'.",
   },
   {
     img: Banktransfer,
@@ -62,7 +62,7 @@ const imagesDepositos = [
     time: "Reportarla por el cajero, para que sea aprobado",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
-      "Elige Retiro, selecciona 'Transferencia Bancaria', ingresa el monto de tu retiro, seguido ingresa la información de tu cuenta bancaria para tu primer retiro por este método (tus datos serán guardados para la próxima vez), finalmente selecciona 'Retirar'.",
+      "Haz clic en 'Transferencia bancaria', selecciona el banco con el que tienes una cuenta, copia la información que se muestra en el sitio web de tu banco, luego sigue los pasos que se muestran en la pantalla para confirmar la transacción y por último haz clic en 'Reportar depósito'.",
   },
   {
     img: Agencias,
@@ -73,7 +73,7 @@ const imagesDepositos = [
     time: "-",
     descriptionTitle: "Dentro de quioscos o agencias Betcris:",
     description:
-      "Elige Retiro, selecciona 'Transferencia Bancaria', ingresa el monto de tu retiro, seguido ingresa la información de tu cuenta bancaria para tu primer retiro por este método (tus datos serán guardados para la próxima vez), finalmente selecciona 'Retirar'.",
+      "Ofrecemos una variedad de formas rápidas y convenientes para depositar fondos en tu cuenta, incluyendo depósitos en las Agencias oficiales de Betcris. Para hacer tu depósito, solo debes presentar tu identificación y número de cuenta, junto con los fondos a depositar. Contacta a tu Agencia Betcris más cercana para confirmar los montos mínimos y máximos por transacción, así como cualquier detalle adicional que necesites, ya que pueden variar según el país.",
   },
 ];
 
@@ -87,7 +87,7 @@ const imagesRetiros = [
     time: "7 días",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
-      "Elige Retiro, selecciona 'Transferencia Bancaria', ingresa el monto de tu retiro, seguido ingresa la información de tu cuenta bancaria para tu primer retiro por este método (tus datos serán guardados para la próxima vez), finalmente selecciona 'Retirar'.",
+      "Haz clic en 'Transferencia Bancaria', seguido ingresa el monto de tu retiro, Completa la información de tu cuenta bancaria para tu primer retiro (tus datos estarán guardados la próxima vez) y por último haz clic en 'Retirar'.",
   },
   {
     img: Retirotarjeta,
@@ -98,7 +98,7 @@ const imagesRetiros = [
     time: "30 minutos",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
-      "Selecciona 'VISA Direct / Retiro a tarjeta', ingresa la cantidad deseada, seguido agrega la información de tu tarjeta: Tu nombre tal como se muestra en la tarjeta, el número de 16 dígitos, la fecha de vencimiento, tu dirección de correo electrónico, número de teléfono, cantidad solicitada y finalmente selecciona 'Retirar'.",
+      "Haz clic en 'Retiro a tarjeta-Visa Direct', seguido ingresa la cantidad deseada, selecciona la tarjeta y por último haz clic en 'Retirar'.",
   },
   {
     img: Agencias,
@@ -109,7 +109,7 @@ const imagesRetiros = [
     time: "-",
     descriptionTitle: "Dentro de quioscos o agencias Betcris:",
     description:
-      "Selecciona 'VISA Direct / Retiro a tarjeta', ingresa la cantidad deseada, seguido agrega la información de tu tarjeta: Tu nombre tal como se muestra en la tarjeta, el número de 16 dígitos, la fecha de vencimiento, tu dirección de correo electrónico, número de teléfono, cantidad solicitada y finalmente selecciona 'Retirar'.",
+      "Ofrecemos una variedad de formas rápidas y convenientes para retirar fondos en tu cuenta, incluyendo depósitos en las Agencias oficiales de Betcris. Para hacer tu retiro solo debes presentar tu identificación y número de cuenta, además de haber completado todos los procesos de verificación necesarios para el retiro de fondos. Contacta a tu Agencia Betcris más cercana para confirmar los montos mínimos y máximos por transacción, así como cualquier detalle adicional que necesites, ya que pueden variar según el país.",
   },
 ];
 

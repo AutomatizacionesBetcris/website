@@ -14,9 +14,9 @@ const imagesDepositos = [
     min: "$10.00",
     max: "$5,000.00",
     time: "Immediately",
-    descriptionTitle: "Desde el Cajero de Betcris:",
+    descriptionTitle: "Click in the cashier:",
     description:
-      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
+      "Click on 'Credit and debit cards', add the requested information if this is the first time you are using a card (to speed up the process, the next time you make a deposit, your card details will already be stored) and click on 'Save', then enter the amount you want to deposit, your identification number, and click on 'Next' and finally select 'Confirm' to complete the transaction.",
   },
   {
     img: PaysafeCard,
@@ -25,9 +25,9 @@ const imagesDepositos = [
     min: "$5.00",
     max: "$2,500.00",
     time: "60 minutes",
-    descriptionTitle: "Desde el Cajero de Betcris:",
+    descriptionTitle: "Click in the cashier:",
     description:
-      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
+      "Click on 'PaySafecard', then enter the deposit amount and click on 'Deposit', then enter the 16-digit PaySafe card PIN and finally click on 'Deposit' to complete the transaction.",
   },
   {
     img: EcoPayz,
@@ -36,9 +36,9 @@ const imagesDepositos = [
     min: "$10.00",
     max: "$50,000.00",
     time: "Immediately",
-    descriptionTitle: "Desde el Cajero de Betcris:",
+    descriptionTitle: "Click in the cashier:",
     description:
-      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
+      "Click on 'e-Wallet', followed by 'ecoPayz', then enter the amount you want to deposit, your ecoPayz account number, and click on 'Confirm'. Complete the transaction on the ecoPayz website you are redirected to.",
   },
   {
     img: AstroPay,
@@ -47,9 +47,9 @@ const imagesDepositos = [
     min: "$5.00",
     max: "$10,000.00",
     time: "Immediately",
-    descriptionTitle: "Desde el Cajero de Betcris:",
+    descriptionTitle: "Click in the cashier:",
     description:
-      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
+      "Click on 'AstroPay', then enter the deposit amount and click on 'Next', then go to the AstroPay website you are redirected to.",
   },
 ];
 
@@ -61,9 +61,9 @@ const imagesRetiros = [
     min: "$10.00",
     max: "$2,500.00",
     time: "48 hours",
-    descriptionTitle: "Desde el Cajero de Betcris:",
+    descriptionTitle: "Click in the cashier:",
     description:
-      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
+      "Click on 'ecoPayz', then enter the amount, your account number, the way you want to pay with, for example, cash, and click on 'Withdraw'.",
   },
   {
     img: Retirotarjeta,
@@ -72,9 +72,9 @@ const imagesRetiros = [
     min: "$10.00",
     max: "$5,000.00",
     time: "30 minutes",
-    descriptionTitle: "Desde el Cajero de Betcris:",
+    descriptionTitle: "Click in the cashier:",
     description:
-      "Selecciona 'VISA Direct / Retiro a tarjeta', ingresa la cantidad deseada, seguido agrega la información de tu tarjeta: Tu nombre tal como se muestra en la tarjeta, el número de 16 dígitos, la fecha de vencimiento, tu dirección de correo electrónico, número de teléfono, cantidad solicitada y finalmente selecciona 'Retirar'.",
+      "Click on 'Pay to Card', then enter the desired amount, choose the card, and finally click on 'Withdraw'.",
   },
   {
     img: AstroPay,
@@ -83,9 +83,9 @@ const imagesRetiros = [
     min: "$5.00",
     max: "$1,000.00",
     time: "24 hours",
-    descriptionTitle: "Desde el Cajero de Betcris:",
+    descriptionTitle: "Click in the cashier:",
     description:
-      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
+      "Click 'AstroPay Card', then enter the amount you want to withdraw, and your account (phone number) and click on 'Confirm'.",
   },
 ];
 
@@ -173,13 +173,13 @@ const Ca = () => {
                         <hr></hr>
                         <div class="grid grid-cols-3 mt-2 mb-2 text-center justify-center gap-2">
                           <p class="w-full whitespace-nowrap">
-                            <strong>Mínimo:</strong>
+                            <strong>Minimum:</strong>
                           </p>
                           <p class="w-full whitespace-nowrap">
-                            <strong>Máximo:</strong>
+                            <strong>Maximum:</strong>
                           </p>
                           <p class="w-full whitespace-nowrap">
-                            <strong>Tiempo:</strong>
+                            <strong>Time:</strong>
                           </p>
                         </div>
 
@@ -200,7 +200,7 @@ const Ca = () => {
                     className="underline hover:text-gray-700"
                     rel="noopener noreferrer"
                   >
-                    Más información
+                    More information
                   </a>
                 </footer>
 
@@ -210,7 +210,7 @@ const Ca = () => {
                     class="w-full rounded-md border border-transparent shadow-sm px-4 py-2 bg-blue-600 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:ml-3 sm:w-auto sm:text-sm"
                     onClick={() => setSelectedImage(null)}
                   >
-                    Cerrar
+                    Close
                   </button>
                 </div>
               </div>

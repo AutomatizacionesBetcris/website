@@ -20,7 +20,7 @@ const imagesDepositos = [
     time: "60 minutos",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
-      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
+      "Haz clic en 'SafetyPay', seguido ingresa la cantidad y presiona 'Depositar', una vez que cargue la página de SafetyPay, elige entre Transferencia bancaria o Pagar en efectivo.",
   },
   {
     img: Mach,
@@ -31,7 +31,7 @@ const imagesDepositos = [
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
-      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
+      "Haz clic en 'MACH', seguido ingresa el monto de tu depósito y haz clic en 'Depositar'. seguido genera un código QR en el sitio web al cual se te redirige, luego escanéalo con tu App, y por último realiza el pago de tu depósito en la App de MACH.",
   },
   {
     img: Tarjetas,
@@ -42,7 +42,7 @@ const imagesDepositos = [
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
-      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
+      "Haz clic en 'Tarjetas de crédito y débito', ingresa la información solicitada si esta es la primera vez que estás usando una tarjeta (para acelerar el proceso, la próxima vez que realices un depósito, los datos de tu tarjeta ya estarán almacenados) y haz clic en 'Guardar', seguido ingresa el monto que quieres depositar y por último selecciona 'Confirmar' para completar la transacción.",
   },
   {
     img: Skrill,
@@ -53,7 +53,7 @@ const imagesDepositos = [
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
-      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
+      "Haz clic en 'e-Wallet', seguido en 'Skrill', seguido ingresa el monto y la información de tu cuenta de Skrill, luego pulsa 'Depositar'. Serás redirigido al sitio de Skrill para completar la transacción.",
   },
   {
     img: Neteller,
@@ -64,7 +64,7 @@ const imagesDepositos = [
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
-      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
+      "Haz clic en 'e-Wallet', seguido en 'NETELLER', seguido ingresa la cantidad, tu número de cuenta y haz clic en 'Depositar', luego pulsa 'Depositar'. Serás redirigido al sitio de Skrill para completar la transacción. Completa la transacción en el sitio de NETELLER al que se te redirige.",
   },
   {
     img: EcoPayz,
@@ -75,7 +75,7 @@ const imagesDepositos = [
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
-      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
+      "Haz clic en 'e-Wallet', seguido en 'ecoPayz', seguido ingresa el monto que quieres depositar, tu número de cuenta ecoPayz y haz clic en 'Confirmar'. Completa la transacción en el sitio de ecoPayz al que se te redirige.",
   },
   {
     img: AstroPay,
@@ -86,7 +86,7 @@ const imagesDepositos = [
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
-      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
+      "Haz clic en 'AstroPay', seguido ingresa la cantidad y presiona 'Depositar', luego ingresa el monto y la información de la tarjeta y por último pulsa 'Depositar' para completar la transacción.",
   },
 ];
 
@@ -100,7 +100,7 @@ const imagesRetiros = [
     time: "30 minutos",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
-      "Selecciona 'VISA Direct / Retiro a tarjeta', ingresa la cantidad deseada, seguido agrega la información de tu tarjeta: Tu nombre tal como se muestra en la tarjeta, el número de 16 dígitos, la fecha de vencimiento, tu dirección de correo electrónico, número de teléfono, cantidad solicitada y finalmente selecciona 'Retirar'.",
+      "Haz clic en 'Retiro a tarjeta-Visa Direct', seguido ingresa la cantidad deseada, luego selecciona la tarjeta, y por último haz clic en 'Retirar'.",
   },
   {
     img: Banktransfer,
@@ -111,7 +111,7 @@ const imagesRetiros = [
     time: "7 días",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
-      "Elige Retiro, selecciona 'Transferencia Bancaria', ingresa el monto de tu retiro, seguido ingresa la información de tu cuenta bancaria para tu primer retiro por este método (tus datos serán guardados para la próxima vez), finalmente selecciona 'Retirar'.",
+      "Haz clic en 'Transferencia Bancaria', seguido ingresa el monto del retiro, luego completa la información de tu cuenta bancaria la primera vez (estará guardada la próxima vez) y por último haz clic en 'Retirar'.",
   },
   {
     img: Skrill,
@@ -122,7 +122,7 @@ const imagesRetiros = [
     time: "48 horas",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
-      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
+      "Haz clic en 'Skrill', seguido ingresa el monto que deseas retirar, luego agrega la información de tu cuenta Skrill para tu primer retiro (la información se guardará para la próxima vez), y por último haz clic en 'Retirar'.",
   },
   {
     img: Neteller,
@@ -133,7 +133,7 @@ const imagesRetiros = [
     time: "48 horas",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
-      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
+      "Haz clic en 'NETELLER', seguido ingresa el monto que deseas retirar, luego agrega la información de tu cuenta Skrill para tu primer retiro (la información se guardará para la próxima vez), y por último haz clic en 'Retirar'.",
   },
   {
     img: EcoPayz,
@@ -144,7 +144,7 @@ const imagesRetiros = [
     time: "48 horas",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
-      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
+      "Haz clic en 'ecoPayz', seguido ingresa el monto, tu número de cuenta, la forma como deseas pagar, por ejemplo, efectivo y por último haz clic en 'Retirar'.",
   },
   {
     img: AstroPay,
@@ -155,7 +155,7 @@ const imagesRetiros = [
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
-      "Elige Depósito, haz clic en 'Tarjetas de crédito y débito', ingresar la información solicitada (tus datos serán guardados para la próxima vez). ",
+      "Haz clic en 'AstroPay Card', seguido ingresa el monto que deseas retirar, tu cuenta (número de teléfono) y haz clic en 'Confirmar'.",
   },
 ];
 
