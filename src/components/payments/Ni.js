@@ -186,7 +186,7 @@ const Ni = () => {
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-2 p-4 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-4 mt-5">
+        <div className="grid grid-cols-3 p-4 sm:grid-cols-5 md:grid-cols-5 lg:grid-cols-5 gap-4 mt-5 sm:m-10 sm:mt-5 lg:m-56 lg:mt-5">
           {showDepositos
             ? imagesDepositos.map((image, index) => (
                 <img
