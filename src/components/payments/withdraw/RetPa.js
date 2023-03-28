@@ -1,81 +1,8 @@
 import React, { useState } from "react";
-import LogoBC from "../../img/logo-blanco.png";
-import Sistemaclave from "../../img/Sistema_clave.jpg";
-import PayCash from "../../img/PayCash.jpg";
-import Puntopago from "../../img/Punto_Pago.jpg";
-import Tarjetas from "../../img/Tarjetas.jpg";
-import Banktransfer from "../../img/Bank_transfer.jpg";
-import Retirotarjeta from "../../img/Pay_to_card.jpg";
-import Agencias from "../../img/Betcris_Agencias.png";
-
-const imagesDepositos = [
-  {
-    img: Sistemaclave,
-    title: "SISTEMA CLAVE",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/sistema-clave/",
-    min: "$10.00",
-    max: "$5,000.00",
-    time: "Inmediato",
-    descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'Sistema Clave', seguido haz clic en pagar como invitado, elige 'Sistema Clave' nuevamente, ingresa tu correo electrónico y número telefónico, haz clic en la opción de enviar pago, llena los datos para el registro de la tarjeta 'CLAVE', haz clic en 'Aceptar', proporciona el PIN de la tarjeta 'CLAVE' y por último haz clic en confirmar.",
-  },
-  {
-    img: PayCash,
-    title: "PAYCASH",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/paycash-panama/",
-    min: "$10.00",
-    max: "$200.00",
-    time: "Inmediato",
-    descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'Pagar en efectivo', seguido ingresa el monto a depositar y selecciona la opción 'Generar referencia', el sistema te brindará un código de 16 dígitos que debes copiar, luego debes presentarte en la tienda de conveniencia y brindar al cajero el número de referencia y el dinero a pagar (el monto debe ser el mismo que digitaste en el Cajero en Línea de Betcris). Guarda el recibo como comprobante de pago.",
-  },
-  {
-    img: Puntopago,
-    title: "PUNTO PAGO",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/punto-pago/",
-    min: "$1.00",
-    max: "$200.00",
-    time: "Inmediato",
-    descriptionTitle: "En el quiosco de Punto Pago:",
-    description:
-      "Busca el botón 'Betcris', seguido ingresa tu número de cuenta 'PANXXXX', revisa y confirma tus datos personales, luego ingresa el monto a recargar, haz clic en opción 'Pagar', y se te dará un recibo que confirma tu transacción.",
-  },
-  {
-    img: Tarjetas,
-    title: "TARJETAS DE CRÉDITO Y DÉBITO",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/tarjetas-de-credito-y-debito/",
-    min: "$10.00",
-    max: "$250.00",
-    time: "Inmediato",
-    descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'Tarjetas de crédito y débito', Ingresa la información solicitada si esta es la primera vez que estás usando una tarjeta (para acelerar el proceso, la próxima vez que realices un depósito, los datos de tu tarjeta ya estarán almacenados) y haz clic en 'Guardar'.",
-  },
-  {
-    img: Banktransfer,
-    title: "TRANSFERENCIA BANCARIA LOCAL",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/transferencias-bancarias/",
-    min: "$10.00",
-    max: "$20,000.00",
-    time: "Reportarla por el cajero, para que sea aprobado",
-    descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'Transferencia bancaria', selecciona el banco con el que tienes una cuenta, copia la información que se muestra en el sitio web de tu banco, luego sigue los pasos que se muestran en la pantalla para confirmar la transacción y por último haz clic en 'Reportar depósito'.",
-  },
-  {
-    img: Agencias,
-    title: "AGENCIAS BETCRIS",
-    url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/depositos-en-agencias-betcris/",
-    min: "$",
-    max: "$",
-    time: "-",
-    descriptionTitle: "Dentro de quioscos o agencias Betcris:",
-    description:
-      "Ofrecemos una variedad de formas rápidas y convenientes para depositar fondos en tu cuenta, incluyendo depósitos en las Agencias oficiales de Betcris. Para hacer tu depósito, solo debes presentar tu identificación y número de cuenta, junto con los fondos a depositar. Contacta a tu Agencia Betcris más cercana para confirmar los montos mínimos y máximos por transacción, así como cualquier detalle adicional que necesites, ya que pueden variar según el país.",
-  },
-];
+import LogoBC from "../../../img/logo-blanco.png";
+import Banktransfer from "../../../img/Bank_transfer.jpg";
+import Retirotarjeta from "../../../img/Pay_to_card.jpg";
+import Agencias from "../../../img/Betcris_Agencias.png";
 
 const imagesRetiros = [
   {
@@ -113,17 +40,8 @@ const imagesRetiros = [
   },
 ];
 
-const PA = () => {
-  const [showDepositos, setShowDepositos] = useState(true);
+const RetPa = () => {
   const [selectedImage, setSelectedImage] = useState(null);
-
-  const handleDepositosClick = () => {
-    setShowDepositos(true);
-  };
-
-  const handleRetirosClick = () => {
-    setShowDepositos(false);
-  };
 
   const handleImageClick = (image) => {
     setSelectedImage(image);
@@ -136,43 +54,17 @@ const PA = () => {
         <img src={LogoBC} alt="Logo" className="h-12" />
       </nav>
       <div className="p-7 flex flex-col justify-center items-center ">
-        {/* Payment buttons */}
-        <div className="text-center mb-2 ">
-          <button
-            className="inline-block px-4 text-sm font-semibold border py-2 bg-green-500 hover:bg-green-600 text-white rounded-md mr-2 sm:mr-4"
-            onClick={handleDepositosClick}
-          >
-            Depósitos
-          </button>
-          <button
-            className="inline-block px-5 text-sm font-semibold border py-2 bg-green-500 hover:bg-green-600 text-white rounded-md"
-            onClick={handleRetirosClick}
-          >
-            Retiros
-          </button>
-        </div>
-
         {/* Grid */}
         <div className="grid grid-cols-3 p-4 sm:grid-cols-5 md:grid-cols-5 lg:grid-cols-5 gap-4 mt-5 sm:m-10 sm:mt-5 lg:m-56 lg:mt-5">
-          {showDepositos
-            ? imagesDepositos.map((image, index) => (
-                <img
-                  key={index}
-                  src={image.img}
-                  alt={`Imagen ${index + 1}`}
-                  className="w-38 rounded-lg overflow-hidden border-black shadow-lg hover:scale-110 transition-transform duration-300 ease-out"
-                  onClick={() => handleImageClick(image)}
-                />
-              ))
-            : imagesRetiros.map((image, index) => (
-                <img
-                  key={index}
-                  src={image.img}
-                  alt={`Imagen ${index + 1}`}
-                  className="w-38 rounded-lg overflow-hidden border-black shadow-lg hover:scale-110 transition-transform duration-300 ease-out"
-                  onClick={() => handleImageClick(image)}
-                />
-              ))}
+          {imagesRetiros.map((image, index) => (
+            <img
+              key={index}
+              src={image.img}
+              alt={`Imagen ${index + 1}`}
+              className="w-38 rounded-lg overflow-hidden border-black shadow-lg hover:scale-110 transition-transform duration-300 ease-out"
+              onClick={() => handleImageClick(image)}
+            />
+          ))}
         </div>
         {selectedImage && (
           <div class="fixed z-10 inset-0 overflow-y-auto">
@@ -250,4 +142,4 @@ const PA = () => {
   );
 };
 
-export default PA;
+export default RetPa;

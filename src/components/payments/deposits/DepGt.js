@@ -1,15 +1,14 @@
 import React, { useState } from "react";
-import LogoBC from "../../img/logo-blanco.png";
-import Tarjetas from "../../img/Tarjetas.jpg";
-import Banktransfer from "../../img/Bank_transfer.jpg";
-import Retirotarjeta from "../../img/Pay_to_card.jpg";
-import AstroPay from "../../img/Astropay.jpg";
-import SafetyPay from "../../img/SafetyPay.jpg";
-import PayCash from "../../img/PayCash.jpg";
-import Agencias from "../../img/Betcris_Agencias.png";
-import Skrill from "../../img/Skrill.jpg";
-import Neteller from "../../img/Neteller.jpg";
-import SkrillTap from "../../img/Skril_tap.jpg";
+import LogoBC from "../../../img/logo-blanco.png";
+import Tarjetas from "../../../img/Tarjetas.jpg";
+import Banktransfer from "../../../img/Bank_transfer.jpg";
+import AstroPay from "../../../img/Astropay.jpg";
+import SafetyPay from "../../../img/SafetyPay.jpg";
+import PayCash from "../../../img/PayCash.jpg";
+import Agencias from "../../../img/Betcris_Agencias.png";
+import Skrill from "../../../img/Skrill.jpg";
+import Neteller from "../../../img/Neteller.jpg";
+import SkrillTap from "../../../img/Skril_tap.jpg";
 
 const imagesDepositos = [
   {
@@ -113,86 +112,8 @@ const imagesDepositos = [
   },
 ];
 
-const imagesRetiros = [
-  {
-    img: Retirotarjeta,
-    title: "TARJETAS DE CRÉDITO Y DÉBITO",
-    url: "https://get.betcris.help/hc/es-419/articles/360002241997-Retiro-a-Tarjeta",
-    min: "$10.00",
-    max: "$5,000.00",
-    time: "30 minutos",
-    descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'Retiro a tarjeta-Visa Direct', seguido ingresa la cantidad deseada, luego selecciona la tarjeta, y por último haz clic en 'Retirar'.",
-  },
-  {
-    img: Banktransfer,
-    title: "TRANSFERENCIA BANCARIA LOCAL",
-    url: "https://get.betcris.help/hc/es-419/articles/360002245278-Transferencia-bancaria-local",
-    min: "$10.00",
-    max: "$10,000.00",
-    time: "7 días",
-    descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'Transferencia Bancaria', seguido ingresa el monto del retiro, luego completa la información de tu cuenta bancaria la primera vez (estará guardada la próxima vez) y por último haz clic en 'Retirar'.",
-  },
-  {
-    img: Skrill,
-    title: "SKRILL",
-    url: "https://get.betcris.help/hc/es-419/articles/360002241957-Skrill",
-    min: "$10.00",
-    max: "$2,500.00",
-    time: "48 horas",
-    descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'Skrill', seguido ingresa el monto que deseas retirar, luego agrega la información de tu cuenta Skrill para tu primer retiro (la información se guardará para la próxima vez), y por último haz clic en 'Retirar'.",
-  },
-  {
-    img: Neteller,
-    title: "NETELLER",
-    url: "https://get.betcris.help/hc/es-419/articles/360002241917-NETELLER-",
-    min: "$10.00",
-    max: "$2,500.00",
-    time: "48 horas",
-    descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'NETELLER', seguido ingresa el monto que deseas retirar, luego agrega la información de tu cuenta Skrill para tu primer retiro (la información se guardará para la próxima vez), y por último haz clic en 'Retirar'.",
-  },
-  {
-    img: AstroPay,
-    title: "ASTROPAY",
-    url: "https://get.betcris.help/hc/es-419/articles/360011110557-AstroPay-Card",
-    min: "$5.00",
-    max: "$1,000.00",
-    time: "Inmediato",
-    descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'AstroPay Card', seguido ingresa el monto que deseas retirar, tu cuenta (número de teléfono) y haz clic en 'Confirmar'.",
-  },
-  {
-    img: Agencias,
-    title: "AGENCIAS BETCRIS",
-    url: "https://get.betcris.help/hc/es-419/articles/6404449911057-Retiros-en-Agencias-Betcris",
-    min: "$",
-    max: "$",
-    time: "Inmediato",
-    descriptionTitle: "Dentro de quioscos o agencias Betcris:",
-    description:
-      "Ofrecemos una variedad de formas rápidas y convenientes para depositar fondos en tu cuenta, incluyendo depósitos en las Agencias oficiales de Betcris. Para hacer tu depósito, solo debes presentar tu identificación y número de cuenta, junto con los fondos a depositar. Contacta a tu Agencia Betcris más cercana para confirmar los montos mínimos y máximos por transacción, así como cualquier detalle adicional que necesites, ya que pueden variar según el país.",
-  },
-];
-
-const Gt = () => {
-  const [showDepositos, setShowDepositos] = useState(true);
+const DepGt = () => {
   const [selectedImage, setSelectedImage] = useState(null);
-
-  const handleDepositosClick = () => {
-    setShowDepositos(true);
-  };
-
-  const handleRetirosClick = () => {
-    setShowDepositos(false);
-  };
 
   const handleImageClick = (image) => {
     setSelectedImage(image);
@@ -205,43 +126,17 @@ const Gt = () => {
         <img src={LogoBC} alt="Logo" className="h-12" />
       </nav>
       <div className="p-7 flex flex-col justify-center items-center ">
-        {/* Payment buttons */}
-        <div className="text-center mb-2 ">
-          <button
-            className="inline-block px-4 text-sm font-semibold border py-2 bg-green-500 hover:bg-green-600 text-white rounded-md mr-2 sm:mr-4"
-            onClick={handleDepositosClick}
-          >
-            Depósitos
-          </button>
-          <button
-            className="inline-block px-5 text-sm font-semibold border py-2 bg-green-500 hover:bg-green-600 text-white rounded-md"
-            onClick={handleRetirosClick}
-          >
-            Retiros
-          </button>
-        </div>
-
         {/* Grid */}
         <div className="grid grid-cols-3 p-4 sm:grid-cols-5 md:grid-cols-5 lg:grid-cols-5 gap-4 mt-5 sm:m-10 sm:mt-5 lg:m-56 lg:mt-5">
-          {showDepositos
-            ? imagesDepositos.map((image, index) => (
-                <img
-                  key={index}
-                  src={image.img}
-                  alt={`Imagen ${index + 1}`}
-                  className="w-38 rounded-lg overflow-hidden border-black shadow-lg hover:scale-110 transition-transform duration-300 ease-out"
-                  onClick={() => handleImageClick(image)}
-                />
-              ))
-            : imagesRetiros.map((image, index) => (
-                <img
-                  key={index}
-                  src={image.img}
-                  alt={`Imagen ${index + 1}`}
-                  className="w-38 rounded-lg overflow-hidden border-black shadow-lg hover:scale-110 transition-transform duration-300 ease-out"
-                  onClick={() => handleImageClick(image)}
-                />
-              ))}
+          {imagesDepositos.map((image, index) => (
+            <img
+              key={index}
+              src={image.img}
+              alt={`Imagen ${index + 1}`}
+              className="w-38 rounded-lg overflow-hidden border-black shadow-lg hover:scale-110 transition-transform duration-300 ease-out"
+              onClick={() => handleImageClick(image)}
+            />
+          ))}
         </div>
         {selectedImage && (
           <div class="fixed z-10 inset-0 overflow-y-auto">
@@ -319,4 +214,4 @@ const Gt = () => {
   );
 };
 
-export default Gt;
+export default DepGt;
