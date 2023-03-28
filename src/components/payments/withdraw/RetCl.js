@@ -1,94 +1,11 @@
 import React, { useState } from "react";
-import LogoBC from "../../img/logo-blanco.png";
-import Tarjetas from "../../img/Tarjetas.jpg";
-import Banktransfer from "../../img/Bank_transfer.jpg";
-import Retirotarjeta from "../../img/Pay_to_card.jpg";
-import AstroPay from "../../img/Astropay.jpg";
-import SafetyPay from "../../img/SafetyPay.jpg";
-import Mach from "../../img/Mach.jpg";
-import Skrill from "../../img/Skrill.jpg";
-import Neteller from "../../img/Neteller.jpg";
-import EcoPayz from "../../img/Ecopayz.jpg";
-
-const imagesDepositos = [
-  {
-    img: SafetyPay,
-    title: "SAFETYPAY",
-    url: "https://get.betcris.help/hc/es-419/articles/360002241397-SafetyPay",
-    min: "$20.00",
-    max: "$2,000.00",
-    time: "60 minutos",
-    descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'SafetyPay', seguido ingresa la cantidad y presiona 'Depositar', una vez que cargue la página de SafetyPay, elige entre Transferencia bancaria o Pagar en efectivo.",
-  },
-  {
-    img: Mach,
-    title: "MACH",
-    url: "https://get.betcris.help/hc/es-419/articles/4423322709521-MACH",
-    min: "$10.00",
-    max: "$479.00",
-    time: "Inmediato",
-    descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'MACH', seguido ingresa el monto de tu depósito y haz clic en 'Depositar'. seguido genera un código QR en el sitio web al cual se te redirige, luego escanéalo con tu App, y por último realiza el pago de tu depósito en la App de MACH.",
-  },
-  {
-    img: Tarjetas,
-    title: "TARJETAS DE CRÉDITO Y DÉBITO",
-    url: "https://get.betcris.help/hc/es-419/articles/360002208798-Tarjetas-de-cr%C3%A9dito-y-d%C3%A9bito",
-    min: "$10.00",
-    max: "$259.00",
-    time: "Inmediato",
-    descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'Tarjetas de crédito y débito', ingresa la información solicitada si esta es la primera vez que estás usando una tarjeta (para acelerar el proceso, la próxima vez que realices un depósito, los datos de tu tarjeta ya estarán almacenados) y haz clic en 'Guardar', seguido ingresa el monto que quieres depositar y por último selecciona 'Confirmar' para completar la transacción.",
-  },
-  {
-    img: Skrill,
-    title: "SKRILL",
-    url: "https://get.betcris.help/hc/es-419/articles/360002218658-Skrill",
-    min: "$10.00",
-    max: "$100,000.00",
-    time: "Inmediato",
-    descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'e-Wallet', seguido en 'Skrill', seguido ingresa el monto y la información de tu cuenta de Skrill, luego pulsa 'Depositar'. Serás redirigido al sitio de Skrill para completar la transacción.",
-  },
-  {
-    img: Neteller,
-    title: "NETELLER",
-    url: "https://get.betcris.help/hc/es-419/articles/360002208818-NETELLER",
-    min: "$10.00",
-    max: "$100,000.00",
-    time: "Inmediato",
-    descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'e-Wallet', seguido en 'NETELLER', seguido ingresa la cantidad, tu número de cuenta y haz clic en 'Depositar', luego pulsa 'Depositar'. Serás redirigido al sitio de Skrill para completar la transacción. Completa la transacción en el sitio de NETELLER al que se te redirige.",
-  },
-  {
-    img: EcoPayz,
-    title: "ECOPAYZ",
-    url: "https://get.betcris.help/hc/es-419/articles/360002218938-ecoPayz",
-    min: "$10.00",
-    max: "$50,000.00",
-    time: "Inmediato",
-    descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'e-Wallet', seguido en 'ecoPayz', seguido ingresa el monto que quieres depositar, tu número de cuenta ecoPayz y haz clic en 'Confirmar'. Completa la transacción en el sitio de ecoPayz al que se te redirige.",
-  },
-  {
-    img: AstroPay,
-    title: "ASTROPAY",
-    url: "https://get.betcris.help/hc/es-419/articles/360002212037-AstroPay-Card",
-    min: "$5.00",
-    max: "$10,000.00",
-    time: "Inmediato",
-    descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'AstroPay', seguido ingresa la cantidad y presiona 'Depositar', luego ingresa el monto y la información de la tarjeta y por último pulsa 'Depositar' para completar la transacción.",
-  },
-];
+import LogoBC from "../../../img/logo-blanco.png";
+import Banktransfer from "../../../img/Bank_transfer.jpg";
+import Retirotarjeta from "../../../img/Pay_to_card.jpg";
+import AstroPay from "../../../img/Astropay.jpg";
+import Skrill from "../../../img/Skrill.jpg";
+import Neteller from "../../../img/Neteller.jpg";
+import EcoPayz from "../../../img/Ecopayz.jpg";
 
 const imagesRetiros = [
   {
@@ -159,17 +76,8 @@ const imagesRetiros = [
   },
 ];
 
-const Cl = () => {
-  const [showDepositos, setShowDepositos] = useState(true);
+const RetCl = () => {
   const [selectedImage, setSelectedImage] = useState(null);
-
-  const handleDepositosClick = () => {
-    setShowDepositos(true);
-  };
-
-  const handleRetirosClick = () => {
-    setShowDepositos(false);
-  };
 
   const handleImageClick = (image) => {
     setSelectedImage(image);
@@ -182,43 +90,17 @@ const Cl = () => {
         <img src={LogoBC} alt="Logo" className="h-12" />
       </nav>
       <div className="p-7 flex flex-col justify-center items-center ">
-        {/* Payment buttons */}
-        <div className="text-center mb-2 ">
-          <button
-            className="inline-block px-4 text-sm font-semibold border py-2 bg-green-500 hover:bg-green-600 text-white rounded-md mr-2 sm:mr-4"
-            onClick={handleDepositosClick}
-          >
-            Depósitos
-          </button>
-          <button
-            className="inline-block px-5 text-sm font-semibold border py-2 bg-green-500 hover:bg-green-600 text-white rounded-md"
-            onClick={handleRetirosClick}
-          >
-            Retiros
-          </button>
-        </div>
-
         {/* Grid */}
         <div className="grid grid-cols-3 p-4 sm:grid-cols-5 md:grid-cols-5 lg:grid-cols-5 gap-4 mt-5 sm:m-10 sm:mt-5 lg:m-56 lg:mt-5">
-          {showDepositos
-            ? imagesDepositos.map((image, index) => (
-                <img
-                  key={index}
-                  src={image.img}
-                  alt={`Imagen ${index + 1}`}
-                  className="w-38 rounded-lg overflow-hidden border-black shadow-lg hover:scale-110 transition-transform duration-300 ease-out"
-                  onClick={() => handleImageClick(image)}
-                />
-              ))
-            : imagesRetiros.map((image, index) => (
-                <img
-                  key={index}
-                  src={image.img}
-                  alt={`Imagen ${index + 1}`}
-                  className="w-38 rounded-lg overflow-hidden border-black shadow-lg hover:scale-110 transition-transform duration-300 ease-out"
-                  onClick={() => handleImageClick(image)}
-                />
-              ))}
+          {imagesRetiros.map((image, index) => (
+            <img
+              key={index}
+              src={image.img}
+              alt={`Imagen ${index + 1}`}
+              className="w-38 rounded-lg overflow-hidden border-black shadow-lg hover:scale-110 transition-transform duration-300 ease-out"
+              onClick={() => handleImageClick(image)}
+            />
+          ))}
         </div>
         {selectedImage && (
           <div class="fixed z-10 inset-0 overflow-y-auto">
@@ -292,4 +174,4 @@ const Cl = () => {
   );
 };
 
-export default Cl;
+export default RetCl;

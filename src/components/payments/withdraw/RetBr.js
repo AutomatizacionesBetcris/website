@@ -1,30 +1,7 @@
 import React, { useState } from "react";
-import LogoBC from "../../img/logo-blanco.png";
-import Pay4Fun from "../../img/Pay4fun.jpg";
-import Pix from "../../img/Pix.jpg";
-
-const imagesDepositos = [
-  {
-    img: Pay4Fun,
-    title: "PAY4FUN",
-    url: "https://br.betcris.help/hc/pt-br/articles/360011459957-Pay4Fun",
-    min: "BRL 20",
-    max: "BRL 1,290",
-    time: "Imediatamente",
-    description:
-      "Escolha 'Pay4Fun', insira o valor do depósito e clique 'confirmar', finalmente você será redirecionado para a site da Pay4Fun para completar a transação.",
-  },
-  {
-    img: Pix,
-    title: "PIX",
-    url: "https://br.betcris.help/hc/pt-br/articles/360018482278-PIX",
-    min: "BRL 52",
-    max: "BRL 1,290,000",
-    time: "Imediatamente",
-    description:
-      "Selecione 'PIX', insira o valor a ser depositado e clique em 'confirmar', finalmente você será redirecionado para a página PIX para concluir a transação.",
-  },
-];
+import LogoBC from "../../../img/logo-blanco.png";
+import Pay4Fun from "../../../img/Pay4fun.jpg";
+import Pix from "../../../img/Pix.jpg";
 
 const imagesRetiros = [
   {
@@ -49,17 +26,8 @@ const imagesRetiros = [
   },
 ];
 
-const Br = () => {
-  const [showDepositos, setShowDepositos] = useState(true);
+const RetBr = () => {
   const [selectedImage, setSelectedImage] = useState(null);
-
-  const handleDepositosClick = () => {
-    setShowDepositos(true);
-  };
-
-  const handleRetirosClick = () => {
-    setShowDepositos(false);
-  };
 
   const handleImageClick = (image) => {
     setSelectedImage(image);
@@ -72,43 +40,17 @@ const Br = () => {
         <img src={LogoBC} alt="Logo" className="h-12" />
       </nav>
       <div className="p-7 flex flex-col justify-center items-center ">
-        {/* Payment buttons */}
-        <div className="text-center mb-2 ">
-          <button
-            className="inline-block px-4 text-sm font-semibold border py-2 bg-green-500 hover:bg-green-600 text-white rounded-md mr-2 sm:mr-4"
-            onClick={handleDepositosClick}
-          >
-            Depósito
-          </button>
-          <button
-            className="inline-block px-5 text-sm font-semibold border py-2 bg-green-500 hover:bg-green-600 text-white rounded-md"
-            onClick={handleRetirosClick}
-          >
-            Saques
-          </button>
-        </div>
-
         {/* Grid */}
         <div className="grid grid-cols-2 p-4 sm:grid-cols-5 md:grid-cols-5 lg:grid-cols-5 gap-4 mt-5 sm:m-10 sm:mt-5 lg:m-56 lg:mt-5">
-          {showDepositos
-            ? imagesDepositos.map((image, index) => (
-                <img
-                  key={index}
-                  src={image.img}
-                  alt={`Imagen ${index + 1}`}
-                  className="w-38 rounded-lg overflow-hidden border-black shadow-lg hover:scale-110 transition-transform duration-300 ease-out"
-                  onClick={() => handleImageClick(image)}
-                />
-              ))
-            : imagesRetiros.map((image, index) => (
-                <img
-                  key={index}
-                  src={image.img}
-                  alt={`Imagen ${index + 1}`}
-                  className="w-38 rounded-lg overflow-hidden border-black shadow-lg hover:scale-110 transition-transform duration-300 ease-out"
-                  onClick={() => handleImageClick(image)}
-                />
-              ))}
+          {imagesRetiros.map((image, index) => (
+            <img
+              key={index}
+              src={image.img}
+              alt={`Imagen ${index + 1}`}
+              className="w-38 rounded-lg overflow-hidden border-black shadow-lg hover:scale-110 transition-transform duration-300 ease-out"
+              onClick={() => handleImageClick(image)}
+            />
+          ))}
         </div>
         {selectedImage && (
           <div class="fixed z-10 inset-0 overflow-y-auto">
@@ -180,4 +122,4 @@ const Br = () => {
   );
 };
 
-export default Br;
+export default RetBr;
