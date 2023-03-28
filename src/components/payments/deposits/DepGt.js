@@ -64,7 +64,7 @@ const imagesDepositos = [
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
-      "Haz clic en 'e-Wallet', seguido en 'Skrill', seguido ingresa el monto y la información de tu cuenta de Skrill, luego pulsa 'Depositar'. Serás redirigido al sitio de Skrill para completar la transacción.",
+      "Haz clic en 'e-Wallet', seguido en 'Skrill', ingresa el monto y la información de tu cuenta de Skrill, luego pulsa 'Depositar'. Serás redirigido al sitio de Skrill para completar la transacción.",
   },
   {
     img: SkrillTap,
@@ -75,7 +75,7 @@ const imagesDepositos = [
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
-      "Haz clic en 'e-Wallet', seguido en 'Skrill 1- Tap', seguido ingresa el monto, tu cuenta Skrill account y haz clic en 'Depositar'. Completa la transacción en la página de Skrill donde se te redirige.",
+      "Haz clic en 'e-Wallet', seguido en 'Skrill 1-Tap', ingresa el monto, tu cuenta Skrill y haz clic en 'Depositar' y por último completa la transacción en la página de Skrill donde se te redirige.",
   },
   {
     img: Neteller,
@@ -86,7 +86,7 @@ const imagesDepositos = [
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
-      "Haz clic en 'e-Wallet', seguido en 'NETELLER', seguido ingresa la cantidad, tu número de cuenta y haz clic en 'Depositar', luego pulsa 'Depositar'. Serás redirigido al sitio de Skrill para completar la transacción. Completa la transacción en el sitio de NETELLER al que se te redirige.",
+      "Haz clic en 'e-Wallet', seguido en 'NETELLER', ingresa la cantidad, tu número de cuenta y haz clic en 'Depositar', luego pulsa 'Depositar'. Serás redirigido al sitio de Skrill para completar la transacción. Completa la transacción en el sitio de NETELLER al que se te redirige.",
   },
   {
     img: AstroPay,

@@ -11,6 +11,8 @@ import Paynet from "../../../img/Paynet.jpg";
 import Skrill from "../../../img/Skrill.jpg";
 import Neteller from "../../../img/Neteller.jpg";
 import EcoPayz from "../../../img/Ecopayz.jpg";
+import Paypal from "../../../img/Paypal.jpg";
+import Skrill1Tap from "../../../img/Skril_tap.jpg";
 
 const imagesDepositos = [
   {
@@ -94,8 +96,8 @@ const imagesDepositos = [
     img: Skrill,
     title: "SKRILL",
     url: "https://ayuda.betcris.mx/guia-de-usuario/centro-de-ayuda/depositos/skrill/",
-    min: "$10.00",
-    max: "$100,000.00",
+    min: "MXN 186.00",
+    max: "MXN 185,000.00",
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
@@ -105,23 +107,34 @@ const imagesDepositos = [
     img: Neteller,
     title: "NETELLER",
     url: "https://ayuda.betcris.mx/guia-de-usuario/centro-de-ayuda/depositos/neteller/",
-    min: "$10.00",
-    max: "$100,000.00",
+    min: "MXN 186.00",
+    max: "MXN 185,000.00",
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
       "Haz clic en 'e-Wallet', seguido en 'NETELLER', seguido ingresa el monto, tu número de cuenta e identificación segura de NETELLER, luego pulsa 'Depositar'. Serás redirigido al sitio de NETELLER para completar la transacción.",
   },
   {
-    img: EcoPayz,
-    title: "ECOPAYZ",
-    url: "https://ayuda.betcris.mx/guia-de-usuario/centro-de-ayuda/depositos/ecopayz/",
-    min: "$10.00",
-    max: "$50,000.00",
+    img: Skrill1Tap,
+    title: "SKRILL 1-TAP",
+    url: "https://ayuda.betcris.mx/guia-de-usuario/centro-de-ayuda/depositos/skrill-1-tap/",
+    min: "MXN 230.00",
+    max: "MXN 185,000.00",
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
-      "Haz clic en 'e-Wallet', seguido en 'ecoPayz', seguido ingresa el monto y la información de tu cuenta de ecoPayz, luego pulsa 'Depositar'. Serás redirigido al sitio de ecoPayz para completar la transacción.",
+      "Haz clic en 'e-Wallet', seguido en 'Skrill 1-Tap', seguido ingresa el monto, y la información de tu cuenta de Skrill 1-Tap, luego pulsa 'Depositar'. Serás redirigido al sitio de Skrill para completar la transacción.",
+  },
+  {
+    img: EcoPayz,
+    title: "ECOPAYZ",
+    url: "https://ayuda.betcris.mx/guia-de-usuario/centro-de-ayuda/depositos/ecopayz/",
+    min: "MXN 230.00",
+    max: "MXN 926,000.00",
+    time: "Inmediato",
+    descriptionTitle: "Desde el Cajero de Betcris:",
+    description:
+      "Haz clic en 'e-Wallet', seguido en 'ecoPayz', ingresa el monto y la información de tu cuenta de ecoPayz, luego pulsa 'Depositar'. Serás redirigido al sitio de ecoPayz para completar la transacción.",
   },
   {
     img: Agencias,
@@ -133,6 +146,17 @@ const imagesDepositos = [
     descriptionTitle: "Dentro de quioscos o agencias Betcris:",
     description:
       "Ofrecemos una variedad de formas rápidas y convenientes para depositar fondos en tu cuenta, incluyendo depósitos en las Agencias oficiales de Betcris. Para hacer tu depósito, solo debes presentar tu identificación y número de cuenta, junto con los fondos a depositar. Contacta a tu Agencia Betcris más cercana para confirmar los montos mínimos y máximos por transacción, así como cualquier detalle adicional que necesites, ya que pueden variar según el país.",
+  },
+  {
+    img: Paypal,
+    title: "PAYPAL",
+    url: "https://ayuda.betcris.mx/guia-de-usuario/centro-de-ayuda/depositos/como-puego-pagar-con-paypal/",
+    min: "MXN 190.00",
+    max: "MXN 180,000.00",
+    time: "Inmediato",
+    descriptionTitle: "Desde el Cajero de Betcris:",
+    description:
+      "Haz clic en 'PayPal', seguido ingresa el monto que deseas y haz clic en 'Depositar', el sistema te redirigirá a la página de PayPal para completar tu pago. Una vez que hayas iniciado sesión en la página de PayPal, selecciona la tarjeta previamente registrada en tu cuenta PayPal o puedes agregar una nueva y por último confirma la tarjeta y, haz clic en 'Compra completa'.",
   },
 ];
 

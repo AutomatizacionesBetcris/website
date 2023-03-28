@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import LogoBC from "../../../img/logo-blanco.png";
 import Pay4Fun from "../../../img/Pay4fun.jpg";
 import Pix from "../../../img/Pix.jpg";
+import Banktransfer from "../../../img/Bank_transfer.jpg";
 
 const imagesDepositos = [
   {
@@ -23,6 +24,16 @@ const imagesDepositos = [
     time: "Imediatamente",
     description:
       "Selecione 'PIX', insira o valor a ser depositado e clique em 'confirmar', finalmente você será redirecionado para a página PIX para concluir a transação.",
+  },
+  {
+    img: Banktransfer,
+    title: "TRANSFERÊNCIA BANCÁRIA",
+    url: "https://br.betcris.help/hc/pt-br/articles/360003674058-Transfer%C3%AAncia-banc%C3%A1ria-local",
+    min: "BRL 20",
+    max: "BRL 5,160,000",
+    time: "Imediatamente",
+    description:
+      "Selecione 'TRANSFERÊNCIA BANCÁRIA', selecione o banco onde você tem conta, copie as informações que aparecem no site do seu banco, finalmente siga os passos exibidos na tela para confirmar a transação.",
   },
 ];
 

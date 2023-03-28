@@ -7,6 +7,7 @@ import Mach from "../../../img/Mach.jpg";
 import Skrill from "../../../img/Skrill.jpg";
 import Neteller from "../../../img/Neteller.jpg";
 import EcoPayz from "../../../img/Ecopayz.jpg";
+import Skrill1Tap from "../../../img/Skril_tap.jpg";
 
 const imagesDepositos = [
   {
@@ -51,7 +52,7 @@ const imagesDepositos = [
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
-      "Haz clic en 'e-Wallet', seguido en 'Skrill', seguido ingresa el monto y la información de tu cuenta de Skrill, luego pulsa 'Depositar'. Serás redirigido al sitio de Skrill para completar la transacción.",
+      "Haz clic en 'e-Wallet', seguido en 'Skrill', ingresa el monto y la información de tu cuenta de Skrill, luego pulsa 'Depositar'. Serás redirigido al sitio de Skrill para completar la transacción.",
   },
   {
     img: Neteller,
@@ -62,7 +63,18 @@ const imagesDepositos = [
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
-      "Haz clic en 'e-Wallet', seguido en 'NETELLER', seguido ingresa la cantidad, tu número de cuenta y haz clic en 'Depositar', luego pulsa 'Depositar'. Serás redirigido al sitio de Skrill para completar la transacción. Completa la transacción en el sitio de NETELLER al que se te redirige.",
+      "Haz clic en 'e-Wallet', seguido en 'NETELLER', ingresa la cantidad, tu número de cuenta y haz clic en 'Depositar', luego pulsa 'Depositar'. Serás redirigido al sitio de Skrill para completar la transacción. Completa la transacción en el sitio de NETELLER al que se te redirige.",
+  },
+  {
+    img: Skrill1Tap,
+    title: "SKRILL 1-TAP",
+    url: "https://get.betcris.help/hc/es-419/articles/360002218838-Skrill-1-Tap",
+    min: "$10.00",
+    max: "$100,000.00",
+    time: "Inmediato",
+    descriptionTitle: "Desde el Cajero de Betcris:",
+    description:
+      "Haz clic en 'e-Wallet', seguido en 'Skrill 1-Tap', ingresa el monto, tu cuenta Skrill y haz clic en 'Depositar' y por último completa la transacción en la página de Skrill donde se te redirige.",
   },
   {
     img: EcoPayz,
@@ -73,7 +85,7 @@ const imagesDepositos = [
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
-      "Haz clic en 'e-Wallet', seguido en 'ecoPayz', seguido ingresa el monto que quieres depositar, tu número de cuenta ecoPayz y haz clic en 'Confirmar'. Completa la transacción en el sitio de ecoPayz al que se te redirige.",
+      "Haz clic en 'e-Wallet', seguido en 'ecoPayz', ingresa el monto que quieres depositar, tu número de cuenta ecoPayz y haz clic en 'Confirmar'. Completa la transacción en el sitio de ecoPayz al que se te redirige.",
   },
   {
     img: AstroPay,
