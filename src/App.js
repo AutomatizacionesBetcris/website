@@ -1,7 +1,8 @@
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import EC from "./components/payments/Ec";
 import PA from "./components/payments/Pa";
-import MX from "./components/payments/Mx";
+import DEPMX from "./components/payments/deposits/DepMx";
+import RETMX from "./components/payments/withdraw/RetMx";
 import PE from "./components/payments/Pe";
 import HN from "./components/payments/Hn";
 import SV from "./components/payments/Sv";
@@ -21,7 +22,8 @@ function App() {
       <Routes>
         <Route path="/ec" element={<EC />} />
         <Route path="/pa" element={<PA />} />
-        <Route path="/mx" element={<MX />} />
+        <Route path="/depositos/mx" element={<DEPMX />} />
+        <Route path="/retiros/mx" element={<RETMX />} />
         <Route path="/pe" element={<PE />} />
         <Route path="/hn" element={<HN />} />
         <Route path="/sv" element={<SV />} />

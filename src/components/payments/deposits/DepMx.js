@@ -1,18 +1,16 @@
 import React, { useState } from "react";
-import LogoBC from "../../img/logo-blanco.png";
-import Tarjetas from "../../img/Tarjetas.jpg";
-import SafetyPay from "../../img/SafetyPay.jpg";
-import Banktransfer from "../../img/Bank_transfer.jpg";
-import AstroPay from "../../img/Astropay.jpg";
-import Agencias from "../../img/Betcris_Agencias.png";
-import Retirotarjeta from "../../img/Pay_to_card.jpg";
-import Oxxo from "../../img/Oxxo.jpg";
-import PaysafeCard from "../../img/PaysafeCard.jpg";
-import SPEI from "../../img/Spei.jpg";
-import Paynet from "../../img/Paynet.jpg";
-import Skrill from "../../img/Skrill.jpg";
-import Neteller from "../../img/Neteller.jpg";
-import EcoPayz from "../../img/Ecopayz.jpg";
+import LogoBC from "../../../img/logo-blanco.png";
+import Tarjetas from "../../../img/Tarjetas.jpg";
+import SafetyPay from "../../../img/SafetyPay.jpg";
+import AstroPay from "../../../img/Astropay.jpg";
+import Agencias from "../../../img/Betcris_Agencias.png";
+import Oxxo from "../../../img/Oxxo.jpg";
+import PaysafeCard from "../../../img/PaysafeCard.jpg";
+import SPEI from "../../../img/Spei.jpg";
+import Paynet from "../../../img/Paynet.jpg";
+import Skrill from "../../../img/Skrill.jpg";
+import Neteller from "../../../img/Neteller.jpg";
+import EcoPayz from "../../../img/Ecopayz.jpg";
 
 const imagesDepositos = [
   {
@@ -138,97 +136,8 @@ const imagesDepositos = [
   },
 ];
 
-const imagesRetiros = [
-  {
-    img: Retirotarjeta,
-    title: "TARJETAS DE CRÉDITO Y DÉBITO",
-    url: "https://get.betcris.help/hc/es-419/articles/360002241997-Retiro-a-Tarjeta",
-    min: "MXN 198.00",
-    max: "MXN 98,750.00",
-    time: "30 minutos",
-    descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'Retiro a tarjeta-Visa Direct', seguido ingresa la cantidad deseada, selecciona la tarjeta, y por último haz clic en 'Retirar'.",
-  },
-  {
-    img: Banktransfer,
-    title: "TRANSFERENCIA BANCARIA LOCAL",
-    url: "https://get.betcris.help/hc/es-419/articles/360002245278-Transferencia-bancaria-local",
-    min: "MXN 198.00",
-    max: "MXN 197,500.00",
-    time: "7 días",
-    descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'Transferencia Bancaria', seguido ingresa el monto del retiro, luego completa la información de tu cuenta bancaria la primera vez (estará guardada la próxima vez) y por último haz clic en 'Retirar'.",
-  },
-  {
-    img: AstroPay,
-    title: "ASTROPAY",
-    url: "https://ayuda.betcris.mx/guia-de-usuario/centro-de-ayuda/retiros/astropay-card/",
-    min: "MXN 99.00",
-    max: "MXN 19,750.00",
-    time: "Inmediato",
-    descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'AstroPay Card', seguido ingresa el monto a retirar y haz clic en 'Registrar' una cuenta nueva, luego ingresa tu información, la misma que usaste en la aplicación móvil: número de teléfono (incluye el código de tu país sin utilizar el signo de “+” al principio), nombre y apellido, correo electrónico e identificación personal.",
-  },
-  {
-    img: Skrill,
-    title: "SKRILL",
-    url: "https://ayuda.betcris.mx/guia-de-usuario/centro-de-ayuda/retiros/skrill-2/",
-    min: "$10.00",
-    max: "$2,500.00",
-    time: "48 horas",
-    descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'Skrill', seguido ingresa la cantidad que quieres retirar, luego agrega los datos de tu cuenta Skrill para tu primer retiro (los datos serán guardados para la siguiente vez), y por último haz clic en 'Verificar retiro'.",
-  },
-  {
-    img: Neteller,
-    title: "NETELLER",
-    url: "https://ayuda.betcris.mx/guia-de-usuario/centro-de-ayuda/retiros/neteller-2/",
-    min: "$10.00",
-    max: "$2,500.00",
-    time: "48 horas",
-    descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'NETELLER', seguido ingresa la cantidad que quieres retirar, luego ingresa los datos de tu cuenta NETELLER, y por último haz clic en 'Verificar retiro'.",
-  },
-  {
-    img: EcoPayz,
-    title: "ECOPAYZ",
-    url: "https://ayuda.betcris.mx/guia-de-usuario/centro-de-ayuda/retiros/ecopayz-2/",
-    min: "$10.00",
-    max: "$2,500.00",
-    time: "48 horas",
-    descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'ecoPayz', seguido ingresa la cantidad que quieres retirar, luego ingresa los datos de tu cuenta ecoPayz y por último haz clic en 'Verificar retiro'.",
-  },
-  {
-    img: Agencias,
-    title: "AGENCIAS BETCRIS",
-    url: "https://ayuda.betcris.mx/guia-de-usuario/centro-de-ayuda/retiros/retiros-en-agencias-betcris/",
-    min: "$",
-    max: "$",
-    time: "-",
-    descriptionTitle: "Dentro de quioscos o agencias Betcris:",
-    description:
-      "Ofrecemos una variedad de formas rápidas y convenientes para retirar fondos en tu cuenta, incluyendo depósitos en las Agencias oficiales de Betcris. Para hacer tu retiro solo debes presentar tu identificación y número de cuenta, además de haber completado todos los procesos de verificación necesarios para el retiro de fondos. Contacta a tu Agencia Betcris más cercana para confirmar los montos mínimos y máximos por transacción, así como cualquier detalle adicional que necesites, ya que pueden variar según el país.",
-  },
-];
-
-const Mx = () => {
-  const [showDepositos, setShowDepositos] = useState(true);
+const DepMx = () => {
   const [selectedImage, setSelectedImage] = useState(null);
-
-  const handleDepositosClick = () => {
-    setShowDepositos(true);
-  };
-
-  const handleRetirosClick = () => {
-    setShowDepositos(false);
-  };
 
   const handleImageClick = (image) => {
     setSelectedImage(image);
@@ -241,43 +150,17 @@ const Mx = () => {
         <img src={LogoBC} alt="Logo" className="h-12" />
       </nav>
       <div className="p-7 flex flex-col justify-center items-center ">
-        {/* Payment buttons */}
-        <div className="text-center mb-2 ">
-          <button
-            className="inline-block px-4 text-sm font-semibold border py-2 bg-green-500 hover:bg-green-600 text-white rounded-md mr-2 sm:mr-4"
-            onClick={handleDepositosClick}
-          >
-            Depósitos
-          </button>
-          <button
-            className="inline-block px-5 text-sm font-semibold border py-2 bg-green-500 hover:bg-green-600 text-white rounded-md"
-            onClick={handleRetirosClick}
-          >
-            Retiros
-          </button>
-        </div>
-
         {/* Grid */}
         <div className="grid grid-cols-3 p-4 sm:grid-cols-5 md:grid-cols-5 lg:grid-cols-5 gap-4 mt-5 sm:m-10 sm:mt-5 lg:m-56 lg:mt-5">
-          {showDepositos
-            ? imagesDepositos.map((image, index) => (
-                <img
-                  key={index}
-                  src={image.img}
-                  alt={`Imagen ${index + 1}`}
-                  className="w-38 rounded-lg overflow-hidden border-black shadow-lg hover:scale-110 transition-transform duration-300 ease-out"
-                  onClick={() => handleImageClick(image)}
-                />
-              ))
-            : imagesRetiros.map((image, index) => (
-                <img
-                  key={index}
-                  src={image.img}
-                  alt={`Imagen ${index + 1}`}
-                  className="w-38 rounded-lg overflow-hidden border-black shadow-lg hover:scale-110 transition-transform duration-300 ease-out"
-                  onClick={() => handleImageClick(image)}
-                />
-              ))}
+          {imagesDepositos.map((image, index) => (
+            <img
+              key={index}
+              src={image.img}
+              alt={`Imagen ${index + 1}`}
+              className="w-38 rounded-lg overflow-hidden border-black shadow-lg hover:scale-110 transition-transform duration-300 ease-out"
+              onClick={() => handleImageClick(image)}
+            />
+          ))}
         </div>
         {selectedImage && (
           <div class="fixed z-10 inset-0 overflow-y-auto">
@@ -355,4 +238,4 @@ const Mx = () => {
   );
 };
 
-export default Mx;
+export default DepMx;
