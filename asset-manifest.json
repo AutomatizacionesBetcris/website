@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/website/static/css/main.8a28de73.css",
-    "main.js": "/website/static/js/main.851080ac.js",
+    "main.js": "/website/static/js/main.eac0e2e3.js",
     "static/media/Oxxo.jpg": "/website/static/media/Oxxo.ec69872d4abe86e326fa.jpg",
     "static/media/Bank_transfer_CL.jpg": "/website/static/media/Bank_transfer_CL.c0fe707d4054e7a0941e.jpg",
     "static/media/Yape.jpg": "/website/static/media/Yape.e4b6b39a7b973cb5dac2.jpg",
@@ -32,10 +32,10 @@
     "static/media/Betcris_Agencias.png": "/website/static/media/Betcris_Agencias.537a99d9d474615f008b.png",
     "index.html": "/website/index.html",
     "main.8a28de73.css.map": "/website/static/css/main.8a28de73.css.map",
-    "main.851080ac.js.map": "/website/static/js/main.851080ac.js.map"
+    "main.eac0e2e3.js.map": "/website/static/js/main.eac0e2e3.js.map"
   },
   "entrypoints": [
     "static/css/main.8a28de73.css",
-    "static/js/main.851080ac.js"
+    "static/js/main.eac0e2e3.js"
   ]
 }
