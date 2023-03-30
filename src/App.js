@@ -23,6 +23,8 @@ import DEPBR from "./components/payments/deposits/DepBr";
 import RETBR from "./components/payments/withdraw/RetBr";
 import DEPCA from "./components/payments/deposits/DepCa";
 import RETCA from "./components/payments/withdraw/RetCa";
+import TEST from "./components/payments/test";
+import TEST2 from "./components/payments/test2";
 
 function App() {
   return (
@@ -52,6 +54,8 @@ function App() {
         <Route path="/retiros/br" element={<RETBR />} />
         <Route path="/depositos/ca" element={<DEPCA />} />
         <Route path="/retiros/ca" element={<RETCA />} />
+        <Route path="/test/test" element={<TEST />} />
+        <Route path="/test/test2" element={<TEST2 />} />
       </Routes>
     </Router>
   );
