@@ -8,6 +8,7 @@ import Skrill from "../../../img/Skrill.jpg";
 import Neteller from "../../../img/Neteller.jpg";
 import EcoPayz from "../../../img/Ecopayz.jpg";
 import Skrill1Tap from "../../../img/Skril_tap.jpg";
+import BankTransferCL from "../../../img/Bank_transfer_CL.jpg";
 
 const imagesDepositos = [
   {
@@ -97,6 +98,17 @@ const imagesDepositos = [
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
       "Haz clic en 'AstroPay', seguido ingresa la cantidad y presiona 'Depositar', luego ingresa el monto y la información de la tarjeta y por último pulsa 'Depositar' para completar la transacción.",
+  },
+  {
+    img: BankTransferCL,
+    title: "TRANSFERENCIA BANCARIA",
+    url: "https://get.betcris.help/hc/es-419/articles/360002241437-Transferencias-bancarias",
+    min: "$10.00",
+    max: "$4,000.00",
+    time: "Reportarla por el cajero, para que sea aprobado",
+    descriptionTitle: "Desde el Cajero de Betcris:",
+    description:
+      "Haz clic en 'Transferencia Bancaria', seguido elige el banco donde vas a depositar, luego selecciona la cuenta y el destinatario para realizar el depósito, completa los detalles requeridos y adjunta una fotografía del depósito realizado en el banco o en línea y por último haz clic en 'Reportar depósito'.",
   },
 ];
 
