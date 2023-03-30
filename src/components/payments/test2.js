@@ -11,7 +11,7 @@ const Br = () => {
       </nav>
 
       {/* Grid */}
-      <div className="grid p-3 mt-20 ">
+      <div className="grid m-5">
         <img
           src={test}
           alt="test"
