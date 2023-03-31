@@ -25,8 +25,11 @@ import DEPCA from "./components/payments/deposits/DepCa";
 import RETCA from "./components/payments/withdraw/RetCa";
 
 // Autoexclusion
-import MXMOBILE from "./components/payments/autoexclusion/MxMobile";
-import MXDESKTOP from "./components/payments/autoexclusion/MxDesktop";
+import MXMOBILEL from "./components/payments/autoexclusion/MxMobileL";
+import MXMOBILEC from "./components/payments/autoexclusion/MxMobileC";
+import MXDESKTOPL from "./components/payments/autoexclusion/MxDesktopL";
+import MXDESKTOPC from "./components/payments/autoexclusion/MxDesktopC";
+
 // Autoexclusion
 
 function App() {
@@ -59,8 +62,10 @@ function App() {
         <Route path="/retiros/ca" element={<RETCA />} />
 
         {/* Autoexclusion */}
-        <Route path="/autoexclusion/mxmobile" element={<MXMOBILE />} />
-        <Route path="/autoexclusion/mxdesktop" element={<MXDESKTOP />} />
+        <Route path="/autoexclusion/mxmobilelargo" element={<MXMOBILEL />} />
+        <Route path="/autoexclusion/mxmobilecorto" element={<MXMOBILEC />} />
+        <Route path="/autoexclusion/mxdesktoplargo" element={<MXDESKTOPL />} />
+        <Route path="/autoexclusion/mxdesktopcorto" element={<MXDESKTOPC />} />
         {/* Autoexclusion */}
       </Routes>
     </Router>
