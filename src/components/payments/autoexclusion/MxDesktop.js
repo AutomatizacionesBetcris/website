@@ -1,6 +1,6 @@
 import React from "react";
 import LogoBC from "../../../img/logo-blanco.png";
-import MxDesktopImg from "../../../img/test2.gif";
+import MxDesktopImg from "../../../img/test.gif";
 
 const MxDesktop = () => {
   return (
@@ -11,11 +11,11 @@ const MxDesktop = () => {
       </nav>
 
       {/* Grid */}
-      <div className="grid w-full lg:justify-center lg:items-center">
+      <div className="grid w-full h-full lg:justify-center lg:items-center">
         <img
           src={MxDesktopImg}
           alt="Autoexclusión"
-          className="rounded-lg overflow-hidden border-black shadow-lg hover:scale-110 transition-transform duration-300 ease-out"
+          className="rounded-lg border-black shadow-lg"
         />
       </div>
     </div>

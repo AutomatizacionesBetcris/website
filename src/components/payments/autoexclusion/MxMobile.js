@@ -1,6 +1,6 @@
 import React from "react";
 import LogoBC from "../../../img/logo-blanco.png";
-import MxMobileImg from "../../../img/test.gif";
+import MxMobileImg from "../../../img/test2.gif";
 
 const MxMobile = () => {
   return (
@@ -15,7 +15,7 @@ const MxMobile = () => {
         <img
           src={MxMobileImg}
           alt="Autoexclusión"
-          className="rounded-lg overflow-hidden border-black shadow-lg hover:scale-110 transition-transform duration-300 ease-out"
+          className="rounded-lg border-black shadow-lg"
         />
       </div>
     </div>
