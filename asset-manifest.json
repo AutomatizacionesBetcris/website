@@ -1,9 +1,11 @@
 {
   "files": {
-    "main.css": "/website/static/css/main.6416ec28.css",
-    "main.js": "/website/static/js/main.1f820bd7.js",
-    "static/media/test.gif": "/website/static/media/test.c7f9a0518dfa6d57ac70.gif",
-    "static/media/test2.gif": "/website/static/media/test2.e6aa72b4b7da0f47cf94.gif",
+    "main.css": "/website/static/css/main.4200a313.css",
+    "main.js": "/website/static/js/main.c259bae3.js",
+    "static/media/MX_desktop_corto.gif": "/website/static/media/MX_desktop_corto.2b6bc38c7406530519d6.gif",
+    "static/media/MX_mobile_largo.gif": "/website/static/media/MX_mobile_largo.777f0a12d21495bee061.gif",
+    "static/media/MX_desktop_largo.gif": "/website/static/media/MX_desktop_largo.c7f9a0518dfa6d57ac70.gif",
+    "static/media/MX_mobile_corto.gif": "/website/static/media/MX_mobile_corto.e6aa72b4b7da0f47cf94.gif",
     "static/media/Oxxo.jpg": "/website/static/media/Oxxo.ec69872d4abe86e326fa.jpg",
     "static/media/Bank_transfer_CL.jpg": "/website/static/media/Bank_transfer_CL.c0fe707d4054e7a0941e.jpg",
     "static/media/Yape.jpg": "/website/static/media/Yape.e4b6b39a7b973cb5dac2.jpg",
@@ -33,11 +35,11 @@
     "static/media/Neteller.jpg": "/website/static/media/Neteller.211fa1bf66f769e3dfba.jpg",
     "static/media/Betcris_Agencias.png": "/website/static/media/Betcris_Agencias.537a99d9d474615f008b.png",
     "index.html": "/website/index.html",
-    "main.6416ec28.css.map": "/website/static/css/main.6416ec28.css.map",
-    "main.1f820bd7.js.map": "/website/static/js/main.1f820bd7.js.map"
+    "main.4200a313.css.map": "/website/static/css/main.4200a313.css.map",
+    "main.c259bae3.js.map": "/website/static/js/main.c259bae3.js.map"
   },
   "entrypoints": [
-    "static/css/main.6416ec28.css",
-    "static/js/main.1f820bd7.js"
+    "static/css/main.4200a313.css",
+    "static/js/main.c259bae3.js"
   ]
 }
