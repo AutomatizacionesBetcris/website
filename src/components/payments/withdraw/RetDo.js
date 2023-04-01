@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import LogoBC from "../../../img/logo-blanco.png";
-import Banktransfer from "../../../img/Bank_transfer.jpg";
-import Retirotarjeta from "../../../img/Pay_to_card.jpg";
-import AstroPay from "../../../img/Astropay.jpg";
-import Agencias from "../../../img/Betcris_Agencias.png";
-import Skrill from "../../../img/Skrill.jpg";
-import Neteller from "../../../img/Neteller.jpg";
-import EcoPayz from "../../../img/Ecopayz.jpg";
+import Banktransfer from "../../../img/payments/Bank_transfer.jpg";
+import Retirotarjeta from "../../../img/payments/Pay_to_card.jpg";
+import AstroPay from "../../../img/payments/Astropay.jpg";
+import Agencias from "../../../img/payments/Betcris_Agencias.png";
+import Skrill from "../../../img/payments/Skrill.jpg";
+import Neteller from "../../../img/payments/Neteller.jpg";
+import EcoPayz from "../../../img/payments/Ecopayz.jpg";
 
 const imagesRetiros = [
   {
@@ -128,7 +128,7 @@ const RetDo = () => {
                         {selectedImage.title}
                       </h3>
                       <hr></hr>
-                      <p className=" mt-4 mb-4 text-sm text-justify w-full">
+                      <p className=" mt-4 mb-4 text-xs text-justify w-full">
                         {selectedImage.title !== "DISASHOP" && (
                           <div>
                             <p>{selectedImage.descriptionTitle}</p>

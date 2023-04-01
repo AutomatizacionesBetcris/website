@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import LogoBC from "../../../img/logo-blanco.png";
-import Pay4Fun from "../../../img/Pay4fun.jpg";
-import Pix from "../../../img/Pix.jpg";
-import Banktransfer from "../../../img/Bank_transfer.jpg";
+import Pay4Fun from "../../../img/payments/Pay4fun.jpg";
+import Pix from "../../../img/payments/Pix.jpg";
+import Banktransfer from "../../../img/payments/Bank_transfer.jpg";
 
 const imagesDepositos = [
   {
@@ -80,7 +80,7 @@ const Br = () => {
                       {selectedImage.title}
                     </h3>
                     <hr></hr>
-                    <p className=" mt-4 mb-4 text-sm text-justify w-full">
+                    <p className=" mt-4 mb-4 text-xs text-justify w-full">
                       {selectedImage.description}
                     </p>
                     <div>

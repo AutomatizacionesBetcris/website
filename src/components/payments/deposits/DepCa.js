@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import LogoBC from "../../../img/logo-blanco.png";
-import EcoPayz from "../../../img/Ecopayz.jpg";
-import Tarjetas from "../../../img/Tarjetas.jpg";
-import PaysafeCard from "../../../img/PaysafeCard.jpg";
-import AstroPay from "../../../img/Astropay.jpg";
+import EcoPayz from "../../../img/payments/Ecopayz.jpg";
+import Tarjetas from "../../../img/payments/Tarjetas.jpg";
+import PaysafeCard from "../../../img/payments/PaysafeCard.jpg";
+import AstroPay from "../../../img/payments/Astropay.jpg";
 
 const imagesDepositos = [
   {
@@ -95,7 +95,7 @@ const DepCa = () => {
                         {selectedImage.title}
                       </h3>
                       <hr></hr>
-                      <p className=" mt-4 mb-4 text-sm text-justify w-full">
+                      <p className=" mt-4 mb-4 text-xs text-justify w-full">
                         <p>{selectedImage.descriptionTitle}</p>
                         <br></br>
                         {selectedImage.description}

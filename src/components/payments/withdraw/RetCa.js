@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import LogoBC from "../../../img/logo-blanco.png";
-import EcoPayz from "../../../img/Ecopayz.jpg";
-import Retirotarjeta from "../../../img/Pay_to_card.jpg";
-import AstroPay from "../../../img/Astropay.jpg";
+import EcoPayz from "../../../img/payments/Ecopayz.jpg";
+import Retirotarjeta from "../../../img/payments/Pay_to_card.jpg";
+import AstroPay from "../../../img/payments/Astropay.jpg";
 
 const imagesRetiros = [
   {
@@ -83,7 +83,7 @@ const RetCa = () => {
                         {selectedImage.title}
                       </h3>
                       <hr></hr>
-                      <p className=" mt-4 mb-4 text-sm text-justify w-full">
+                      <p className=" mt-4 mb-4 text-xs text-justify w-full">
                         <p>{selectedImage.descriptionTitle}</p>
                         <br></br>
                         {selectedImage.description}

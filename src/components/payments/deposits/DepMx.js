@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 import LogoBC from "../../../img/logo-blanco.png";
-import Tarjetas from "../../../img/Tarjetas.jpg";
-import SafetyPay from "../../../img/SafetyPay.jpg";
-import AstroPay from "../../../img/Astropay.jpg";
-import Agencias from "../../../img/Betcris_Agencias.png";
-import Oxxo from "../../../img/Oxxo.jpg";
-import PaysafeCard from "../../../img/PaysafeCard.jpg";
-import SPEI from "../../../img/Spei.jpg";
-import Paynet from "../../../img/Paynet.jpg";
-import Skrill from "../../../img/Skrill.jpg";
-import Neteller from "../../../img/Neteller.jpg";
-import EcoPayz from "../../../img/Ecopayz.jpg";
-import Paypal from "../../../img/Paypal.jpg";
-import Skrill1Tap from "../../../img/Skril_tap.jpg";
+import Tarjetas from "../../../img/payments/Tarjetas.jpg";
+import SafetyPay from "../../../img/payments/SafetyPay.jpg";
+import AstroPay from "../../../img/payments/Astropay.jpg";
+import Agencias from "../../../img/payments/Betcris_Agencias.png";
+import Oxxo from "../../../img/payments/Oxxo.jpg";
+import PaysafeCard from "../../../img/payments/PaysafeCard.jpg";
+import SPEI from "../../../img/payments/Spei.jpg";
+import Paynet from "../../../img/payments/Paynet.jpg";
+import Skrill from "../../../img/payments/Skrill.jpg";
+import Neteller from "../../../img/payments/Neteller.jpg";
+import EcoPayz from "../../../img/payments/Ecopayz.jpg";
+import Paypal from "../../../img/payments/Paypal.jpg";
+import Skrill1Tap from "../../../img/payments/Skril_tap.jpg";
 
 const imagesDepositos = [
   {
@@ -200,7 +200,7 @@ const DepMx = () => {
                         {selectedImage.title}
                       </h3>
                       <hr></hr>
-                      <p className=" mt-4 mb-4 text-sm text-justify w-full">
+                      <p className=" mt-4 mb-4 text-xs text-justify w-full">
                         <p>{selectedImage.descriptionTitle}</p>
                         <br></br>
                         {selectedImage.description}

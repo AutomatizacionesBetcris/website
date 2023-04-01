@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import LogoBC from "../../../img/logo-blanco.png";
-import Sistemaclave from "../../../img/Sistema_clave.jpg";
-import PayCash from "../../../img/PayCash.jpg";
-import Puntopago from "../../../img/Punto_Pago.jpg";
-import Tarjetas from "../../../img/Tarjetas.jpg";
-import Banktransfer from "../../../img/Bank_transfer.jpg";
-import Agencias from "../../../img/Betcris_Agencias.png";
+import Sistemaclave from "../../../img/payments/Sistema_clave.jpg";
+import PayCash from "../../../img/payments/PayCash.jpg";
+import Puntopago from "../../../img/payments/Punto_Pago.jpg";
+import Tarjetas from "../../../img/payments/Tarjetas.jpg";
+import Banktransfer from "../../../img/payments/Bank_transfer.jpg";
+import Agencias from "../../../img/payments/Betcris_Agencias.png";
 
 const imagesDepositos = [
   {
@@ -116,7 +116,7 @@ const DepPa = () => {
                         {selectedImage.title}
                       </h3>
                       <hr></hr>
-                      <p className=" mt-4 mb-4 text-sm text-justify w-full">
+                      <p className=" mt-4 mb-4 text-xs text-justify w-full">
                         <p>{selectedImage.descriptionTitle}</p>
                         <br></br>
                         {selectedImage.description}

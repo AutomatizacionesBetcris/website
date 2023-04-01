@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import LogoBC from "../../../img/logo-blanco.png";
-import Tarjetas from "../../../img/Tarjetas.jpg";
-import Banktransfer from "../../../img/Bank_transfer.jpg";
-import Agencias from "../../../img/Betcris_Agencias.png";
-import AstroPay from "../../../img/Astropay.jpg";
-import Skrill from "../../../img/Skrill.jpg";
-import Neteller from "../../../img/Neteller.jpg";
-import EcoPayz from "../../../img/Ecopayz.jpg";
-import Skrill1Tap from "../../../img/Skril_tap.jpg";
+import Tarjetas from "../../../img/payments/Tarjetas.jpg";
+import Banktransfer from "../../../img/payments/Bank_transfer.jpg";
+import Agencias from "../../../img/payments/Betcris_Agencias.png";
+import AstroPay from "../../../img/payments/Astropay.jpg";
+import Skrill from "../../../img/payments/Skrill.jpg";
+import Neteller from "../../../img/payments/Neteller.jpg";
+import EcoPayz from "../../../img/payments/Ecopayz.jpg";
+import Skrill1Tap from "../../../img/payments/Skril_tap.jpg";
+import TigoMoney from "../../../img/payments/Tigo_money.jpg";
+import TigoMoneyWallet from "../../../img/payments/Tigo_money_wallet.jpg";
 
 const imagesDepositos = [
   {
@@ -98,6 +100,28 @@ const imagesDepositos = [
     description:
       "Ofrecemos una variedad de formas rápidas y convenientes para depositar fondos en tu cuenta, incluyendo depósitos en las Agencias oficiales de Betcris. Para hacer tu depósito, solo debes presentar tu identificación y número de cuenta, junto con los fondos a depositar. Contacta a tu Agencia Betcris más cercana para confirmar los montos mínimos y máximos por transacción, así como cualquier detalle adicional que necesites, ya que pueden variar según el país.",
   },
+  {
+    img: TigoMoney,
+    title: "TIGO MONEY",
+    url: "https://get.betcris.help/hc/es-419/articles/14169356381585-Tigo-Money-",
+    min: "$2.00",
+    max: "$600.00",
+    time: "Inmediato",
+    descriptionTitle: "Dentro de la tienda de Tigo Money",
+    description:
+      "Solicita un pago o depósito a Betcris, seguido proporciona tu número de cuenta, por último indica y entrega el monto que deseas depositar.",
+  },
+  {
+    img: TigoMoneyWallet,
+    title: "TIGO MONEY WALLET",
+    url: "https://get.betcris.help/hc/es-419/articles/14169756988433-Tigo-Money-Wallet",
+    min: "$2.00",
+    max: "$600.00",
+    time: "Inmediato",
+    descriptionTitle: "Desde el Cajero de Betcris:",
+    description:
+      "Haz clic en 'Tigo Money Wallet', seguido ingresa el monto que deseas depositar, continúa el proceso en la página a la que te redirige el sistema, seguido ingresa tu número de teléfono registrado en Tigo Money Wallet, confirma el depósito por medio del código enviado a tu teléfono, y por último ingresa el código en la plataforma de Tigo Money para completar la transacción.",
+  },
 ];
 
 const DepHn = () => {
@@ -140,7 +164,7 @@ const DepHn = () => {
                         {selectedImage.title}
                       </h3>
                       <hr></hr>
-                      <p className=" mt-4 mb-4 text-sm text-justify w-full">
+                      <p className=" mt-4 mb-4 text-xs text-justify w-full">
                         <p>{selectedImage.descriptionTitle}</p>
                         <br></br>
                         {selectedImage.description}

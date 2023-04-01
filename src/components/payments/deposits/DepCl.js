@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import LogoBC from "../../../img/logo-blanco.png";
-import Tarjetas from "../../../img/Tarjetas.jpg";
-import AstroPay from "../../../img/Astropay.jpg";
-import SafetyPay from "../../../img/SafetyPay.jpg";
-import Mach from "../../../img/Mach.jpg";
-import Skrill from "../../../img/Skrill.jpg";
-import Neteller from "../../../img/Neteller.jpg";
-import EcoPayz from "../../../img/Ecopayz.jpg";
-import Skrill1Tap from "../../../img/Skril_tap.jpg";
-import BankTransferCL from "../../../img/Bank_transfer_CL.jpg";
+import Tarjetas from "../../../img/payments/Tarjetas.jpg";
+import AstroPay from "../../../img/payments/Astropay.jpg";
+import SafetyPay from "../../../img/payments/SafetyPay.jpg";
+import Mach from "../../../img/payments/Mach.jpg";
+import Skrill from "../../../img/payments/Skrill.jpg";
+import Neteller from "../../../img/payments/Neteller.jpg";
+import EcoPayz from "../../../img/payments/Ecopayz.jpg";
+import Skrill1Tap from "../../../img/payments/Skril_tap.jpg";
+import BankTransferCL from "../../../img/payments/Bank_transfer_CL.jpg";
+import WebPay from "../../../img/payments/Webpay_plus.jpg";
 
 const imagesDepositos = [
   {
@@ -110,6 +111,17 @@ const imagesDepositos = [
     description:
       "Haz clic en 'Transferencia Bancaria', seguido elige el banco donde vas a depositar, luego selecciona la cuenta y el destinatario para realizar el depósito, completa los detalles requeridos y adjunta una fotografía del depósito realizado en el banco o en línea y por último haz clic en 'Reportar depósito'.",
   },
+  {
+    img: WebPay,
+    title: "WEBPAY",
+    url: "https://get.betcris.help/hc/es-419/articles/14170668409489-WebPay-",
+    min: "$10.00",
+    max: "$250.00",
+    time: "Inmediato",
+    descriptionTitle: "Desde el Cajero de Betcris:",
+    description:
+      "Haz clic en 'WebPay', seguido ingresa el monto que deseas depositar y haz clic en 'Depositar', continua el proceso en la página a la que te redirige el sistema, luego elige la opción de pago de tu preferencia, ya sea tarjeta de crédito, de débito o Onepay y por último valida tu pago.",
+  },
 ];
 
 const DepCl = () => {
@@ -152,7 +164,7 @@ const DepCl = () => {
                         {selectedImage.title}
                       </h3>
                       <hr></hr>
-                      <p className=" mt-4 mb-4 text-sm text-justify w-full">
+                      <p className=" mt-4 mb-4 text-xs text-justify w-full">
                         <p>{selectedImage.descriptionTitle}</p>
                         <br></br>
                         {selectedImage.description}

@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import LogoBC from "../../../img/logo-blanco.png";
-import Tarjetas from "../../../img/Tarjetas.jpg";
-import Banktransfer from "../../../img/Bank_transfer.jpg";
-import Agencias from "../../../img/Betcris_Agencias.png";
-import AstroPay from "../../../img/Astropay.jpg";
-import SafetyPay from "../../../img/SafetyPay.jpg";
-import Skrill from "../../../img/Skrill.jpg";
-import Neteller from "../../../img/Neteller.jpg";
-import EcoPayz from "../../../img/Ecopayz.jpg";
-import Skrill1Tap from "../../../img/Skril_tap.jpg";
+import Tarjetas from "../../../img/payments/Tarjetas.jpg";
+import Banktransfer from "../../../img/payments/Bank_transfer.jpg";
+import Agencias from "../../../img/payments/Betcris_Agencias.png";
+import AstroPay from "../../../img/payments/Astropay.jpg";
+import SafetyPay from "../../../img/payments/SafetyPay.jpg";
+import Skrill from "../../../img/payments/Skrill.jpg";
+import Neteller from "../../../img/payments/Neteller.jpg";
+import EcoPayz from "../../../img/payments/Ecopayz.jpg";
+import Skrill1Tap from "../../../img/payments/Skril_tap.jpg";
 
 const imagesDepositos = [
   {
@@ -152,7 +152,7 @@ const DepSv = () => {
                         {selectedImage.title}
                       </h3>
                       <hr></hr>
-                      <p className=" mt-4 mb-4 text-sm text-justify w-full">
+                      <p className=" mt-4 mb-4 text-xs text-justify w-full">
                         <p>{selectedImage.descriptionTitle}</p>
                         <br></br>
                         {selectedImage.description}

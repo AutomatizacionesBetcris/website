@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import LogoBC from "../../../img/logo-blanco.png";
-import Tarjetas from "../../../img/Tarjetas.jpg";
-import Banktransfer from "../../../img/Bank_transfer.jpg";
-import AstroPay from "../../../img/Astropay.jpg";
-import SafetyPay from "../../../img/SafetyPay.jpg";
-import PayCash from "../../../img/PayCash.jpg";
-import Agencias from "../../../img/Betcris_Agencias.png";
-import Skrill from "../../../img/Skrill.jpg";
-import Neteller from "../../../img/Neteller.jpg";
-import SkrillTap from "../../../img/Skril_tap.jpg";
+import Tarjetas from "../../../img/payments/Tarjetas.jpg";
+import Banktransfer from "../../../img/payments/Bank_transfer.jpg";
+import AstroPay from "../../../img/payments/Astropay.jpg";
+import SafetyPay from "../../../img/payments/SafetyPay.jpg";
+import PayCash from "../../../img/payments/PayCash.jpg";
+import Agencias from "../../../img/payments/Betcris_Agencias.png";
+import Skrill from "../../../img/payments/Skrill.jpg";
+import Neteller from "../../../img/payments/Neteller.jpg";
+import SkrillTap from "../../../img/payments/Skril_tap.jpg";
+import Fri from "../../../img/payments/Fri.jpg";
 
 const imagesDepositos = [
   {
@@ -110,6 +111,17 @@ const imagesDepositos = [
     description:
       "Ofrecemos una variedad de formas rápidas y convenientes para depositar fondos en tu cuenta, incluyendo depósitos en las Agencias oficiales de Betcris. Para hacer tu depósito, solo debes presentar tu identificación y número de cuenta, junto con los fondos a depositar. Contacta a tu Agencia Betcris más cercana para confirmar los montos mínimos y máximos por transacción, así como cualquier detalle adicional que necesites, ya que pueden variar según el país.",
   },
+  {
+    img: Fri,
+    title: "FRI",
+    url: "https://get.betcris.help/hc/es-419/articles/14170452651537-Fri",
+    min: "$6.00",
+    max: "$1,270.00",
+    time: "Inmediato",
+    descriptionTitle: "Desde el Cajero de Betcris:",
+    description:
+      "Haz clic en 'Fri', seguido ingresa el monto que deseas depositar, el número de teléfono registrado en Fri y haz clic en 'Depositar', genera la orden de depósito, luego ingresa a tu billetera Fri y valida la orden de Betcris, y por último confirma la orden de depósito para acreditar tus fondos.",
+  },
 ];
 
 const DepGt = () => {
@@ -152,7 +164,7 @@ const DepGt = () => {
                         {selectedImage.title}
                       </h3>
                       <hr></hr>
-                      <p className=" mt-4 mb-4 text-sm text-justify w-full">
+                      <p className=" mt-4 mb-4 text-xs text-justify w-full">
                         <p>{selectedImage.descriptionTitle}</p>
                         <br></br>
                         {selectedImage.description}
