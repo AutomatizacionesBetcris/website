@@ -17,7 +17,7 @@ const DoDesktopC = () => {
             <span className="text-white text-base font-bold">¡Recuerda!</span>
           </p>
           <p>
-            <span className="text-white text-xs text-center">
+            <span className="text-slate-200 text-xs text-center">
               Una vez hecho este proceso no se podrá habilitar la cuenta hasta
               que dicha Autoexclusión haya terminado.
             </span>
@@ -31,7 +31,7 @@ const DoDesktopC = () => {
           />
         </div>
 
-        <div className=" text-white text-xs text-justify p-5 m-5 bg-sky-900 bg-opacity-20 rounded-2xl shadow-lg">
+        <div className=" text-slate-200 text-xs text-justify p-5 m-5 bg-sky-900 bg-opacity-20 rounded-2xl shadow-lg">
           <p className="mb-3">
             En Betcris nos preocupamos por tu bienestar, si sientes que podrías
             estar en riesgo de desarrollar un problema de juego, o estás seguro
