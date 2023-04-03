@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/website/static/css/main.466417bb.css",
-    "main.js": "/website/static/js/main.75d2c88f.js",
+    "main.css": "/website/static/css/main.ac212e34.css",
+    "main.js": "/website/static/js/main.d7ebf9dd.js",
     "static/media/DO_desktop_corto.gif": "/website/static/media/DO_desktop_corto.80eb8aa8975f0d813909.gif",
     "static/media/PA_desktop_corto.gif": "/website/static/media/PA_desktop_corto.a28413936ee485df3cdb.gif",
     "static/media/MX_desktop_corto.gif": "/website/static/media/MX_desktop_corto.2b6bc38c7406530519d6.gif",
     "static/media/PA_movil_largo.gif": "/website/static/media/PA_movil_largo.5ed19f29724d86560f1e.gif",
+    "static/media/DO movil_largo.gif": "/website/static/media/DO movil_largo.640225caf8e5b0f069d8.gif",
     "static/media/MX_mobile_largo.gif": "/website/static/media/MX_mobile_largo.777f0a12d21495bee061.gif",
     "static/media/PA_movil_corto.gif": "/website/static/media/PA_movil_corto.0afaf8efafad7d904404.gif",
     "static/media/PA_desktop_largo.gif": "/website/static/media/PA_desktop_largo.e2e138b6d696ac0279fc.gif",
@@ -46,11 +47,11 @@
     "static/media/Neteller.jpg": "/website/static/media/Neteller.211fa1bf66f769e3dfba.jpg",
     "static/media/Betcris_Agencias.png": "/website/static/media/Betcris_Agencias.537a99d9d474615f008b.png",
     "index.html": "/website/index.html",
-    "main.466417bb.css.map": "/website/static/css/main.466417bb.css.map",
-    "main.75d2c88f.js.map": "/website/static/js/main.75d2c88f.js.map"
+    "main.ac212e34.css.map": "/website/static/css/main.ac212e34.css.map",
+    "main.d7ebf9dd.js.map": "/website/static/js/main.d7ebf9dd.js.map"
   },
   "entrypoints": [
-    "static/css/main.466417bb.css",
-    "static/js/main.75d2c88f.js"
+    "static/css/main.ac212e34.css",
+    "static/js/main.d7ebf9dd.js"
   ]
 }
