@@ -31,16 +31,9 @@ const MxDesktopL = () => {
           />
         </div>
 
-        <div className=" text-slate-200 text-xs text-justify p-5 m-5 bg-sky-900 bg-opacity-20 rounded-2xl shadow-lg">
+        <div className=" text-slate-200 text-xs p-5 m-5 bg-sky-900 bg-opacity-20 rounded-2xl shadow-lg">
           <p className="mb-3">
-            En Betcris nos preocupamos por tu bienestar, si sientes que podrías
-            estar en riesgo de desarrollar un problema de juego, o estás seguro
-            de que actualmente tienes un problema de juego, considera usar
-            nuestra función de autoexclusión, la cual te impide usar nuestros
-            servicios durante un período específico de tiempo.
-          </p>
-          <p className="mb-3">
-            Toma en cuenta lo siguiente:
+            <strong>Toma en cuenta lo siguiente:</strong>
             <ul>
               <li>
                 <strong>- </strong>Las autoexclusiones son irreversibles durante
@@ -54,7 +47,7 @@ const MxDesktopL = () => {
             </ul>
           </p>
           <p className="mb-3">
-            Sigue estos pasos:
+            <strong>Sigue estos pasos:</strong>
             <ul>
               <li>
                 <strong>1- </strong>Ingresa a tu cuenta Betcris (el proceso se
@@ -62,14 +55,11 @@ const MxDesktopL = () => {
                 misma.
               </li>
               <li>
-                <strong>2- </strong>Usuarios móviles: clic en ícono de persona y
-                luego opción de 'Juego Responsable' (Icono de una mano).
+                <strong>2- </strong>Una vez dentro de tu cuenta; desplazate
+                hacia abajo (parte inferior de la pantalla).
               </li>
               <li>
-                <strong>3- </strong>Por último clic en 'Autoexclusión' Usuario
-                de desktop/escritorio: en la parte superior de la pantalla: clic
-                en la opción de 'Juego Responsable' (Icono de una mano) y verás
-                la opción de 'Autoexclusión'.
+                <strong>3- </strong>Por último haz clic en 'Autoexclusión'.
               </li>
             </ul>
           </p>
@@ -77,6 +67,15 @@ const MxDesktopL = () => {
             Desde ahí podrás definir el tiempo que desees para cerrar tu cuenta
             ya sea por unos meses o de manera 'indefinida'.
           </p>
+          <button className=" text-center text-xs font-semibold w-full h-8 shadow-3xl shadow-black rounded-lg bg-green-600 hover:bg-green-700">
+            <a
+              href="https://ayuda.betcris.mx/guia-de-usuario/legal/juego-responsable/juego-responsable/"
+              target="_link"
+              rel="noopener noreferrer"
+            >
+              Ver más información aquí
+            </a>
+          </button>
         </div>
       </div>
     </div>
