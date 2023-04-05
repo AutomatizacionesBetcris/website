@@ -26,7 +26,7 @@ const imagesRetiros = [
     url: "https://get.betcris.help/hc/es-419/articles/360002245278-Transferencia-bancaria-local",
     min: "$1.00",
     max: "$2,500.00",
-    time: "7 días",
+    time: "Una vez aprobado, se acredita de inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
       "Haz clic en 'Transferencia Bancaria', seguido ingresa el monto del retiro, luego completa la información de tu cuenta bancaria la primera vez (estará guardada la próxima vez) y por último haz clic en 'Retirar'.",

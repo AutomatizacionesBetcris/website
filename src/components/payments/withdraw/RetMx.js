@@ -26,7 +26,7 @@ const imagesRetiros = [
     url: "https://ayuda.betcris.mx/guia-de-usuario/centro-de-ayuda/retiros/transferencia-bancaria/",
     min: "MXN 198.00",
     max: "MXN 197,500.00",
-    time: "7 días",
+    time: "Una vez aprobado, se acredita de inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
       "Haz clic en 'Transferencia Bancaria', seguido ingresa el monto del retiro, luego completa la información de tu cuenta bancaria la primera vez (estará guardada la próxima vez) y por último haz clic en 'Retirar'.",
