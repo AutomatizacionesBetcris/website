@@ -28,22 +28,22 @@ import RETCA from "./components/payments/withdraw/RetCa";
 
 // Autoexclusion
 // Mexico
-import MXMOBILEL from "./components/payments/autoexclusion/MxMobileL";
-import MXMOBILEC from "./components/payments/autoexclusion/MxMobileC";
-import MXDESKTOPL from "./components/payments/autoexclusion/MxDesktopL";
-import MXDESKTOPC from "./components/payments/autoexclusion/MxDesktopC";
+import MXMOBILEL from "./components/autoexclusion/MxMobileL";
+import MXMOBILEC from "./components/autoexclusion/MxMobileC";
+import MXDESKTOPL from "./components/autoexclusion/MxDesktopL";
+import MXDESKTOPC from "./components/autoexclusion/MxDesktopC";
 
 // Panama
-import PAMOBILEL from "./components/payments/autoexclusion/PaMobileL";
-import PAMOBILEC from "./components/payments/autoexclusion/PaMobileC";
-import PADESKTOPL from "./components/payments/autoexclusion/PaDesktopL";
-import PADESKTOPC from "./components/payments/autoexclusion/PaDesktopC";
+import PAMOBILEL from "./components/autoexclusion/PaMobileL";
+import PAMOBILEC from "./components/autoexclusion/PaMobileC";
+import PADESKTOPL from "./components/autoexclusion/PaDesktopL";
+import PADESKTOPC from "./components/autoexclusion/PaDesktopC";
 
 //Rep. Dominicana
-import DOMOBILEL from "./components/payments/autoexclusion/DoMobileL";
-import DOMOBILEC from "./components/payments/autoexclusion/DoMobileC";
-import DODESKTOPL from "./components/payments/autoexclusion/DoDesktopL";
-import DODESKTOPC from "./components/payments/autoexclusion/DoDesktopC";
+import DOMOBILEL from "./components/autoexclusion/DoMobileL";
+import DOMOBILEC from "./components/autoexclusion/DoMobileC";
+import DODESKTOPL from "./components/autoexclusion/DoDesktopL";
+import DODESKTOPC from "./components/autoexclusion/DoDesktopC";
 
 // Autoexclusion
 

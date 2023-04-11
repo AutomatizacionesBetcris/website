@@ -1,8 +1,7 @@
-import React from "react";
-import LogoBC from "../../../img/logo-blanco.png";
-import Gif from "../../../img/autoexclusionImg/PA_movil_corto.gif";
+import LogoBC from "../../img/logo-blanco.png";
+import Gif from "../../img/autoexclusionImg/PA_desktop_corto.gif";
 
-const PaMobileC = () => {
+const PaDesktopC = () => {
   return (
     <div className="min-h-screen">
       {/* navbar */}
@@ -82,4 +81,4 @@ const PaMobileC = () => {
   );
 };
 
-export default PaMobileC;
+export default PaDesktopC;

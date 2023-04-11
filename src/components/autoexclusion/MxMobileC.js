@@ -1,8 +1,7 @@
-import React from "react";
-import LogoBC from "../../../img/logo-blanco.png";
-import Gif from "../../../img/autoexclusionImg/PA_desktop_largo.gif";
+import LogoBC from "../../img/logo-blanco.png";
+import Gif from "../../img/autoexclusionImg/MX_mobile_corto.gif";
 
-const PaDesktopL = () => {
+const MxMobileC = () => {
   return (
     <div className="min-h-screen">
       {/* navbar */}
@@ -69,7 +68,7 @@ const PaDesktopL = () => {
           </p>
           <button className=" text-center text-xs font-semibold w-full h-8 shadow-3xl shadow-black rounded-lg bg-green-600 hover:bg-green-700">
             <a
-              href="https://ayuda.betcris.pa/guia-de-usuario/legal/juego-responsable/autoexclusion/"
+              href="https://ayuda.betcris.mx/guia-de-usuario/legal/juego-responsable/juego-responsable/"
               target="_link"
               rel="noopener noreferrer"
             >
@@ -82,4 +81,4 @@ const PaDesktopL = () => {
   );
 };
 
-export default PaDesktopL;
+export default MxMobileC;

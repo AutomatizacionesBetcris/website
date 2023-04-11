@@ -1,8 +1,7 @@
-import React from "react";
-import LogoBC from "../../../img/logo-blanco.png";
-import Gif from "../../../img/autoexclusionImg/MX_desktop_largo.gif";
+import LogoBC from "../../img/logo-blanco.png";
+import Gif from "../../img/autoexclusionImg/MX_mobile_largo.gif";
 
-const MxDesktopL = () => {
+const MxMobileL = () => {
   return (
     <div className="min-h-screen">
       {/* navbar */}
@@ -82,4 +81,4 @@ const MxDesktopL = () => {
   );
 };
 
-export default MxDesktopL;
+export default MxMobileL;

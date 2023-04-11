@@ -1,8 +1,7 @@
-import React from "react";
-import LogoBC from "../../../img/logo-blanco.png";
-import Gif from "../../../img/autoexclusionImg/DO_desktop_corto.gif";
+import LogoBC from "../../img/logo-blanco.png";
+import Gif from "../../img/autoexclusionImg/DO movil_largo.gif";
 
-const DoDesktopC = () => {
+const DoMobileL = () => {
   return (
     <div className="min-h-screen">
       {/* navbar */}
@@ -82,4 +81,4 @@ const DoDesktopC = () => {
   );
 };
 
-export default DoDesktopC;
+export default DoMobileL;

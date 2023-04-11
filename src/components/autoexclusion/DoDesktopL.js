@@ -1,6 +1,5 @@
-import React from "react";
-import LogoBC from "../../../img/logo-blanco.png";
-import Gif from "../../../img/autoexclusionImg/DO_desktop_largo.gif";
+import LogoBC from "../../img/logo-blanco.png";
+import Gif from "../../img/autoexclusionImg/DO_desktop_largo.gif";
 
 const DoDesktopL = () => {
   return (

@@ -1,8 +1,7 @@
-import React from "react";
-import LogoBC from "../../../img/logo-blanco.png";
-import Gif from "../../../img/autoexclusionImg/PA_movil_largo.gif";
+import LogoBC from "../../img/logo-blanco.png";
+import Gif from "../../img/autoexclusionImg/DO_movil_corto.gif";
 
-const PaMobileL = () => {
+const DoMobileC = () => {
   return (
     <div className="min-h-screen">
       {/* navbar */}
@@ -69,7 +68,7 @@ const PaMobileL = () => {
           </p>
           <button className=" text-center text-xs font-semibold w-full h-8 shadow-3xl shadow-black rounded-lg bg-green-600 hover:bg-green-700">
             <a
-              href="https://ayuda.betcris.pa/guia-de-usuario/legal/juego-responsable/autoexclusion/"
+              href="https://get.betcris.help/hc/es-419/articles/360002666377-Autoexclusi%C3%B3n"
               target="_link"
               rel="noopener noreferrer"
             >
@@ -82,4 +81,4 @@ const PaMobileL = () => {
   );
 };
 
-export default PaMobileL;
+export default DoMobileC;
