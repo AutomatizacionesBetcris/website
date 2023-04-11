@@ -51,7 +51,7 @@ const imagesDepositos = [
     url: "https://get.betcris.help/hc/es-419/articles/360002241437-Transferencias-bancarias",
     min: "$10.00",
     max: "$900.00",
-    time: "Reportarla por el cajero, para que sea aprobado",
+    time: "Una vez aprobados, los fondos se tramitan de forma inmediata a tu cuenta.",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
       "Haz clic en 'Transferencia Bancaria', seguido elige el banco donde vas a depositar, luego selecciona la cuenta y el destinatario para realizar el depósito, completa los detalles requeridos y adjunta una fotografía del depósito realizado en el banco o en línea y por último haz clic en 'Reportar depósito'.",

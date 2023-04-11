@@ -11,7 +11,7 @@ const imagesRetiros = [
     url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/retiros/transferencia-bancaria-local/",
     min: "$10.00",
     max: "$10,000.00",
-    time: "7 días",
+    time: "El tiempo de acreditación varía según el banco receptor.",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description:
       "Haz clic en 'Transferencia Bancaria', seguido ingresa el monto de tu retiro, Completa la información de tu cuenta bancaria para tu primer retiro (tus datos estarán guardados la próxima vez) y por último haz clic en 'Retirar'.",
