@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/website/static/css/main.ac212e34.css",
-    "main.js": "/website/static/js/main.41d95001.js",
+    "main.js": "/website/static/js/main.5ac4edf6.js",
     "static/media/DO_desktop_corto.gif": "/website/static/media/DO_desktop_corto.80eb8aa8975f0d813909.gif",
     "static/media/PA_desktop_corto.gif": "/website/static/media/PA_desktop_corto.a28413936ee485df3cdb.gif",
     "static/media/MX_desktop_corto.gif": "/website/static/media/MX_desktop_corto.2b6bc38c7406530519d6.gif",
@@ -48,10 +48,10 @@
     "static/media/Betcris_Agencias.png": "/website/static/media/Betcris_Agencias.537a99d9d474615f008b.png",
     "index.html": "/website/index.html",
     "main.ac212e34.css.map": "/website/static/css/main.ac212e34.css.map",
-    "main.41d95001.js.map": "/website/static/js/main.41d95001.js.map"
+    "main.5ac4edf6.js.map": "/website/static/js/main.5ac4edf6.js.map"
   },
   "entrypoints": [
     "static/css/main.ac212e34.css",
-    "static/js/main.41d95001.js"
+    "static/js/main.5ac4edf6.js"
   ]
 }
