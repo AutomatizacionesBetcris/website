@@ -1,130 +1,79 @@
 import React, { useState } from "react";
-import { depositDataEn, depositDataEs } from "./DepData";
-import DepMethods from "./DepMethods";
+import { depositDataEn } from "./DepData";
 import LogoBC from "../../../../img/logo-blanco.png";
-import crisEs from "../../../../img/200x200_CRIS_ESP.gif";
-import crisEn from "../../../../img/200x200_CRIS_EN.gif";
 
 const DepMenu = () => {
-  const [showLanguageButtons, setShowLanguageButtons] = useState(true);
-  const [selectedLanguage, setSelectedLanguage] = useState(null);
-  const [selectedCountry, setSelectedCountry] = useState(null);
+  const depositData = depositDataEn;
+  const [selectedCountry, setSelectedCountry] = useState(""); // Estado para manejar la selección de país
 
-  const handleLanguageButtonClick = (language) => {
-    setSelectedLanguage(language);
-    setShowLanguageButtons(false);
-  };
-
-  const handleCountryButtonClick = (country) => {
+  // Función para manejar la selección de país
+  const handleCountrySelect = (country) => {
     setSelectedCountry(country);
   };
 
-  const handleBackToLanguageSelection = () => {
-    setShowLanguageButtons(true); // Mostrar nuevamente los botones de idioma
-    setSelectedLanguage(null); // Limpiar la selección de idioma
-    setSelectedCountry(null); // Limpiar la selección de país
-  };
-
-  const handleBackToCountrySelection = () => {
-    setSelectedCountry(null); // Limpiar la selección de país
+  // Función para manejar el botón de volver
+  const handleBackButtonClick = () => {
+    setSelectedCountry("");
   };
 
   return (
     <div>
-      <div className="min-h-screen">
+      <div>
         {/* navbar */}
         <nav className="flex flex-col border top-0 z-50 items-center justify-center h-20 bg-sky-800">
           <img src={LogoBC} alt="Logo" className="h-12" />
         </nav>
-        {showLanguageButtons && (
-          <div className="flex m-10 mt-16 h-64 justify-center items-center lg:m-64 bg-sky-900 bg-opacity-20 rounded-2xl shadow-lg ">
-            <div className="flex flex-col gap-5 items-center ">
-              <button
-                className="border h-10 w-40 lg:h-16 lg:w-96 rounded-2xl"
-                onClick={() => handleLanguageButtonClick("en")}
-              >
-                English
-              </button>
 
-              <button
-                className="border h-10 w-40 lg:h-16 lg:w-96 rounded-2xl"
-                onClick={() => handleLanguageButtonClick("es")}
-              >
-                Español
-              </button>
+        {/* Seleccion de pais */}
+        {selectedCountry === "" ? (
+          <div>
+            <div className="text-base text-center mt-10">
+              <h1>Select a country</h1>
+            </div>
+            <div className="grid grid-cols-2 p-5 m-10 gap-5 justify-center items-center lg:m-40 lg:p-10 bg-sky-900 bg-opacity-20 rounded-2xl shadow-lg ">
+              {depositData.map((country) => (
+                <div className="flex justify-center items-center">
+                  <button
+                    key={country.pais}
+                    onClick={() => handleCountrySelect(country.pais)}
+                    className="border h-10 w-28 lg:h-16 lg:w-96 rounded-2xl"
+                  >
+                    {country.pais}
+                  </button>
+                </div>
+              ))}
             </div>
           </div>
-        )}
-        {!showLanguageButtons && selectedLanguage && !selectedCountry && (
-          <div>
-            {selectedLanguage === "en" ? (
-              <div>
-                <h1>Select a country</h1>
-                {depositDataEn.map((country) => (
-                  <button
-                    key={country.pais}
-                    onClick={() => handleCountryButtonClick(country.pais)}
-                  >
-                    {country.pais}
-                  </button>
-                ))}
-                <div>
-                  <button onClick={handleBackToLanguageSelection}>
-                    Back to language selection
-                  </button>
-                </div>
-                <div className="fixed bottom-0 left-0 w-full flex justify-center items-center">
-                  <img src={crisEn} alt="Cris"></img>
-                </div>
-              </div>
-            ) : (
-              <div>
-                <h1>Seleccione un país</h1>
-                {depositDataEs.map((country) => (
-                  <button
-                    key={country.pais}
-                    onClick={() => handleCountryButtonClick(country.pais)}
-                  >
-                    {country.pais}
-                  </button>
-                ))}
-                <div>
-                  <button onClick={handleBackToLanguageSelection}>
-                    Volver a selección de idioma
-                  </button>
-                </div>
-                <div className="fixed bottom-0 left-0 w-full flex justify-center items-center">
-                  <img src={crisEs} alt="Cris"></img>
-                </div>
-              </div>
-            )}
+        ) : (
+          <div className="text-base text-center mt-10">
+            <button
+              onClick={handleBackButtonClick}
+              className="border h-12 w-60 lg:h-16 lg:w-80 rounded-2xl"
+            >
+              Back to country selection
+            </button>
           </div>
         )}
-        {!showLanguageButtons && selectedLanguage && selectedCountry && (
-          <div>
-            {selectedLanguage === "en" ? (
-              <div>
-                <DepMethods
-                  country={selectedCountry}
-                  language={selectedLanguage}
+      </div>
+      <div className="grid grid-cols-3 p-4 sm:grid-cols-5 md:grid-cols-5 lg:grid-cols-5 gap-4 mt-5 sm:m-10 sm:mt-5 lg:m-56 lg:mt-5">
+        {/* Mostrar la información correspondiente del país seleccionado en el grid */}
+        {selectedCountry !== "" &&
+          depositData
+            .find((country) => country.pais === selectedCountry)
+            ?.info.map((image, index) => (
+              <a
+                key={index}
+                href={image.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={image.img}
+                  alt={`Imagen ${index + 1}`}
+                  className="w-38 rounded-lg overflow-hidden border-black shadow-lg hover:scale-110 transition-transform duration-300 ease-out"
                 />
-                <button onClick={handleBackToCountrySelection}>
-                  Back to country selection
-                </button>
-              </div>
-            ) : (
-              <div>
-                <DepMethods
-                  country={selectedCountry}
-                  language={selectedLanguage}
-                />
-                <button onClick={handleBackToCountrySelection}>
-                  Volver a selección de país
-                </button>
-              </div>
-            )}
-          </div>
-        )}
+              </a>
+            ))}
       </div>
     </div>
   );

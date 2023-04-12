@@ -71,6 +71,110 @@ const depositDataEn = [
       },
     ],
   },
+  {
+    pais: "Guatemala",
+    info: [
+      {
+        img: Tarjetas,
+        title: "PIX",
+        url: "https://br.betcris.help/hc/pt-br/articles/360018482278-PIX",
+      },
+
+      {
+        img: EcoPayz,
+        title: "PAY4FUN",
+        url: "https://br.betcris.help/hc/pt-br/articles/360011459957-Pay4Fun",
+      },
+      {
+        img: Tarjetas,
+        title: "PIX",
+        url: "https://br.betcris.help/hc/pt-br/articles/360018482278-PIX",
+      },
+      {
+        img: Tarjetas,
+        title: "PIX",
+        url: "https://br.betcris.help/hc/pt-br/articles/360018482278-PIX",
+      },
+    ],
+  },
+  {
+    pais: "Honduras",
+    info: [
+      {
+        img: Tarjetas,
+        title: "PIX",
+        url: "https://br.betcris.help/hc/pt-br/articles/360018482278-PIX",
+      },
+
+      {
+        img: EcoPayz,
+        title: "PAY4FUN",
+        url: "https://br.betcris.help/hc/pt-br/articles/360011459957-Pay4Fun",
+      },
+      {
+        img: Tarjetas,
+        title: "PIX",
+        url: "https://br.betcris.help/hc/pt-br/articles/360018482278-PIX",
+      },
+      {
+        img: Tarjetas,
+        title: "PIX",
+        url: "https://br.betcris.help/hc/pt-br/articles/360018482278-PIX",
+      },
+    ],
+  },
+  {
+    pais: "Nicaragua",
+    info: [
+      {
+        img: Tarjetas,
+        title: "PIX",
+        url: "https://br.betcris.help/hc/pt-br/articles/360018482278-PIX",
+      },
+
+      {
+        img: EcoPayz,
+        title: "PAY4FUN",
+        url: "https://br.betcris.help/hc/pt-br/articles/360011459957-Pay4Fun",
+      },
+      {
+        img: Tarjetas,
+        title: "PIX",
+        url: "https://br.betcris.help/hc/pt-br/articles/360018482278-PIX",
+      },
+      {
+        img: Tarjetas,
+        title: "PIX",
+        url: "https://br.betcris.help/hc/pt-br/articles/360018482278-PIX",
+      },
+    ],
+  },
+  {
+    pais: "Mexico",
+    info: [
+      {
+        img: Tarjetas,
+        title: "PIX",
+        url: "https://br.betcris.help/hc/pt-br/articles/360018482278-PIX",
+      },
+
+      {
+        img: EcoPayz,
+        title: "PAY4FUN",
+        url: "https://br.betcris.help/hc/pt-br/articles/360011459957-Pay4Fun",
+      },
+      {
+        img: Tarjetas,
+        title: "PIX",
+        url: "https://br.betcris.help/hc/pt-br/articles/360018482278-PIX",
+      },
+      {
+        img: Tarjetas,
+        title: "PIX",
+        url: "https://br.betcris.help/hc/pt-br/articles/360018482278-PIX",
+      },
+    ],
+  },
 ];
 
 // Info en español
