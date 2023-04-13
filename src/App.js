@@ -28,6 +28,8 @@ import RETCA from "./components/payments/withdraw/RetCa";
 // General Payments
 import DEPGENERALEN from "./components/payments/general/deposits/DepMenuEN";
 import DEPGENERALES from "./components/payments/general/deposits/DepMenuES";
+import RETGENERALEN from "./components/payments/general/withdraw/RetMenuEN";
+import RETGENERALES from "./components/payments/general/withdraw/RetMenuES";
 // Payments
 
 // Autoexclusion
@@ -83,6 +85,8 @@ function App() {
         {/* General Payments */}
         <Route path="/depositos/generaldepEN" element={<DEPGENERALEN />} />
         <Route path="/depositos/generaldepES" element={<DEPGENERALES />} />
+        <Route path="/retiros/generalretEN" element={<RETGENERALEN />} />
+        <Route path="/retiros/generalretES" element={<RETGENERALES />} />
         {/* Payments */}
 
         {/* Autoexclusion */}

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { depositDataEs } from "./DepData";
+import { retDataEs } from "./RetData";
 import LogoBC from "../../../../img/logo-blanco.png";
 
-const DepMenuES = () => {
-  const depositData = depositDataEs;
+const RetMenuES = () => {
+  const retData = retDataEs;
   const [selectedCountry, setSelectedCountry] = useState(""); // Estado para manejar la selección de país
 
   // Función para manejar la selección de país
@@ -33,7 +33,7 @@ const DepMenuES = () => {
               </div>
             </div>
             <div className="grid grid-cols-2 p-5 m-5 gap-5 justify-center items-center lg:grid-cols-4 lg:m-6 lg:p-10 bg-sky-900 bg-opacity-20 rounded-2xl shadow-black shadow-md ">
-              {depositData.map((country) => (
+              {retData.map((country) => (
                 <div className="flex justify-center items-center">
                   <button
                     key={country.pais}
@@ -71,9 +71,8 @@ const DepMenuES = () => {
 
                 <img
                   src={
-                    depositData.find(
-                      (country) => country.pais === selectedCountry
-                    )?.flag
+                    retData.find((country) => country.pais === selectedCountry)
+                      ?.flag
                   }
                   alt={`Flag of ${selectedCountry}`}
                   className="h-8 w-10 rounded-lg md:h-10 md:w-12 lg:h-12 lg:w-14"
@@ -86,7 +85,7 @@ const DepMenuES = () => {
       <div className="grid grid-cols-4 p-4 lg:grid-cols-6 gap-4 mt-5 sm:m-10 sm:mt-5 lg:m-56 lg:mt-5">
         {/* Mostrar la información correspondiente del país seleccionado en el grid */}
         {selectedCountry !== "" &&
-          depositData
+          retData
             .find((country) => country.pais === selectedCountry)
             ?.info.map((image, index) => (
               <a
@@ -107,4 +106,4 @@ const DepMenuES = () => {
   );
 };
 
-export default DepMenuES;
+export default RetMenuES;
