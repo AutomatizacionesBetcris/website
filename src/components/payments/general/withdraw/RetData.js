@@ -144,7 +144,7 @@ const retDataEn = [
     ],
   },
   {
-    pais: "Perú",
+    pais: "Peru",
     flag: peru,
     info: [
       {
@@ -185,7 +185,7 @@ const retDataEn = [
     ],
   },
   {
-    pais: "República Dominicana",
+    pais: "Dominican Republic",
     flag: repdominicana,
     info: [
       {
