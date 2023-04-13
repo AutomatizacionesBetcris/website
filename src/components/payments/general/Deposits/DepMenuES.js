@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { depositDataEn } from "./DepData";
+import { depositDataEs } from "./DepData";
 import LogoBC from "../../../../img/logo-blanco.png";
 
-const DepMenu = () => {
-  const depositData = depositDataEn;
+const DepMenuES = () => {
+  const depositData = depositDataEs;
   const [selectedCountry, setSelectedCountry] = useState(""); // Estado para manejar la selección de país
 
   // Función para manejar la selección de país
@@ -29,10 +29,10 @@ const DepMenu = () => {
           <div>
             <div className="p-5 m-5 bg-sky-900 bg-opacity-20 rounded-2xl shadow-black shadow-sm">
               <div className="text-sm lg:text-base text-white text-center">
-                <h1>SELECT A COUNTRY</h1>
+                <h1>Por favor, selecciona tu país</h1>
               </div>
             </div>
-            <div className="grid grid-cols-3 p-5 m-5 gap-5 justify-center items-center lg:grid-cols-3 lg:m-6 lg:p-10 bg-sky-900 bg-opacity-20 rounded-2xl shadow-black shadow-md ">
+            <div className="grid grid-cols-2 p-5 m-5 gap-5 justify-center items-center lg:grid-cols-4 lg:m-6 lg:p-10 bg-sky-900 bg-opacity-20 rounded-2xl shadow-black shadow-md ">
               {depositData.map((country) => (
                 <div className="flex justify-center items-center">
                   <button
@@ -66,7 +66,7 @@ const DepMenu = () => {
                       clipRule="evenodd"
                     />
                   </svg>
-                  BACK
+                  VOLVER
                 </button>
 
                 <img
@@ -107,4 +107,4 @@ const DepMenu = () => {
   );
 };
 
-export default DepMenu;
+export default DepMenuES;
