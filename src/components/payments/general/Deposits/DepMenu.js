@@ -48,15 +48,15 @@ const DepMenu = () => {
           </div>
         ) : (
           <div className="text-sm lg:text-base text-center mt-5">
-            <div className="p-5 m-5 bg-sky-900 bg-opacity-20 rounded-2xl shadow-black shadow-sm">
-              <div className="flex text-sm lg:text-base text-white justify-between">
+            <div className="p-3 m-4 bg-sky-900 bg-opacity-20 rounded-2xl shadow-black shadow-sm">
+              <div className="flex text-xs lg:text-base text-white justify-between">
                 <button
                   onClick={handleBackButtonClick}
                   className="flex w-24 items-center text-white hover:scale-110 transition-transform duration-300 ease-out hover:text-gray-300 hover:underline"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 ml-2 mr-2"
+                    className="h-4 w-4 ml-2 mr-2"
                     viewBox="0 0 20 20"
                     fill="currentColor"
                   >
@@ -76,14 +76,14 @@ const DepMenu = () => {
                     )?.flag
                   }
                   alt={`Flag of ${selectedCountry}`}
-                  className="h-10 w-12 rounded-lg md:h-10 md:w-12 lg:h-12 lg:w-14"
+                  className="h-8 w-10 rounded-lg md:h-10 md:w-12 lg:h-12 lg:w-14"
                 />
               </div>
             </div>
           </div>
         )}
       </div>
-      <div className="grid grid-cols-3 p-4 sm:grid-cols-5 md:grid-cols-5 lg:grid-cols-5 gap-4 mt-5 sm:m-10 sm:mt-5 lg:m-56 lg:mt-5">
+      <div className="grid grid-cols-4 p-4 lg:grid-cols-6 gap-4 mt-5 sm:m-10 sm:mt-5 lg:m-56 lg:mt-5">
         {/* Mostrar la información correspondiente del país seleccionado en el grid */}
         {selectedCountry !== "" &&
           depositData
