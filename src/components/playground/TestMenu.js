@@ -69,9 +69,9 @@ const TestMenu = () => {
             {selectedCountry !== "" && (
               <div className="mt-5 m-5">
                 <div className="flex text-sm lg:text-lg text-white">
-                  <p className="lg:mr-96 ml-6 lg:ml-5">Metodo</p>
-                  <p className="lg:mr-96 ml-7 lg:ml-1">Minimo</p>
-                  <p className="lg:mr-96 ml-7 lg:ml-1">Maximo</p>
+                  <p className="lg:mr-96 ml-7 lg:ml-5">Metodo</p>
+                  <p className="lg:mr-96 ml-12 lg:ml-1">Minimo</p>
+                  <p className="lg:mr-96 ml-12 lg:ml-1">Maximo</p>
                 </div>
 
                 {/* Mostrar la información correspondiente del país seleccionado en el acordeón */}
