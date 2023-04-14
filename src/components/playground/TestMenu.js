@@ -4,6 +4,7 @@ import { testdata } from "./DataTest";
 const TestMenu = () => {
   const [selectedTab, setSelectedTab] = useState("retiros");
   const [selectedCountry, setSelectedCountry] = useState("");
+  const [isAccordionOpen, setIsAccordionOpen] = useState(false);
 
   const handleTabChange = (tab) => {
     setSelectedCountry(""); // Agregar esta línea para resetear el valor seleccionado del dropdown
@@ -12,6 +13,7 @@ const TestMenu = () => {
 
   const handleCountryChange = (event) => {
     setSelectedCountry(event.target.value);
+    setIsAccordionOpen(false); // Cerrar el acordeón al cambiar de país
   };
 
   return (
@@ -64,26 +66,50 @@ const TestMenu = () => {
                 ))}
               </select>
             </div>
-            <div className="grid grid-cols-4 p-4 lg:grid-cols-6 gap-4 mt-5 sm:m-10 sm:mt-5 lg:m-56 lg:mt-5">
-              {/* Mostrar la información correspondiente del país seleccionado en el grid */}
-              {selectedCountry !== "" &&
-                testdata
+            {selectedCountry !== "" && (
+              <div className="mt-5 m-5">
+                <div className="flex text-sm lg:text-lg text-white">
+                  <p className="lg:mr-96 ml-6 lg:ml-5">Metodo</p>
+                  <p className="lg:mr-96 ml-7 lg:ml-1">Minimo</p>
+                  <p className="lg:mr-96 ml-7 lg:ml-1">Maximo</p>
+                </div>
+
+                {/* Mostrar la información correspondiente del país seleccionado en el acordeón */}
+                {testdata
                   .find((country) => country.pais === selectedCountry)
                   ?.info.map((image, index) => (
-                    <a
-                      key={index}
-                      href={image.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <img
-                        src={image.img}
-                        alt={`Imagen ${index + 1}`}
-                        className="w-38 rounded-lg overflow-hidden border-black shadow-lg hover:scale-110 transition-transform duration-300 ease-out"
-                      />
-                    </a>
+                    <div key={index}>
+                      <button
+                        className="flex items-center rounded-xl justify-between w-full h-16 bg-gray-200 text-black p-4 text-left cursor-pointer"
+                        onClick={() => setIsAccordionOpen(index)}
+                      >
+                        <img
+                          src={image.img}
+                          alt={`Imagen del Método de Pago ${index + 1}`}
+                          className="w-14 h-14 ml-2 rounded-lg overflow-hidden border-black shadow-lg hover:scale-110 transition-transform duration-300 ease-out"
+                        />
+                        <p>{image.min}</p>
+
+                        <p>{image.max}</p>
+                        <div className=" font-bold">
+                          <span>
+                            {isAccordionOpen === index ? "Cerrar" : "Abrir"}{" "}
+                          </span>
+                        </div>
+                      </button>
+                      {isAccordionOpen === index && (
+                        <div className="p-4 bg-white rounded-lg">
+                          <p>
+                            Las retiradas mediante tarjeta de débito no se
+                            encuentran disponibles. Para más información, vaya a
+                            la sección de 'Transferencia bancaria'.
+                          </p>
+                        </div>
+                      )}
+                    </div>
                   ))}
-            </div>
+              </div>
+            )}
           </div>
         ) : null}
       </div>
