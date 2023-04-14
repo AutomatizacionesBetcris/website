@@ -51,7 +51,8 @@ import DOMOBILEC from "./components/autoexclusion/DoMobileC";
 import DODESKTOPL from "./components/autoexclusion/DoDesktopL";
 import DODESKTOPC from "./components/autoexclusion/DoDesktopC";
 
-// Autoexclusion
+// Playground
+import Playground from "./components/playground/TestMenu";
 
 function App() {
   return (
@@ -108,7 +109,8 @@ function App() {
         <Route path="/autoexclusion/dodesktoplargo" element={<DODESKTOPL />} />
         <Route path="/autoexclusion/dodesktopcorto" element={<DODESKTOPC />} />
 
-        {/* Autoexclusion */}
+        {/* Playground */}
+        <Route path="/playground" element={<Playground />} />
       </Routes>
     </Router>
   );
