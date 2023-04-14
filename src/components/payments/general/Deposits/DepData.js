@@ -204,7 +204,7 @@ const depositDataEn = [
       {
         img: TigoMoneyWallet,
         title: "TIGO MONEY WALLET",
-        url: "https://get.betcris.help/hc/es-419/articles/14169756988433-Tigo-Money-Wallet",
+        url: "https://get.betcris.help/hc/en-us/articles/14169756988433-Tigo-Money-Wallet-",
       },
     ],
   },
