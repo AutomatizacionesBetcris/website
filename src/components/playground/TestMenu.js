@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { testdata } from "./DataTest";
+import LogoBC from "../../img/logo-blanco.png";
 
 const TestMenu = () => {
   const [selectedTab, setSelectedTab] = useState("retiros");
@@ -18,18 +19,12 @@ const TestMenu = () => {
 
   return (
     <div>
+      {/* navbar */}
+      <nav className="flex flex-col border top-0 z-50 items-center justify-center h-20 bg-sky-800">
+        <img src={LogoBC} alt="Logo" className="h-12" />
+      </nav>
+
       <div className="flex justify-center items-center rounded-lg">
-        {/* Tab de Retiros */}
-        <div
-          className={`cursor-pointer p-4 ${
-            selectedTab === "retiros"
-              ? "bg-blue-500 text-white"
-              : "bg-gray-200 text-black"
-          }`}
-          onClick={() => handleTabChange("retiros")}
-        >
-          Retiros
-        </div>
         {/* Tab de Depósitos */}
         <div
           className={`cursor-pointer p-4 ${
@@ -40,6 +35,17 @@ const TestMenu = () => {
           onClick={() => handleTabChange("depositos")}
         >
           Depósitos
+        </div>
+        {/* Tab de Retiros */}
+        <div
+          className={`cursor-pointer p-4 ${
+            selectedTab === "retiros"
+              ? "bg-blue-500 text-white"
+              : "bg-gray-200 text-black"
+          }`}
+          onClick={() => handleTabChange("retiros")}
+        >
+          Retiros
         </div>
       </div>
 
@@ -113,6 +119,48 @@ const TestMenu = () => {
           </div>
         ) : null}
       </div>
+      {/* Condición para mostrar el div en fixed */}
+      {selectedCountry === "" ? (
+        <div className="fixed bottom-0 left-0 right-0 h-32 w-full text-center justify-center items-center text-white bg-sky-900 shadow-black shadow-sm">
+          <div className=" text-xs m-2 mt-3">
+            <p>
+              Para conocer los límites exactos de cada método de acuerdo a tu
+              tipo de cuenta, por favor ingresa al cajero virtual; si aún no
+              tienes acceso a nuestro cajero te invitamos a crearte una cuenta
+              Betcris en el siguiente enlace:
+            </p>
+            <div className="mt-2">
+              <a
+                href="https://www.example.com/registro"
+                className="text-blue-500 hover:text-blue-600 font-bold hover:underline"
+              >
+                Crear cuenta
+              </a>
+            </div>
+          </div>
+        </div>
+      ) : (
+        <div className=" p-1 h-36 w-full text-center justify-center items-center text-white bg-sky-900 shadow-black shadow-sm">
+          <div className=" ">
+            <div className=" text-xs">
+              <p className="mt-5">
+                Para conocer los límites exactos de cada método de acuerdo a tu
+                tipo de cuenta, por favor ingresa al cajero virtual; si aún no
+                tienes acceso a nuestro cajero te invitamos a crearte una cuenta
+                Betcris en el siguiente enlace:
+              </p>
+              <div className="mt-2">
+                <a
+                  href="https://www.example.com/registro"
+                  className="text-blue-500 hover:text-blue-600 font-bold hover:underline"
+                >
+                  Crear cuenta
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
