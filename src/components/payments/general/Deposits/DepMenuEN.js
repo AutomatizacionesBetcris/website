@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { depositDataEn } from "./DepData";
 import LogoBC from "../../../../img/logo-blanco.png";
+import { motion } from "framer-motion";
 
 const DepMenuEN = () => {
   const depositData = depositDataEn;
@@ -29,20 +30,31 @@ const DepMenuEN = () => {
           <div>
             <div className="p-5 m-5 bg-sky-900 bg-opacity-20 rounded-2xl shadow-black shadow-sm">
               <div className="text-sm lg:text-base text-white text-center">
-                <h1>Please select your country</h1>
+                <motion.h1
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 1, delay: depositData.length * 0.3 }} // Aplica un retardo para que la animación del h1 se inicie después de la animación de los botones
+                >
+                  Please select your country
+                </motion.h1>
               </div>
             </div>
             <div className="grid grid-cols-2 p-5 m-5 gap-5 justify-center items-center lg:grid-cols-4 lg:m-6 lg:p-10 bg-sky-900 bg-opacity-20 rounded-2xl shadow-black shadow-md ">
-              {depositData.map((country) => (
-                <div className="flex justify-center items-center">
-                  <button
-                    key={country.pais}
+              {depositData.map((country, index) => (
+                <motion.div
+                  key={country.pais}
+                  className="flex justify-center items-center"
+                  initial={{ opacity: 0, y: 50 }} // establece la posición inicial en la parte inferior y la opacidad en 0
+                  animate={{ opacity: 1, y: 0 }} // anima la opacidad a 1 y la posición a 0 (arriba)
+                  transition={{ duration: 1, delay: index * 0.3 }} // utiliza el índice del array para aplicar un retardo a la animación
+                >
+                  <motion.button
                     onClick={() => handleCountrySelect(country.pais)}
                     className="h-12 w-28 text-xs lg:text-base lg:h-16 lg:w-96 rounded-lg shadow-black shadow-sm bg-blue-600 text-white hover:bg-indigo-700"
                   >
                     {country.pais}
-                  </button>
-                </div>
+                  </motion.button>
+                </motion.div>
               ))}
             </div>
           </div>
@@ -89,18 +101,21 @@ const DepMenuEN = () => {
           depositData
             .find((country) => country.pais === selectedCountry)
             ?.info.map((image, index) => (
-              <a
+              <motion.a
                 key={index}
                 href={image.url}
                 target="_blank"
                 rel="noopener noreferrer"
+                initial={{ opacity: 0, y: 50 }} // establece la posición inicial en la parte inferior y la opacidad en 0
+                animate={{ opacity: 1, y: 0 }} // anima la opacidad a 1 y la posición a 0 (arriba)
+                transition={{ duration: 1, delay: index * 0.3 }} // utiliza el índice del array para aplicar un retardo a la animación
               >
-                <img
+                <motion.img
                   src={image.img}
                   alt={`Imagen ${index + 1}`}
                   className="w-38 rounded-lg overflow-hidden border-black shadow-lg hover:scale-110 transition-transform duration-300 ease-out"
                 />
-              </a>
+              </motion.a>
             ))}
       </div>
     </div>
