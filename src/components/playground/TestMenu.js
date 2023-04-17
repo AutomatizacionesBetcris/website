@@ -3,7 +3,7 @@ import { testdata } from "./DataTest";
 import LogoBC from "../../img/logo-blanco.png";
 
 const TestMenu = () => {
-  const [selectedTab, setSelectedTab] = useState("retiros");
+  const [selectedTab, setSelectedTab] = useState("depositos");
   const [selectedCountry, setSelectedCountry] = useState("");
   const [isAccordionOpen, setIsAccordionOpen] = useState(false);
 
@@ -29,7 +29,7 @@ const TestMenu = () => {
         <div
           className={`cursor-pointer p-4 ${
             selectedTab === "depositos"
-              ? "bg-blue-500 text-white"
+              ? "bg-blue-500 text-white underline"
               : "bg-gray-200 text-black"
           }`}
           onClick={() => handleTabChange("depositos")}
@@ -40,7 +40,7 @@ const TestMenu = () => {
         <div
           className={`cursor-pointer p-4 ${
             selectedTab === "retiros"
-              ? "bg-blue-500 text-white"
+              ? "bg-blue-500 text-white underline"
               : "bg-gray-200 text-black"
           }`}
           onClick={() => handleTabChange("retiros")}
@@ -106,9 +106,10 @@ const TestMenu = () => {
                       {isAccordionOpen === index && (
                         <div className="p-4 bg-white rounded-lg">
                           <p>
-                            Las retiradas mediante tarjeta de débito no se
-                            encuentran disponibles. Para más información, vaya a
-                            la sección de 'Transferencia bancaria'.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Ut et lorem vestibulum justo vehicula
+                            accumsan. Pellentesque id suscipit massa. Aliquam
+                            molestie semper ornare.
                           </p>
                         </div>
                       )}
@@ -122,7 +123,7 @@ const TestMenu = () => {
       {/* Condición para mostrar el div en fixed */}
       {selectedCountry === "" ? (
         <div className="fixed bottom-0 left-0 right-0 h-32 w-full text-center justify-center items-center text-white bg-sky-900 shadow-black shadow-sm">
-          <div className=" text-xs m-2 mt-3">
+          <div className=" text-xs m-2 mt-4 lg:m-10">
             <p>
               Para conocer los límites exactos de cada método de acuerdo a tu
               tipo de cuenta, por favor ingresa al cajero virtual; si aún no
@@ -132,7 +133,9 @@ const TestMenu = () => {
             <div className="mt-2">
               <a
                 href="https://be.betcris.com/es/registrov3"
-                className="text-blue-500 hover:text-blue-600 font-bold hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-blue-500 hover:text-blue-600 font-bold hover:underline"
               >
                 Crear cuenta
               </a>
@@ -142,17 +145,19 @@ const TestMenu = () => {
       ) : (
         <div className=" p-1 h-36 w-full text-center justify-center items-center text-white bg-sky-900 shadow-black shadow-sm">
           <div className=" ">
-            <div className=" text-xs">
-              <p className="mt-5">
+            <div className=" text-xs m-6 lg:m-5">
+              <p className="mt-5 lg:m-10">
                 Para conocer los límites exactos de cada método de acuerdo a tu
                 tipo de cuenta, por favor ingresa al cajero virtual; si aún no
                 tienes acceso a nuestro cajero te invitamos a crearte una cuenta
                 Betcris en el siguiente enlace:
               </p>
-              <div className="mt-2">
+              <div className="mt-2 lg:mt-0">
                 <a
                   href="https://be.betcris.com/es/registrov3"
-                  className="text-blue-500 hover:text-blue-600 font-bold hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-blue-500 hover:text-blue-600 font-bold hover:underline"
                 >
                   Crear cuenta
                 </a>
