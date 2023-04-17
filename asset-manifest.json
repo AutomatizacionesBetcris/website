@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/website/static/css/main.2eddeea4.css",
-    "main.js": "/website/static/js/main.0f127d02.js",
+    "main.css": "/website/static/css/main.1611e0be.css",
+    "main.js": "/website/static/js/main.41e22658.js",
     "static/media/DO_desktop_corto.gif": "/website/static/media/DO_desktop_corto.80eb8aa8975f0d813909.gif",
     "static/media/PA_desktop_corto.gif": "/website/static/media/PA_desktop_corto.a28413936ee485df3cdb.gif",
     "static/media/MX_desktop_corto.gif": "/website/static/media/MX_desktop_corto.2b6bc38c7406530519d6.gif",
@@ -50,11 +50,11 @@
     "static/media/ecuador.png": "/website/static/media/ecuador.2176794d2c550729aea2.png",
     "static/media/republica-dominicana.png": "/website/static/media/republica-dominicana.894c860a043c184be22d.png",
     "index.html": "/website/index.html",
-    "main.2eddeea4.css.map": "/website/static/css/main.2eddeea4.css.map",
-    "main.0f127d02.js.map": "/website/static/js/main.0f127d02.js.map"
+    "main.1611e0be.css.map": "/website/static/css/main.1611e0be.css.map",
+    "main.41e22658.js.map": "/website/static/js/main.41e22658.js.map"
   },
   "entrypoints": [
-    "static/css/main.2eddeea4.css",
-    "static/js/main.0f127d02.js"
+    "static/css/main.1611e0be.css",
+    "static/js/main.41e22658.js"
   ]
 }
