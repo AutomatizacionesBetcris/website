@@ -131,7 +131,7 @@ const TestMenu = () => {
             </p>
             <div className="mt-2">
               <a
-                href="https://www.example.com/registro"
+                href="https://be.betcris.com/es/registrov3"
                 className="text-blue-500 hover:text-blue-600 font-bold hover:underline"
               >
                 Crear cuenta
@@ -151,7 +151,7 @@ const TestMenu = () => {
               </p>
               <div className="mt-2">
                 <a
-                  href="https://www.example.com/registro"
+                  href="https://be.betcris.com/es/registrov3"
                   className="text-blue-500 hover:text-blue-600 font-bold hover:underline"
                 >
                   Crear cuenta
