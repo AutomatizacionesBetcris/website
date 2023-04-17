@@ -76,8 +76,8 @@ const TestMenu = () => {
               <div className="mt-5 m-5">
                 <div className="flex text-sm lg:text-lg text-white">
                   <p className="lg:mr-96 ml-7 lg:ml-5">Metodo</p>
-                  <p className="lg:mr-96 ml-12 lg:ml-1">Minimo</p>
-                  <p className="lg:mr-96 ml-12 lg:ml-1">Maximo</p>
+                  <p className="lg:mr-96 ml-12 lg:ml-48">Minimo</p>
+                  <p className="lg:mr-96 ml-12 lg:ml-48">Maximo</p>
                 </div>
 
                 {/* Mostrar la información correspondiente del país seleccionado en el acordeón */}
@@ -97,11 +97,6 @@ const TestMenu = () => {
                         <p>{image.min}</p>
 
                         <p>{image.max}</p>
-                        <div className=" font-bold">
-                          <span>
-                            {isAccordionOpen === index ? "Cerrar" : "Abrir"}{" "}
-                          </span>
-                        </div>
                       </button>
                       {isAccordionOpen === index && (
                         <div className="p-4 bg-white rounded-lg">
