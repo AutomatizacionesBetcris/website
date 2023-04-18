@@ -3,6 +3,7 @@ import LogoBC from "../../../img/logo-blanco.png";
 import Pay4Fun from "../../../img/payments/Pay4fun.jpg";
 import Pix from "../../../img/payments/Pix.jpg";
 import Banktransfer from "../../../img/payments/Bank_transfer.jpg";
+import { motion } from "framer-motion";
 
 const imagesDepositos = [
   {
@@ -39,9 +40,27 @@ const imagesDepositos = [
 
 const Br = () => {
   const [selectedImage, setSelectedImage] = useState(null);
+  const [isClosing, setIsClosing] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  // Función para manejar el clic en el botón de cerrar
+  const handleClose = () => {
+    // Establecer el estado de cierre a verdadero
+    setIsClosing(true);
+    // Retrasar la eliminación del modal para permitir que se complete la animación
+    setTimeout(() => {
+      // Establecer el estado de cierre a falso
+      setIsClosing(false);
+      // Llamar a la función para cerrar el modal
+      setSelectedImage(null);
+    }, 800); // Duración de la animación en milisegundos
+  };
 
   const handleImageClick = (image) => {
     setSelectedImage(image);
+    // Lógica para abrir el modal y pasar la imagen seleccionada
+    setIsModalOpen(true);
+    // Resto de la lógica para manejar la imagen seleccionada...
   };
 
   return (
@@ -54,17 +73,34 @@ const Br = () => {
       {/* Grid */}
       <div className="grid grid-cols-2 p-4 sm:grid-cols-5 md:grid-cols-5 lg:grid-cols-5 gap-4 mt-5 sm:m-10 sm:mt-5 lg:m-56 lg:mt-5">
         {imagesDepositos.map((image, index) => (
-          <img
+          <motion.a
             key={index}
-            src={image.img}
-            alt={`Imagen ${index + 1}`}
-            className="w-38 rounded-lg overflow-hidden border-black shadow-lg hover:scale-110 transition-transform duration-300 ease-out"
-            onClick={() => handleImageClick(image)}
-          />
+            initial={{ opacity: 0, y: 50 }} // establece la posición inicial en la parte inferior y la opacidad en 0
+            animate={{ opacity: 1, y: 0 }} // anima la opacidad a 1 y la posición a 0 (arriba)
+            transition={{ duration: 1, delay: index * 0.3 }} // utiliza el índice del array para aplicar un retardo a la animación
+          >
+            <motion.img
+              src={image.img}
+              alt={`Imagen ${index + 1}`}
+              onClick={() => handleImageClick(image)}
+              className="w-38 rounded-lg overflow-hidden border-black shadow-lg hover:scale-110 transition-transform duration-300 ease-out"
+            />
+          </motion.a>
         ))}
       </div>
       {selectedImage && (
-        <div className="fixed z-10 inset-0 overflow-y-auto">
+        <motion.div
+          className="fixed z-10 inset-0 overflow-y-auto"
+          initial={{ opacity: 0, scale: 0.8 }} // Configuración inicial con opacidad en 0 y escala en 0.8
+          animate={
+            isClosing
+              ? { opacity: 0, scale: 0.8 } // Configuración de animación al cerrar el modal
+              : isModalOpen // Verificar si el modal está abierto
+              ? { opacity: 1, scale: 1 } // Configuración de animación al abrir el modal
+              : { opacity: 0, scale: 0.8 } // Configuración de animación cuando el modal está cerrado
+          }
+          transition={{ duration: 0.5 }} // Duración de la animación en segundos
+        >
           <div className="flex justify-center items-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
             <div
               className="fixed inset-0 transition-opacity"
@@ -80,9 +116,14 @@ const Br = () => {
                       {selectedImage.title}
                     </h3>
                     <hr></hr>
-                    <p className=" mt-4 mb-4 text-xs text-justify w-full">
+                    <motion.p
+                      className="mt-4 mb-4 text-xs text-justify w-full"
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ duration: 5 }}
+                    >
                       {selectedImage.description}
-                    </p>
+                    </motion.p>
                     <div>
                       <hr></hr>
                       <div className="grid grid-cols-3 mt-2 mb-2 text-center justify-center gap-2">
@@ -98,9 +139,27 @@ const Br = () => {
                       </div>
 
                       <div className="grid grid-cols-3 mb-2 text-center justify-center gap-2">
-                        <p>{selectedImage.min}</p>
-                        <p>{selectedImage.max}</p>
-                        <p>{selectedImage.time}</p>
+                        <motion.p
+                          initial={{ opacity: 0, y: 50 }} // Configuración inicial con opacidad en 0 y desplazamiento vertical de 50px
+                          animate={{ opacity: 1, y: 0 }} // Configuración de animación con opacidad en 1 y desplazamiento vertical de 0px
+                          transition={{ duration: 1, delay: 0.4 }} // Duración de la animación de 1 segundo y retraso de 0.2 segundos
+                        >
+                          {selectedImage.min}
+                        </motion.p>
+                        <motion.p
+                          initial={{ opacity: 0, y: 50 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ duration: 1, delay: 0.6 }} // Retraso de 0.4 segundos para que la animación se inicie después de la primera
+                        >
+                          {selectedImage.max}
+                        </motion.p>
+                        <motion.p
+                          initial={{ opacity: 0, y: 50 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ duration: 1, delay: 0.8 }} // Retraso de 0.6 segundos para que la animación se inicie después de la segunda
+                        >
+                          {selectedImage.time}
+                        </motion.p>
                       </div>
                     </div>
                     <hr></hr>
@@ -119,17 +178,17 @@ const Br = () => {
               </footer>
 
               <div className="flex justify-center items-center px-4 py-3">
-                <button
+                <motion.button
                   type="button"
                   className="w-full rounded-md border border-transparent shadow-sm px-4 py-2 bg-blue-600 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:ml-3 sm:w-auto sm:text-sm"
-                  onClick={() => setSelectedImage(null)}
+                  onClick={handleClose}
                 >
                   Fechar
-                </button>
+                </motion.button>
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       )}
     </div>
   );
