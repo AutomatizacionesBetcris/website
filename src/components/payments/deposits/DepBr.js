@@ -13,8 +13,13 @@ const imagesDepositos = [
     min: "BRL 20",
     max: "BRL 1,290",
     time: "Imediatamente",
-    description:
-      "Escolha 'Pay4Fun', insira o valor do depósito e clique 'confirmar', finalmente você será redirecionado para a site da Pay4Fun para completar a transação.",
+    description: [
+      "1- Escolha 'Pay4Fun'",
+      "2- Insira o valor do depósito e clique 'confirmar'",
+      "3- Finalmente você será redirecionado para a site da Pay4Fun para completar a transação.",
+    ],
+    // description:
+    //   "Escolha 'Pay4Fun', insira o valor do depósito e clique 'confirmar', finalmente você será redirecionado para a site da Pay4Fun para completar a transação.",
   },
   {
     img: Pix,
@@ -23,8 +28,14 @@ const imagesDepositos = [
     min: "BRL 52",
     max: "BRL 1,290,000",
     time: "Imediatamente",
-    description:
-      "Selecione 'PIX', insira o valor a ser depositado e clique em 'confirmar', finalmente você será redirecionado para a página PIX para concluir a transação.",
+    description: [
+      "1- Selecione 'PIX'",
+      "2- Insira o valor a ser depositado e clique em 'confirmar'",
+      "3- Finalmente você será redirecionado para a página PIX para concluir a transação.",
+    ],
+
+    // description:
+    //   "Selecione 'PIX', insira o valor a ser depositado e clique em 'confirmar', finalmente você será redirecionado para a página PIX para concluir a transação.",
   },
   {
     img: Banktransfer,
@@ -33,8 +44,14 @@ const imagesDepositos = [
     min: "BRL 20",
     max: "BRL 5,160",
     time: "Imediatamente",
-    description:
-      "Selecione 'TRANSFERÊNCIA BANCÁRIA', selecione o banco onde você tem conta, copie as informações que aparecem no site do seu banco, finalmente siga os passos exibidos na tela para confirmar a transação.",
+    description: [
+      "1- Selecione 'TRANSFERÊNCIA BANCÁRIA'",
+      "2- Selecione o banco onde você tem conta",
+      "3- Copie as informações que aparecem no site do seu banco",
+      "4- Finalmente siga os passos exibidos na tela para confirmar a transação.",
+    ],
+    // description:
+    //   "Selecione 'TRANSFERÊNCIA BANCÁRIA', selecione o banco onde você tem conta, copie as informações que aparecem no site do seu banco, finalmente siga os passos exibidos na tela para confirmar a transação.",
   },
 ];
 
@@ -116,14 +133,25 @@ const Br = () => {
                       {selectedImage.title}
                     </h3>
                     <hr></hr>
-                    <motion.p
+                    <motion.ul
                       className="mt-4 mb-4 text-xs text-justify w-full"
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
-                      transition={{ duration: 5 }}
+                      transition={{ duration: 4 }}
                     >
-                      {selectedImage.description}
-                    </motion.p>
+                      {selectedImage.description.map((description, index) => (
+                        <motion.li
+                          key={index}
+                          className="mb-2"
+                          initial={{ x: "100%" }}
+                          animate={{ x: 0 }}
+                          transition={{ duration: 1, delay: index * 0.4 }}
+                        >
+                          {description}
+                        </motion.li>
+                      ))}
+                    </motion.ul>
+
                     <div>
                       <hr></hr>
                       <div className="grid grid-cols-3 mt-2 mb-2 text-center justify-center gap-2">
@@ -142,21 +170,21 @@ const Br = () => {
                         <motion.p
                           initial={{ opacity: 0, y: 50 }} // Configuración inicial con opacidad en 0 y desplazamiento vertical de 50px
                           animate={{ opacity: 1, y: 0 }} // Configuración de animación con opacidad en 1 y desplazamiento vertical de 0px
-                          transition={{ duration: 1, delay: 0.4 }} // Duración de la animación de 1 segundo y retraso de 0.2 segundos
+                          transition={{ duration: 1, delay: 2.4 }} // Duración de la animación de 1 segundo y retraso de 0.2 segundos
                         >
                           {selectedImage.min}
                         </motion.p>
                         <motion.p
                           initial={{ opacity: 0, y: 50 }}
                           animate={{ opacity: 1, y: 0 }}
-                          transition={{ duration: 1, delay: 0.6 }} // Retraso de 0.4 segundos para que la animación se inicie después de la primera
+                          transition={{ duration: 1, delay: 2.6 }} // Retraso de 0.4 segundos para que la animación se inicie después de la primera
                         >
                           {selectedImage.max}
                         </motion.p>
                         <motion.p
                           initial={{ opacity: 0, y: 50 }}
                           animate={{ opacity: 1, y: 0 }}
-                          transition={{ duration: 1, delay: 0.8 }} // Retraso de 0.6 segundos para que la animación se inicie después de la segunda
+                          transition={{ duration: 1, delay: 2.8 }} // Retraso de 0.6 segundos para que la animación se inicie después de la segunda
                         >
                           {selectedImage.time}
                         </motion.p>
