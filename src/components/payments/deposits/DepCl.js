@@ -10,6 +10,7 @@ import EcoPayz from "../../../img/payments/Ecopayz.jpg";
 import Skrill1Tap from "../../../img/payments/Skril_tap.jpg";
 import BankTransferCL from "../../../img/payments/Bank_transfer_CL.jpg";
 import WebPay from "../../../img/payments/Webpay_plus.jpg";
+import { motion } from "framer-motion";
 
 const imagesDepositos = [
   {
@@ -20,8 +21,11 @@ const imagesDepositos = [
     max: "$2,000.00",
     time: "60 minutos",
     descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'SafetyPay', seguido ingresa la cantidad y presiona 'Depositar', una vez que cargue la página de SafetyPay, elige entre Transferencia bancaria o Pagar en efectivo.",
+    description: [
+      "Haz clic en 'SafetyPay'",
+      "Seguido ingresa la cantidad y presiona 'Depositar'",
+      "Una vez que cargue la página de SafetyPay, elige entre Transferencia bancaria o Pagar en efectivo",
+    ],
   },
   {
     img: Mach,
@@ -31,8 +35,12 @@ const imagesDepositos = [
     max: "$479.00",
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'MACH', seguido ingresa el monto de tu depósito y haz clic en 'Depositar'. seguido genera un código QR en el sitio web al cual se te redirige, luego escanéalo con tu App, y por último realiza el pago de tu depósito en la App de MACH.",
+    description: [
+      "Haz clic en 'MACH'",
+      "Seguido ingresa el monto de tu depósito y haz clic en 'Depositar'",
+      "Genera un código QR en el sitio web al cual se te redirige, luego escanéalo con tu App",
+      "Realiza el pago de tu depósito en la App de MACH",
+    ],
   },
   {
     img: Tarjetas,
@@ -42,8 +50,12 @@ const imagesDepositos = [
     max: "$259.00",
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'Tarjetas de crédito y débito', ingresa la información solicitada si esta es la primera vez que estás usando una tarjeta (para acelerar el proceso, la próxima vez que realices un depósito, los datos de tu tarjeta ya estarán almacenados) y haz clic en 'Guardar', seguido ingresa el monto que quieres depositar y por último selecciona 'Confirmar' para completar la transacción.",
+    description: [
+      "Haz clic en 'Tarjetas de crédito y débito'",
+      "Ingresa la información solicitada si esta es la primera vez que estás usando una tarjeta (para acelerar el proceso, la próxima vez que realices un depósito, los datos de tu tarjeta ya estarán almacenados) y haz clic en 'Guardar'",
+      "Ingresa el monto que quieres depositar",
+      "Selecciona 'Confirmar' para completar la transacción",
+    ],
   },
   {
     img: Skrill,
@@ -53,8 +65,12 @@ const imagesDepositos = [
     max: "$100,000.00",
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'e-Wallet', seguido en 'Skrill', ingresa el monto y la información de tu cuenta de Skrill, luego pulsa 'Depositar'. Serás redirigido al sitio de Skrill para completar la transacción.",
+    description: [
+      "Haz clic en 'e-Wallet'",
+      "Seguido en 'Skrill'",
+      "Ingresa el monto y la información de tu cuenta de Skrill luego pulsa 'Depositar'",
+      "Serás redirigido al sitio de Skrill para completar la transacción",
+    ],
   },
   {
     img: Neteller,
@@ -64,8 +80,13 @@ const imagesDepositos = [
     max: "$100,000.00",
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'e-Wallet', seguido en 'NETELLER', ingresa la cantidad, tu número de cuenta y haz clic en 'Depositar', luego pulsa 'Depositar'. Serás redirigido al sitio de Skrill para completar la transacción. Completa la transacción en el sitio de NETELLER al que se te redirige.",
+    description: [
+      "Haz clic en 'e-Wallet'",
+      "Seguido en 'NETELLER'",
+      "Ingresa la cantidad, tu número de cuenta y haz clic en 'Depositar'",
+      "Serás redirigido al sitio de Skrill para completar la transacción",
+      "Completa la transacción en el sitio de NETELLER al que se te redirige",
+    ],
   },
   {
     img: Skrill1Tap,
@@ -75,8 +96,12 @@ const imagesDepositos = [
     max: "$100,000.00",
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'e-Wallet', seguido en 'Skrill 1-Tap', ingresa el monto, tu cuenta Skrill y haz clic en 'Depositar' y por último completa la transacción en la página de Skrill donde se te redirige.",
+    description: [
+      "Haz clic en 'e-Wallet'",
+      "Seguido en 'Skrill 1-Tap'",
+      "Ingresa el monto, tu cuenta Skrill y haz clic en 'Depositar'",
+      "Completa la transacción en la página de Skrill donde se te redirige.",
+    ],
   },
   {
     img: EcoPayz,
@@ -86,8 +111,12 @@ const imagesDepositos = [
     max: "$50,000.00",
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'e-Wallet', seguido en 'ecoPayz', ingresa el monto que quieres depositar, tu número de cuenta ecoPayz y haz clic en 'Confirmar'. Completa la transacción en el sitio de ecoPayz al que se te redirige.",
+    description: [
+      "Haz clic en 'e-Wallet'",
+      "Seguido en 'ecoPayz'",
+      "Ingresa el monto que quieres depositar, tu número de cuenta ecoPayz y haz clic en 'Confirmar'",
+      "Completa la transacción en el sitio de ecoPayz al que se te redirige.",
+    ],
   },
   {
     img: AstroPay,
@@ -97,8 +126,11 @@ const imagesDepositos = [
     max: "$10,000.00",
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'AstroPay', seguido ingresa la cantidad y presiona 'Depositar', luego ingresa el monto y la información de la tarjeta y por último pulsa 'Depositar' para completar la transacción.",
+    description: [
+      "Haz clic en 'AstroPay'",
+      "Seguido ingresa la cantidad y presiona 'Depositar'",
+      "Ingresa el monto y la información de la tarjeta y por último pulsa 'Depositar' para completar la transacción",
+    ],
   },
   {
     img: BankTransferCL,
@@ -108,8 +140,12 @@ const imagesDepositos = [
     max: "$4,000.00",
     time: "Una vez aprobados, los fondos se tramitan de forma inmediata a tu cuenta.",
     descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'Transferencia Bancaria', seguido elige el banco donde vas a depositar, luego selecciona la cuenta y el destinatario para realizar el depósito, completa los detalles requeridos y adjunta una fotografía del depósito realizado en el banco o en línea y por último haz clic en 'Reportar depósito'.",
+    description: [
+      "Haz clic en 'Transferencia Bancaria'",
+      "Elige el banco donde vas a depositar",
+      "Selecciona la cuenta y el destinatario para realizar el depósito, completa los detalles requeridos y adjunta una fotografía del depósito realizado en el banco o en línea",
+      "Haz clic en 'Reportar depósito'",
+    ],
   },
   {
     img: WebPay,
@@ -119,8 +155,12 @@ const imagesDepositos = [
     max: "$250.00",
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'WebPay', seguido ingresa el monto que deseas depositar y haz clic en 'Depositar', continua el proceso en la página a la que te redirige el sistema, luego elige la opción de pago de tu preferencia, ya sea tarjeta de crédito, de débito o Onepay y por último valida tu pago.",
+    description: [
+      "Haz clic en 'WebPay'",
+      "Seguido ingresa el monto que deseas depositar y haz clic en 'Depositar'",
+      "Continua el proceso en la página a la que te redirige el sistema",
+      "Elige la opción de pago de tu preferencia, ya sea tarjeta de crédito, de débito o Onepay y por último valida tu pago",
+    ],
   },
 ];
 
@@ -141,13 +181,19 @@ const DepCl = () => {
         {/* Grid */}
         <div className="grid grid-cols-3 p-4 sm:grid-cols-5 md:grid-cols-5 lg:grid-cols-5 gap-4 mt-5 sm:m-10 sm:mt-5 lg:m-56 lg:mt-5">
           {imagesDepositos.map((image, index) => (
-            <img
+            <motion.a
               key={index}
-              src={image.img}
-              alt={`Imagen ${index + 1}`}
-              className="w-38 rounded-lg overflow-hidden border-black shadow-lg hover:scale-110 transition-transform duration-300 ease-out"
-              onClick={() => handleImageClick(image)}
-            />
+              initial={{ opacity: 0, y: 50 }} // establece la posición inicial en la parte inferior y la opacidad en 0
+              animate={{ opacity: 1, y: 0 }} // anima la opacidad a 1 y la posición a 0 (arriba)
+              transition={{ duration: 1, delay: index * 0.3 }} // utiliza el índice del array para aplicar un retardo a la animación
+            >
+              <motion.img
+                src={image.img}
+                alt={`Imagen ${index + 1}`}
+                onClick={() => handleImageClick(image)}
+                className="w-38 rounded-lg overflow-hidden border-black shadow-lg hover:scale-110 transition-transform duration-300 ease-out"
+              />
+            </motion.a>
           ))}
         </div>
         {selectedImage && (
@@ -164,11 +210,15 @@ const DepCl = () => {
                         {selectedImage.title}
                       </h3>
                       <hr></hr>
-                      <p className=" mt-4 mb-4 text-xs text-justify w-full">
+                      <ul className="mt-4 mb-4 text-xs text-start w-full p-1">
                         <p>{selectedImage.descriptionTitle}</p>
                         <br></br>
-                        {selectedImage.description}
-                      </p>
+                        {selectedImage.description.map((description, index) => (
+                          <li key={index} className="mb-2">
+                            {index + 1}. {description}{" "}
+                          </li>
+                        ))}
+                      </ul>
                       <div>
                         <hr></hr>
                         <div class="grid grid-cols-3 mt-2 mb-2 text-center justify-center gap-2">

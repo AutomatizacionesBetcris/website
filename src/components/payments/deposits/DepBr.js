@@ -14,9 +14,9 @@ const imagesDepositos = [
     max: "BRL 1,290",
     time: "Imediatamente",
     description: [
-      "1- Escolha 'Pay4Fun'",
-      "2- Insira o valor do depósito e clique 'confirmar'",
-      "3- Finalmente você será redirecionado para a site da Pay4Fun para completar a transação.",
+      "Escolha 'Pay4Fun'",
+      "Insira o valor do depósito e clique 'confirmar'",
+      "Finalmente você será redirecionado para a site da Pay4Fun para completar a transação.",
     ],
   },
   {
@@ -27,9 +27,9 @@ const imagesDepositos = [
     max: "BRL 1,290,000",
     time: "Imediatamente",
     description: [
-      "1- Selecione 'PIX'",
-      "2- Insira o valor a ser depositado e clique em 'confirmar'",
-      "3- Finalmente você será redirecionado para a página PIX para concluir a transação.",
+      "Selecione 'PIX'",
+      "Insira o valor a ser depositado e clique em 'confirmar'",
+      "Finalmente você será redirecionado para a página PIX para concluir a transação.",
     ],
   },
   {
@@ -40,10 +40,10 @@ const imagesDepositos = [
     max: "BRL 5,160",
     time: "Imediatamente",
     description: [
-      "1- Selecione 'TRANSFERÊNCIA BANCÁRIA'",
-      "2- Selecione o banco onde você tem conta",
-      "3- Copie as informações que aparecem no site do seu banco",
-      "4- Finalmente siga os passos exibidos na tela para confirmar a transação.",
+      "Selecione 'TRANSFERÊNCIA BANCÁRIA'",
+      "Selecione o banco onde você tem conta",
+      "Copie as informações que aparecem no site do seu banco",
+      "Finalmente siga os passos exibidos na tela para confirmar a transação.",
     ],
   },
 ];
@@ -97,10 +97,10 @@ const Br = () => {
                       {selectedImage.title}
                     </h3>
                     <hr></hr>
-                    <ul className="mt-4 mb-4 text-xs text-justify w-full p-1">
+                    <ul className="mt-4 mb-4 text-xs text-start w-full p-1">
                       {selectedImage.description.map((description, index) => (
                         <li key={index} className="mb-2">
-                          {description}
+                          {index + 1}. {description}{" "}
                         </li>
                       ))}
                     </ul>

@@ -4,6 +4,7 @@ import EcoPayz from "../../../img/payments/Ecopayz.jpg";
 import Tarjetas from "../../../img/payments/Tarjetas.jpg";
 import PaysafeCard from "../../../img/payments/PaysafeCard.jpg";
 import AstroPay from "../../../img/payments/Astropay.jpg";
+import { motion } from "framer-motion";
 
 const imagesDepositos = [
   {
@@ -14,8 +15,12 @@ const imagesDepositos = [
     max: "$5,000.00",
     time: "Immediately",
     descriptionTitle: "Click on 'Cashier':",
-    description:
-      "Click on 'Credit and debit cards', add the requested information if this is the first time you are using a card (to speed up the process, the next time you make a deposit, your card details will already be stored) and click on 'Save', then enter the amount you want to deposit, your identification number, and click on 'Next' and finally select 'Confirm' to complete the transaction.",
+    description: [
+      "Click on 'Credit and debit cards'",
+      "Add the requested information if this is the first time you are using a card (to speed up the process, the next time you make a deposit, your card details will already be stored) and click on 'Save'",
+      "Enter the amount you want to deposit, your identification number, and click on 'Next'",
+      "Select 'Confirm' to complete the transaction",
+    ],
   },
   {
     img: PaysafeCard,
@@ -25,8 +30,12 @@ const imagesDepositos = [
     max: "$2,500.00",
     time: "60 minutes",
     descriptionTitle: "Click on 'Cashier':",
-    description:
-      "Click on 'PaySafecard', then enter the deposit amount and click on 'Deposit', then enter the 16-digit PaySafe card PIN and finally click on 'Deposit' to complete the transaction.",
+    description: [
+      "Click on 'PaySafecard'",
+      "Enter the deposit amount and click on 'Deposit'",
+      "Enter the 16-digit PaySafe card PIN.",
+      "Click on 'Deposit' to complete the transaction.",
+    ],
   },
   {
     img: EcoPayz,
@@ -36,8 +45,11 @@ const imagesDepositos = [
     max: "$50,000.00",
     time: "Immediately",
     descriptionTitle: "Click on 'Cashier':",
-    description:
-      "Click on 'e-Wallet', followed by 'ecoPayz', then enter the amount you want to deposit, your ecoPayz account number, and click on 'Confirm'. Complete the transaction on the ecoPayz website you are redirected to.",
+    description: [
+      "Click on 'e-Wallet', followed by 'ecoPayz'",
+      "Enter the amount you want to deposit, your ecoPayz account number, and click on 'Confirm'",
+      "Complete the transaction on the ecoPayz website you are redirected to.",
+    ],
   },
   {
     img: AstroPay,
@@ -47,8 +59,11 @@ const imagesDepositos = [
     max: "$10,000.00",
     time: "Immediately",
     descriptionTitle: "Click on 'Cashier':",
-    description:
-      "Click on 'AstroPay', then enter the deposit amount and click on 'Next', then go to the AstroPay website you are redirected to.",
+    description: [
+      "Click on 'AstroPay'",
+      "Enter the deposit amount and click on 'Next'",
+      "Go to the AstroPay website you are redirected to",
+    ],
   },
 ];
 
@@ -69,13 +84,19 @@ const DepCa = () => {
         {/* Grid */}
         <div className="grid grid-cols-3 p-4 sm:grid-cols-5 md:grid-cols-5 lg:grid-cols-5 gap-4 mt-5 sm:m-10 sm:mt-5 lg:m-56 lg:mt-5">
           {imagesDepositos.map((image, index) => (
-            <img
+            <motion.a
               key={index}
-              src={image.img}
-              alt={`Imagen ${index + 1}`}
-              className="w-38 rounded-lg overflow-hidden border-black shadow-lg hover:scale-110 transition-transform duration-300 ease-out"
-              onClick={() => handleImageClick(image)}
-            />
+              initial={{ opacity: 0, y: 50 }} // establece la posición inicial en la parte inferior y la opacidad en 0
+              animate={{ opacity: 1, y: 0 }} // anima la opacidad a 1 y la posición a 0 (arriba)
+              transition={{ duration: 1, delay: index * 0.3 }} // utiliza el índice del array para aplicar un retardo a la animación
+            >
+              <motion.img
+                src={image.img}
+                alt={`Imagen ${index + 1}`}
+                onClick={() => handleImageClick(image)}
+                className="w-38 rounded-lg overflow-hidden border-black shadow-lg hover:scale-110 transition-transform duration-300 ease-out"
+              />
+            </motion.a>
           ))}
         </div>
         {selectedImage && (
@@ -95,11 +116,15 @@ const DepCa = () => {
                         {selectedImage.title}
                       </h3>
                       <hr></hr>
-                      <p className=" mt-4 mb-4 text-xs text-justify w-full">
+                      <ul className="mt-4 mb-4 text-xs text-start w-full p-1">
                         <p>{selectedImage.descriptionTitle}</p>
                         <br></br>
-                        {selectedImage.description}
-                      </p>
+                        {selectedImage.description.map((description, index) => (
+                          <li key={index} className="mb-2">
+                            {index + 1}. {description}{" "}
+                          </li>
+                        ))}
+                      </ul>
                       <div>
                         <hr></hr>
                         <div className="grid grid-cols-3 mt-2 mb-2 text-center justify-center gap-2">
