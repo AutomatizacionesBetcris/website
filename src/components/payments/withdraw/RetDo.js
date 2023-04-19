@@ -7,6 +7,7 @@ import Agencias from "../../../img/payments/Betcris_Agencias.png";
 import Skrill from "../../../img/payments/Skrill.jpg";
 import Neteller from "../../../img/payments/Neteller.jpg";
 import EcoPayz from "../../../img/payments/Ecopayz.jpg";
+import { motion } from "framer-motion";
 
 const imagesRetiros = [
   {
@@ -17,8 +18,12 @@ const imagesRetiros = [
     max: "$5,000.00",
     time: "30 minutos",
     descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'Retiro a tarjeta-Visa Direct', seguido ingresa la cantidad deseada, luego selecciona la tarjeta, y por último haz clic en 'Retirar'.",
+    description: [
+      "Haz clic en 'Retiro a tarjeta-Visa Direct'",
+      "Ingresa la cantidad deseada",
+      "Selecciona la tarjeta",
+      "Haz clic en 'Retirar'",
+    ],
   },
   {
     img: Banktransfer,
@@ -28,8 +33,12 @@ const imagesRetiros = [
     max: "$10,000.00",
     time: "El tiempo de acreditación varía según el banco receptor.",
     descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'Transferencia Bancaria', seguido ingresa el monto del retiro, luego completa la información de tu cuenta bancaria la primera vez (estará guardada la próxima vez) y por último haz clic en 'Retirar'.",
+    description: [
+      "Haz clic en 'Transferencia Bancaria'",
+      "Ingresa el monto del retiro",
+      "Completa la información de tu cuenta bancaria la primera vez (estará guardada la próxima vez)",
+      "Haz clic en 'Retirar'",
+    ],
   },
   {
     img: Skrill,
@@ -39,8 +48,12 @@ const imagesRetiros = [
     max: "$2,500.00",
     time: "48 horas",
     descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'Skrill', seguido ingresa el monto que deseas retirar, luego agrega la información de tu cuenta Skrill para tu primer retiro (la información se guardará para la próxima vez), y por último haz clic en 'Retirar'.",
+    description: [
+      "Haz clic en 'Skrill'",
+      "Ingresa el monto que deseas retirar",
+      "Agrega la información de tu cuenta Skrill para tu primer retiro (la información se guardará para la próxima vez)",
+      "Haz clic en 'Retirar'",
+    ],
   },
   {
     img: Neteller,
@@ -50,8 +63,12 @@ const imagesRetiros = [
     max: "$2,500.00",
     time: "48 horas",
     descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'NETELLER', seguido ingresa el monto que deseas retirar, luego agrega la información de tu cuenta Skrill para tu primer retiro (la información se guardará para la próxima vez), y por último haz clic en 'Retirar'.",
+    description: [
+      "Haz clic en 'NETELLER'",
+      "Ingresa el monto que deseas retirar",
+      "Agrega la información de tu cuenta Skrill para tu primer retiro (la información se guardará para la próxima vez)",
+      "Haz clic en 'Retirar'",
+    ],
   },
   {
     img: EcoPayz,
@@ -61,8 +78,11 @@ const imagesRetiros = [
     max: "$2,500.00",
     time: "48 horas",
     descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'ecoPayz', seguido ingresa el monto, tu número de cuenta, la forma como deseas pagar, por ejemplo, efectivo y por último haz clic en 'Retirar'.",
+    description: [
+      "Haz clic en 'ecoPayz'",
+      "Ingresa el monto, tu número de cuenta y la forma como deseas pagar, por ejemplo: Efectivo",
+      "Haz clic en 'Retirar'",
+    ],
   },
   {
     img: AstroPay,
@@ -72,8 +92,11 @@ const imagesRetiros = [
     max: "$1,000.00",
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'AstroPay Card', seguido ingresa el monto que deseas retirar, tu cuenta (número de teléfono) y haz clic en 'Confirmar'.",
+    description: [
+      "Haz clic en 'AstroPay Card'",
+      "Ingresa el monto que deseas retirar, tu cuenta (número de teléfono)",
+      "Haz clic en 'Confirmar'",
+    ],
   },
   {
     img: Agencias,
@@ -83,8 +106,11 @@ const imagesRetiros = [
     max: "$",
     time: "Inmediato",
     descriptionTitle: "Dentro de quioscos o agencias Betcris:",
-    description:
-      "Ofrecemos una variedad de formas rápidas y convenientes para depositar fondos en tu cuenta, incluyendo depósitos en las Agencias oficiales de Betcris. Para hacer tu depósito, solo debes presentar tu identificación y número de cuenta, junto con los fondos a depositar. Contacta a tu Agencia Betcris más cercana para confirmar los montos mínimos y máximos por transacción, así como cualquier detalle adicional que necesites, ya que pueden variar según el país.",
+    description: [
+      "Ofrecemos una variedad de formas rápidas y convenientes para retirar fondos en tu cuenta, incluyendo depósitos en las Agencias oficiales de Betcris.",
+      "Para hacer tu retiro solo debes presentar tu identificación y número de cuenta, además de haber completado todos los procesos de verificación necesarios para el retiro de fondos.",
+      "Contacta a tu Agencia Betcris más cercana para confirmar los montos mínimos y máximos por transacción, así como cualquier detalle adicional que necesites, ya que pueden variar según el país.",
+    ],
   },
 ];
 
@@ -105,13 +131,19 @@ const RetDo = () => {
         {/* Grid */}
         <div className="grid grid-cols-3 p-4 sm:grid-cols-5 md:grid-cols-5 lg:grid-cols-5 gap-4 mt-5 sm:m-10 sm:mt-5 lg:m-56 lg:mt-5">
           {imagesRetiros.map((image, index) => (
-            <img
+            <motion.a
               key={index}
-              src={image.img}
-              alt={`Imagen ${index + 1}`}
-              className="w-38 rounded-lg overflow-hidden border-black shadow-lg hover:scale-110 transition-transform duration-300 ease-out"
-              onClick={() => handleImageClick(image)}
-            />
+              initial={{ opacity: 0, y: 50 }} // establece la posición inicial en la parte inferior y la opacidad en 0
+              animate={{ opacity: 1, y: 0 }} // anima la opacidad a 1 y la posición a 0 (arriba)
+              transition={{ duration: 1, delay: index * 0.3 }} // utiliza el índice del array para aplicar un retardo a la animación
+            >
+              <motion.img
+                src={image.img}
+                alt={`Imagen ${index + 1}`}
+                onClick={() => handleImageClick(image)}
+                className="w-38 rounded-lg overflow-hidden border-black shadow-lg hover:scale-110 transition-transform duration-300 ease-out"
+              />
+            </motion.a>
           ))}
         </div>
         {selectedImage && (
@@ -128,15 +160,38 @@ const RetDo = () => {
                         {selectedImage.title}
                       </h3>
                       <hr></hr>
-                      <p className=" mt-4 mb-4 text-xs text-justify w-full">
+                      <ul className="mt-4 mb-4 text-xs text-start w-full p-1">
                         {selectedImage.title !== "DISASHOP" && (
                           <div>
                             <p>{selectedImage.descriptionTitle}</p>
                             <br></br>
                           </div>
                         )}
-                        {selectedImage.description}
-                      </p>
+                        {selectedImage.title !== "AGENCIAS BETCRIS" ? (
+                          selectedImage.description.map(
+                            (description, index) => (
+                              <li key={index} className="mb-2">
+                                {index + 1}. {description}{" "}
+                              </li>
+                            )
+                          )
+                        ) : (
+                          <li
+                            className="mb-2"
+                            style={{ whiteSpace: "pre-wrap" }}
+                          >
+                            {selectedImage.description.map(
+                              (description, index) => (
+                                <div key={index}>
+                                  {description}
+                                  <br />
+                                  <br />
+                                </div>
+                              )
+                            )}
+                          </li>
+                        )}
+                      </ul>
                       {selectedImage.title !== "AGENCIAS BETCRIS" && (
                         <div>
                           <hr></hr>

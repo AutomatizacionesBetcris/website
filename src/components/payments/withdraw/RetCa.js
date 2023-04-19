@@ -3,6 +3,7 @@ import LogoBC from "../../../img/logo-blanco.png";
 import EcoPayz from "../../../img/payments/Ecopayz.jpg";
 import Retirotarjeta from "../../../img/payments/Pay_to_card.jpg";
 import AstroPay from "../../../img/payments/Astropay.jpg";
+import { motion } from "framer-motion";
 
 const imagesRetiros = [
   {
@@ -13,8 +14,11 @@ const imagesRetiros = [
     max: "$2,500.00",
     time: "48 hours",
     descriptionTitle: "Click on 'Cashier':",
-    description:
-      "Click on 'ecoPayz', then enter the amount, your account number, the way you want to pay with, for example, cash, and click on 'Withdraw'.",
+    description: [
+      "Click on 'ecoPayz'",
+      "Enter the amount, your account number, and the way you want to pay with, for example: Cash",
+      "Click on 'Withdraw'",
+    ],
   },
   {
     img: Retirotarjeta,
@@ -24,8 +28,11 @@ const imagesRetiros = [
     max: "$5,000.00",
     time: "30 minutes",
     descriptionTitle: "Click on 'Cashier':",
-    description:
-      "Click on 'Pay to Card', then enter the desired amount, choose the card, and finally click on 'Withdraw'.",
+    description: [
+      "Click on 'Pay to Card'",
+      "Enter the desired amount, and choose the card",
+      "Click on 'Withdraw'",
+    ],
   },
   {
     img: AstroPay,
@@ -35,8 +42,11 @@ const imagesRetiros = [
     max: "$1,000.00",
     time: "24 hours",
     descriptionTitle: "Click on 'Cashier':",
-    description:
-      "Click 'AstroPay Card', then enter the amount you want to withdraw, and your account (phone number) and click on 'Confirm'.",
+    description: [
+      "Click 'AstroPay Card'",
+      "Enter the amount you want to withdraw, and your account (phone number)",
+      "Click on 'Confirm'",
+    ],
   },
 ];
 
@@ -57,13 +67,19 @@ const RetCa = () => {
         {/* Grid */}
         <div className="grid grid-cols-3 p-4 sm:grid-cols-5 md:grid-cols-5 lg:grid-cols-5 gap-4 mt-5 sm:m-10 sm:mt-5 lg:m-56 lg:mt-5">
           {imagesRetiros.map((image, index) => (
-            <img
+            <motion.a
               key={index}
-              src={image.img}
-              alt={`Imagen ${index + 1}`}
-              className="w-38 rounded-lg overflow-hidden border-black shadow-lg hover:scale-110 transition-transform duration-300 ease-out"
-              onClick={() => handleImageClick(image)}
-            />
+              initial={{ opacity: 0, y: 50 }} // establece la posición inicial en la parte inferior y la opacidad en 0
+              animate={{ opacity: 1, y: 0 }} // anima la opacidad a 1 y la posición a 0 (arriba)
+              transition={{ duration: 1, delay: index * 0.3 }} // utiliza el índice del array para aplicar un retardo a la animación
+            >
+              <motion.img
+                src={image.img}
+                alt={`Imagen ${index + 1}`}
+                onClick={() => handleImageClick(image)}
+                className="w-38 rounded-lg overflow-hidden border-black shadow-lg hover:scale-110 transition-transform duration-300 ease-out"
+              />
+            </motion.a>
           ))}
         </div>
         {selectedImage && (
@@ -83,11 +99,15 @@ const RetCa = () => {
                         {selectedImage.title}
                       </h3>
                       <hr></hr>
-                      <p className=" mt-4 mb-4 text-xs text-justify w-full">
+                      <ul className="mt-4 mb-4 text-xs text-start w-full p-1">
                         <p>{selectedImage.descriptionTitle}</p>
                         <br></br>
-                        {selectedImage.description}
-                      </p>
+                        {selectedImage.description.map((description, index) => (
+                          <li key={index} className="mb-2">
+                            {index + 1}. {description}{" "}
+                          </li>
+                        ))}
+                      </ul>
                       <div>
                         <hr></hr>
                         <div className="grid grid-cols-3 mt-2 mb-2 text-center justify-center gap-2">

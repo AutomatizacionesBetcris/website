@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import LogoBC from "../../../img/logo-blanco.png";
 import Pay4Fun from "../../../img/payments/Pay4fun.jpg";
 import Pix from "../../../img/payments/Pix.jpg";
+import { motion } from "framer-motion";
 
 const imagesRetiros = [
   {
@@ -11,8 +12,12 @@ const imagesRetiros = [
     min: "BRL 52",
     max: "BRL 51,600",
     time: "Imediatamente",
-    description:
-      "Escolha 'Pay4Fun', insira o valor do saqu,  escolha a conta Pay4Fun cadastrada ou a registre inserindo seu e-mail, finalmente clique em 'Verificar saque'.",
+    description: [
+      "Escolha 'Pay4Fun'",
+      "Insira o valor do saque",
+      "Escolha a conta Pay4Fun cadastrada ou a registre inserindo seu e-mail",
+      "Finalmente clique em 'Verificar saque'",
+    ],
   },
   {
     img: Pix,
@@ -21,8 +26,12 @@ const imagesRetiros = [
     min: "BRL 52",
     max: "BRL 4,582",
     time: "24 Horas",
-    description:
-      "Escolha 'PIX', insira o valor do saque, digite seu CPF e seu primeiro nome finalmente finalmente clique em 'Verificar saque'.",
+    description: [
+      "Escolha 'PIX'",
+      "Insira o valor do saque",
+      "Figite seu CPF e seu primeiro nome",
+      "Finalmente clique em 'Verificar saque'",
+    ],
   },
 ];
 
@@ -43,13 +52,19 @@ const RetBr = () => {
         {/* Grid */}
         <div className="grid grid-cols-2 p-4 sm:grid-cols-5 md:grid-cols-5 lg:grid-cols-5 gap-4 mt-5 sm:m-10 sm:mt-5 lg:m-56 lg:mt-5">
           {imagesRetiros.map((image, index) => (
-            <img
+            <motion.a
               key={index}
-              src={image.img}
-              alt={`Imagen ${index + 1}`}
-              className="w-38 rounded-lg overflow-hidden border-black shadow-lg hover:scale-110 transition-transform duration-300 ease-out"
-              onClick={() => handleImageClick(image)}
-            />
+              initial={{ opacity: 0, y: 50 }} // establece la posición inicial en la parte inferior y la opacidad en 0
+              animate={{ opacity: 1, y: 0 }} // anima la opacidad a 1 y la posición a 0 (arriba)
+              transition={{ duration: 1, delay: index * 0.3 }} // utiliza el índice del array para aplicar un retardo a la animación
+            >
+              <motion.img
+                src={image.img}
+                alt={`Imagen ${index + 1}`}
+                onClick={() => handleImageClick(image)}
+                className="w-38 rounded-lg overflow-hidden border-black shadow-lg hover:scale-110 transition-transform duration-300 ease-out"
+              />
+            </motion.a>
           ))}
         </div>
         {selectedImage && (
@@ -66,9 +81,13 @@ const RetBr = () => {
                         {selectedImage.title}
                       </h3>
                       <hr></hr>
-                      <p className=" mt-4 mb-4 text-xs text-justify w-full">
-                        {selectedImage.description}
-                      </p>
+                      <ul className="mt-4 mb-4 text-xs text-start w-full p-1">
+                        {selectedImage.description.map((description, index) => (
+                          <li key={index} className="mb-2">
+                            {index + 1}. {description}{" "}
+                          </li>
+                        ))}
+                      </ul>
                       <div>
                         <hr></hr>
                         <div class="grid grid-cols-3 mt-2 mb-2 text-center justify-center gap-2">

@@ -3,6 +3,7 @@ import LogoBC from "../../../img/logo-blanco.png";
 import Banktransfer from "../../../img/payments/Bank_transfer.jpg";
 import Retirotarjeta from "../../../img/payments/Pay_to_card.jpg";
 import Agencias from "../../../img/payments/Betcris_Agencias.png";
+import { motion } from "framer-motion";
 
 const imagesRetiros = [
   {
@@ -13,8 +14,12 @@ const imagesRetiros = [
     max: "$10,000.00",
     time: "El tiempo de acreditación varía según el banco receptor.",
     descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'Transferencia Bancaria', seguido ingresa el monto de tu retiro, Completa la información de tu cuenta bancaria para tu primer retiro (tus datos estarán guardados la próxima vez) y por último haz clic en 'Retirar'.",
+    description: [
+      "Haz clic en 'Transferencia Bancaria'",
+      "Ingresa el monto de tu retiro",
+      "Completa la información de tu cuenta bancaria para tu primer retiro (tus datos estarán guardados la próxima vez)",
+      "Haz clic en 'Retirar'",
+    ],
   },
   {
     img: Retirotarjeta,
@@ -24,8 +29,12 @@ const imagesRetiros = [
     max: "$5,000.00",
     time: "30 minutos",
     descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'Retiro a tarjeta-Visa Direct', seguido ingresa la cantidad deseada, selecciona la tarjeta y por último haz clic en 'Retirar'.",
+    description: [
+      "Haz clic en 'Retiro a tarjeta-Visa Direct'",
+      "Ingresa la cantidad deseada",
+      "Selecciona la tarjeta",
+      "Haz clic en 'Retirar'",
+    ],
   },
   {
     img: Agencias,
@@ -35,8 +44,11 @@ const imagesRetiros = [
     max: "$",
     time: "-",
     descriptionTitle: "Dentro de quioscos o agencias Betcris:",
-    description:
-      "Ofrecemos una variedad de formas rápidas y convenientes para retirar fondos en tu cuenta, incluyendo depósitos en las Agencias oficiales de Betcris. Para hacer tu retiro solo debes presentar tu identificación y número de cuenta, además de haber completado todos los procesos de verificación necesarios para el retiro de fondos. Contacta a tu Agencia Betcris más cercana para confirmar los montos mínimos y máximos por transacción, así como cualquier detalle adicional que necesites, ya que pueden variar según el país.",
+    description: [
+      "Ofrecemos una variedad de formas rápidas y convenientes para retirar fondos en tu cuenta, incluyendo depósitos en las Agencias oficiales de Betcris.",
+      "Para hacer tu retiro solo debes presentar tu identificación y número de cuenta, además de haber completado todos los procesos de verificación necesarios para el retiro de fondos.",
+      "Contacta a tu Agencia Betcris más cercana para confirmar los montos mínimos y máximos por transacción, así como cualquier detalle adicional que necesites, ya que pueden variar según el país.",
+    ],
   },
 ];
 
@@ -57,13 +69,19 @@ const RetPa = () => {
         {/* Grid */}
         <div className="grid grid-cols-3 p-4 sm:grid-cols-5 md:grid-cols-5 lg:grid-cols-5 gap-4 mt-5 sm:m-10 sm:mt-5 lg:m-56 lg:mt-5">
           {imagesRetiros.map((image, index) => (
-            <img
+            <motion.a
               key={index}
-              src={image.img}
-              alt={`Imagen ${index + 1}`}
-              className="w-38 rounded-lg overflow-hidden border-black shadow-lg hover:scale-110 transition-transform duration-300 ease-out"
-              onClick={() => handleImageClick(image)}
-            />
+              initial={{ opacity: 0, y: 50 }} // establece la posición inicial en la parte inferior y la opacidad en 0
+              animate={{ opacity: 1, y: 0 }} // anima la opacidad a 1 y la posición a 0 (arriba)
+              transition={{ duration: 1, delay: index * 0.3 }} // utiliza el índice del array para aplicar un retardo a la animación
+            >
+              <motion.img
+                src={image.img}
+                alt={`Imagen ${index + 1}`}
+                onClick={() => handleImageClick(image)}
+                className="w-38 rounded-lg overflow-hidden border-black shadow-lg hover:scale-110 transition-transform duration-300 ease-out"
+              />
+            </motion.a>
           ))}
         </div>
         {selectedImage && (
@@ -80,11 +98,34 @@ const RetPa = () => {
                         {selectedImage.title}
                       </h3>
                       <hr></hr>
-                      <p className=" mt-4 mb-4 text-xs text-justify w-full">
+                      <ul className="mt-4 mb-4 text-xs text-start w-full p-1">
                         <p>{selectedImage.descriptionTitle}</p>
                         <br></br>
-                        {selectedImage.description}
-                      </p>
+                        {selectedImage.title !== "AGENCIAS BETCRIS" ? (
+                          selectedImage.description.map(
+                            (description, index) => (
+                              <li key={index} className="mb-2">
+                                {index + 1}. {description}{" "}
+                              </li>
+                            )
+                          )
+                        ) : (
+                          <li
+                            className="mb-2"
+                            style={{ whiteSpace: "pre-wrap" }}
+                          >
+                            {selectedImage.description.map(
+                              (description, index) => (
+                                <div key={index}>
+                                  {description}
+                                  <br />
+                                  <br />
+                                </div>
+                              )
+                            )}
+                          </li>
+                        )}
+                      </ul>
                       {selectedImage.title !== "AGENCIAS BETCRIS" && (
                         <div>
                           <hr></hr>
