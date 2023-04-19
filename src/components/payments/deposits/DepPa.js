@@ -6,6 +6,7 @@ import Puntopago from "../../../img/payments/Punto_Pago.jpg";
 import Tarjetas from "../../../img/payments/Tarjetas.jpg";
 import Banktransfer from "../../../img/payments/Bank_transfer.jpg";
 import Agencias from "../../../img/payments/Betcris_Agencias.png";
+import { motion } from "framer-motion";
 
 const imagesDepositos = [
   {
@@ -16,8 +17,15 @@ const imagesDepositos = [
     max: "$5,000.00",
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'Sistema Clave', seguido haz clic en pagar como invitado, elige 'Sistema Clave' nuevamente, ingresa tu correo electrónico y número telefónico, haz clic en la opción de enviar pago, llena los datos para el registro de la tarjeta 'CLAVE', haz clic en 'Aceptar', proporciona el PIN de la tarjeta 'CLAVE' y por último haz clic en confirmar.",
+    description: [
+      "Haz clic en 'Sistema Clave'",
+      "Haz clic en pagar como invitado",
+      "Elige 'Sistema Clave' nuevamente",
+      "Ingresa tu correo electrónico y número telefónico, haz clic en la opción de enviar pago",
+      "Llena los datos para el registro de la tarjeta 'CLAVE', haz clic en 'Aceptar'",
+      "Proporciona el PIN de la tarjeta 'CLAVE'",
+      "Haz clic en confirmar",
+    ],
   },
   {
     img: PayCash,
@@ -27,8 +35,13 @@ const imagesDepositos = [
     max: "$200.00",
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'Pagar en efectivo', seguido ingresa el monto a depositar y selecciona la opción 'Generar referencia', el sistema te brindará un código de 16 dígitos que debes copiar, luego debes presentarte en la tienda de conveniencia y brindar al cajero el número de referencia y el dinero a pagar (el monto debe ser el mismo que digitaste en el Cajero en Línea de Betcris). Guarda el recibo como comprobante de pago.",
+    description: [
+      "Haz clic en 'Pagar en efectivo'",
+      "Ingresa el monto a depositar y selecciona la opción 'Generar referencia'",
+      "El sistema te brindará un código de 16 dígitos que debes copiar",
+      "Luego debes presentarte en la tienda de conveniencia y brindar al cajero el número de referencia y el dinero a pagar (el monto debe ser el mismo que digitaste en el Cajero en Línea de Betcris)",
+      "Guarda el recibo como comprobante de pago.",
+    ],
   },
   {
     img: Puntopago,
@@ -38,8 +51,13 @@ const imagesDepositos = [
     max: "$200.00",
     time: "Inmediato",
     descriptionTitle: "En el quiosco de Punto Pago:",
-    description:
-      "Busca el botón 'Betcris', seguido ingresa tu número de cuenta 'PANXXXX', revisa y confirma tus datos personales, luego ingresa el monto a recargar, haz clic en opción 'Pagar', y se te dará un recibo que confirma tu transacción.",
+    description: [
+      "Busca el botón 'Betcris'",
+      "Ingresa tu número de cuenta 'PANXXXX'",
+      "Revisa y confirma tus datos personales, luego ingresa el monto a recargar",
+      "Haz clic en opción 'Pagar'",
+      "Se te dará un recibo que confirma tu transacción.",
+    ],
   },
   {
     img: Tarjetas,
@@ -49,8 +67,11 @@ const imagesDepositos = [
     max: "$250.00",
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'Tarjetas de crédito y débito', Ingresa la información solicitada si esta es la primera vez que estás usando una tarjeta (para acelerar el proceso, la próxima vez que realices un depósito, los datos de tu tarjeta ya estarán almacenados) y haz clic en 'Guardar'.",
+    description: [
+      "Haz clic en 'Tarjetas de crédito y débito'",
+      "Ingresa la información solicitada si esta es la primera vez que estás usando una tarjeta (para acelerar el proceso, la próxima vez que realices un depósito, los datos de tu tarjeta ya estarán almacenados)",
+      "Haz clic en 'Guardar'",
+    ],
   },
   {
     img: Banktransfer,
@@ -60,8 +81,12 @@ const imagesDepositos = [
     max: "$20,000.00",
     time: "Una vez aprobados, los fondos se tramitan de forma inmediata a tu cuenta.",
     descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'Transferencia bancaria', selecciona el banco con el que tienes una cuenta, copia la información que se muestra en el sitio web de tu banco, luego sigue los pasos que se muestran en la pantalla para confirmar la transacción y por último haz clic en 'Reportar depósito'.",
+    description: [
+      "Haz clic en 'Transferencia bancaria'",
+      "Selecciona el banco con el que tienes una cuenta, copia la información que se muestra en el sitio web de tu banco",
+      "Sigue los pasos que se muestran en la pantalla para confirmar la transacción",
+      "Haz clic en 'Reportar depósito'",
+    ],
   },
   {
     img: Agencias,
@@ -71,8 +96,11 @@ const imagesDepositos = [
     max: "$",
     time: "-",
     descriptionTitle: "Dentro de quioscos o agencias Betcris:",
-    description:
-      "Ofrecemos una variedad de formas rápidas y convenientes para depositar fondos en tu cuenta, incluyendo depósitos en las Agencias oficiales de Betcris. Para hacer tu depósito, solo debes presentar tu identificación y número de cuenta, junto con los fondos a depositar. Contacta a tu Agencia Betcris más cercana para confirmar los montos mínimos y máximos por transacción, así como cualquier detalle adicional que necesites, ya que pueden variar según el país.",
+    description: [
+      "Ofrecemos una variedad de formas rápidas y convenientes para depositar fondos en tu cuenta, incluyendo depósitos en las Agencias oficiales de Betcris.",
+      "Para hacer tu depósito, solo debes presentar tu identificación y número de cuenta, junto con los fondos a depositar.",
+      "Contacta a tu Agencia Betcris más cercana para confirmar los montos mínimos y máximos por transacción, así como cualquier detalle adicional que necesites, ya que pueden variar según el país.",
+    ],
   },
 ];
 
@@ -93,13 +121,19 @@ const DepPa = () => {
         {/* Grid */}
         <div className="grid grid-cols-3 p-4 sm:grid-cols-5 md:grid-cols-5 lg:grid-cols-5 gap-4 mt-5 sm:m-10 sm:mt-5 lg:m-56 lg:mt-5">
           {imagesDepositos.map((image, index) => (
-            <img
+            <motion.a
               key={index}
-              src={image.img}
-              alt={`Imagen ${index + 1}`}
-              className="w-38 rounded-lg overflow-hidden border-black shadow-lg hover:scale-110 transition-transform duration-300 ease-out"
-              onClick={() => handleImageClick(image)}
-            />
+              initial={{ opacity: 0, y: 50 }} // establece la posición inicial en la parte inferior y la opacidad en 0
+              animate={{ opacity: 1, y: 0 }} // anima la opacidad a 1 y la posición a 0 (arriba)
+              transition={{ duration: 1, delay: index * 0.3 }} // utiliza el índice del array para aplicar un retardo a la animación
+            >
+              <motion.img
+                src={image.img}
+                alt={`Imagen ${index + 1}`}
+                onClick={() => handleImageClick(image)}
+                className="w-38 rounded-lg overflow-hidden border-black shadow-lg hover:scale-110 transition-transform duration-300 ease-out"
+              />
+            </motion.a>
           ))}
         </div>
         {selectedImage && (
@@ -116,11 +150,34 @@ const DepPa = () => {
                         {selectedImage.title}
                       </h3>
                       <hr></hr>
-                      <p className=" mt-4 mb-4 text-xs text-justify w-full">
+                      <ul className="mt-4 mb-4 text-xs text-start w-full p-1">
                         <p>{selectedImage.descriptionTitle}</p>
                         <br></br>
-                        {selectedImage.description}
-                      </p>
+                        {selectedImage.title !== "AGENCIAS BETCRIS" ? (
+                          selectedImage.description.map(
+                            (description, index) => (
+                              <li key={index} className="mb-2">
+                                {index + 1}. {description}{" "}
+                              </li>
+                            )
+                          )
+                        ) : (
+                          <li
+                            className="mb-2"
+                            style={{ whiteSpace: "pre-wrap" }}
+                          >
+                            {selectedImage.description.map(
+                              (description, index) => (
+                                <div key={index}>
+                                  {description}
+                                  <br />
+                                  <br />
+                                </div>
+                              )
+                            )}
+                          </li>
+                        )}
+                      </ul>
                       {selectedImage.title !== "AGENCIAS BETCRIS" && (
                         <div>
                           <hr></hr>

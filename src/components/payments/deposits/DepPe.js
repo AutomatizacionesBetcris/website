@@ -11,6 +11,7 @@ import Neteller from "../../../img/payments/Neteller.jpg";
 import EcoPayz from "../../../img/payments/Ecopayz.jpg";
 import Yape from "../../../img/payments/Yape.jpg";
 import Skrill1Tap from "../../../img/payments/Skril_tap.jpg";
+import { motion } from "framer-motion";
 
 const imagesDepositos = [
   {
@@ -21,8 +22,12 @@ const imagesDepositos = [
     max: "$5,000.00",
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'Tarjetas de crédito y débito', ingresa la información solicitada si esta es la primera vez que estás usando una tarjeta (para acelerar el proceso, la próxima vez que realices un depósito, los datos de tu tarjeta ya estarán almacenados) y haz clic en 'Guardar', seguido ingresa el monto que quieres depositar y por último selecciona 'Confirmar' para completar la transacción.",
+    description: [
+      "Haz clic en 'Tarjetas de crédito y débito'",
+      "Ingresa la información solicitada si esta es la primera vez que estás usando una tarjeta (para acelerar el proceso, la próxima vez que realices un depósito, los datos de tu tarjeta ya estarán almacenados) y haz clic en 'Guardar'",
+      "Ingresa el monto que quieres depositar",
+      "Selecciona 'Confirmar' para completar la transacción",
+    ],
   },
   {
     img: PagoEfectivo,
@@ -32,8 +37,11 @@ const imagesDepositos = [
     max: "$1,100.00",
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'Pago Efectivo', seguido ingresa el monto que quieres depositar y haz clic en 'Depositar', luego muestra el código de pago, el monto y la fecha de expiración que te proporcionan en un punto de pago para obtener el crédito en tu cuenta Betcris.",
+    description: [
+      "Haz clic en 'Pago Efectivo'",
+      "Ingresa el monto que quieres depositar y haz clic en 'Depositar'",
+      "Muestra el código de pago, el monto y la fecha de expiración que te proporcionan en un punto de pago para obtener el crédito en tu cuenta Betcris",
+    ],
   },
   {
     img: PaysafeCard,
@@ -43,8 +51,12 @@ const imagesDepositos = [
     max: "$2,500.00",
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'PaySafecard', seguido ingresa el monto del depósito y haz clic en 'Depositar', luego ingresa el PIN de 16 dígitos de PaySafecard y por último haz clic en 'Depositar' para completar la transacción.",
+    description: [
+      "Haz clic en 'PaySafecard'",
+      "Ingresa el monto del depósito y haz clic en 'Depositar'",
+      "Ingresa el PIN de 16 dígitos de PaySafecard",
+      "Haz clic en 'Depositar' para completar la transacción",
+    ],
   },
   {
     img: Skrill,
@@ -54,8 +66,11 @@ const imagesDepositos = [
     max: "$100,000.00",
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'e-Wallet', seguido en 'Skrill', ingresa el monto y la información de tu cuenta de Skrill, luego pulsa 'Depositar'. Serás redirigido al sitio de Skrill para completar la transacción.",
+    description: [
+      "Haz clic en 'e-Wallet', seguido en 'Skrill'",
+      "Ingresa el monto y la información de tu cuenta de Skrill, luego pulsa 'Depositar'",
+      "Serás redirigido al sitio de Skrill para completar la transacción",
+    ],
   },
   {
     img: Neteller,
@@ -65,8 +80,12 @@ const imagesDepositos = [
     max: "$100,000.00",
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'e-Wallet', seguido en 'NETELLER', ingresa la cantidad, tu número de cuenta y haz clic en 'Depositar', luego pulsa 'Depositar'. Serás redirigido al sitio de Skrill para completar la transacción. Completa la transacción en el sitio de NETELLER al que se te redirige.",
+    description: [
+      "Haz clic en 'e-Wallet', seguido en 'NETELLER'",
+      "Ingresa la cantidad, tu número de cuenta y haz clic en 'Depositar'",
+      "Serás redirigido al sitio de Skrill para completar la transacción",
+      "Completa la transacción en el sitio de NETELLER al que se te redirige",
+    ],
   },
   {
     img: Skrill1Tap,
@@ -76,8 +95,11 @@ const imagesDepositos = [
     max: "$100,000.00",
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'e-Wallet', seguido en 'Skrill 1-Tap', ingresa el monto, tu cuenta Skrill y haz clic en 'Depositar' y por último completa la transacción en la página de Skrill donde se te redirige.",
+    description: [
+      "Haz clic en 'e-Wallet', seguido en 'Skrill 1-Tap'",
+      "Ingresa el monto, tu cuenta Skrill y haz clic en 'Depositar'",
+      "Completa la transacción en la página de Skrill donde se te redirige",
+    ],
   },
   {
     img: EcoPayz,
@@ -87,8 +109,11 @@ const imagesDepositos = [
     max: "$50,000.00",
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'e-Wallet', seguido en 'ecoPayz', ingresa el monto que quieres depositar, tu número de cuenta ecoPayz y haz clic en 'Confirmar'. Completa la transacción en el sitio de ecoPayz al que se te redirige.",
+    description: [
+      "Haz clic en 'e-Wallet', seguido en 'ecoPayz'",
+      "Ingresa el monto que quieres depositar, tu número de cuenta ecoPayz y haz clic en 'Confirmar'",
+      "Completa la transacción en el sitio de ecoPayz al que se te redirige",
+    ],
   },
   {
     img: SafetyPay,
@@ -98,8 +123,11 @@ const imagesDepositos = [
     max: "$1,100.00",
     time: "60 minutos",
     descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'SafetyPay', seguido ingresa la cantidad y presiona 'Depositar', una vez que cargue la página de SafetyPay, elige entre Transferencia bancaria o Pagar en efectivo.",
+    description: [
+      "Haz clic en 'SafetyPay'",
+      "Ingresa la cantidad y presiona 'Depositar'",
+      "Una vez que cargue la página de SafetyPay, elige entre Transferencia bancaria o Pagar en efectivo",
+    ],
   },
   {
     img: AstroPay,
@@ -109,8 +137,12 @@ const imagesDepositos = [
     max: "$100,000.00",
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'AstroPay', seguido ingresa la cantidad y presiona 'Depositar', luego ingresa el monto y la información de la tarjeta y por último pulsa 'Depositar' para completar la transacción.",
+    description: [
+      "Haz clic en 'AstroPay'",
+      "Ingresa la cantidad y presiona 'Depositar'",
+      "Ingresa el monto y la información de la tarjeta",
+      "Pulsa 'Depositar' para completar la transacción",
+    ],
   },
   {
     img: Yape,
@@ -120,8 +152,11 @@ const imagesDepositos = [
     max: "$125.00",
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'Yape o Plin', seguido elige un método, ingresa el monto que deseas y haz clic en 'Depositar', y por último escanea el código QR que se genera en tu pantalla desde tu aplicación favorita.",
+    description: [
+      "Haz clic en 'Yape o Plin'",
+      "Elige un método, ingresa el monto que deseas y haz clic en 'Depositar'",
+      "Escanea el código QR que se genera en tu pantalla desde tu aplicación favorita",
+    ],
   },
   {
     img: Agencias,
@@ -131,8 +166,11 @@ const imagesDepositos = [
     max: "$",
     time: "Inmediato",
     descriptionTitle: "Dentro de quioscos o agencias Betcris:",
-    description:
-      "Ofrecemos una variedad de formas rápidas y convenientes para depositar fondos en tu cuenta, incluyendo depósitos en las Agencias oficiales de Betcris. Para hacer tu depósito, solo debes presentar tu identificación y número de cuenta, junto con los fondos a depositar. Contacta a tu Agencia Betcris más cercana para confirmar los montos mínimos y máximos por transacción, así como cualquier detalle adicional que necesites, ya que pueden variar según el país.",
+    description: [
+      "Ofrecemos una variedad de formas rápidas y convenientes para depositar fondos en tu cuenta, incluyendo depósitos en las Agencias oficiales de Betcris.",
+      "Para hacer tu depósito, solo debes presentar tu identificación y número de cuenta, junto con los fondos a depositar.",
+      "Contacta a tu Agencia Betcris más cercana para confirmar los montos mínimos y máximos por transacción, así como cualquier detalle adicional que necesites, ya que pueden variar según el país.",
+    ],
   },
 ];
 
@@ -153,13 +191,19 @@ const DepPe = () => {
         {/* Grid */}
         <div className="grid grid-cols-3 p-4 sm:grid-cols-5 md:grid-cols-5 lg:grid-cols-5 gap-4 mt-5 sm:m-10 sm:mt-5 lg:m-56 lg:mt-5">
           {imagesDepositos.map((image, index) => (
-            <img
+            <motion.a
               key={index}
-              src={image.img}
-              alt={`Imagen ${index + 1}`}
-              className="w-38 rounded-lg overflow-hidden border-black shadow-lg hover:scale-110 transition-transform duration-300 ease-out"
-              onClick={() => handleImageClick(image)}
-            />
+              initial={{ opacity: 0, y: 50 }} // establece la posición inicial en la parte inferior y la opacidad en 0
+              animate={{ opacity: 1, y: 0 }} // anima la opacidad a 1 y la posición a 0 (arriba)
+              transition={{ duration: 1, delay: index * 0.3 }} // utiliza el índice del array para aplicar un retardo a la animación
+            >
+              <motion.img
+                src={image.img}
+                alt={`Imagen ${index + 1}`}
+                onClick={() => handleImageClick(image)}
+                className="w-38 rounded-lg overflow-hidden border-black shadow-lg hover:scale-110 transition-transform duration-300 ease-out"
+              />
+            </motion.a>
           ))}
         </div>
         {selectedImage && (
@@ -176,11 +220,34 @@ const DepPe = () => {
                         {selectedImage.title}
                       </h3>
                       <hr></hr>
-                      <p className=" mt-4 mb-4 text-xs text-justify w-full">
+                      <ul className="mt-4 mb-4 text-xs text-start w-full p-1">
                         <p>{selectedImage.descriptionTitle}</p>
                         <br></br>
-                        {selectedImage.description}
-                      </p>
+                        {selectedImage.title !== "AGENCIAS BETCRIS" ? (
+                          selectedImage.description.map(
+                            (description, index) => (
+                              <li key={index} className="mb-2">
+                                {index + 1}. {description}{" "}
+                              </li>
+                            )
+                          )
+                        ) : (
+                          <li
+                            className="mb-2"
+                            style={{ whiteSpace: "pre-wrap" }}
+                          >
+                            {selectedImage.description.map(
+                              (description, index) => (
+                                <div key={index}>
+                                  {description}
+                                  <br />
+                                  <br />
+                                </div>
+                              )
+                            )}
+                          </li>
+                        )}
+                      </ul>
                       {selectedImage.title !== "AGENCIAS BETCRIS" && (
                         <div>
                           <hr></hr>

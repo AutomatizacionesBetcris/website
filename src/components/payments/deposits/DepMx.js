@@ -13,6 +13,7 @@ import Neteller from "../../../img/payments/Neteller.jpg";
 import EcoPayz from "../../../img/payments/Ecopayz.jpg";
 import Paypal from "../../../img/payments/Paypal.jpg";
 import Skrill1Tap from "../../../img/payments/Skril_tap.jpg";
+import { motion } from "framer-motion";
 
 const imagesDepositos = [
   {
@@ -23,8 +24,11 @@ const imagesDepositos = [
     max: "MXN 98,750.00",
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'Tarjetas de crédito y débito', ingresa el monto que quieres deposita, seguido selecciona 'Siguiente', luego asegúrate de revisar todos los detalles y presiona 'Confirmar' para completar la transacción.",
+    description: [
+      "Haz clic en 'Tarjetas de crédito y débito'",
+      "Ingresa el monto que quieres deposita, seguido selecciona 'Siguiente'",
+      "Asegúrate de revisar todos los detalles y presiona 'Confirmar' para completar la transacción",
+    ],
   },
   {
     img: SafetyPay,
@@ -34,8 +38,11 @@ const imagesDepositos = [
     max: "MXN 19,750.00",
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'SafetyPay', ingresa la cantidad y presiona 'Depositar', una vez que cargue la página de SafetyPay, elige entre Transferencia bancaria o Pagar en efectivo.",
+    description: [
+      "Haz clic en 'SafetyPay'",
+      "Ingresa la cantidad y presiona 'Depositar'",
+      "Una vez que cargue la página de SafetyPay, elige entre Transferencia bancaria o Pagar en efectivo",
+    ],
   },
   {
     img: AstroPay,
@@ -45,8 +52,11 @@ const imagesDepositos = [
     max: "MXN 197,500.00",
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'AstroPay Card', seguido ingresa el monto y la información de la tarjeta, pulsa 'Depositar' para completar la transacción.",
+    description: [
+      "Haz clic en 'AstroPay Card'",
+      "Ingresa el monto y la información de la tarjeta",
+      "Pulsa 'Depositar' para completar la transacción",
+    ],
   },
   {
     img: Oxxo,
@@ -56,8 +66,11 @@ const imagesDepositos = [
     max: "MXN 9,404.00",
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'Oxxo Pay', seguido ingresa el monto a depositar, haz clic en 'Depositar'. Se te generará un número de transacción, el cual podrás ir a pagar al Oxxo más cercano, para que los fondos se acrediten de forma inmediata.",
+    description: [
+      "Haz clic en 'Oxxo Pay'",
+      "Ingresa el monto a depositar, haz clic en 'Depositar'",
+      "Se te generará un número de transacción, el cual podrás ir a pagar al Oxxo más cercano, para que los fondos se acrediten de forma inmediata",
+    ],
   },
   {
     img: PaysafeCard,
@@ -67,8 +80,11 @@ const imagesDepositos = [
     max: "MXN 49,375.00",
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'Paysafecard', seguido ingresa el monto del depósito, luego ingresa los 16 dígitos del PIN de paysafecard y por último pulsa 'Depositar' para completar la transacción.",
+    description: [
+      "Haz clic en 'Paysafecard'",
+      "Ingresa el monto del depósito, luego ingresa los 16 dígitos del PIN de paysafecard",
+      "Pulsa 'Depositar' para completar la transacción",
+    ],
   },
   {
     img: SPEI,
@@ -78,8 +94,11 @@ const imagesDepositos = [
     max: "MXN 395,000.00",
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'SPEI', ingresa la cantidad y los datos que se te solicitan, luego haz clic en 'Depositar'. Se te brindará la información del detalle de pago que debes utilizar para que hagas la transferencia.",
+    description: [
+      "Haz clic en 'SPEI'",
+      "Ingresa la cantidad y los datos que se te solicitan, luego haz clic en 'Depositar'",
+      "Se te brindará la información del detalle de pago que debes utilizar para que hagas la transferencia",
+    ],
   },
   {
     img: Paynet,
@@ -89,8 +108,12 @@ const imagesDepositos = [
     max: "MXN 59,250.00",
     time: "24 horas",
     descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'Paynet', ingresa el monto que deseas depositar, luego ingresa los datos que se te solicitan, los cuales solo se te pedirán una vez, y quedarán guardados para futuras transacciones y por último haz clic en 'Depositar'.",
+    description: [
+      "Haz clic en 'Paynet'",
+      "Ingresa el monto que deseas depositar",
+      "Ingresa los datos que se te solicitan, los cuales solo se te pedirán una vez, y quedarán guardados para futuras transacciones",
+      "Haz clic en 'Depositar'",
+    ],
   },
   {
     img: Skrill,
@@ -100,8 +123,11 @@ const imagesDepositos = [
     max: "MXN 185,000.00",
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'e-Wallet', seguido en 'Skrill', seguido ingresa el monto y la información de tu cuenta de Skrill, luego pulsa 'Depositar'. Serás redirigido al sitio de Skrill para completar la transacción.",
+    description: [
+      "Haz clic en 'e-Wallet', seguido en 'Skrill'",
+      "Ingresa el monto y la información de tu cuenta de Skrill, luego pulsa 'Depositar'",
+      "Serás redirigido al sitio de Skrill para completar la transacción",
+    ],
   },
   {
     img: Neteller,
@@ -111,8 +137,11 @@ const imagesDepositos = [
     max: "MXN 185,000.00",
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'e-Wallet', seguido en 'NETELLER', seguido ingresa el monto, tu número de cuenta e identificación segura de NETELLER, luego pulsa 'Depositar'. Serás redirigido al sitio de NETELLER para completar la transacción.",
+    description: [
+      "Haz clic en 'e-Wallet', seguido en 'NETELLER'",
+      "Ingresa el monto, tu número de cuenta e identificación segura de NETELLER, luego pulsa 'Depositar'",
+      "Serás redirigido al sitio de NETELLER para completar la transacción",
+    ],
   },
   {
     img: Skrill1Tap,
@@ -122,8 +151,11 @@ const imagesDepositos = [
     max: "MXN 185,000.00",
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'e-Wallet', seguido en 'Skrill 1-Tap', seguido ingresa el monto, y la información de tu cuenta de Skrill 1-Tap, luego pulsa 'Depositar'. Serás redirigido al sitio de Skrill para completar la transacción.",
+    description: [
+      "Haz clic en 'e-Wallet', seguido en 'Skrill 1-Tap'",
+      "Ingresa el monto, y la información de tu cuenta de Skrill 1-Tap, luego pulsa 'Depositar'",
+      "Serás redirigido al sitio de Skrill para completar la transacción",
+    ],
   },
   {
     img: EcoPayz,
@@ -133,8 +165,11 @@ const imagesDepositos = [
     max: "MXN 926,000.00",
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'e-Wallet', seguido en 'ecoPayz', ingresa el monto y la información de tu cuenta de ecoPayz, luego pulsa 'Depositar'. Serás redirigido al sitio de ecoPayz para completar la transacción.",
+    description: [
+      "Haz clic en 'e-Wallet', seguido en 'ecoPayz'",
+      "Ingresa el monto y la información de tu cuenta de ecoPayz, luego pulsa 'Depositar'",
+      "Serás redirigido al sitio de ecoPayz para completar la transacción",
+    ],
   },
   {
     img: Agencias,
@@ -144,8 +179,11 @@ const imagesDepositos = [
     max: "$",
     time: "Inmediato",
     descriptionTitle: "Dentro de quioscos o agencias Betcris:",
-    description:
-      "Ofrecemos una variedad de formas rápidas y convenientes para depositar fondos en tu cuenta, incluyendo depósitos en las Agencias oficiales de Betcris. Para hacer tu depósito, solo debes presentar tu identificación y número de cuenta, junto con los fondos a depositar. Contacta a tu Agencia Betcris más cercana para confirmar los montos mínimos y máximos por transacción, así como cualquier detalle adicional que necesites, ya que pueden variar según el país.",
+    description: [
+      "Ofrecemos una variedad de formas rápidas y convenientes para depositar fondos en tu cuenta, incluyendo depósitos en las Agencias oficiales de Betcris.",
+      "Para hacer tu depósito, solo debes presentar tu identificación y número de cuenta, junto con los fondos a depositar.",
+      "Contacta a tu Agencia Betcris más cercana para confirmar los montos mínimos y máximos por transacción, así como cualquier detalle adicional que necesites, ya que pueden variar según el país.",
+    ],
   },
   {
     img: Paypal,
@@ -155,8 +193,13 @@ const imagesDepositos = [
     max: "MXN 180,000.00",
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
-    description:
-      "Haz clic en 'PayPal', seguido ingresa el monto que deseas y haz clic en 'Depositar', el sistema te redirigirá a la página de PayPal para completar tu pago. Una vez que hayas iniciado sesión en la página de PayPal, selecciona la tarjeta previamente registrada en tu cuenta PayPal o puedes agregar una nueva y por último confirma la tarjeta y, haz clic en 'Compra completa'.",
+    description: [
+      "Haz clic en 'PayPal'",
+      "Ingresa el monto que deseas y haz clic en 'Depositar'",
+      "El sistema te redirigirá a la página de PayPal para completar tu pago",
+      "Una vez que hayas iniciado sesión en la página de PayPal, selecciona la tarjeta previamente registrada en tu cuenta PayPal o puedes agregar una nueva",
+      "Confirma la tarjeta y, haz clic en 'Compra completa'",
+    ],
   },
 ];
 
@@ -177,13 +220,19 @@ const DepMx = () => {
         {/* Grid */}
         <div className="grid grid-cols-3 p-4 sm:grid-cols-5 md:grid-cols-5 lg:grid-cols-5 gap-4 mt-5 sm:m-10 sm:mt-5 lg:m-56 lg:mt-5">
           {imagesDepositos.map((image, index) => (
-            <img
+            <motion.a
               key={index}
-              src={image.img}
-              alt={`Imagen ${index + 1}`}
-              className="w-38 rounded-lg overflow-hidden border-black shadow-lg hover:scale-110 transition-transform duration-300 ease-out"
-              onClick={() => handleImageClick(image)}
-            />
+              initial={{ opacity: 0, y: 50 }} // establece la posición inicial en la parte inferior y la opacidad en 0
+              animate={{ opacity: 1, y: 0 }} // anima la opacidad a 1 y la posición a 0 (arriba)
+              transition={{ duration: 1, delay: index * 0.3 }} // utiliza el índice del array para aplicar un retardo a la animación
+            >
+              <motion.img
+                src={image.img}
+                alt={`Imagen ${index + 1}`}
+                onClick={() => handleImageClick(image)}
+                className="w-38 rounded-lg overflow-hidden border-black shadow-lg hover:scale-110 transition-transform duration-300 ease-out"
+              />
+            </motion.a>
           ))}
         </div>
         {selectedImage && (
@@ -200,11 +249,34 @@ const DepMx = () => {
                         {selectedImage.title}
                       </h3>
                       <hr></hr>
-                      <p className=" mt-4 mb-4 text-xs text-justify w-full">
+                      <ul className="mt-4 mb-4 text-xs text-start w-full p-1">
                         <p>{selectedImage.descriptionTitle}</p>
                         <br></br>
-                        {selectedImage.description}
-                      </p>
+                        {selectedImage.title !== "AGENCIAS BETCRIS" ? (
+                          selectedImage.description.map(
+                            (description, index) => (
+                              <li key={index} className="mb-2">
+                                {index + 1}. {description}{" "}
+                              </li>
+                            )
+                          )
+                        ) : (
+                          <li
+                            className="mb-2"
+                            style={{ whiteSpace: "pre-wrap" }}
+                          >
+                            {selectedImage.description.map(
+                              (description, index) => (
+                                <div key={index}>
+                                  {description}
+                                  <br />
+                                  <br />
+                                </div>
+                              )
+                            )}
+                          </li>
+                        )}
+                      </ul>
                       {selectedImage.title !== "AGENCIAS BETCRIS" && (
                         <div>
                           <hr></hr>
