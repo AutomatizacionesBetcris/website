@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/website/static/css/main.c405eca2.css",
-    "main.js": "/website/static/js/main.c64d76b7.js",
+    "main.js": "/website/static/js/main.e14be2ee.js",
     "static/media/DO_desktop_corto.gif": "/website/static/media/DO_desktop_corto.80eb8aa8975f0d813909.gif",
     "static/media/PA_desktop_corto.gif": "/website/static/media/PA_desktop_corto.a28413936ee485df3cdb.gif",
     "static/media/MX_desktop_corto.gif": "/website/static/media/MX_desktop_corto.2b6bc38c7406530519d6.gif",
@@ -51,10 +51,10 @@
     "static/media/republica-dominicana.png": "/website/static/media/republica-dominicana.894c860a043c184be22d.png",
     "index.html": "/website/index.html",
     "main.c405eca2.css.map": "/website/static/css/main.c405eca2.css.map",
-    "main.c64d76b7.js.map": "/website/static/js/main.c64d76b7.js.map"
+    "main.e14be2ee.js.map": "/website/static/js/main.e14be2ee.js.map"
   },
   "entrypoints": [
     "static/css/main.c405eca2.css",
-    "static/js/main.c64d76b7.js"
+    "static/js/main.e14be2ee.js"
   ]
 }
