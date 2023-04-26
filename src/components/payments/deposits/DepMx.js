@@ -26,7 +26,7 @@ const imagesDepositos = [
     descriptionTitle: "Desde el Cajero de Betcris:",
     description: [
       "Haz clic en 'Tarjetas de crédito y débito'",
-      "Ingresa el monto que quieres deposita, seguido selecciona 'Siguiente'",
+      "Ingresa el monto que quieres depositar, seguido selecciona 'Siguiente'",
       "Asegúrate de revisar todos los detalles y presiona 'Confirmar' para completar la transacción",
     ],
   },
