@@ -3,7 +3,7 @@ import LogoBC from "../../../img/logo-blanco.png";
 import Tarjetas from "../../../img/payments/Tarjetas.jpg";
 import Facilito from "../../../img/payments/Facilito.jpg";
 import RedActiva from "../../../img/payments/RedActiva.jpg";
-import SafetyPay from "../../../img/payments/SafetyPay.jpg";
+import SafetyPay from "../../../img/payments/PagoEfectivoEC.jpg";
 import PayPhone from "../../../img/payments/Payphone.jpg";
 import AstroPay from "../../../img/payments/Astropay.jpg";
 import Agencias from "../../../img/payments/Betcris_Agencias.png";
@@ -51,9 +51,11 @@ const imagesDepositos = [
     time: "60 minutos",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description: [
-      "Haz clic en 'SafetyPay'",
-      "Ingresa la cantidad y presiona 'Depositar'",
-      "Una vez que cargue la página de SafetyPay, elige entre Transferencia bancaria o Pagar en efectivo.",
+      "Haz clic en el 'Menú Principal', en la parte superior izquierda de tu pantalla, y luego en el 'Cajero'",
+      "Selecciona 'Depósito' → 'Tiendas de conveniencia' → Pagar en efectivo",
+      "Ingresa el monto, selecciona un punto de pago y haz clic en 'Generar código de pago'",
+      "Reporta el código de pago de 6 dígitos que te proporciona el sistema",
+      "Sigue los pasos mostrados en pantalla para confirmar tu depósito.",
     ],
   },
   {

@@ -4,7 +4,7 @@ import Tarjetas from "../../../img/payments/Tarjetas.jpg";
 import Banktransfer from "../../../img/payments/Bank_transfer.jpg";
 import Agencias from "../../../img/payments/Betcris_Agencias.png";
 import AstroPay from "../../../img/payments/Astropay.jpg";
-import SafetyPay from "../../../img/payments/SafetyPay.jpg";
+import SafetyPay from "../../../img/payments/PagoEfectivoSV.jpg";
 import Skrill from "../../../img/payments/Skrill.jpg";
 import Neteller from "../../../img/payments/Neteller.jpg";
 import EcoPayz from "../../../img/payments/Ecopayz.jpg";
@@ -36,9 +36,10 @@ const imagesDepositos = [
     time: "60 minutos",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description: [
-      "Haz clic en 'SafetyPay'",
-      "Ingresa la cantidad y presiona 'Depositar'",
-      "Una vez que cargue la página de SafetyPay, elige entre Transferencia bancaria o Pagar en efectivo",
+      "Haz clic en el 'Menú Principal', en la parte superior izquierda de tu pantalla, y luego en el 'Cajero'",
+      "Selecciona 'Depósito' → Pagar en efectivo",
+      "Ingresa el monto a depositar",
+      "Completa el proceso en la página a la que te redirige el sistema.",
     ],
   },
   {

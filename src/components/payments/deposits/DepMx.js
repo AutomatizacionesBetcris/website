@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import LogoBC from "../../../img/logo-blanco.png";
 import Tarjetas from "../../../img/payments/Tarjetas.jpg";
-import SafetyPay from "../../../img/payments/SafetyPay.jpg";
+import SafetyPay from "../../../img/payments/PagoEfectivoMX.jpg";
 import AstroPay from "../../../img/payments/Astropay.jpg";
 import Agencias from "../../../img/payments/Betcris_Agencias.png";
 import Oxxo from "../../../img/payments/Oxxo.jpg";
@@ -39,9 +39,9 @@ const imagesDepositos = [
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description: [
-      "Haz clic en 'SafetyPay'",
-      "Ingresa la cantidad y presiona 'Depositar'",
-      "Una vez que cargue la página de SafetyPay, elige entre Transferencia bancaria o Pagar en efectivo",
+      "Elige Depósito → SafetyPay",
+      "Ingresa la cantidad y presiona Depositar",
+      "Una vez que cargue la página de SafetyPay, elige entre Transferencia bancaria o Pagar en efectivo.",
     ],
   },
   {

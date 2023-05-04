@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import LogoBC from "../../../img/logo-blanco.png";
-import Pay4Fun from "../../../img/payments/Pay4fun.jpg";
+import Pay4Fun2 from "../../../img/payments/Pay4fun2.jpg";
 import Pix from "../../../img/payments/Pix.jpg";
 import { motion } from "framer-motion";
 
 const imagesRetiros = [
   {
-    img: Pay4Fun,
+    img: Pay4Fun2,
     title: "PAY4FUN",
     url: "https://br.betcris.help/hc/pt-br/articles/9325651135377-Saque-Pay4Fun",
     min: "BRL 52",

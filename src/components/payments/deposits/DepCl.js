@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import LogoBC from "../../../img/logo-blanco.png";
 import Tarjetas from "../../../img/payments/Tarjetas.jpg";
 import AstroPay from "../../../img/payments/Astropay.jpg";
-import SafetyPay from "../../../img/payments/SafetyPay.jpg";
+import SafetyPay from "../../../img/payments/PagoEfectivoCL.jpg";
 import Mach from "../../../img/payments/Mach.jpg";
 import Skrill from "../../../img/payments/Skrill.jpg";
 import Neteller from "../../../img/payments/Neteller.jpg";
@@ -22,9 +22,10 @@ const imagesDepositos = [
     time: "60 minutos",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description: [
-      "Haz clic en 'SafetyPay'",
-      "Seguido ingresa la cantidad y presiona 'Depositar'",
-      "Una vez que cargue la página de SafetyPay, elige entre Transferencia bancaria o Pagar en efectivo",
+      "Haz clic en el 'Menú Principal', en la parte superior izquierda de tu pantalla, y luego en el 'Cajero'",
+      "Selecciona 'Depósito' → Pagar en efectivo ",
+      "Ingresa el monto a depositar",
+      "Completa el proceso en la página a la que te redirige el sistema.",
     ],
   },
   {
