@@ -1,15 +1,22 @@
 import { useState } from "react";
-import { testdata } from "./DataTest";
-import LogoBC from "../../img/logo-blanco.png";
+import { depositos, retiros } from "./RetDepData";
+import LogoBC from "../../../img/logo-blanco.png";
+import { motion } from "framer-motion";
 
-const TestMenu = () => {
+const DepRet = () => {
   const [selectedTab, setSelectedTab] = useState("depositos");
   const [selectedCountry, setSelectedCountry] = useState("");
   const [isAccordionOpen, setIsAccordionOpen] = useState(false);
+  const [depRetArray, setDepRetArray] = useState(depositos); // Default to depositos array
 
   const handleTabChange = (tab) => {
     setSelectedCountry(""); // Agregar esta línea para resetear el valor seleccionado del dropdown
     setSelectedTab(tab);
+    if (tab === "depositos") {
+      setDepRetArray(depositos);
+    } else if (tab === "retiros") {
+      setDepRetArray(retiros);
+    }
   };
 
   const handleCountryChange = (event) => {
@@ -24,28 +31,39 @@ const TestMenu = () => {
         <img src={LogoBC} alt="Logo" className="h-12" />
       </nav>
 
-      <div className="flex justify-center items-center rounded-lg">
-        {/* Tab de Depósitos */}
-        <div
-          className={`cursor-pointer p-4 ${
-            selectedTab === "depositos"
-              ? "bg-blue-500 text-white underline"
-              : "bg-gray-200 text-black"
-          }`}
-          onClick={() => handleTabChange("depositos")}
-        >
-          Depósitos
-        </div>
-        {/* Tab de Retiros */}
-        <div
-          className={`cursor-pointer p-4 ${
-            selectedTab === "retiros"
-              ? "bg-blue-500 text-white underline"
-              : "bg-gray-200 text-black"
-          }`}
-          onClick={() => handleTabChange("retiros")}
-        >
-          Retiros
+      <div className="p-5 m-5 bg-sky-900 bg-opacity-20 rounded-2xl shadow-black shadow-sm">
+        <div className="text-sm lg:text-base text-center">
+          <motion.h1
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }} // Aplica un retardo para que la animación del h1 se inicie después de la animación de los botones
+          >
+            <div className="flex justify-center items-center gap-5">
+              {/* Tab de Depósitos */}
+              <div
+                className={`cursor-pointer rounded-lg w-28 p-3 hover:opacity-80 border-2 ${
+                  selectedTab === "depositos"
+                    ? "bg-blue-500 text-white"
+                    : "bg-gray-200 text-black"
+                }`}
+                onClick={() => handleTabChange("depositos")}
+              >
+                Depósitos
+              </div>
+
+              {/* Tab de Retiros */}
+              <div
+                className={`cursor-pointer rounded-lg w-28 p-3 hover:opacity-80 border-2 ${
+                  selectedTab === "retiros"
+                    ? "bg-blue-500 text-white"
+                    : "bg-gray-200 text-black"
+                }`}
+                onClick={() => handleTabChange("retiros")}
+              >
+                Retiros
+              </div>
+            </div>
+          </motion.h1>
         </div>
       </div>
 
@@ -55,7 +73,7 @@ const TestMenu = () => {
           <div>
             <div className="flex flex-col justify-center items-center">
               {/* Contenido del tab de Retiros o Depósitos */}
-              <h1 className="text-center text-white text-lg mt-5 mb-5">
+              <h1 className="text-center text-white text-lg mb-5">
                 {selectedTab === "retiros" ? "Retiros" : "Depósitos"}
               </h1>
               {/* Dropdown de países */}
@@ -65,7 +83,7 @@ const TestMenu = () => {
                 onChange={handleCountryChange}
               >
                 <option value="">Seleccione un país</option>
-                {testdata.map((country) => (
+                {depRetArray.map((country) => (
                   <option key={country.pais} value={country.pais}>
                     {country.pais}
                   </option>
@@ -81,7 +99,7 @@ const TestMenu = () => {
                 </div>
 
                 {/* Mostrar la información correspondiente del país seleccionado en el acordeón */}
-                {testdata
+                {depositos
                   .find((country) => country.pais === selectedCountry)
                   ?.info.map((image, index) => (
                     <div key={index}>
@@ -165,4 +183,4 @@ const TestMenu = () => {
   );
 };
 
-export default TestMenu;
+export default DepRet;

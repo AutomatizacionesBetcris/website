@@ -25,12 +25,14 @@ import RETBR from "./components/payments/withdraw/RetBr";
 import DEPCA from "./components/payments/deposits/DepCa";
 import RETCA from "./components/payments/withdraw/RetCa";
 
-// General Payments
-import DEPGENERALEN from "./components/payments/general/deposits/DepMenuEN";
-import DEPGENERALES from "./components/payments/general/deposits/DepMenuES";
-import RETGENERALEN from "./components/payments/general/withdraw/RetMenuEN";
-import RETGENERALES from "./components/payments/general/withdraw/RetMenuES";
-// Payments
+// .com Payments
+import DEPCOMEN from "./components/payments/com/deposits/DepMenuEN";
+import DEPCOMES from "./components/payments/com/deposits/DepMenuES";
+import RETCOMEN from "./components/payments/com/withdraw/RetMenuEN";
+import RETCOMES from "./components/payments/com/withdraw/RetMenuES";
+
+// Retiros y depositos generales
+import RETDEPGENERAL from "./components/payments/general/DepRet";
 
 // Autoexclusion
 // Mexico
@@ -45,7 +47,7 @@ import PAMOBILEC from "./components/autoexclusion/PaMobileC";
 import PADESKTOPL from "./components/autoexclusion/PaDesktopL";
 import PADESKTOPC from "./components/autoexclusion/PaDesktopC";
 
-//Rep. Dominicana
+// Rep. Dominicana
 import DOMOBILEL from "./components/autoexclusion/DoMobileL";
 import DOMOBILEC from "./components/autoexclusion/DoMobileC";
 import DODESKTOPL from "./components/autoexclusion/DoDesktopL";
@@ -83,12 +85,15 @@ function App() {
         <Route path="/retiros/br" element={<RETBR />} />
         <Route path="/depositos/ca" element={<DEPCA />} />
         <Route path="/retiros/ca" element={<RETCA />} />
-        {/* General Payments */}
-        <Route path="/depositos/generaldepEN" element={<DEPGENERALEN />} />
-        <Route path="/depositos/generaldepES" element={<DEPGENERALES />} />
-        <Route path="/retiros/generalretEN" element={<RETGENERALEN />} />
-        <Route path="/retiros/generalretES" element={<RETGENERALES />} />
-        {/* Payments */}
+
+        {/* .com Payments */}
+        <Route path="/depositos/generaldepEN" element={<DEPCOMEN />} />
+        <Route path="/depositos/generaldepES" element={<DEPCOMES />} />
+        <Route path="/retiros/generalretEN" element={<RETCOMEN />} />
+        <Route path="/retiros/generalretES" element={<RETCOMES />} />
+
+        {/* Depositos & retiros generales */}
+        <Route path="/retdepgenerales" element={<RETDEPGENERAL />} />
 
         {/* Autoexclusion */}
         {/* Mexico */}
