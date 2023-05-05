@@ -84,7 +84,6 @@ const imagesRetiros = [
     description: [
       "Haz clic en 'NETELLER'",
       "Ingresa el monto que deseas retirar",
-      "Agrega la información de tu cuenta Skrill para tu primer retiro (la información se guardará para la próxima vez)",
       "Haz clic en 'Retirar'",
     ],
   },
