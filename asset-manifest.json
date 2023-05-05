@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/website/static/css/main.4c3c57f6.css",
-    "main.js": "/website/static/js/main.1362041d.js",
+    "main.js": "/website/static/js/main.20876be5.js",
     "static/media/DO_desktop_corto.gif": "/website/static/media/DO_desktop_corto.80eb8aa8975f0d813909.gif",
     "static/media/PA_desktop_corto.gif": "/website/static/media/PA_desktop_corto.a28413936ee485df3cdb.gif",
     "static/media/MX_desktop_corto.gif": "/website/static/media/MX_desktop_corto.2b6bc38c7406530519d6.gif",
@@ -36,6 +36,7 @@
     "static/media/SafetyPay.jpg": "/website/static/media/SafetyPay.e5bdf49ec7a75b954a52.jpg",
     "static/media/Bank_transfer.jpg": "/website/static/media/Bank_transfer.4c25dd10b3826c46392a.jpg",
     "static/media/Webpay_plus.jpg": "/website/static/media/Webpay_plus.e239e545fdc9e4ccdf47.jpg",
+    "static/media/PayCashGT.jpg": "/website/static/media/PayCashGT.5e18dd16395a750ac065.jpg",
     "static/media/PagoEfectivo.jpg": "/website/static/media/PagoEfectivo.c58e1c71672ff4023217.jpg",
     "static/media/RedActiva.jpg": "/website/static/media/RedActiva.9c6f37cd90c578bc0825.jpg",
     "static/media/PaysafeCard.jpg": "/website/static/media/PaysafeCard.f7f198b0299b3a86829b.jpg",
@@ -57,10 +58,10 @@
     "static/media/republica-dominicana.png": "/website/static/media/republica-dominicana.894c860a043c184be22d.png",
     "index.html": "/website/index.html",
     "main.4c3c57f6.css.map": "/website/static/css/main.4c3c57f6.css.map",
-    "main.1362041d.js.map": "/website/static/js/main.1362041d.js.map"
+    "main.20876be5.js.map": "/website/static/js/main.20876be5.js.map"
   },
   "entrypoints": [
     "static/css/main.4c3c57f6.css",
-    "static/js/main.1362041d.js"
+    "static/js/main.20876be5.js"
   ]
 }
