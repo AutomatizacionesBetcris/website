@@ -4,7 +4,7 @@ import Tarjetas from "../../../img/payments/Tarjetas.jpg";
 import Banktransfer from "../../../img/payments/Bank_transfer.jpg";
 import AstroPay from "../../../img/payments/Astropay.jpg";
 import SafetyPay from "../../../img/payments/PagoEfectivoGT.jpg";
-import PayCash from "../../../img/payments/PayCash.jpg";
+import PayCash from "../../../img/payments/PayCashGT.jpg";
 import Agencias from "../../../img/payments/Betcris_Agencias.png";
 import Skrill from "../../../img/payments/Skrill.jpg";
 import Neteller from "../../../img/payments/Neteller.jpg";
@@ -38,11 +38,12 @@ const imagesDepositos = [
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description: [
-      "Haz clic en 'PayCash'",
-      "Ingresa el monto a depositar y haz clic en 'Generar referencia",
-      "Visita el sistema de banca en línea de tu banco que tiene el servicio de PayCash activo",
-      "Selecciona 'Pago de Servicios' o 'Pago a Compañías' y luego 'PayCash'",
-      "Ingresa el número de referencia, el monto a pagar y por último confirma el pago",
+      "Haz clic en el 'Menú Principal', en la parte superior izquierda de tu pantalla, y luego en el 'Cajero'",
+      "Selecciona 'Depósito' → 'Pagar en efectivo'",
+      "Ingresa el monto a depositar y selecciona 'Generar referencia'",
+      "Copia el código de 16 dígitos que el sistema proporciona",
+      "Ve a una tienda de conveniencia, dile al cajero que vas a hacer un pago de PayCash, proporciona el número de referencia y el dinero a pagar (el monto debe ser el mismo que ingresaste al Cajero en línea de Betcris).",
+      "Guarda el comprobante de pago.",
     ],
   },
   {
