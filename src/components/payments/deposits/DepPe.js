@@ -117,17 +117,12 @@ const imagesDepositos = [
   {
     img: SafetyPay,
     title: "SAFETYPAY",
-    url: "https://get.betcris.help/hc/es-419/articles/360002241397-SafetyPay",
+    url: "https://ayuda.betcris.com/guia-de-usuario/centro-de-ayuda/depositos/chile/safetypay/",
     min: "$10.00",
     max: "$1,100.00",
     time: "60 minutos",
-    descriptionTitle: "Desde el Cajero de Betcris:",
     description: [
-      "Haz clic en el 'Menú Principal', en la parte superior izquierda de tu pantalla, y luego en el 'Cajero'",
-      "Selecciona 'Depósito' → 'Tiendas de conveniencia' → Pagar en efectivo",
-      "Ingresa el monto, selecciona un punto de pago y haz clic en 'Generar código de pago'",
-      "Reporta el código de pago de 6 dígitos que te proporciona el sistema",
-      "Sigue los pasos mostrados en pantalla para confirmar tu depósito.",
+      "Puedes usar SafetyPay (Pagoseguro) para hacer depósitos usando efectivo a través de múltiples puntos de cobro, como agencias bancarias o tiendas de conveniencia.",
     ],
   },
   {
@@ -222,9 +217,14 @@ const DepPe = () => {
                       </h3>
                       <hr></hr>
                       <ul className="mt-4 mb-4 text-xs text-start w-full p-1">
-                        <p>{selectedImage.descriptionTitle}</p>
-                        <br></br>
-                        {selectedImage.title !== "AGENCIAS BETCRIS" ? (
+                        {selectedImage.title !== "SAFETYPAY" && (
+                          <div>
+                            <p>{selectedImage.descriptionTitle}</p>
+                            <br></br>
+                          </div>
+                        )}
+                        {selectedImage.title !== "AGENCIAS BETCRIS" &&
+                        selectedImage.title !== "SAFETYPAY" ? (
                           selectedImage.description.map(
                             (description, index) => (
                               <li key={index} className="mb-2">

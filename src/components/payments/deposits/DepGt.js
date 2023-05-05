@@ -16,27 +16,21 @@ const imagesDepositos = [
   {
     img: SafetyPay,
     title: "SAFETYPAY",
-    url: "https://get.betcris.help/hc/es-419/articles/360002241397-SafetyPay",
+    url: "https://ayuda.betcris.com/guia-de-usuario/centro-de-ayuda/depositos/chile/safetypay/",
     min: "$20.00",
     max: "$900.00",
     time: "60 minutos",
-    descriptionTitle: "Desde el Cajero de Betcris:",
     description: [
-      "Haz clic en el 'Menú Principal', en la parte superior izquierda de tu pantalla, y luego en el 'Cajero'",
-      "Selecciona 'Depósito' → 'Tiendas de conveniencia' → Pagar en efectivo",
-      "Ingresa el monto, selecciona un punto de pago y haz clic en 'Generar código de pago'",
-      "Reporta el código de pago de 6 dígitos que te proporciona el sistema",
-      "Sigue los pasos mostrados en pantalla para confirmar tu depósito.",
+      "Puedes usar SafetyPay (Pagoseguro) para hacer depósitos usando efectivo a través de múltiples puntos de cobro, como agencias bancarias o tiendas de conveniencia.",
     ],
   },
   {
     img: PayCash,
     title: "PAYCASH",
-    url: "https://get.betcris.help/hc/es-419/articles/7287493065617-PayCash-Guatemala",
+    url: "https://ayuda.betcris.com/guia-de-usuario/centro-de-ayuda/depositos/guatemala/paycash-guatemala/",
     min: "$10.00",
     max: "$900.00",
     time: "Inmediato",
-    descriptionTitle: "Desde el Cajero de Betcris:",
     description: [
       "Este método es exclusivo para Guatemala.",
       "Puedes usar PayCash para hacer tus pagos directamente desde tu cuenta por medio de una transferencia bancaria o en efectivo desde una tienda de conveniencia.",
@@ -207,11 +201,20 @@ const DepGt = () => {
                       </h3>
                       <hr></hr>
                       <ul className="mt-4 mb-4 text-xs text-start w-full p-1">
-                        {selectedImage.title !== "AGENCIAS BETCRIS" ? (
+                        {selectedImage.title !== "SAFETYPAY" &&
+                          selectedImage.title !== "PAYCASH" && (
+                            <div>
+                              <p>{selectedImage.descriptionTitle}</p>
+                              <br></br>
+                            </div>
+                          )}
+                        {selectedImage.title !== "AGENCIAS BETCRIS" &&
+                        selectedImage.title !== "PAYCASH" &&
+                        selectedImage.title !== "SAFETYPAY" ? (
                           selectedImage.description.map(
                             (description, index) => (
                               <li key={index} className="mb-2">
-                                {description}{" "}
+                                {index + 1}. {description}{" "}
                               </li>
                             )
                           )

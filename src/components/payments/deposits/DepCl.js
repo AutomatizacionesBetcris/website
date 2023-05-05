@@ -16,16 +16,12 @@ const imagesDepositos = [
   {
     img: SafetyPay,
     title: "SAFETYPAY",
-    url: "https://get.betcris.help/hc/es-419/articles/360002241397-SafetyPay",
+    url: "https://ayuda.betcris.com/guia-de-usuario/centro-de-ayuda/depositos/chile/safetypay/",
     min: "$20.00",
     max: "$2,000.00",
     time: "60 minutos",
-    descriptionTitle: "Desde el Cajero de Betcris:",
     description: [
-      "Haz clic en el 'Menú Principal', en la parte superior izquierda de tu pantalla, y luego en el 'Cajero'",
-      "Selecciona 'Depósito' → Pagar en efectivo ",
-      "Ingresa el monto a depositar",
-      "Completa el proceso en la página a la que te redirige el sistema.",
+      "Puedes usar SafetyPay (Pagoseguro) para hacer depósitos usando efectivo a través de múltiples puntos de cobro, como agencias bancarias o tiendas de conveniencia.",
     ],
   },
   {
@@ -211,13 +207,36 @@ const DepCl = () => {
                       </h3>
                       <hr></hr>
                       <ul className="mt-4 mb-4 text-xs text-start w-full p-1">
-                        <p>{selectedImage.descriptionTitle}</p>
-                        <br></br>
-                        {selectedImage.description.map((description, index) => (
-                          <li key={index} className="mb-2">
-                            {index + 1}. {description}{" "}
+                        {selectedImage.title !== "SAFETYPAY" && (
+                          <div>
+                            <p>{selectedImage.descriptionTitle}</p>
+                            <br></br>
+                          </div>
+                        )}
+                        {selectedImage.title !== "SAFETYPAY" ? (
+                          selectedImage.description.map(
+                            (description, index) => (
+                              <li key={index} className="mb-2">
+                                {index + 1}. {description}{" "}
+                              </li>
+                            )
+                          )
+                        ) : (
+                          <li
+                            className="mb-2"
+                            style={{ whiteSpace: "pre-wrap" }}
+                          >
+                            {selectedImage.description.map(
+                              (description, index) => (
+                                <div key={index}>
+                                  {description}
+                                  <br />
+                                  <br />
+                                </div>
+                              )
+                            )}
                           </li>
-                        ))}
+                        )}
                       </ul>
                       <div>
                         <hr></hr>
