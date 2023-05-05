@@ -38,12 +38,8 @@ const imagesDepositos = [
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description: [
-      "Haz clic en el 'Menú Principal', en la parte superior izquierda de tu pantalla, y luego en el 'Cajero'",
-      "Selecciona 'Depósito' → 'Pagar en efectivo'",
-      "Ingresa el monto a depositar y selecciona 'Generar referencia'",
-      "Copia el código de 16 dígitos que el sistema proporciona",
-      "Ve a una tienda de conveniencia, dile al cajero que vas a hacer un pago de PayCash, proporciona el número de referencia y el dinero a pagar (el monto debe ser el mismo que ingresaste al Cajero en línea de Betcris).",
-      "Guarda el comprobante de pago.",
+      "Este método es exclusivo para Guatemala.",
+      "Puedes usar PayCash para hacer tus pagos directamente desde tu cuenta por medio de una transferencia bancaria o en efectivo desde una tienda de conveniencia.",
     ],
   },
   {
@@ -212,13 +208,11 @@ const DepGt = () => {
                       </h3>
                       <hr></hr>
                       <ul className="mt-4 mb-4 text-xs text-start w-full p-1">
-                        <p>{selectedImage.descriptionTitle}</p>
-                        <br></br>
                         {selectedImage.title !== "AGENCIAS BETCRIS" ? (
                           selectedImage.description.map(
                             (description, index) => (
                               <li key={index} className="mb-2">
-                                {index + 1}. {description}{" "}
+                                {description}{" "}
                               </li>
                             )
                           )
