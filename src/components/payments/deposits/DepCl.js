@@ -85,7 +85,6 @@ const imagesDepositos = [
       "Haz clic en 'e-Wallet'",
       "Seguido en 'NETELLER'",
       "Ingresa la cantidad, tu número de cuenta y haz clic en 'Depositar'",
-      "Serás redirigido al sitio de Skrill para completar la transacción",
       "Completa la transacción en el sitio de NETELLER al que se te redirige",
     ],
   },
