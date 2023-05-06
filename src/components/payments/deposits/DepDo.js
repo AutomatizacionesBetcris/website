@@ -80,10 +80,10 @@ const imagesDepositos = [
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description: [
-      "Haz clic en 'e-Wallet''",
-      "Seguido en 'NETELLER'",
-      "Ingresa la cantidad, tu número de cuenta y haz clic en 'Depositar'",
-      "Completa la transacción en el sitio de NETELLER al que se te redirige",
+      "Haz clic en el 'Menú Principal', en la parte superior izquierda de tu pantalla y luego en el 'Cajero'",
+      "Selecciona 'Depósito'→'NETELLER'",
+      "Ingresa el monto deseado, tu número de cuenta y haz clic en 'Depositar'",
+      "Completa la transacción en el sitio de NETELLER al que se te redirige.",
     ],
   },
   {

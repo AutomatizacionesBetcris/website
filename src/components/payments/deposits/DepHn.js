@@ -60,15 +60,16 @@ const imagesDepositos = [
   {
     img: Neteller,
     title: "NETELLER",
-    url: "https://get.betcris.help/hc/es-419/articles/360002208818-NETELLER",
+    url: "https://ayuda.betcris.com/guia-de-usuario/centro-de-ayuda/depositos/chile/neteller/",
     min: "$10.00",
     max: "$100,000.00",
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description: [
-      "Haz clic en 'e-Wallet', seguido en 'NETELLER'",
-      "Ingresa la cantidad, tu número de cuenta y haz clic en 'Depositar'",
-      "Completa la transacción en el sitio de NETELLER al que se te redirige",
+      "Haz clic en el 'Menú Principal', en la parte superior izquierda de tu pantalla y luego en el 'Cajero'",
+      "Selecciona 'Depósito' → 'NETELLER'",
+      "Ingresa el monto deseado, tu número de cuenta y haz clic en 'Depositar'",
+      "Completa la transacción en el sitio de NETELLER al que se te redirige.",
     ],
   },
   {
