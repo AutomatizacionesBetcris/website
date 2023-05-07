@@ -76,15 +76,17 @@ const imagesRetiros = [
   {
     img: Neteller,
     title: "NETELLER",
-    url: "https://get.betcris.help/hc/es-419/articles/360002241917-NETELLER-",
+    url: "https://ayuda.betcris.com/guia-de-usuario/centro-de-ayuda/retiros/ecuador-retiros/neteller-2/",
     min: "$10.00",
     max: "$2,500.00",
     time: "48 horas",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description: [
-      "Haz clic en 'NETELLER'",
+      "Haz clic en el 'Menú Principal', en la parte superior izquierda de tu pantalla, y luego en el 'Cajero'",
+      "Selecciona 'Retiro' → 'NETELLER'",
       "Ingresa el monto que deseas retirar",
-      "Haz clic en 'Retirar'",
+      "Completa la información de tu cuenta NETELLER la primera vez (tu información se guardará para la próxima vez)",
+      "Haz clic en 'Verificar retiro'.",
     ],
   },
   {

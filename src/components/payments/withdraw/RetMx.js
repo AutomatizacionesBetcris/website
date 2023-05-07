@@ -79,10 +79,10 @@ const imagesRetiros = [
     time: "48 horas",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description: [
-      "Haz clic en 'NETELLER'",
+      "Selecciona Retiro → NETELLER",
       "Ingresa la cantidad que quieres retirar",
       "Ingresa los datos de tu cuenta NETELLER",
-      "Haz clic en 'Verificar retiro'",
+      "Pulsa Verificar retiro.",
     ],
   },
   {
