@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/website/static/css/main.4c3c57f6.css",
-    "main.js": "/website/static/js/main.3c3d27c9.js",
+    "main.js": "/website/static/js/main.7561d3d4.js",
     "static/media/DO_desktop_corto.gif": "/website/static/media/DO_desktop_corto.80eb8aa8975f0d813909.gif",
     "static/media/PA_desktop_corto.gif": "/website/static/media/PA_desktop_corto.a28413936ee485df3cdb.gif",
     "static/media/MX_desktop_corto.gif": "/website/static/media/MX_desktop_corto.2b6bc38c7406530519d6.gif",
@@ -21,6 +21,7 @@
     "static/media/PagoEfectivoSV.jpg": "/website/static/media/PagoEfectivoSV.a6c2538b9b1f61ba41e4.jpg",
     "static/media/PagoEfectivoCL.jpg": "/website/static/media/PagoEfectivoCL.6fe5be667c9ad77a1781.jpg",
     "static/media/Bank_transfer_CL.jpg": "/website/static/media/Bank_transfer_CL.c0fe707d4054e7a0941e.jpg",
+    "static/media/SafetyPay_PE.jpg": "/website/static/media/SafetyPay_PE.c8db124adb218091a667.jpg",
     "static/media/PagoEfectivoMX.jpg": "/website/static/media/PagoEfectivoMX.fbb9d9660b8eff740708.jpg",
     "static/media/Yape.jpg": "/website/static/media/Yape.e4b6b39a7b973cb5dac2.jpg",
     "static/media/Tigo_money_wallet.jpg": "/website/static/media/Tigo_money_wallet.5861f23c07073d414b96.jpg",
@@ -30,6 +31,7 @@
     "static/media/Facilito.jpg": "/website/static/media/Facilito.7d7b34eb989731f2e382.jpg",
     "static/media/Punto_Pago.jpg": "/website/static/media/Punto_Pago.e73f25898204ad497b4f.jpg",
     "static/media/PagoEfectivoEC.jpg": "/website/static/media/PagoEfectivoEC.ab39f9d5b5965d727d0b.jpg",
+    "static/media/WebPay.jpg": "/website/static/media/WebPay.fb2e04e7dd23461c0dc0.jpg",
     "static/media/Pay_to_card.jpg": "/website/static/media/Pay_to_card.defcf50cf1c439b7b1c2.jpg",
     "static/media/Skril_tap.jpg": "/website/static/media/Skril_tap.82af823a0f9e251f93ba.jpg",
     "static/media/Tarjetas.jpg": "/website/static/media/Tarjetas.5865542f7d80c0e4131d.jpg",
@@ -58,10 +60,10 @@
     "static/media/republica-dominicana.png": "/website/static/media/republica-dominicana.894c860a043c184be22d.png",
     "index.html": "/website/index.html",
     "main.4c3c57f6.css.map": "/website/static/css/main.4c3c57f6.css.map",
-    "main.3c3d27c9.js.map": "/website/static/js/main.3c3d27c9.js.map"
+    "main.7561d3d4.js.map": "/website/static/js/main.7561d3d4.js.map"
   },
   "entrypoints": [
     "static/css/main.4c3c57f6.css",
-    "static/js/main.3c3d27c9.js"
+    "static/js/main.7561d3d4.js"
   ]
 }
