@@ -120,10 +120,13 @@ const imagesDepositos = [
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description: [
-      "Haz clic en 'AstroPay'",
-      "Ingresa la cantidad y presiona 'Depositar'",
-      "Ingresa el monto y la información de la tarjeta",
-      "Pulsa 'Depositar' para completar la transacción",
+      "Haz clic en el 'Menú Principal', en la parte superior izquierda de tu pantalla, y luego en el 'Cajero'",
+      "Selecciona 'Depósito' → 'AstroPay'",
+      "Ingresa el monto de depósito y haz clic en 'Siguiente'",
+      "Continúa el proceso en la página que te redirige el sistema",
+      "Ingresa tu número de teléfono registrado en tu cuenta AstroPay",
+      "Elige el método de pago, ya sea un voucher ya adquirido o el saldo disponible en tu cuenta",
+      "Confirma tu depósito",
     ],
   },
   {

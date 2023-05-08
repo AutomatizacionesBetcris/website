@@ -54,15 +54,19 @@ const imagesDepositos = [
   {
     img: AstroPay,
     title: "ASTROPAY",
-    url: "https://get.betcris.help/hc/en-us/articles/360002212037-AstroPay-",
+    url: "https://ayuda.betcris.com/en/guia-de-usuario/centro-de-ayuda/depositos/chile/astropay-card/",
     min: "$5.00",
     max: "$10,000.00",
     time: "Immediately",
     descriptionTitle: "Click on 'Cashier':",
     description: [
-      "Click on 'AstroPay'",
-      "Enter the deposit amount and click on 'Next'",
-      "Go to the AstroPay website you are redirected to",
+      "Click on the 'Main Menu' at the top left of your screen, then click on 'Cashier'.",
+      "Select 'Deposit' → 'AstroPay'.",
+      "Enter the deposit amount and click 'Next'.",
+      "Continue the process on the page that redirects you the system",
+      "Enter your phone number registered in your account AstroPay",
+      "Choose the payment methodeither a voucher voucher already purchased or the available balance in your account.",
+      "Confirm your deposit",
     ],
   },
 ];
