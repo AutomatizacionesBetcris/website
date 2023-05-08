@@ -9,7 +9,7 @@ import Neteller from "../../../img/payments/Neteller.jpg";
 import EcoPayz from "../../../img/payments/Ecopayz.jpg";
 import Skrill1Tap from "../../../img/payments/Skril_tap.jpg";
 import BankTransferCL from "../../../img/payments/Bank_transfer_CL.jpg";
-import WebPay from "../../../img/payments/Webpay_plus.jpg";
+import WebPay from "../../../img/payments/WebPay.jpg";
 import { motion } from "framer-motion";
 
 const imagesDepositos = [

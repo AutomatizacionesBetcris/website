@@ -4,7 +4,7 @@ import PaysafeCard from "../../../img/payments/PaysafeCard.jpg";
 import Tarjetas from "../../../img/payments/Tarjetas.jpg";
 import Agencias from "../../../img/payments/Betcris_Agencias.png";
 import PagoEfectivo from "../../../img/payments/PagoEfectivo.jpg";
-import SafetyPay from "../../../img/payments/SafetyPay.jpg";
+import SafetyPay from "../../../img/payments/SafetyPay_PE.jpg";
 import AstroPay from "../../../img/payments/Astropay.jpg";
 import Skrill from "../../../img/payments/Skrill.jpg";
 import Neteller from "../../../img/payments/Neteller.jpg";
