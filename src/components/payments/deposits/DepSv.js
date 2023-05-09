@@ -30,7 +30,7 @@ const imagesDepositos = [
   {
     img: SafetyPay,
     title: "SAFETYPAY",
-    url: "https://ayuda.betcris.com/guia-de-usuario/centro-de-ayuda/depositos/chile/safetypay/",
+    url: "https://get.betcris.help/hc/es-419/articles/360002241397-SafetyPay",
     min: "$20.00",
     max: "$5,000.00",
     time: "60 minutos",

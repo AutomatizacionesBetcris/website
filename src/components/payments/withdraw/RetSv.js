@@ -46,7 +46,7 @@ const imagesRetiros = [
     url: "https://get.betcris.help/hc/es-419/articles/360002241957-Skrill",
     min: "$10.00",
     max: "$2,500.00",
-    time: "48 horas",
+    time: "Una vez aprobados, los fondos se tramitan de forma inmediata a tu cuenta.",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description: [
       "Haz clic en 'Skrill'",
@@ -61,7 +61,7 @@ const imagesRetiros = [
     url: "https://get.betcris.help/hc/es-419/articles/360002241917-NETELLER-",
     min: "$10.00",
     max: "$2,500.00",
-    time: "48 horas",
+    time: "Una vez aprobados, los fondos se tramitan de forma inmediata a tu cuenta.",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description: [
       "Haz clic en el 'Menú Principal', en la parte superior izquierda de tu pantalla, y luego en el 'Cajero'",
@@ -77,7 +77,7 @@ const imagesRetiros = [
     url: "https://get.betcris.help/hc/es-419/articles/360002245158-ecoPayz",
     min: "$10.00",
     max: "$2,500.00",
-    time: "48 horas",
+    time: "Una vez aprobados, los fondos se tramitan de forma inmediata a tu cuenta.",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description: [
       "Haz clic en 'ecoPayz'",

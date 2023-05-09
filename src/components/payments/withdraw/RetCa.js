@@ -12,7 +12,7 @@ const imagesRetiros = [
     url: "https://get.betcris.help/hc/en-us/articles/360002245158-ecoPayz",
     min: "$10.00",
     max: "$2,500.00",
-    time: "48 hours",
+    time: "Once approved, the funds are immediately transferred to your account.",
     descriptionTitle: "Click on 'Cashier':",
     description: [
       "Click on 'ecoPayz'",
