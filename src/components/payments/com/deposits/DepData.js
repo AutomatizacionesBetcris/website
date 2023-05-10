@@ -1,10 +1,14 @@
-import PayCash from "../../../../img/payments/PayCash.jpg";
 import Tarjetas from "../../../../img/payments/Tarjetas.jpg";
 import Banktransfer from "../../../../img/payments/Bank_transfer.jpg";
 import Agencias from "../../../../img/payments/Betcris_Agencias.png";
 import Facilito from "../../../../img/payments/Facilito.jpg";
 import RedActiva from "../../../../img/payments/RedActiva.jpg";
-import SafetyPay from "../../../../img/payments/SafetyPay.jpg";
+import SafetyPayEC from "../../../../img/payments/PagoEfectivoEC.jpg";
+import SafetyPayGT from "../../../../img/payments/PagoEfectivoGT.jpg";
+import SafetyPayPE from "../../../../img/payments/SafetyPay_PE.jpg";
+import SafetyPaySV from "../../../../img/payments/PagoEfectivoSV.jpg";
+import SafetyPayCL from "../../../../img/payments/PagoEfectivoCL.jpg";
+import PayCashGT from "../../../../img/payments/PayCashGT.jpg";
 import PayPhone from "../../../../img/payments/Payphone.jpg";
 import AstroPay from "../../../../img/payments/Astropay.jpg";
 import Skrill from "../../../../img/payments/Skrill.jpg";
@@ -21,7 +25,7 @@ import Yape from "../../../../img/payments/Yape.jpg";
 import Disashop from "../../../../img/payments/Disashop.jpg";
 import Mach from "../../../../img/payments/Mach.jpg";
 import BankTransferCL from "../../../../img/payments/Bank_transfer_CL.jpg";
-import WebPay from "../../../../img/payments/Webpay_plus.jpg";
+import WebPay from "../../../../img/payments/WebPay.jpg";
 
 // Flags
 import ecuador from "../../../../img/flags/ecuador.png";
@@ -50,9 +54,9 @@ const depositDataEn = [
         url: "https://get.betcris.help/hc/en-us/articles/360016935658-Facilito",
       },
       {
-        img: SafetyPay,
+        img: SafetyPayEC,
         title: "SAFETYPAY",
-        url: "https://get.betcris.help/hc/en-us/articles/360002241397-SafetyPay",
+        url: "https://ayuda.betcris.com/en/guia-de-usuario/centro-de-ayuda/depositos/chile/safetypay/",
       },
       {
         img: Tarjetas,
@@ -101,12 +105,12 @@ const depositDataEn = [
     flag: guatemala,
     info: [
       {
-        img: SafetyPay,
+        img: SafetyPayGT,
         title: "SAFETYPAY",
         url: "https://get.betcris.help/hc/en-us/articles/360002241397-SafetyPay",
       },
       {
-        img: PayCash,
+        img: PayCashGT,
         title: "PAYCASH",
         url: "https://get.betcris.help/hc/en-us/articles/7287493065617-PayCash-Guatemala",
       },
@@ -248,7 +252,7 @@ const depositDataEn = [
         url: "https://get.betcris.help/hc/en-us/articles/360002218938-ecoPayz",
       },
       {
-        img: SafetyPay,
+        img: SafetyPayPE,
         title: "SAFETYPAY",
         url: "https://get.betcris.help/hc/en-us/articles/360002241397-SafetyPay",
       },
@@ -371,7 +375,7 @@ const depositDataEn = [
         url: "https://get.betcris.help/hc/en-us/articles/360002208798-Credit-and-Debit-Cards",
       },
       {
-        img: SafetyPay,
+        img: SafetyPaySV,
         title: "SAFETYPAY",
         url: "https://get.betcris.help/hc/en-us/articles/360002241397-SafetyPay",
       },
@@ -417,7 +421,7 @@ const depositDataEn = [
     flag: chile,
     info: [
       {
-        img: SafetyPay,
+        img: SafetyPayCL,
         title: "SAFETYPAY",
         url: "https://get.betcris.help/hc/en-us/articles/360002241397-SafetyPay",
       },
@@ -487,7 +491,7 @@ const depositDataEs = [
         url: "https://get.betcris.help/hc/es-419/articles/360016935658-Facilito",
       },
       {
-        img: SafetyPay,
+        img: SafetyPayEC,
         title: "SAFETYPAY",
         url: "https://get.betcris.help/hc/es-419/articles/360002241397-SafetyPay",
       },
@@ -538,12 +542,12 @@ const depositDataEs = [
     flag: guatemala,
     info: [
       {
-        img: SafetyPay,
+        img: SafetyPayGT,
         title: "SAFETYPAY",
         url: "https://get.betcris.help/hc/es-419/articles/360002241397-SafetyPay",
       },
       {
-        img: PayCash,
+        img: PayCashGT,
         title: "PAYCASH",
         url: "https://get.betcris.help/hc/es-419/articles/7287493065617-PayCash-Guatemala",
       },
@@ -685,7 +689,7 @@ const depositDataEs = [
         url: "https://get.betcris.help/hc/es-419/articles/360002218938-ecoPayz",
       },
       {
-        img: SafetyPay,
+        img: SafetyPayPE,
         title: "SAFETYPAY",
         url: "https://get.betcris.help/hc/es-419/articles/360002241397-SafetyPay",
       },
@@ -808,7 +812,7 @@ const depositDataEs = [
         url: "https://get.betcris.help/hc/es-419/articles/360002208798-Tarjetas-de-cr%C3%A9dito-y-d%C3%A9bito",
       },
       {
-        img: SafetyPay,
+        img: SafetyPaySV,
         title: "SAFETYPAY",
         url: "https://get.betcris.help/hc/es-419/articles/360002241397-SafetyPay/",
       },
@@ -854,7 +858,7 @@ const depositDataEs = [
     flag: chile,
     info: [
       {
-        img: SafetyPay,
+        img: SafetyPayCL,
         title: "SAFETYPAY",
         url: "https://get.betcris.help/hc/es-419/articles/360002241397-SafetyPay",
       },
