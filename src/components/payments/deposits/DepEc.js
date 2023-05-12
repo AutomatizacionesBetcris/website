@@ -45,7 +45,7 @@ const imagesDepositos = [
   {
     img: SafetyPay,
     title: "SAFETYPAY",
-    url: "https://ayuda.betcris.com/guia-de-usuario/centro-de-ayuda/depositos/chile/safetypay/",
+    url: "https://ayuda.betcris.com/guia-de-usuario/centro-de-ayuda/depositos/ecuador/safetypay-2/",
     min: "$10.00",
     max: "$10,000.00",
     time: "60 minutos",
@@ -62,9 +62,9 @@ const imagesDepositos = [
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description: [
-      "Haz clic en 'Tarjetas de crédito y débito'",
+      "Elige 'Depósito' → 'Tarjetas'",
       "Ingresa la información solicitada si esta es la primera vez que estás usando una tarjeta (para acelerar el proceso, la próxima vez que realices un depósito, los datos de tu tarjeta ya estarán almacenados) y haz clic en 'Guardar'",
-      "Ingresa el monto que quieres depositar",
+      "Ingresa el monto que quieres depositar y tu número de identificación y haz clic en 'Siguiente'",
       "Selecciona 'Confirmar' para completar la transacción",
     ],
   },
@@ -77,8 +77,9 @@ const imagesDepositos = [
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description: [
-      "Haz clic en 'e-Wallet', seguido en 'PayPhone'",
-      "Ingresa el monto a depositar y haz clic en 'Depositar'",
+      "Selecciona 'Depósito' → 'e-Wallet' → 'PayPhone'",
+      "Ingresa el monto que deseas depositar, tu cuenta PayPhone (número de teléfono registrado) y haz clic en 'Depositar'",
+      "Revisa tu App PayPhone, allí recibirás un enlace para completar tu depósito",
     ],
   },
   {
@@ -90,24 +91,23 @@ const imagesDepositos = [
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description: [
-      "Haz clic en 'e-Wallet', seguido en 'Skrill'",
-      "Ingresa el monto y la información de tu cuenta de Skrill, luego pulsa 'Depositar'",
-      "Serás redirigido al sitio de Skrill para completar la transacción",
+      "Selecciona 'Depósito' → 'Skrill'",
+      "Ingresa el monto, tu cuenta Skrill y haz clic en 'Depositar'",
+      "Completa la transacción en la página de Skrill que se te redirecciona",
     ],
   },
   {
     img: Neteller,
     title: "NETELLER",
-    url: "https://ayuda.betcris.com/guia-de-usuario/centro-de-ayuda/depositos/chile/neteller/",
+    url: "https://ayuda.betcris.com/guia-de-usuario/centro-de-ayuda/depositos/ecuador/neteller-4/",
     min: "$10.00",
     max: "$100,000.00",
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description: [
-      "Haz clic en el 'Menú Principal', en la parte superior izquierda de tu pantalla y luego en el 'Cajero'",
       "Selecciona 'Depósito' → 'NETELLER'",
       "Ingresa el monto deseado, tu número de cuenta y haz clic en 'Depositar'",
-      "Completa la transacción en el sitio de NETELLER al que se te redirige.",
+      "Completa la transacción en el sitio de NETELLER al que se te redirige",
     ],
   },
   {
@@ -119,8 +119,8 @@ const imagesDepositos = [
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description: [
-      "Haz clic en 'e-Wallet', seguido en 'Skrill 1-Tap'",
-      "Ingresa el monto, tu cuenta Skrill y haz clic en 'Depositar'",
+      "Selecciona 'Depósito' → 'Skrill 1-Tap'",
+      "Ingresa el monto, tu cuenta Skrill account y haz clic en 'Depositar'",
       "Completa la transacción en la página de Skrill donde se te redirige",
     ],
   },
@@ -133,7 +133,7 @@ const imagesDepositos = [
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description: [
-      "Haz clic en 'e-Wallet', seguido en 'ecoPayz'",
+      "Selecciona 'Depósito' → 'ecoPayz'",
       "Ingresa el monto que quieres depositar, tu número de cuenta ecoPayz y haz clic en 'Confirmar'",
       "Completa la transacción en el sitio de ecoPayz al que se te redirige",
     ],
@@ -141,13 +141,12 @@ const imagesDepositos = [
   {
     img: AstroPay,
     title: "ASTROPAY",
-    url: "https://ayuda.betcris.com/guia-de-usuario/centro-de-ayuda/depositos/chile/astropay-card/",
+    url: "https://ayuda.betcris.com/guia-de-usuario/centro-de-ayuda/depositos/ecuador/astropay-card-4/",
     min: "$5.00",
     max: "$10,000",
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description: [
-      "Haz clic en el 'Menú Principal', en la parte superior izquierda de tu pantalla, y luego en el 'Cajero'",
       "Selecciona 'Depósito' → 'AstroPay'",
       "Ingresa el monto de depósito y haz clic en 'Siguiente'",
       "Continúa el proceso en la página que te redirige el sistema",
