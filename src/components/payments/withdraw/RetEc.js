@@ -21,11 +21,10 @@ const imagesRetiros = [
     descriptionTitle:
       "Para esta transacción no es necesario ir al Cajero virtual.",
     description: [
-      "Haz clic en 'Red Activa'",
+      "Selecciona 'Retiro' → 'Red Activa'",
       "Ingresa el monto del retiro y haz clic en 'Retirar'",
       "Revisa el código de la transacción enviado a tu correo electrónico",
-      "Visita cualquier agencia Western Union que ofrezca el servicio de Red Activa",
-      "Muestra el código, tu ID y retira tus fondos",
+      "Visita cualquier agencia Western Union que ofrezca el servicio de Red Activa, muestra el código, tu ID y retira tus fondos",
     ],
   },
   {
@@ -38,7 +37,7 @@ const imagesRetiros = [
     descriptionTitle:
       "Para esta transacción no es necesario ir al Cajero virtual.",
     description: [
-      "Haz clic en 'Facilito'",
+      "Selecciona 'Retiro' → 'Facilito'",
       "Ingresa el monto y haz clic en 'Retirar'",
       "Revisa tu correo electrónico y sigue las instrucciones que te enviamos allí",
     ],
@@ -52,7 +51,7 @@ const imagesRetiros = [
     time: "30 minutos",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description: [
-      "Haz clic en 'Retiro a tarjeta-Visa Direct'",
+      "Elige 'Retiro' → 'Retiro a tarjeta-Visa Direct'",
       "Ingresa la cantidad deseada",
       "Selecciona la tarjeta",
       "Haz clic en 'Retirar'",
@@ -67,26 +66,25 @@ const imagesRetiros = [
     time: "Una vez aprobados, los fondos se tramitan de forma inmediata a tu cuenta.",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description: [
-      "Haz clic en 'Skrill'",
+      "Selecciona 'Retiro' → 'Skrill'",
       "Ingresa el monto que deseas retirar",
       "Agrega la información de tu cuenta Skrill para tu primer retiro (la información se guardará para la próxima vez)",
-      "Haz clic en 'Retirar'",
+      "Haz clic en 'Verificar retiro'",
     ],
   },
   {
     img: Neteller,
     title: "NETELLER",
-    url: "https://ayuda.betcris.com/guia-de-usuario/centro-de-ayuda/retiros/ecuador-retiros/neteller-2/",
+    url: "https://ayuda.betcris.com/guia-de-usuario/centro-de-ayuda/retiros/chile-retiros/neteller-2/",
     min: "$10.00",
     max: "$2,500.00",
     time: "Una vez aprobados, los fondos se tramitan de forma inmediata a tu cuenta.",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description: [
-      "Haz clic en el 'Menú Principal', en la parte superior izquierda de tu pantalla, y luego en el 'Cajero'",
       "Selecciona 'Retiro' → 'NETELLER'",
       "Ingresa el monto que deseas retirar",
       "Completa la información de tu cuenta NETELLER la primera vez (tu información se guardará para la próxima vez)",
-      "Haz clic en 'Verificar retiro'.",
+      "Haz clic en 'Verificar retiro'",
     ],
   },
   {
@@ -98,9 +96,8 @@ const imagesRetiros = [
     time: "Una vez aprobados, los fondos se tramitan de forma inmediata a tu cuenta.",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description: [
-      "Haz clic en 'ecoPayz'",
-      "Ingresa el monto, tu número de cuenta y la forma como deseas pagar, por ejemplo: Efectivo",
-      "Haz clic en 'Retirar'",
+      "Selecciona 'Retiro' → 'ecoPayz'",
+      "Ingresa el monto, tu número de cuenta, la forma como deseas pagar, por ejemplo, efectivo y haz clic en 'Verificar retiro'",
     ],
   },
   {
@@ -112,9 +109,8 @@ const imagesRetiros = [
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description: [
-      "Haz clic en 'AstroPay Card'",
-      "Ingresa el monto que deseas retirar, tu cuenta (número de teléfono)",
-      "Haz clic en 'Confirmar'",
+      "Selecciona 'Retiro' → 'AstroPay Card'",
+      "Ingresa el monto que deseas retirar, tu cuenta (número de teléfono) y haz clic en 'Confirmar'",
     ],
   },
   {

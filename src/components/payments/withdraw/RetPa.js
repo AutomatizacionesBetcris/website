@@ -15,7 +15,7 @@ const imagesRetiros = [
     time: "El tiempo de acreditación varía según el banco receptor.",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description: [
-      "Haz clic en 'Transferencia Bancaria'",
+      "Elige 'Retiro' → 'Transferencia Bancaria'",
       "Ingresa el monto de tu retiro",
       "Completa la información de tu cuenta bancaria para tu primer retiro (tus datos estarán guardados la próxima vez)",
       "Haz clic en 'Retirar'",
@@ -30,7 +30,7 @@ const imagesRetiros = [
     time: "30 minutos",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description: [
-      "Haz clic en 'Retiro a tarjeta-Visa Direct'",
+      "Elige 'Retiro' → 'Retiro a tarjeta-Visa Direct'",
       "Ingresa la cantidad deseada",
       "Selecciona la tarjeta",
       "Haz clic en 'Retirar'",
