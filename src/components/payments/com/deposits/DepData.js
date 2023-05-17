@@ -26,6 +26,8 @@ import Disashop from "../../../../img/payments/Disashop.jpg";
 import Mach from "../../../../img/payments/Mach.jpg";
 import BankTransferCL from "../../../../img/payments/Bank_transfer_CL.jpg";
 import WebPay from "../../../../img/payments/WebPay.jpg";
+import BankTransferEC from "../../../../img/payments/Bank_transfer.jpg";
+import BanktransferPE from "../../../../img/payments/Bank_transfer_PE_RET.jpg";
 
 // Flags
 import ecuador from "../../../../img/flags/ecuador.png";
@@ -92,6 +94,11 @@ const depositDataEn = [
         img: AstroPay,
         title: "ASTROPAY",
         url: "https://get.betcris.help/hc/en-us/articles/360002212037-AstroPay-",
+      },
+      {
+        img: BankTransferEC,
+        title: "TRANSFERENCIA BANCARIA",
+        url: "https://get.betcris.help/hc/en-us/articles/360002241437-Bank-Transfer",
       },
       {
         img: Agencias,
@@ -265,6 +272,11 @@ const depositDataEn = [
         img: Yape,
         title: "YAPE",
         url: "https://get.betcris.help/hc/en-us/articles/12679035275153-Yape-and-or-Plin",
+      },
+      {
+        img: BanktransferPE,
+        title: "TRANSFERENCIA BANCARIA LOCAL",
+        url: "https://get.betcris.help/hc/en-us/articles/360002241437-Bank-Transfer",
       },
       {
         img: Agencias,
@@ -531,6 +543,11 @@ const depositDataEs = [
         url: "https://get.betcris.help/hc/es-419/articles/360002212037-AstroPay-Card",
       },
       {
+        img: BankTransferEC,
+        title: "TRANSFERENCIA BANCARIA",
+        url: "https://get.betcris.help/hc/es-419/articles/360002241437-Transferencias-bancarias",
+      },
+      {
         img: Agencias,
         title: "AGENCIAS BETCRIS",
         url: "https://get.betcris.help/hc/es-419/articles/6404360144273-Dep%C3%B3sitos-en-Agencias-Betcris",
@@ -702,6 +719,11 @@ const depositDataEs = [
         img: Yape,
         title: "YAPE",
         url: "https://get.betcris.help/hc/es-419/articles/11446138940689-Yape",
+      },
+      {
+        img: BanktransferPE,
+        title: "TRANSFERENCIA BANCARIA LOCAL",
+        url: "https://get.betcris.help/hc/es-419/articles/360002241437-Transferencias-bancarias",
       },
       {
         img: Agencias,

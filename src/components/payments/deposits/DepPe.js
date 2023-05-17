@@ -11,6 +11,7 @@ import Neteller from "../../../img/payments/Neteller.jpg";
 import EcoPayz from "../../../img/payments/Ecopayz.jpg";
 import Yape from "../../../img/payments/Yape.jpg";
 import Skrill1Tap from "../../../img/payments/Skril_tap.jpg";
+import Banktransfer from "../../../img/payments/Bank_transfer_PE_RET.jpg";
 import { motion } from "framer-motion";
 
 const imagesDepositos = [
@@ -154,6 +155,22 @@ const imagesDepositos = [
       "Selecciona 'Depósito' → 'Yape o Plin'",
       "Elige un método, ingresa el monto que deseas y haz clic en 'Depositar'",
       "Escanea el código QR que se genera en tu pantalla desde tu aplicación favorita",
+    ],
+  },
+  {
+    img: Banktransfer,
+    title: "TRANSFERENCIA BANCARIA LOCAL",
+    url: "https://get.betcris.help/hc/es-419/articles/360002241437-Transferencias-bancarias",
+    min: "$10.00",
+    max: "$8,000.00",
+    time: "Una vez aprobados, los fondos se tramitan de forma inmediata a tu cuenta.",
+    descriptionTitle: "Desde el Cajero de Betcris:",
+    description: [
+      "Selecciona 'Depósito' → 'Transferencia Bancaria'",
+      "Elige el banco donde vas a depositar",
+      "Selecciona la cuenta y el destinatario para realizar el depósito",
+      "Completa los detalles requeridos y adjunta una fotografía del depósito realizado en el banco o en línea",
+      "Haz clic en 'Reportar depósito'",
     ],
   },
   {

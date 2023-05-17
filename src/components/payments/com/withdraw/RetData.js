@@ -7,6 +7,7 @@ import Skrill from "../../../../img/payments/Skrill.jpg";
 import Neteller from "../../../../img/payments/Neteller.jpg";
 import EcoPayz from "../../../../img/payments/Ecopayz.jpg";
 import Retirotarjeta from "../../../../img/payments/Pay_to_card.jpg";
+import BanktransferCLRet from "../../../../img/payments/Bank_transfer_RET.jpg";
 
 // Flags
 import ecuador from "../../../../img/flags/ecuador.png";
@@ -312,7 +313,7 @@ const retDataEn = [
         url: "https://get.betcris.help/hc/en-us/articles/360002241997-Pay-to-Card-Visa-Direct-",
       },
       {
-        img: Banktransfer,
+        img: BanktransferCLRet,
         title: "TRANSFERENCIA BANCARIA LOCAL",
         url: "https://get.betcris.help/hc/en-us/articles/360002245278-Bank-Transfer",
       },

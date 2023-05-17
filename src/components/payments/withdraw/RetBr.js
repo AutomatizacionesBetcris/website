@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import LogoBC from "../../../img/logo-blanco.png";
-import Pay4Fun2 from "../../../img/payments/Pay4fun2.jpg";
+import Pay4Fun2 from "../../../img/payments/Pay4funRet.jpg";
 import Pix from "../../../img/payments/Pix.jpg";
 import { motion } from "framer-motion";
 

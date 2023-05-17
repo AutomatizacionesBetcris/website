@@ -4,7 +4,7 @@ import Facilito from "../../../img/payments/Facilito.jpg";
 import RedActiva from "../../../img/payments/RedActiva.jpg";
 import AstroPay from "../../../img/payments/Astropay.jpg";
 import Agencias from "../../../img/payments/Betcris_Agencias.png";
-import Retirotarjeta from "../../../img/payments/Pay_to_card.jpg";
+import BankTransfer from "../../../img/payments/Bank_transfer_RET.jpg";
 import Skrill from "../../../img/payments/Skrill.jpg";
 import Neteller from "../../../img/payments/Neteller.jpg";
 import EcoPayz from "../../../img/payments/Ecopayz.jpg";
@@ -43,17 +43,17 @@ const imagesRetiros = [
     ],
   },
   {
-    img: Retirotarjeta,
-    title: "TARJETA - VISA DIRECT",
-    url: "https://get.betcris.help/hc/es-419/articles/360002241997-Retiro-a-Tarjeta",
+    img: BankTransfer,
+    title: "TRANSFERENCIA BANCARIA LOCAL",
+    url: "https://get.betcris.help/hc/es-419/articles/360002245278-Transferencia-bancaria-local",
     min: "$10.00",
-    max: "$5,000.00",
-    time: "30 minutos",
+    max: "$2,500.00",
+    time: "El tiempo de acreditación varía según el banco receptor.",
     descriptionTitle: "Desde el Cajero de Betcris:",
     description: [
-      "Elige 'Retiro' → 'Retiro a tarjeta-Visa Direct'",
-      "Ingresa la cantidad deseada",
-      "Selecciona la tarjeta",
+      "Selecciona 'Retiro' → 'Transferencia Bancaria'",
+      "Ingresa el monto del retiro",
+      "Completa la información de tu cuenta bancaria la primera vez (estará guardada la próxima vez)",
       "Haz clic en 'Retirar'",
     ],
   },

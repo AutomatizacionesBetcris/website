@@ -13,6 +13,7 @@ import Neteller from "../../../img/payments/Neteller.jpg";
 import EcoPayz from "../../../img/payments/Ecopayz.jpg";
 import Paypal from "../../../img/payments/Paypal.jpg";
 import Skrill1Tap from "../../../img/payments/Skril_tap.jpg";
+import BankTransfer from "../../../img/payments/Bank_transfer_MX_DEP.jpg";
 import { motion } from "framer-motion";
 
 const imagesDepositos = [
@@ -212,6 +213,22 @@ const imagesDepositos = [
       "Selecciona la tarjeta previamente registrada en tu cuenta PayPal o puedes agregar una nueva",
       "Confirma la tarjeta y, haz clic en 'Compra completa'",
       "Una vez terminada la transacción, te aparecerá como acreditada en el Cajero de Betcris",
+    ],
+  },
+  {
+    img: BankTransfer,
+    title: "TRANSFERENCIA BANCARIA",
+    url: "https://ayuda.betcris.mx/guia-de-usuario/centro-de-ayuda/depositos/transferencias-bancarias/",
+    min: "MXN 170.00",
+    max: "MXN 150,000.00",
+    time: "Una vez aprobados, los fondos se tramitan de forma inmediata a tu cuenta.",
+    descriptionTitle: "Desde el Cajero de Betcris:",
+    description: [
+      "Selecciona 'Depósito' → 'Transferencia Bancaria'",
+      "Elige el banco donde vas a depositar",
+      "Ingresa el monto del depósito, indica tu punto de pago y haz clic en 'Generar código de pago'",
+      "Revisa las instrucciones que te indica el sistema",
+      "Haz clic en 'Ir a pagar' para gestionar la transferencia",
     ],
   },
 ];

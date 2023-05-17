@@ -11,6 +11,7 @@ import Skrill from "../../../img/payments/Skrill.jpg";
 import Neteller from "../../../img/payments/Neteller.jpg";
 import EcoPayz from "../../../img/payments/Ecopayz.jpg";
 import Skrill1Tap from "../../../img/payments/Skril_tap.jpg";
+import BankTransfer from "../../../img/payments/Bank_transfer.jpg";
 import { motion } from "framer-motion";
 
 const imagesDepositos = [
@@ -153,6 +154,22 @@ const imagesDepositos = [
       "Ingresa tu número de teléfono registrado en tu cuenta AstroPay",
       "Elige el método de pago, ya sea un voucher ya adquirido o el saldo disponible en tu cuenta",
       "Confirma tu depósito",
+    ],
+  },
+  {
+    img: BankTransfer,
+    title: "TRANSFERENCIA BANCARIA",
+    url: "https://get.betcris.help/hc/es-419/articles/360002241437-Transferencias-bancarias",
+    min: "$5.00",
+    max: "$3,500.00",
+    time: "Una vez aprobados, los fondos se tramitan de forma inmediata a tu cuenta.",
+    descriptionTitle: "Desde el Cajero de Betcris:",
+    description: [
+      "Selecciona 'Depósito' → 'Transferencia Bancaria'",
+      "Elige el banco donde vas a depositar",
+      "Selecciona la cuenta y el destinatario para realizar el depósito",
+      "Completa los detalles requeridos y adjunta una fotografía del depósito realizado en el banco o en línea",
+      "Haz clic en 'Reportar depósito'",
     ],
   },
   {

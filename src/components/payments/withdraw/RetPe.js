@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import LogoBC from "../../../img/logo-blanco.png";
-import Banktransfer from "../../../img/payments/Bank_transfer.jpg";
+import Banktransfer from "../../../img/payments/Bank_transfer_RET.jpg";
 import Retirotarjeta from "../../../img/payments/Pay_to_card.jpg";
 import Agencias from "../../../img/payments/Betcris_Agencias.png";
 import AstroPay from "../../../img/payments/Astropay.jpg";

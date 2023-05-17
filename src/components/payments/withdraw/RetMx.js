@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import LogoBC from "../../../img/logo-blanco.png";
-import Banktransfer from "../../../img/payments/Bank_transfer.jpg";
+import Banktransfer from "../../../img/payments/Bank_transfer_RET.jpg";
 import AstroPay from "../../../img/payments/Astropay.jpg";
 import Agencias from "../../../img/payments/Betcris_Agencias.png";
 import Retirotarjeta from "../../../img/payments/Pay_to_card.jpg";
 import Skrill from "../../../img/payments/Skrill.jpg";
 import Neteller from "../../../img/payments/Neteller.jpg";
 import EcoPayz from "../../../img/payments/Ecopayz.jpg";
+import Nuvei from "../../../img/payments/NUVEI.jpg";
 import { motion } from "framer-motion";
 
 const imagesRetiros = [
@@ -97,6 +98,23 @@ const imagesRetiros = [
       "Ingresa la cantidad que quieres retirar",
       "Ingresa los datos de tu cuenta ecoPayz",
       "Pulsa 'Verificar retiro'",
+    ],
+  },
+  {
+    img: Nuvei,
+    title: "NUVEI",
+    url: "https://ayuda.betcris.mx/guia-de-usuario/centro-de-ayuda/retiros/nuvei/",
+    min: "MXN 18.00",
+    max: "MXN 3,700.00",
+    time: "Inmediato",
+    descriptionTitle: "Desde el Cajero de Betcris:",
+    description: [
+      "Selecciona 'Retiro' → 'Retiro en efectivo'",
+      "Ingresa el monto que deseas retirar, el CURP, correo electrónico y haz clic en 'Generar referencia'",
+      "Revisa tu correo; allí recibirás el número de referencia",
+      "Visita la tienda afiliada más cercana",
+      "Solicita un retiro a PESPAY",
+      "Proporciona el número de referencia y recibe tu dinero en efectivo",
     ],
   },
   {
