@@ -36,22 +36,46 @@ import RETDEPGENERAL from "./components/payments/general/DepRet";
 
 // Autoexclusion
 // Mexico
-import MXMOBILEL from "./components/autoexclusion/MxMobileL";
-import MXMOBILEC from "./components/autoexclusion/MxMobileC";
-import MXDESKTOPL from "./components/autoexclusion/MxDesktopL";
-import MXDESKTOPC from "./components/autoexclusion/MxDesktopC";
+import MXMOBILEL from "./components/autoexclusion/MX/MxMobileL";
+import MXMOBILEC from "./components/autoexclusion/MX/MxMobileC";
+import MXDESKTOPL from "./components/autoexclusion/MX/MxDesktopL";
+import MXDESKTOPC from "./components/autoexclusion/MX/MxDesktopC";
 
 // Panama
-import PAMOBILEL from "./components/autoexclusion/PaMobileL";
-import PAMOBILEC from "./components/autoexclusion/PaMobileC";
-import PADESKTOPL from "./components/autoexclusion/PaDesktopL";
-import PADESKTOPC from "./components/autoexclusion/PaDesktopC";
+import PAMOBILEL from "./components/autoexclusion/PA/PaMobileL";
+import PAMOBILEC from "./components/autoexclusion/PA/PaMobileC";
+import PADESKTOPL from "./components/autoexclusion/PA/PaDesktopL";
+import PADESKTOPC from "./components/autoexclusion/PA/PaDesktopC";
 
 // Rep. Dominicana
-import DOMOBILEL from "./components/autoexclusion/DoMobileL";
-import DOMOBILEC from "./components/autoexclusion/DoMobileC";
-import DODESKTOPL from "./components/autoexclusion/DoDesktopL";
-import DODESKTOPC from "./components/autoexclusion/DoDesktopC";
+import DOMOBILEL from "./components/autoexclusion/DO/DoMobileL";
+import DOMOBILEC from "./components/autoexclusion/DO/DoMobileC";
+import DODESKTOPL from "./components/autoexclusion/DO/DoDesktopL";
+import DODESKTOPC from "./components/autoexclusion/DO/DoDesktopC";
+
+// Brasil
+import BRMOBILEL from "./components/autoexclusion/BR/BrMobileL";
+import BRMOBILEC from "./components/autoexclusion/BR/BrMobileC";
+import BRDESKTOPL from "./components/autoexclusion/BR/BrDesktopL";
+import BRDESKTOPC from "./components/autoexclusion/BR/BrDesktopC";
+
+// Canadá
+import CAMOBILEL from "./components/autoexclusion/CA/CaMobileL";
+import CAMOBILEC from "./components/autoexclusion/CA/CaMobileC";
+import CADESKTOPL from "./components/autoexclusion/CA/CaDesktopL";
+import CADESKTOPC from "./components/autoexclusion/CA/CaDesktopC";
+
+// All
+import MOBILEL from "./components/autoexclusion/COM/All/MobileL";
+import MOBILEC from "./components/autoexclusion/COM/All/MobileC";
+import DESKTOPL from "./components/autoexclusion/COM/All/DesktopL";
+import DESKTOPC from "./components/autoexclusion/COM/All/DesktopC";
+
+// El Salvador
+import SVMOBILEL from "./components/autoexclusion/COM/SV/SvMobileL";
+import SVMOBILEC from "./components/autoexclusion/COM/SV/SvMobileC";
+import SVDESKTOPL from "./components/autoexclusion/COM/SV/SvDesktopL";
+import SVDESKTOPC from "./components/autoexclusion/COM/SV/SvDesktopC";
 
 // Playground
 import Playground from "./components/playground/TestMenu";
@@ -113,6 +137,30 @@ function App() {
         <Route path="/autoexclusion/domobilecorto" element={<DOMOBILEC />} />
         <Route path="/autoexclusion/dodesktoplargo" element={<DODESKTOPL />} />
         <Route path="/autoexclusion/dodesktopcorto" element={<DODESKTOPC />} />
+
+        {/* Brasil */}
+        <Route path="/autoexclusion/brmobilelargo" element={<BRMOBILEL />} />
+        <Route path="/autoexclusion/brmobilecorto" element={<BRMOBILEC />} />
+        <Route path="/autoexclusion/brdesktoplargo" element={<BRDESKTOPL />} />
+        <Route path="/autoexclusion/brdesktopcorto" element={<BRDESKTOPC />} />
+
+        {/* Canadá */}
+        <Route path="/autoexclusion/camobilelargo" element={<CAMOBILEL />} />
+        <Route path="/autoexclusion/camobilecorto" element={<CAMOBILEC />} />
+        <Route path="/autoexclusion/cadesktoplargo" element={<CADESKTOPL />} />
+        <Route path="/autoexclusion/cadesktopcorto" element={<CADESKTOPC />} />
+
+        {/* All */}
+        <Route path="/autoexclusion/mobilelargo" element={<MOBILEL />} />
+        <Route path="/autoexclusion/mobilecorto" element={<MOBILEC />} />
+        <Route path="/autoexclusion/desktoplargo" element={<DESKTOPL />} />
+        <Route path="/autoexclusion/desktopcorto" element={<DESKTOPC />} />
+
+        {/* El Salvador */}
+        <Route path="/autoexclusion/svmobilelargo" element={<SVMOBILEL />} />
+        <Route path="/autoexclusion/svmobilecorto" element={<SVMOBILEC />} />
+        <Route path="/autoexclusion/svdesktoplargo" element={<SVDESKTOPL />} />
+        <Route path="/autoexclusion/svdesktopcorto" element={<SVDESKTOPC />} />
 
         {/* Playground */}
         <Route path="/playground" element={<Playground />} />
