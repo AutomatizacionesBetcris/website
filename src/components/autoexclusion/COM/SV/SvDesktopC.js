@@ -67,7 +67,11 @@ const SvDesktopC = () => {
             ya sea por unos meses o de manera 'indefinida'.
           </p>
           <button className=" text-center text-xs font-semibold w-full h-8 shadow-3xl shadow-black rounded-lg bg-green-600 hover:bg-green-700">
-            <a href="/" target="_link" rel="noopener noreferrer">
+            <a
+              href="https://eu.betcris.help/hc/es/articles/360002802517-Autoexclusi%C3%B3n"
+              target="_link"
+              rel="noopener noreferrer"
+            >
               Ver más información aquí
             </a>
           </button>
