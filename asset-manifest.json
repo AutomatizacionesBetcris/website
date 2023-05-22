@@ -1,12 +1,24 @@
 {
   "files": {
     "main.css": "/website/static/css/main.4c3c57f6.css",
-    "main.js": "/website/static/js/main.c7f6fa49.js",
+    "main.js": "/website/static/js/main.d640d6aa.js",
+    "static/media/BR_movil_largo.gif": "/website/static/media/BR_movil_largo.ce2a58b006e913374ba8.gif",
+    "static/media/COM_ES_movil_largo.gif": "/website/static/media/COM_ES_movil_largo.ea1c5d293d5a36a2d8eb.gif",
+    "static/media/COM_EN_movil_largo.gif": "/website/static/media/COM_EN_movil_largo.20d389c0721dcd523f96.gif",
+    "static/media/BR_movil_corto.gif": "/website/static/media/BR_movil_corto.0653c1ff05893231f92a.gif",
+    "static/media/COM_ES_movil_corto.gif": "/website/static/media/COM_ES_movil_corto.2cdfb769b88bf3e894fa.gif",
+    "static/media/COM_EN_movil_corto.gif": "/website/static/media/COM_EN_movil_corto.ccd755fb7d4a38805079.gif",
+    "static/media/BR_desktop_largo.gif": "/website/static/media/BR_desktop_largo.c777debc6f348c531ee0.gif",
+    "static/media/BR_desktop_corto.gif": "/website/static/media/BR_desktop_corto.a110dd01f3029dcfa761.gif",
+    "static/media/COM_ES_desktop_largo.gif": "/website/static/media/COM_ES_desktop_largo.6802606b5ad081bdc317.gif",
+    "static/media/COM_EN_desktop_largo.gif": "/website/static/media/COM_EN_desktop_largo.6c0dd0f74b896dedec15.gif",
     "static/media/DO_desktop_corto.gif": "/website/static/media/DO_desktop_corto.80eb8aa8975f0d813909.gif",
+    "static/media/COM_EN_desktop_corto.gif": "/website/static/media/COM_EN_desktop_corto.00e8cf6158f7d1da189a.gif",
     "static/media/PA_desktop_corto.gif": "/website/static/media/PA_desktop_corto.a28413936ee485df3cdb.gif",
+    "static/media/COM_ES_desktop_corto.gif": "/website/static/media/COM_ES_desktop_corto.6cbf4b750699c8228f44.gif",
     "static/media/MX_desktop_corto.gif": "/website/static/media/MX_desktop_corto.2b6bc38c7406530519d6.gif",
     "static/media/PA_movil_largo.gif": "/website/static/media/PA_movil_largo.5ed19f29724d86560f1e.gif",
-    "static/media/DO movil_largo.gif": "/website/static/media/DO movil_largo.640225caf8e5b0f069d8.gif",
+    "static/media/DO_movil_largo.gif": "/website/static/media/DO_movil_largo.640225caf8e5b0f069d8.gif",
     "static/media/MX_mobile_largo.gif": "/website/static/media/MX_mobile_largo.777f0a12d21495bee061.gif",
     "static/media/PA_movil_corto.gif": "/website/static/media/PA_movil_corto.0afaf8efafad7d904404.gif",
     "static/media/PA_desktop_largo.gif": "/website/static/media/PA_desktop_largo.e2e138b6d696ac0279fc.gif",
@@ -62,10 +74,10 @@
     "static/media/republica-dominicana.png": "/website/static/media/republica-dominicana.894c860a043c184be22d.png",
     "index.html": "/website/index.html",
     "main.4c3c57f6.css.map": "/website/static/css/main.4c3c57f6.css.map",
-    "main.c7f6fa49.js.map": "/website/static/js/main.c7f6fa49.js.map"
+    "main.d640d6aa.js.map": "/website/static/js/main.d640d6aa.js.map"
   },
   "entrypoints": [
     "static/css/main.4c3c57f6.css",
-    "static/js/main.c7f6fa49.js"
+    "static/js/main.d640d6aa.js"
   ]
 }
