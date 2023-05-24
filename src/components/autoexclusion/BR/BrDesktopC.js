@@ -13,12 +13,12 @@ const BrDesktopC = () => {
       <div className="grid lg:justify-center lg:items-center">
         <div className=" text-center p-2 m-5 bg-sky-900 bg-opacity-20 rounded-2xl shadow-lg ">
           <p>
-            <span className="text-white text-base font-bold">¡Recuerda!</span>
+            <span className="text-white text-base font-bold">Lembre-se!</span>
           </p>
           <p>
             <span className="text-slate-200 text-xs text-center">
-              Una vez hecho este proceso no se podrá habilitar la cuenta hasta
-              que dicha Autoexclusión haya terminado.
+              Uma vez concluído esse processo, a conta não poderá ser reativada
+              até que a autoexclusão seja encerrada.
             </span>
           </p>
         </div>
@@ -32,39 +32,40 @@ const BrDesktopC = () => {
 
         <div className=" text-slate-200 text-xs p-5 m-5 bg-sky-900 bg-opacity-20 rounded-2xl shadow-lg">
           <p className="mb-3">
-            <strong>Toma en cuenta lo siguiente:</strong>
+            <strong>Considere o seguinte:</strong>
             <ul>
               <li>
-                <strong>- </strong>Las autoexclusiones son irreversibles durante
-                el tiempo especificado.
+                <strong>- </strong>As autoexclusões são irreversíveis durante o
+                período especificado.
               </li>
               <li>
-                <strong>- </strong>Durante el período de autoexclusión, no
-                podrás utilizar tu cuenta para apostar y jugar, tu cuenta se
-                cerrará y se te devolverán los fondos de la cuenta.
+                <strong>- </strong>Durante o período de autoexclusão, você não
+                poderá usar sua conta para apostar e jogar. Sua conta será
+                fechada e os fundos serão devolvidos.
               </li>
             </ul>
           </p>
           <p className="mb-3">
-            <strong>Sigue estos pasos:</strong>
+            <strong>Siga estes passos:</strong>
             <ul>
               <li>
-                <strong>1- </strong>Ingresa a tu cuenta Betcris (el proceso se
-                hace dentro de tu cuenta) por lo tanto, debes tener acceso a la
-                misma.
+                <strong>1- </strong>Faça login na sua conta Betcris (o processo
+                é feito dentro da sua conta), portanto, você deve ter acesso à
+                mesma.
               </li>
               <li>
-                <strong>2- </strong>Una vez dentro de tu cuenta; desplazate
-                hacia abajo (parte inferior de la pantalla).
+                <strong>2- </strong>Uma vez dentro da sua conta, role a página
+                para baixo (parte inferior da tela).
               </li>
               <li>
-                <strong>3- </strong>Por último haz clic en 'Autoexclusión'.
+                <strong>3- </strong>Clique em Jogo Responsável e, em seguida,
+                clique em 'Autoexclusão'.
               </li>
             </ul>
           </p>
           <p className="mb-3">
-            Desde ahí podrás definir el tiempo que desees para cerrar tu cuenta
-            ya sea por unos meses o de manera 'indefinida'.
+            A partir daí, você poderá definir o tempo desejado para fechar sua
+            conta, seja por alguns meses ou de forma 'indefinida'.
           </p>
           <button className=" text-center text-xs font-semibold w-full h-8 shadow-3xl shadow-black rounded-lg bg-green-600 hover:bg-green-700">
             <a
@@ -72,7 +73,7 @@ const BrDesktopC = () => {
               target="_link"
               rel="noopener noreferrer"
             >
-              Ver más información aquí
+              Veja mais informações aquí.
             </a>
           </button>
         </div>
