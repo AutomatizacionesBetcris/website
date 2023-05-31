@@ -77,6 +77,9 @@ import SVMOBILEC from "./components/autoexclusion/COM/SV/SvMobileC";
 import SVDESKTOPL from "./components/autoexclusion/COM/SV/SvDesktopL";
 import SVDESKTOPC from "./components/autoexclusion/COM/SV/SvDesktopC";
 
+// Temp Events
+import Champions from "./components/tempevents/champions/champions";
+
 // Playground
 import Playground from "./components/playground/TestMenu";
 
@@ -161,6 +164,9 @@ function App() {
         <Route path="/autoexclusion/svmobilecorto" element={<SVMOBILEC />} />
         <Route path="/autoexclusion/svdesktoplargo" element={<SVDESKTOPL />} />
         <Route path="/autoexclusion/svdesktopcorto" element={<SVDESKTOPC />} />
+
+        {/* Temp Events */}
+        <Route path="/champions" element={<Champions />} />
 
         {/* Playground */}
         <Route path="/playground" element={<Playground />} />
