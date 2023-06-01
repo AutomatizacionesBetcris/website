@@ -3,7 +3,7 @@ import ChampionsLogo from "../../../img/tempevents/champions.PNG";
 // import "./champions.css";
 
 const Accordion = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(-1);
 
   const handleAccordionClick = (index) => {
     setActiveIndex(index === activeIndex ? null : index);
