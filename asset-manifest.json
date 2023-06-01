@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/website/static/css/main.10d82d0b.css",
-    "main.js": "/website/static/js/main.20389405.js",
+    "main.css": "/website/static/css/main.98d6f826.css",
+    "main.js": "/website/static/js/main.833d072a.js",
     "static/media/BR_movil_largo.gif": "/website/static/media/BR_movil_largo.ce2a58b006e913374ba8.gif",
     "static/media/COM_ES_movil_largo.gif": "/website/static/media/COM_ES_movil_largo.ea1c5d293d5a36a2d8eb.gif",
     "static/media/COM_EN_movil_largo.gif": "/website/static/media/COM_EN_movil_largo.20d389c0721dcd523f96.gif",
@@ -74,11 +74,11 @@
     "static/media/republica-dominicana.png": "/website/static/media/republica-dominicana.894c860a043c184be22d.png",
     "static/media/champions.PNG": "/website/static/media/champions.c402d14a09311d6edc73.PNG",
     "index.html": "/website/index.html",
-    "main.10d82d0b.css.map": "/website/static/css/main.10d82d0b.css.map",
-    "main.20389405.js.map": "/website/static/js/main.20389405.js.map"
+    "main.98d6f826.css.map": "/website/static/css/main.98d6f826.css.map",
+    "main.833d072a.js.map": "/website/static/js/main.833d072a.js.map"
   },
   "entrypoints": [
-    "static/css/main.10d82d0b.css",
-    "static/js/main.20389405.js"
+    "static/css/main.98d6f826.css",
+    "static/js/main.833d072a.js"
   ]
 }
