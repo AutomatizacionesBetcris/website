@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ChampionsLogo from "../../../img/tempevents/champions.PNG";
 // import "./champions.css";
 
-const Accordion = () => {
+const Champions = () => {
   const [activeIndex, setActiveIndex] = useState(-1);
 
   const handleAccordionClick = (index) => {
@@ -34,15 +34,10 @@ const Accordion = () => {
               <div className="bg-bluedark text-sm p-5">
                 <section className="text-white text-start">
                   <p>
-                    La Final de la Liga de Campeones de la UEFA 2022-23 será el
-                    partido final de la Liga de Campeones de la UEFA 2022-23, la
-                    68ª temporada del torneo de fútbol de clubes más importante
-                    de Europa organizado por la UEFA, y la 31ª temporada desde
-                    que cambió su nombre de Copa de Europa de Clubes Campeones a
-                    Liga de Campeones de la UEFA. Se disputará en el Estadio
-                    Olímpico Atatürk de Estambul, Turquía, el 10 de junio de
-                    2023, entre el Manchester City inglés y el Inter de Milán
-                    italiano.
+                    La Final de la Liga de Campeones de la UEFA 2022-23 se
+                    jugará el 10 de junio de 2023 en el Estadio Olímpico Atatürk
+                    de Estambul, Turquía. En el partido se enfrentarán el
+                    Manchester City de Inglaterra y el Inter de Milán de Italia.
                   </p>
 
                   <ul className="text-gray-300 list-disc space-y-3 m-4 mt-5">
@@ -140,14 +135,18 @@ const Accordion = () => {
                   La campaña hasta ahora
                 </h2>
                 <p className="text-gray-300">
-                  El City no tardó en asegurarse el pase a octavos de final por
-                  décima temporada consecutiva, pero no todo fue coser y cantar
-                  para el conjunto plagado de estrellas de Pep Guardiola. En
-                  septiembre, necesitó un espectacular gol del prolífico Erling
-                  Haaland para dar la vuelta a la tortilla contra el Dortmund,
-                  antes de jugar más de una hora con diez hombres en el empate
-                  sin goles contra el Copenhague.
+                  El Manchester City logró de manera rápida y consistente su
+                  clasificación a los octavos de final de la Liga de Campeones
+                  por décima temporada consecutiva. Sin embargo, el camino hacia
+                  esta meta no fue exento de dificultades para el equipo
+                  dirigido por Pep Guardiola, que cuenta con una plantilla
+                  repleta de estrellas. En el mes de septiembre, el City se vio
+                  obligado a remontar un partido contra el Dortmund gracias a un
+                  espectacular gol del prolífico delantero Erling Haaland.
+                  Además, tuvieron que afrontar más de una hora de juego con un
+                  jugador menos en el empate sin goles contra el Copenhague.
                 </p>
+                <br></br>
                 <p className="text-gray-300">
                   Tras una discreta actuación en el partido de ida de octavos de
                   final contra el Leipzig, Haaland marcó un récord de cinco
@@ -346,4 +345,4 @@ const Accordion = () => {
   );
 };
 
-export default Accordion;
+export default Champions;
