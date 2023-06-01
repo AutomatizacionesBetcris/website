@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/website/static/css/main.98d6f826.css",
-    "main.js": "/website/static/js/main.bffda89d.js",
+    "main.css": "/website/static/css/main.a4da8ec2.css",
+    "main.js": "/website/static/js/main.0c4d8809.js",
     "static/media/BR_movil_largo.gif": "/website/static/media/BR_movil_largo.ce2a58b006e913374ba8.gif",
     "static/media/COM_ES_movil_largo.gif": "/website/static/media/COM_ES_movil_largo.ea1c5d293d5a36a2d8eb.gif",
     "static/media/COM_EN_movil_largo.gif": "/website/static/media/COM_EN_movil_largo.20d389c0721dcd523f96.gif",
@@ -40,6 +40,7 @@
     "static/media/NUVEI.jpg": "/website/static/media/NUVEI.e80ad08c011fe210c8a7.jpg",
     "static/media/Tigo_money_wallet.jpg": "/website/static/media/Tigo_money_wallet.5861f23c07073d414b96.jpg",
     "static/media/Payphone.jpg": "/website/static/media/Payphone.9da3c40648dec9af5687.jpg",
+    "static/media/caballos.png": "/website/static/media/caballos.ade6028fef92a9727645.png",
     "static/media/Tigo_money.jpg": "/website/static/media/Tigo_money.26f8b0c5025733613a14.jpg",
     "static/media/PayCash.jpg": "/website/static/media/PayCash.a6061cfbb183af98afed.jpg",
     "static/media/Facilito.jpg": "/website/static/media/Facilito.7d7b34eb989731f2e382.jpg",
@@ -74,11 +75,11 @@
     "static/media/republica-dominicana.png": "/website/static/media/republica-dominicana.894c860a043c184be22d.png",
     "static/media/champions.PNG": "/website/static/media/champions.c402d14a09311d6edc73.PNG",
     "index.html": "/website/index.html",
-    "main.98d6f826.css.map": "/website/static/css/main.98d6f826.css.map",
-    "main.bffda89d.js.map": "/website/static/js/main.bffda89d.js.map"
+    "main.a4da8ec2.css.map": "/website/static/css/main.a4da8ec2.css.map",
+    "main.0c4d8809.js.map": "/website/static/js/main.0c4d8809.js.map"
   },
   "entrypoints": [
-    "static/css/main.98d6f826.css",
-    "static/js/main.bffda89d.js"
+    "static/css/main.a4da8ec2.css",
+    "static/js/main.0c4d8809.js"
   ]
 }
