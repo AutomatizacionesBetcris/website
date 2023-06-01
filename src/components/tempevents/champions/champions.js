@@ -10,7 +10,7 @@ const Accordion = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div>
       <div>
         <img
           src={ChampionsLogo}
