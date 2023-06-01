@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ChampionsLogo from "../../../img/tempevents/champions.PNG";
-import "./champions.css";
+// import "./champions.css";
 
 const Accordion = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -25,13 +25,13 @@ const Accordion = () => {
           <div className="-mt-12">
             <button
               style={{ width: "100%" }}
-              className="bg-black text-white font-bold border py-4 px-3 hover:text-gray-500"
+              className="bg-black text-white text-lg font-bold border py-4 px-3 hover:text-gray-500"
               onClick={() => handleAccordionClick(0)}
             >
               Final Champions League ‘23
             </button>
             {activeIndex === 0 && (
-              <div className="bg-bluedark p-5">
+              <div className="bg-bluedark text-sm p-5">
                 <section className="text-white text-start">
                   <p>
                     La Final de la Liga de Campeones de la UEFA 2022-23 será el
@@ -105,13 +105,13 @@ const Accordion = () => {
           <div>
             <button
               style={{ width: "100%" }}
-              className="bg-black text-white font-bold border py-4 px-3 hover:text-gray-500"
+              className="bg-black text-white text-base font-bold border py-4 px-3 hover:text-gray-500"
               onClick={() => handleAccordionClick(1)}
             >
               ¿Cómo llegan a la final el Manchester City?
             </button>
             {activeIndex === 1 && (
-              <div className="bg-bluedark p-4">
+              <div className="bg-bluedark text-sm p-4">
                 <ul className="text-gray-300 list-disc space-y-3 m-4 mt-5">
                   <li>Clasificación coeficiente UEFA: 1</li>
                   <li>Esta temporada W7 D5 L0 F31 A5</li>
@@ -204,13 +204,13 @@ const Accordion = () => {
           <div>
             <button
               style={{ width: "100%" }}
-              className="bg-black text-white font-bold border py-4 px-3 hover:text-gray-500"
+              className="bg-black text-white text-base font-bold border py-4 px-3 hover:text-gray-500"
               onClick={() => handleAccordionClick(2)}
             >
               ¿Cómo llegan a la final el Inter de Milán?
             </button>
             {activeIndex === 2 && (
-              <div className="bg-bluedark p-4">
+              <div className="bg-bluedark text-sm p-4">
                 <ul className="text-gray-300 list-disc space-y-3 m-4 mt-5">
                   <li>Clasificación coeficiente UEFA: 10</li>
                   <li>Esta temporada W7 D3 L2 F19 A10</li>
@@ -290,13 +290,13 @@ const Accordion = () => {
           <div>
             <button
               style={{ width: "100%" }}
-              className="bg-black text-white font-bold border py-4 px-3 hover:text-gray-500"
+              className="bg-black text-white font- text-base font-bold border py-4 px-3 hover:text-gray-500"
               onClick={() => handleAccordionClick(3)}
             >
               Hechos históricos
             </button>
             {activeIndex === 3 && (
-              <div className="bg-bluedark p-4">
+              <div className="bg-bluedark text-sm p-4">
                 <ul className="text-gray-300 list-disc space-y-3 m-5">
                   <li>
                     La primera final de la UEFA Champions League se celebró en
