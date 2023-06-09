@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Caballos from "../../../img/tempevents/caballos.png";
+import LogoBC from "../../../img/logo-blanco.png";
 
 const Belmont = () => {
   const [activeIndex, setActiveIndex] = useState(-1);
@@ -10,12 +11,16 @@ const Belmont = () => {
 
   return (
     <div>
+      {/* navbar */}
+      <nav className="flex flex-col border top-0 z-50 items-center justify-center h-20 bg-sky-800">
+        <img src={LogoBC} alt="Logo" className="h-12" />
+      </nav>
       <div>
         <img
           src={Caballos}
           alt="Caballos"
-          style={{ width: "100%", height: "10" }}
-          className="bg-white p-12 -mt-12"
+          style={{ width: "100%", height: "auto" }}
+          className=" "
         />
 
         {/* Accordion  */}

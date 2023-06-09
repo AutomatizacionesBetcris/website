@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import ChampionsLogo from "../../../img/tempevents/champions.PNG";
+import ChampionsLogo from "../../../img/tempevents/champions.gif";
+import LogoBC from "../../../img/logo-blanco.png";
 // import "./champions.css";
 
 const Champions = () => {
@@ -11,18 +12,22 @@ const Champions = () => {
 
   return (
     <div>
+      {/* navbar */}
+      <nav className="flex flex-col border top-0 z-50 items-center justify-center h-20 bg-sky-800">
+        <img src={LogoBC} alt="Logo" className="h-12" />
+      </nav>
       <div>
         <img
           src={ChampionsLogo}
           alt="Champions"
-          style={{ width: "100%", height: "10" }}
-          className="bg-white p-12 -mt-12"
+          style={{ width: "100%", height: "auto" }}
+          className=" bg-blue-500 "
         />
 
         {/* Accordion  */}
         <section>
           {/* Button 1 */}
-          <div className="-mt-12">
+          <div className="-mt-2">
             <button
               style={{ width: "100%" }}
               className="bg-black text-white text-lg font-bold border py-4 px-3 hover:text-gray-500"
