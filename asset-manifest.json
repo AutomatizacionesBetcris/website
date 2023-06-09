@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/website/static/css/main.6443ffeb.css",
-    "main.js": "/website/static/js/main.b26432e0.js",
+    "main.css": "/website/static/css/main.9dcebfb5.css",
+    "main.js": "/website/static/js/main.bfa727f9.js",
     "static/media/BR_movil_largo.gif": "/website/static/media/BR_movil_largo.ce2a58b006e913374ba8.gif",
     "static/media/COM_ES_movil_largo.gif": "/website/static/media/COM_ES_movil_largo.ea1c5d293d5a36a2d8eb.gif",
     "static/media/COM_EN_movil_largo.gif": "/website/static/media/COM_EN_movil_largo.20d389c0721dcd523f96.gif",
@@ -26,7 +26,7 @@
     "static/media/MX_mobile_corto.gif": "/website/static/media/MX_mobile_corto.e6aa72b4b7da0f47cf94.gif",
     "static/media/DO_movil_corto.gif": "/website/static/media/DO_movil_corto.c09b00b36ee254ac0763.gif",
     "static/media/DO_desktop_largo.gif": "/website/static/media/DO_desktop_largo.7508b0a6a5050e1fe588.gif",
-    "static/media/champions.gif": "/website/static/media/champions.eb6f035693223c190698.gif",
+    "static/media/champions.png": "/website/static/media/champions.4f8a7cb47e333c0c9066.png",
     "static/media/Pay4funRet.jpg": "/website/static/media/Pay4funRet.3881691ce89517ed781f.jpg",
     "static/media/Oxxo.jpg": "/website/static/media/Oxxo.ec69872d4abe86e326fa.jpg",
     "static/media/PagoEfectivoGT.jpg": "/website/static/media/PagoEfectivoGT.9d257192b272cc77e485.jpg",
@@ -75,11 +75,11 @@
     "static/media/ecuador.png": "/website/static/media/ecuador.2176794d2c550729aea2.png",
     "static/media/republica-dominicana.png": "/website/static/media/republica-dominicana.894c860a043c184be22d.png",
     "index.html": "/website/index.html",
-    "main.6443ffeb.css.map": "/website/static/css/main.6443ffeb.css.map",
-    "main.b26432e0.js.map": "/website/static/js/main.b26432e0.js.map"
+    "main.9dcebfb5.css.map": "/website/static/css/main.9dcebfb5.css.map",
+    "main.bfa727f9.js.map": "/website/static/js/main.bfa727f9.js.map"
   },
   "entrypoints": [
-    "static/css/main.6443ffeb.css",
-    "static/js/main.b26432e0.js"
+    "static/css/main.9dcebfb5.css",
+    "static/js/main.bfa727f9.js"
   ]
 }
