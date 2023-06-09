@@ -61,3 +61,7 @@ body {
     background-position: 500px 0;
   }
 }
+
+.bg-btnAccordionChamp {
+  background: #058adf;
+}
