@@ -1,3 +1,5 @@
+// https://bcautomatizaciones.com/website/#/retiros/generalreten
+
 import React, { useState } from "react";
 import { retDataEn } from "./RetData";
 import LogoBC from "../../../../img/logo-blanco.png";

@@ -1,3 +1,5 @@
+// https://bcautomatizaciones.com/website/#/depositos/generaldepen
+
 import React, { useState } from "react";
 import { depositDataEn } from "./DepData";
 import LogoBC from "../../../../img/logo-blanco.png";

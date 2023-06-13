@@ -1,3 +1,5 @@
+// https://bcautomatizaciones.com/website/#/retiros/ni
+
 import React, { useState } from "react";
 import LogoBC from "../../../img/logo-blanco.png";
 import Retirotarjeta from "../../../img/payments/Pay_to_card.jpg";

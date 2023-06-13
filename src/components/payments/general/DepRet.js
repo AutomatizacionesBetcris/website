@@ -1,3 +1,5 @@
+// EN CONSTRUCCION: http://localhost:3000/website/#/retdepgenerales
+
 import { useState } from "react";
 import { depositos, retiros } from "./RetDepData";
 import LogoBC from "../../../img/logo-blanco.png";

@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 body {
   margin: 0;
@@ -62,6 +62,7 @@ body {
   }
 }
 
+/* BG color for Champions buttons */
 .bg-btnAccordionChamp {
   background: #058adf;
 }

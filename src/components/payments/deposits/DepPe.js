@@ -1,3 +1,5 @@
+// https://bcautomatizaciones.com/website/#/depositos/pe
+
 import React, { useState } from "react";
 import LogoBC from "../../../img/logo-blanco.png";
 import PaysafeCard from "../../../img/payments/PaysafeCard.jpg";

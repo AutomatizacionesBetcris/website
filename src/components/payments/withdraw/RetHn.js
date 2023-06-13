@@ -1,3 +1,5 @@
+// https://bcautomatizaciones.com/website/#/retiros/hn
+
 import React, { useState } from "react";
 import LogoBC from "../../../img/logo-blanco.png";
 import Banktransfer from "../../../img/payments/Bank_transfer.jpg";

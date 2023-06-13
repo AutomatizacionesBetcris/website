@@ -1,3 +1,5 @@
+// https://bcautomatizaciones.com/website/#/retiros/ca
+
 import React, { useState } from "react";
 import LogoBC from "../../../img/logo-blanco.png";
 import EcoPayz from "../../../img/payments/Ecopayz.jpg";
