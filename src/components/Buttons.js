@@ -20,16 +20,20 @@ export const Close = ({ onClose }) => {
 
 export const MoreInfo = ({ selectedImage }) => {
   return (
-    <div className="text-center text-gray-500 text-sm mt-3">
-      <a
-        href={selectedImage.url}
-        target="_blank"
-        className="underline hover:text-gray-700"
-        rel="noopener noreferrer"
-      >
-        Más información
-      </a>
-    </div>
+    <>
+      {selectedImage.title !== "AGENCIAS BETCRIS" && (
+        <div className="text-center text-gray-500 text-sm mt-3">
+          <a
+            href={selectedImage.url}
+            target="_blank"
+            className="underline hover:text-gray-700"
+            rel="noopener noreferrer"
+          >
+            Más información
+          </a>
+        </div>
+      )}
+    </>
   );
 };
 

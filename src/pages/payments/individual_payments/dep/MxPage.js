@@ -21,7 +21,7 @@ const MxPage = () => {
     <div className="min-h-screen">
       {/* navbar */}
       <NavBar />
-      <div className="p-5 flex flex-col justify-center items-center ">
+      <div className="flex flex-col justify-center items-center ">
         {/* Grid */}
         <PaymentGrid images={MxData} handleImageClick={handleImageClick} />
         {selectedImage && (
