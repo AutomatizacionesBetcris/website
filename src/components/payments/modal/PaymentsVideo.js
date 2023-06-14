@@ -2,12 +2,19 @@ import React from "react";
 
 const PaymentsVideo = ({ selectedImage }) => {
   return (
-    <div className="relative" style={{ paddingBottom: "56.25%" }}>
+    <div
+      className="relative overflow-hidden"
+      style={{ paddingBottom: "56.25%" }}
+    >
       <iframe
-        title={selectedImage.title}
         src={selectedImage.videodep}
+        width="100%"
+        height="100%"
+        frameBorder="0"
         allowFullScreen
-        className="absolute top-0 left-0 w-full h-full rounded-2xl border-4"
+        scrolling="auto"
+        title="¿Cómo puedo pagar con PayPal? México"
+        style={{ position: "absolute" }}
       ></iframe>
     </div>
   );
