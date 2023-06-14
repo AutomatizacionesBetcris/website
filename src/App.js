@@ -5,7 +5,7 @@ import RETEC from "./components/payments/withdraw/RetEc";
 import DEPPA from "./components/payments/deposits/DepPa";
 import RETPA from "./components/payments/withdraw/RetPa";
 import DEPMX from "./pages/payments/individual_payments/dep/MxPage";
-import RETMX from "./components/payments/withdraw/RetMx";
+import RETMX from "./pages/payments/individual_payments/ret/MxPage";
 import DEPPE from "./components/payments/deposits/DepPe";
 import RETPE from "./components/payments/withdraw/RetPe";
 import DEPHN from "./components/payments/deposits/DepHn";

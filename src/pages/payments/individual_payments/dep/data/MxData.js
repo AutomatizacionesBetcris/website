@@ -202,7 +202,7 @@ const MxData = [
     max: "MXN 170,000.00",
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
-    videodep: "https://cdn.jwplayer.com/players/7btrNlLw-TL6jDYkn.html",
+    videodep: "https://cdn.jwplayer.com/previews/7btrNlLw",
     description: [
       "Selecciona 'Depósito' → 'PayPal'",
       "Ingresa el monto que deseas y haz clic en 'Depositar'",

@@ -3,7 +3,8 @@ import React from "react";
 const PaymentsTitle = ({ selectedImage }) => {
   const isPaypalOrCreditCard =
     selectedImage.title === "PAYPAL" ||
-    selectedImage.title === "TARJETAS DE CRÉDITO Y DÉBITO";
+    selectedImage.title === "TARJETAS DE CRÉDITO Y DÉBITO" ||
+    selectedImage.title === "NUVEI";
   const showTitle = !isPaypalOrCreditCard;
 
   return (

@@ -13,7 +13,7 @@ const PaymentsVideo = ({ selectedImage }) => {
         frameBorder="0"
         allowFullScreen
         scrolling="auto"
-        title="¿Cómo puedo pagar con PayPal? México"
+        title={selectedImage.title}
         style={{ position: "absolute" }}
       ></iframe>
     </div>
