@@ -5,20 +5,18 @@ import PaymentsTitle from "./PaymentsTitle";
 
 const PaymentesModal = ({ selectedImage, onClose }) => {
   return (
-    <div className="fixed z-10 inset-0 overflow-y-auto">
-      <div className="flex justify-center items-center min-h-screen px-4 pb-20 p-2 text-center">
-        <div className="fixed inset-0 transition-opacity bg-slate-500 opacity-75" />
-        <div className="inline-block align-bottom bg-white px-4 pt-2 rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:align-middle sm:max-w-lg sm:w-full">
-          <PaymentsTitle selectedImage={selectedImage} />
+    <div className="fixed z-10 inset-0 overflow-y-auto flex justify-center items-center">
+      <div className="bg-slate-500 bg-opacity-75 absolute inset-0" />
+      <div className="relative bg-white rounded-lg w-full max-w-3xl mx-4 sm:mx-auto p-2">
+        <PaymentsTitle selectedImage={selectedImage} />
 
-          <PaymentsInfo selectedImage={selectedImage} />
+        <PaymentsInfo selectedImage={selectedImage} />
 
-          <PaymentsMinMax selectedImage={selectedImage} />
+        <PaymentsMinMax selectedImage={selectedImage} />
 
-          <MoreInfo selectedImage={selectedImage} />
+        <MoreInfo selectedImage={selectedImage} />
 
-          <Close onClose={onClose} />
-        </div>
+        <Close onClose={onClose} />
       </div>
     </div>
   );

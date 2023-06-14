@@ -9,12 +9,12 @@ const PaymentsInfo = ({ selectedImage }) => {
 
   return (
     <>
-      <ul className="mt-4 mb-4 text-xs text-start w-full p-1">
+      <ul className="mt-4 mb-4 text-xs text-start w-full p-2">
         {showTitle && <p>{selectedImage.descriptionTitle}</p>}
         <br />
         {selectedImage.title !== "AGENCIAS BETCRIS" ? (
           isPaypalOrCreditCard ? (
-            <li className="-mt-6" style={{ whiteSpace: "pre-wrap" }}>
+            <li className="-mt-8" style={{ whiteSpace: "pre-wrap" }}>
               {/* Video iFrame */}
               <PaymentsVideo selectedImage={selectedImage} />
             </li>

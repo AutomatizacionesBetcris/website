@@ -3,7 +3,7 @@ import React from "react";
 const PaymentsVideo = ({ selectedImage }) => {
   return (
     <div
-      className="relative overflow-hidden"
+      className="relative overflow-hidden border-4"
       style={{ paddingBottom: "56.25%" }}
     >
       <iframe

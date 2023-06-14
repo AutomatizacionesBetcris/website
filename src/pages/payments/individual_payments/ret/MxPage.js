@@ -1,4 +1,4 @@
-// https://bcautomatizaciones.com/website/#/depositos/mx
+// https://bcautomatizaciones.com/website/#/retiros/mx
 
 import React, { useState } from "react";
 import NavBar from "../../../../components/NavBar";
