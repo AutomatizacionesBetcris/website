@@ -22,7 +22,7 @@ const MxData = [
     max: "MXN 90,000.00",
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
-    videodep: "https://cdn.jwplayer.com/players/wh2gsJmS-TL6jDYkn.html",
+    video: "https://cdn.jwplayer.com/players/wh2gsJmS-TL6jDYkn.html",
     description: [
       "Elige 'Depósito' → 'Tarjetas'",
       "Ingresa la información solicitada si esta es la primera vez que estás usando una tarjeta (para acelerar el proceso, la próxima vez que realices un depósito, los datos de tu tarjeta ya estarán almacenados) y haz clic en 'Guardar'",
@@ -202,7 +202,7 @@ const MxData = [
     max: "MXN 170,000.00",
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
-    videodep: "https://cdn.jwplayer.com/previews/7btrNlLw",
+    video: "https://cdn.jwplayer.com/previews/7btrNlLw",
     description: [
       "Selecciona 'Depósito' → 'PayPal'",
       "Ingresa el monto que deseas y haz clic en 'Depositar'",

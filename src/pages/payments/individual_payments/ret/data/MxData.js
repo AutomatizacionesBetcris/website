@@ -105,7 +105,7 @@ const MxData = [
     max: "MXN 3,700.00",
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
-    videodep: "https://cdn.jwplayer.com/players/d0EJpE9U-Ds0vhdRv.html",
+    video: "https://cdn.jwplayer.com/players/d0EJpE9U-Ds0vhdRv.html",
     description: [
       "Selecciona 'Retiro' → 'Retiro en efectivo'",
       "Ingresa el monto que deseas retirar, el CURP, correo electrónico y haz clic en 'Generar referencia'",

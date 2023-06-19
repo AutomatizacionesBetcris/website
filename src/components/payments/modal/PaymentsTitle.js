@@ -4,7 +4,9 @@ const PaymentsTitle = ({ selectedImage }) => {
   const isPaypalOrCreditCard =
     selectedImage.title === "PAYPAL" ||
     selectedImage.title === "TARJETAS DE CRÉDITO Y DÉBITO" ||
-    selectedImage.title === "NUVEI";
+    selectedImage.title === "NUVEI" ||
+    selectedImage.title === "PAYPHONE" ||
+    selectedImage.title === "RED ACTIVA";
   const showTitle = !isPaypalOrCreditCard;
 
   return (

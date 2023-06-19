@@ -7,7 +7,7 @@ const PaymentsVideo = ({ selectedImage }) => {
       style={{ paddingBottom: "56.25%" }}
     >
       <iframe
-        src={selectedImage.videodep}
+        src={selectedImage.video}
         width="100%"
         height="100%"
         frameBorder="0"
