@@ -1,12 +1,12 @@
-// https://bcautomatizaciones.com/website/#/depositos/ec
+// https://bcautomatizaciones.com/website/#/retiros/br
 
 import React, { useState } from "react";
 import NavBar from "../../../../components/NavBar";
-import EcData from "./data/EcData";
+import BrData from "./data/BrData";
 import PaymentesModal from "../../../../components/payments/modal/PaymentsModal";
 import PaymentGrid from "../../../../components/payments/PaymentsGrid";
 
-const EcPage = () => {
+const BrPage = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   const handleImageClick = (image) => {
@@ -23,7 +23,7 @@ const EcPage = () => {
       <NavBar />
       <div className="flex flex-col justify-center items-center ">
         {/* Grid */}
-        <PaymentGrid images={EcData} handleImageClick={handleImageClick} />
+        <PaymentGrid images={BrData} handleImageClick={handleImageClick} />
         {selectedImage && (
           <PaymentesModal selectedImage={selectedImage} onClose={handleClose} />
         )}
@@ -32,4 +32,4 @@ const EcPage = () => {
   );
 };
 
-export default EcPage;
+export default BrPage;

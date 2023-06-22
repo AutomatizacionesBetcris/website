@@ -21,7 +21,7 @@ import RETDO from "./components/payments/withdraw/RetDo";
 import DEPNI from "./components/payments/deposits/DepNi";
 import RETNI from "./components/payments/withdraw/RetNi";
 import DEPBR from "./pages/payments/individual_payments/dep/BrPage";
-import RETBR from "./components/payments/withdraw/RetBr";
+import RETBR from "./pages/payments/individual_payments/ret/BrPage";
 import DEPCA from "./components/payments/deposits/DepCa";
 import RETCA from "./components/payments/withdraw/RetCa";
 
