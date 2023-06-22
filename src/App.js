@@ -1,7 +1,7 @@
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
 // Individual Payments
 import DEPEC from "./pages/payments/individual_payments/dep/EcPage";
-import RETEC from "./components/payments/withdraw/RetEc";
+import RETEC from "./pages/payments/individual_payments/ret/EcPage";
 import DEPPA from "./components/payments/deposits/DepPa";
 import RETPA from "./components/payments/withdraw/RetPa";
 import DEPMX from "./pages/payments/individual_payments/dep/MxPage";
