@@ -72,7 +72,7 @@ const EcData = [
   {
     img: Neteller,
     title: "NETELLER",
-    url: "https://ayuda.betcris.com/guia-de-usuario/centro-de-ayuda/retiros/chile-retiros/neteller-2/",
+    url: "https://ayuda.betcris.com/es/guia-de-usuario/centro-de-ayuda/retiros/ecuador-retiros/neteller-10/",
     min: "$10.00",
     max: "$2,500.00",
     time: "Una vez aprobados, los fondos se tramitan de forma inmediata a tu cuenta.",

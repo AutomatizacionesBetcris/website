@@ -22,8 +22,8 @@ import DEPNI from "./components/payments/deposits/DepNi";
 import RETNI from "./components/payments/withdraw/RetNi";
 import DEPBR from "./pages/payments/individual_payments/dep/BrPage";
 import RETBR from "./pages/payments/individual_payments/ret/BrPage";
-import DEPCA from "./components/payments/deposits/DepCa";
-import RETCA from "./components/payments/withdraw/RetCa";
+import DEPCA from "./pages/payments/individual_payments/dep/CaPage";
+import RETCA from "./pages/payments/individual_payments/ret/CaPage";
 
 // .com Payments
 import DEPCOMEN from "./components/payments/com/deposits/DepMenuEN";
