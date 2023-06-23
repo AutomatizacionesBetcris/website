@@ -56,7 +56,7 @@ const EcData = [
   },
   {
     img: Tarjetas,
-    title: "DEPÓSITO TARJETAS DE CRÉDITO Y DÉBITO",
+    title: "TARJETAS DE CRÉDITO Y DÉBITO",
     url: "https://get.betcris.help/hc/es-419/articles/360002208798-Tarjetas-de-cr%C3%A9dito-y-d%C3%A9bito",
     min: "$10.00",
     max: "$5,000.00",
