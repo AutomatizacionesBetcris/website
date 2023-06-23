@@ -2,11 +2,11 @@ import React from "react";
 
 const PaymentsTitle = ({ selectedImage }) => {
   const isPaypalOrCreditCard =
-    selectedImage.title === "PAYPAL" ||
-    selectedImage.title === "TARJETAS DE CRÉDITO Y DÉBITO" ||
-    selectedImage.title === "NUVEI" ||
-    selectedImage.title === "PAYPHONE" ||
-    selectedImage.title === "RED ACTIVA";
+    selectedImage.title === "DEPÓSITO PAYPAL" ||
+    selectedImage.title === "DEPÓSITO TARJETAS DE CRÉDITO Y DÉBITO" ||
+    selectedImage.title === "RETIRO NUVEI" ||
+    selectedImage.title === "DEPÓSITO PAYPHONE" ||
+    selectedImage.title === "DEPÓSITO RED ACTIVA";
   const showTitle = !isPaypalOrCreditCard;
 
   return (

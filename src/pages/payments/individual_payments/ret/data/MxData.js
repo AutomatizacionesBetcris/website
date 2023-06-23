@@ -10,7 +10,7 @@ import Nuvei from "../../../../../img/payments/NUVEI.jpg";
 const MxData = [
   {
     img: Retirotarjeta,
-    title: "RETIRO TARJETAS DE CRÉDITO Y DÉBITO",
+    title: "TARJETAS DE CRÉDITO Y DÉBITO",
     url: "https://ayuda.betcris.mx/guia-de-usuario/centro-de-ayuda/retiros/visa-direct-retiro-a-tarjeta/",
     min: "MXN 180.00",
     max: "MXN 90,000.00",
@@ -99,7 +99,7 @@ const MxData = [
   },
   {
     img: Nuvei,
-    title: "NUVEI",
+    title: "RETIRO NUVEI",
     url: "https://ayuda.betcris.mx/guia-de-usuario/centro-de-ayuda/retiros/nuvei/",
     min: "MXN 18.00",
     max: "MXN 3,700.00",

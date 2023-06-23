@@ -14,7 +14,7 @@ import BankTransfer from "../../../../../img/payments/Bank_transfer.jpg";
 const EcData = [
   {
     img: RedActiva,
-    title: "RED ACTIVA",
+    title: "DEPÓSITO RED ACTIVA",
     url: "https://get.betcris.help/hc/es-419/articles/5016167802257-Red-Activa",
     min: "$10.00",
     max: "$1,000.00",
@@ -71,7 +71,7 @@ const EcData = [
   },
   {
     img: PayPhone,
-    title: "PAYPHONE",
+    title: "DEPÓSITO PAYPHONE",
     url: "https://get.betcris.help/hc/es-419/articles/360012312518-PayPhone",
     min: "$10.00",
     max: "$500.00",

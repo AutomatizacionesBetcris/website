@@ -16,7 +16,7 @@ import BankTransfer from "../../../../../img/payments/Bank_transfer_MX_DEP.jpg";
 const MxData = [
   {
     img: Tarjetas,
-    title: "TARJETAS DE CRÉDITO Y DÉBITO",
+    title: "DEPÓSITO TARJETAS DE CRÉDITO Y DÉBITO",
     url: "https://ayuda.betcris.mx/guia-de-usuario/centro-de-ayuda/depositos/tarjetas-de-credito-y-debito/",
     min: "MXN 180.00",
     max: "MXN 90,000.00",
@@ -196,7 +196,7 @@ const MxData = [
   },
   {
     img: Paypal,
-    title: "PAYPAL",
+    title: "DEPÓSITO PAYPAL",
     url: "https://ayuda.betcris.mx/guia-de-usuario/centro-de-ayuda/depositos/como-puego-pagar-con-paypal/",
     min: "MXN 180.00",
     max: "MXN 170,000.00",

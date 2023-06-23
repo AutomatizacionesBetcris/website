@@ -10,7 +10,7 @@ import EcoPayz from "../../../../../img/payments/Ecopayz.jpg";
 const EcData = [
   {
     img: RedActiva,
-    title: "RETIROS RED ACTIVA",
+    title: "RED ACTIVA",
     url: "https://get.betcris.help/hc/es-419/articles/360014961898-Red-Activa",
     min: "$10.00",
     max: "$1,000.00",

@@ -58,7 +58,7 @@ const PaData = [
   },
   {
     img: Tarjetas,
-    title: "DEPÓSITO TARJETAS DE CRÉDITO Y DÉBITO",
+    title: "TARJETAS DE CRÉDITO Y DÉBITO",
     url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/depositos/tarjetas-de-credito-y-debito/",
     min: "$10.00",
     max: "$250.00",

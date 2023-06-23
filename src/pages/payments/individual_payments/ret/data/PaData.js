@@ -20,7 +20,7 @@ const PaData = [
   },
   {
     img: Retirotarjeta,
-    title: "RETIROS TARJETAS DE CRÉDITO Y DÉBITO",
+    title: "TARJETAS DE CRÉDITO Y DÉBITO",
     url: "https://ayuda.betcris.pa/guia-de-usuario/centro-de-ayuda/retiros/retiro-a-tarjeta/",
     min: "$10.00",
     max: "$5,000.00",

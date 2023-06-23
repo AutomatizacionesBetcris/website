@@ -9,7 +9,7 @@ import EcoPayz from "../../../../../img/payments/Ecopayz.jpg";
 const PeData = [
   {
     img: Retirotarjeta,
-    title: "RETIROS TARJETAS DE CRÉDITO Y DÉBITO",
+    title: "TARJETAS DE CRÉDITO Y DÉBITO",
     url: "https://get.betcris.help/hc/es-419/articles/360002241997-Retiro-a-Tarjeta",
     min: "$10.00",
     max: "5,000.00",
