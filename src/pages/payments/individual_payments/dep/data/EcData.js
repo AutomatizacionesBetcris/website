@@ -29,12 +29,13 @@ const EcData = [
   },
   {
     img: Facilito,
-    title: "FACILITO",
+    title: "DEPOSITO FACILITO",
     url: "https://get.betcris.help/hc/es-419/articles/360016935658-Facilito",
     min: "$10.00",
     max: "$1,000.00",
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
+    video: "https://cdn.jwplayer.com/players/PocyeBSD-Ds0vhdRv.html",
     description: [
       "Visita cualquier agencia autorizada por Facilito",
       "Ingresa tu cuenta Betcris 'ECUXXXX' junto con el monto de depósito deseado",
