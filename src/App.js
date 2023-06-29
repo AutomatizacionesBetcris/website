@@ -78,8 +78,9 @@ import SVDESKTOPL from "./components/autoexclusion/COM/SV/SvDesktopL";
 import SVDESKTOPC from "./components/autoexclusion/COM/SV/SvDesktopC";
 
 // Temp Events
-import Champions from "./components/tempevents/champions/Champions";
-import Belmont from "./components/tempevents/belmontstakes/Belmont";
+import Champions from "./pages/temp_events/champions/Champions";
+import Belmont from "./pages/temp_events/belmontstakes/Belmont";
+import MLB from "./pages/temp_events/mlb/MLB";
 
 // Playground
 import Playground from "./components/playground/TestMenu";
@@ -169,6 +170,7 @@ function App() {
         {/* Temp Events */}
         <Route path="/champions" element={<Champions />} />
         <Route path="/belmont" element={<Belmont />} />
+        <Route path="/mlb" element={<MLB />} />
 
         {/* Playground */}
         <Route path="/playground" element={<Playground />} />

@@ -30,7 +30,7 @@ const Champions = () => {
           <div className="-mt-2">
             <button
               style={{ width: "100%" }}
-              className="bg-btnAccordionChamp text-white text-lg font-bold border py-4 px-3 hover:text-gray-500"
+              className="bg-[#058adf] text-white text-lg font-bold border py-4 px-3 hover:text-gray-500"
               onClick={() => handleAccordionClick(0)}
             >
               Final Champions League ‘23
@@ -105,7 +105,7 @@ const Champions = () => {
           <div>
             <button
               style={{ width: "100%" }}
-              className="bg-btnAccordionChamp text-white text-base font-bold border py-4 px-3 hover:text-gray-500"
+              className="bg-[#058adf] text-white text-base font-bold border py-4 px-3 hover:text-gray-500"
               onClick={() => handleAccordionClick(1)}
             >
               ¿Cómo llegan a la final el Manchester City?
@@ -208,7 +208,7 @@ const Champions = () => {
           <div>
             <button
               style={{ width: "100%" }}
-              className="bg-btnAccordionChamp text-white text-base font-bold border py-4 px-3 hover:text-gray-500"
+              className="bg-[#058adf] text-white text-base font-bold border py-4 px-3 hover:text-gray-500"
               onClick={() => handleAccordionClick(2)}
             >
               ¿Cómo llegan a la final el Inter de Milán?
@@ -294,7 +294,7 @@ const Champions = () => {
           <div>
             <button
               style={{ width: "100%" }}
-              className="bg-btnAccordionChamp text-white font- text-base font-bold border py-4 px-3 hover:text-gray-500"
+              className="bg-[#058adf] text-white font- text-base font-bold border py-4 px-3 hover:text-gray-500"
               onClick={() => handleAccordionClick(3)}
             >
               Hechos históricos
