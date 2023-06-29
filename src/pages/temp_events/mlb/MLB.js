@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Game23 from "../../../components/tempevents/mlb/Game23";
-import BgWhiteIAndmg from "../../../components/tempevents/mlb/BgWhiteIAndmg";
+import BgWhiteIAndImg from "../../../components/tempevents/mlb/BgWhiteIAndImg";
 import BgBlackAndInfo from "../../../components/tempevents/mlb/BgBlackAndInfo";
 import Acerca from "../../../components/tempevents/mlb/Acerca";
 
@@ -10,10 +10,12 @@ const MLB = () => {
   return (
     <section>
       {/* Bg white & Imagen */}
-      <BgWhiteIAndmg />
+      <BgWhiteIAndImg />
+
+      <hr />
 
       {/* BG Black & Info */}
-      <div className="flex flex-col min-h-screen bg-black">
+      <div className="flex flex-col min-h-screen bg-[#003D5B]">
         <BgBlackAndInfo setActive={setActive} />
 
         <div className="mb-10">
