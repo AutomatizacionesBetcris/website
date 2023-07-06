@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/website/static/css/main.8f338e9a.css",
-    "main.js": "/website/static/js/main.eedad6d5.js",
+    "main.js": "/website/static/js/main.bb32a232.js",
     "static/media/BR_movil_largo.gif": "/website/static/media/BR_movil_largo.ce2a58b006e913374ba8.gif",
     "static/media/COM_ES_movil_largo.gif": "/website/static/media/COM_ES_movil_largo.ea1c5d293d5a36a2d8eb.gif",
     "static/media/COM_EN_movil_largo.gif": "/website/static/media/COM_EN_movil_largo.20d389c0721dcd523f96.gif",
@@ -64,6 +64,7 @@
     "static/media/Ecopayz.jpg": "/website/static/media/Ecopayz.f34a6ffe83887e934d34.jpg",
     "static/media/Disashop.jpg": "/website/static/media/Disashop.2b4062e35a9709a04c97.jpg",
     "static/media/Paynet.jpg": "/website/static/media/Paynet.519717befa40b6ecfdd4.jpg",
+    "static/media/copa_oro.png": "/website/static/media/copa_oro.9bd2a7ce53a1d8c8dd25.png",
     "static/media/Skrill.jpg": "/website/static/media/Skrill.85a91d32590d66d880db.jpg",
     "static/media/Spei.jpg": "/website/static/media/Spei.a94bfda4f7c1905d893c.jpg",
     "static/media/Mach.jpg": "/website/static/media/Mach.f1b68ba57616360f8272.jpg",
@@ -77,10 +78,10 @@
     "static/media/mlb.webp": "/website/static/media/mlb.0a536a7c67ec2d404c14.webp",
     "index.html": "/website/index.html",
     "main.8f338e9a.css.map": "/website/static/css/main.8f338e9a.css.map",
-    "main.eedad6d5.js.map": "/website/static/js/main.eedad6d5.js.map"
+    "main.bb32a232.js.map": "/website/static/js/main.bb32a232.js.map"
   },
   "entrypoints": [
     "static/css/main.8f338e9a.css",
-    "static/js/main.eedad6d5.js"
+    "static/js/main.bb32a232.js"
   ]
 }
