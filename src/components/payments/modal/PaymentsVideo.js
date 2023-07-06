@@ -4,7 +4,7 @@ const PaymentsVideo = ({ selectedImage }) => {
   return (
     <div
       className="relative overflow-hidden border-4"
-      style={{ paddingBottom: "54.25%" }}
+      style={{ paddingBottom: "55.25%" }}
     >
       <iframe
         src={selectedImage.video}

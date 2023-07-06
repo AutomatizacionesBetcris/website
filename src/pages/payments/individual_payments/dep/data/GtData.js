@@ -145,6 +145,7 @@ const GtData = [
     max: "$1,250.00",
     time: "Inmediato",
     descriptionTitle: "Desde el Cajero de Betcris:",
+    video: "https://cdn.jwplayer.com/players/wYPOMmmP-Ds0vhdRv.html",
     description: [
       "Selecciona 'Depósito' → 'Fri'",
       "Ingresa el monto que deseas depositar, el número de teléfono registrado en Fri y haz clic en 'Depositar'",

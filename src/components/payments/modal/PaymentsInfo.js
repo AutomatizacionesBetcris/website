@@ -7,7 +7,8 @@ const PaymentsInfo = ({ selectedImage }) => {
     selectedImage.title === "RETIRO NUVEI" ||
     selectedImage.title === "DEPÓSITO PAYPHONE" ||
     selectedImage.title === "DEPÓSITO RED ACTIVA" ||
-    selectedImage.title === "DEPOSITO FACILITO";
+    selectedImage.title === "DEPOSITO FACILITO" ||
+    selectedImage.title === "FRI";
   const showTitle = !isPaypalOrCreditCard;
 
   return (
